@@ -64,3 +64,10 @@ code, pre, kbd, samp {
   background: var(--theme-background-alt);
 }
 .amtsscore-headerlink svg { display: block; }
+
+/* Hide the row-selection checkbox column on Inputs.table — we use it for
+ * display only, not for selection. */
+form[class*="inputs-"][class*="-table"] thead th:first-child,
+form[class*="inputs-"][class*="-table"] tbody td:first-child {
+  display: none;
+}
