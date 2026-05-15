@@ -40,7 +40,7 @@ toc: false
 <div class="hero">
   <img src="./assets/logo-light.svg" alt="AmtsScore" class="hero-logo">
   <div class="tag">v0 / Pre-Launch</div>
-  <h1>Wie digital ist Ihre Behörde wirklich?</h1>
+  <h1>Wie digital ist die deutsche Verwaltung wirklich?</h1>
   <p>AmtsScore misst die digitale Performance deutscher Verwaltungs-Websites. Quartalsweise, datenbasiert, methodisch offen.</p>
 </div>
 
