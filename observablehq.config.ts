@@ -45,8 +45,51 @@ export default {
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap">
     <script>
-      // Clear any sticky theme override from previous experiments.
-      try { localStorage.removeItem('amtsscore-theme'); } catch(e) {}
+      (function() {
+        const KEY = 'amtsscore-theme';
+        const root = document.documentElement;
+        const stored = localStorage.getItem(KEY);
+        if (stored === 'dark' || stored === 'light') root.dataset.theme = stored;
+        const SUN = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>';
+        const MOON = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+        function effective() {
+          if (root.dataset.theme) return root.dataset.theme;
+          return matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        function iconFor(t) { return t === 'dark' ? SUN : MOON; }
+        function refreshIcon() {
+          const btn = document.getElementById('theme-toggle');
+          if (btn) btn.innerHTML = iconFor(effective());
+        }
+        function toggle() {
+          const next = effective() === 'dark' ? 'light' : 'dark';
+          root.dataset.theme = next;
+          localStorage.setItem(KEY, next);
+          refreshIcon();
+        }
+        function mount() {
+          if (document.getElementById('theme-toggle')) return;
+          const sidebar = document.querySelector('#observablehq-sidebar');
+          if (!sidebar) return;
+          const wrap = document.createElement('div');
+          wrap.id = 'theme-toggle-wrap';
+          const btn = document.createElement('button');
+          btn.id = 'theme-toggle';
+          btn.type = 'button';
+          btn.title = 'Theme wechseln';
+          btn.setAttribute('aria-label', 'Theme wechseln');
+          btn.innerHTML = iconFor(effective());
+          btn.onclick = toggle;
+          wrap.appendChild(btn);
+          sidebar.appendChild(wrap);
+        }
+        matchMedia('(prefers-color-scheme: dark)').addEventListener('change', refreshIcon);
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', mount);
+        } else {
+          mount();
+        }
+      })();
     </script>
   `,
   style: "style.css",

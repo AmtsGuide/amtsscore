@@ -27,16 +27,11 @@ toc: false
   gap: 1rem;
   margin: 2rem 0;
 }
-.cta-card {
-  padding: 1.5rem;
-  background: light-dark(#f9fafb, #1f2123);
-  border: 1px solid light-dark(#e5e7eb, #3a3c3e);
-  border-radius: 8px;
-  color: light-dark(#1a1a1a, #f5f5f5);
-}
+/* .cta-card colors defined globally in style.css (use theme vars) */
+.cta-card { padding: 1.5rem; }
 .cta-card h3 { margin-top: 0; color: inherit; }
-.cta-card p { color: light-dark(#525252, #b0b0b0); }
-.cta-card a { color: light-dark(#3b82f6, #5fa8f5); font-weight: 600; }
+.cta-card p { color: var(--theme-foreground-muted); }
+.cta-card a { color: var(--theme-foreground-focus); font-weight: 600; }
 </style>
 
 <div class="hero">
