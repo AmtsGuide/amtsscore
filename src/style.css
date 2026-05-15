@@ -43,11 +43,12 @@ code, pre, kbd, samp {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 0.4rem;
   width: 100%;
   height: 100%;
   padding: 0 1rem;
 }
-.amtsscore-gh {
+.amtsscore-headerlink {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
@@ -58,8 +59,8 @@ code, pre, kbd, samp {
   font-size: 0.85rem;
   font-weight: 500;
 }
-.amtsscore-gh:hover {
+.amtsscore-headerlink:hover {
   color: var(--theme-foreground);
   background: var(--theme-background-alt);
 }
-.amtsscore-gh svg { display: block; }
+.amtsscore-headerlink svg { display: block; }
