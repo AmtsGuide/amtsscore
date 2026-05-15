@@ -1,91 +1,166 @@
 ---
-title: "KFZ-Zulassung: Topic-Daten + Pre-AmtsScore"
+title: "KFZ-Zulassung: tiefer Stadt-Vergleich"
 toc: true
 ---
 
 # KFZ-Zulassung (Neuzulassung)
 
-Pre-AmtsScore pro Stadt aus AmtsGuide-Daten, linear normalisiert:
-
-- **40% Kosten** (Gebühr)
-- **40% Geschwindigkeit** (Wartezeit)
-- **20% Online-Verfügbarkeit** (i-Kfz)
-
 ```js
-const prescore = (await FileAttachment("../data/prescore.json").json())
-  .topics.find(t => t.slug === "kfz-zulassung");
+const d = await FileAttachment("../data/kfz_enriched.json").json();
 ```
 
-## Pro Stadt
+20 deutsche Großstädte, 9 Dimensionen, keine Kosten-Wertung (Gebühren sind FZV-reguliert und sagen nichts über Service-Qualität).
+Stand der Messung: ${d.generated_at.slice(0,10)}.
+
+## Wichtigste Befunde
 
 ```js
-Inputs.table(prescore.cities.map(c => ({
+const dimList = d.dimensions;
+const haveSchema = d.cities.filter(c => c.dimensions.schema === 10).length;
+const haveLlms = d.cities.filter(c => c.dimensions.llmstxt === 10).length;
+const haveEid = d.cities.filter(c => c.dimensions.auth === 10).length;
+const haveObs = d.cities.filter(c => c.dimensions.https !== null).length;
+```
+
+```js
+html`<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:0.75rem;margin:1rem 0">
+  <div class="stat-card">
+    <div class="stat-label" style="font-size:0.8rem">Schema.org GovernmentService</div>
+    <div style="font-size:1.5rem;font-weight:600">${haveSchema} / ${d.n_cities}</div>
+    <div class="stat-label" style="font-size:0.8rem">Termin-URL trägt strukturiertes Markup</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label" style="font-size:0.8rem">llms.txt</div>
+    <div style="font-size:1.5rem;font-weight:600">${haveLlms} / ${d.n_cities}</div>
+    <div class="stat-label" style="font-size:0.8rem">Stadt-Domain trägt /llms.txt</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label" style="font-size:0.8rem">eID-Anbindung</div>
+    <div style="font-size:1.5rem;font-weight:600">${haveEid} / ${d.n_cities}</div>
+    <div class="stat-label" style="font-size:0.8rem">Termin-URL erwähnt eID/BundID/Servicekonto</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-label" style="font-size:0.8rem">i-Kfz Online</div>
+    <div style="font-size:1.5rem;font-weight:600">${d.cities.filter(c => c.dimensions.online === 10).length} / ${d.n_cities}</div>
+    <div class="stat-label" style="font-size:0.8rem">Bürger kann online zulassen</div>
+  </div>
+</div>`
+```
+
+## Stadt-Ranking (9 Dimensionen, Gleichgewicht)
+
+```js
+Inputs.table(d.cities.map(c => ({
   Rang: c.rank,
   Stadt: c.city,
-  Score: c.score,
-  "Tage Wartezeit": c.raw.speed_days,
-  "Gebühr": c.raw.cost_eur,
-  "i-Kfz": c.raw.online_available,
-  Behörde: c.meta?.authority ?? "—",
-  Quelle: c.meta?.source_url ?? "",
+  "⌀": c.composite,
+  Wartezeit: c.dimensions.speed,
+  "i-Kfz": c.dimensions.online,
+  Standorte: c.dimensions.access,
+  "Walk-in": c.dimensions.friction,
+  eID: c.dimensions.auth,
+  "Schema.org": c.dimensions.schema,
+  "llms.txt": c.dimensions.llmstxt,
+  HTTPS: c.dimensions.https,
+  "Presse-Stille": c.dimensions.press,
 })), {
-  rows: 30,
+  rows: 25,
   format: {
-    Score: (x) => x === null ? "—" : x.toFixed(1),
-    "Tage Wartezeit": (x) => x === null ? "—" : `${x} d`,
-    "Gebühr": (x) => x === null ? "—" : `${x.toFixed(2)} €`,
-    "i-Kfz": (x) => x ? "ja" : "nein",
-    Quelle: (url) => url ? htl.html`<a href="${url}" target="_blank" rel="noopener">öffnen ↗</a>` : "—",
+    "⌀": (x) => x === null ? "—" : x.toFixed(1),
+    Wartezeit: (x) => x === null ? "—" : x.toFixed(1),
+    "i-Kfz": (x) => x === null ? "—" : x.toFixed(0),
+    Standorte: (x) => x === null ? "—" : x.toFixed(1),
+    "Walk-in": (x) => x === null ? "—" : x.toFixed(0),
+    eID: (x) => x === null ? "—" : x.toFixed(0),
+    "Schema.org": (x) => x === null ? "—" : x.toFixed(0),
+    "llms.txt": (x) => x === null ? "—" : x.toFixed(0),
+    HTTPS: (x) => x === null ? "—" : x.toFixed(1),
+    "Presse-Stille": (x) => x === null ? "—" : x.toFixed(1),
   }
 })
 ```
 
+## Per Dimension
+
 ```js
-const kfzGap = (await FileAttachment("../data/prescore.json").json())
-  .data_gaps.find(g => g.slug === "kfz-zulassung");
-html`<p><strong>Daten-Lücken:</strong> ${kfzGap.null_speed}/${kfzGap.n_cities} Städte ohne strukturierbare Wartezeit (qualitative Strings nicht maschinenlesbar).</p>`
+const dimChoice = view(Inputs.select(
+  d.dimensions.map(dim => dim.key),
+  {label: "Dimension", format: (k) => d.dimensions.find(x => x.key === k).label}
+))
 ```
 
-## Verteilung Wartezeit
-
 ```js
-const withWait = prescore.cities.filter(c => c.raw.speed_days != null)
-  .sort((a,b) => b.raw.speed_days - a.raw.speed_days);
+const dim = d.dimensions.find(x => x.key === dimChoice);
+const rows = d.cities
+  .map(c => ({stadt: c.city, value: c.dimensions[dimChoice]}))
+  .filter(r => r.value !== null)
+  .sort((a,b) => b.value - a.value);
 ```
 
 ```js
 Plot.plot({
-  marginLeft: 140,
-  marginRight: 80,
-  width: 800,
-  height: 30 + withWait.length * 22,
-  x: {label: "Wartezeit (Tage)", grid: true},
+  marginLeft: 130, marginRight: 50,
+  width: 800, height: 30 + rows.length * 22,
+  x: {label: `${dim.label} (Score)`, domain: [0, 10], grid: true},
   y: {label: null},
   marks: [
-    Plot.barX(withWait, {
-      x: d => d.raw.speed_days,
-      y: "city",
-      sort: {y: "x", reverse: true},
-      fill: "#1a3da5"
-    }),
-    Plot.text(withWait, {
-      x: d => d.raw.speed_days,
-      y: "city",
-      text: d => `${d.raw.speed_days} d`,
-      dx: 5,
-      textAnchor: "start",
-      fontSize: 11
-    })
+    Plot.barX(rows, {x: "value", y: "stadt", sort: {y: "x", reverse: true}, fill: "#1a3da5"}),
+    Plot.text(rows, {x: "value", y: "stadt", text: d => d.value.toFixed(1), dx: 5, textAnchor: "start", fontSize: 11})
   ]
+})
+```
+
+## Detailseiten der Termin-URLs
+
+```js
+Inputs.table(d.cities.map(c => ({
+  Stadt: c.city,
+  Behörde: c.authority,
+  "Stadt-Domain": c.stadt_domain,
+  "Termin-URL": c.source_url,
+  Wartezeit: c.raw.wartezeit_label,
+  "eID-Signale": (c.raw.eid_evidence ?? []).join(", "),
+})), {
+  rows: 25,
+  format: {
+    "Termin-URL": (url) => url ? htl.html`<a href="${url}" target="_blank" rel="noopener">öffnen ↗</a>` : "—",
+  }
 })
 ```
 
 ## Methodik
 
-Daten aus der [AmtsGuide Facts API](https://amtsguide.de/api/v1/calculator/kfz/results),
-Vorgang `neuzulassung`. Wartezeits-Angaben ("mehrere Wochen bis zu 10 Wochen")
-werden heuristisch in Tage übersetzt (Mittelwert × 7).
+**9 Dimensionen, alle gleich gewichtet.** Kosten ist NICHT enthalten, weil
+KFZ-Gebühren bundesweit nach FZV reguliert sind und Variationen kein
+Qualitäts-Signal sind.
 
-Diese Pre-Wertung misst Bürger-Outcome (was kostet es, wie lange dauert es).
-Sie ersetzt nicht die AmtsScore-Website-Bewertung der zuständigen Behörde,
-ergänzt sie aber.
+| # | Tier | Dimension | Quelle | Logik |
+|---|---|---|---|---|
+| 1 | 1 | Wartezeit | AmtsGuide `wartezeit` | weniger Tage = höher |
+| 2 | 1 | i-Kfz Online | AmtsGuide `ikfz` | binär 10/0 |
+| 3 | 1 | Standorte | AmtsGuide `standorte` count | mehr = höher |
+| 4 | 1 | Walk-in möglich | AmtsGuide `terminpflicht` | walk-in = 10, Termin-Pflicht = 5 |
+| 5 | 2 | eID-Anbindung | Termin-URL scan | BundID/BerlinID/Servicekonto/AusweisApp erwähnt |
+| 6 | 2 | Schema.org GovernmentService | Termin-URL JSON-LD | binär 10/0 |
+| 7 | 2 | llms.txt | Stadt-Domain `/llms.txt` | HTTP 200 = 10 |
+| 8 | 2 | HTTPS-Hygiene | Mozilla Observatory | A+→10, F→0 |
+| 9 | 3 | Presse-Stille | Brave Search "kritik wartezeit" | weniger Treffer = höher |
+
+**Tier 1** = direkt aus AmtsGuide-Daten. **Tier 2** = pro-Stadt Webfetch.
+**Tier 3** = externes Signal.
+
+Tools im öffentlichen Repo: [`tools/scan/kfz.py`](https://github.com/AmtsGuide/amtsscore/blob/main/tools/scan/kfz.py).
+Reproduzierbar mit `python tools/scan/kfz.py` (Brave API-Key empfohlen).
+
+## Daten-Lücken
+
+```js
+const nullSpeed = d.cities.filter(c => c.dimensions.speed === null).length;
+const nullObs = d.cities.filter(c => c.dimensions.https === null).length;
+const nullPress = d.cities.filter(c => c.dimensions.press === null).length;
+html`<ul>
+<li>${nullSpeed}/${d.n_cities} Städte ohne maschinenlesbare Wartezeit (qualitative Strings).</li>
+<li>${nullObs}/${d.n_cities} Städte ohne Mozilla-Observatory-Score (API-Ausfall im Messzeitraum, kein Stadt-Problem).</li>
+<li>${nullPress}/${d.n_cities} Städte ohne Presse-Signal (Brave-API-Quote / Query-Match).</li>
+</ul>`
+```
