@@ -19,20 +19,20 @@ const summary = (await data);
 
 ```js
 html`<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin:1rem 0">
-  <div style="padding:1rem;background:var(--theme-background-b);border:1px solid var(--theme-foreground-faintest);border-radius:8px">
-    <div style="color:var(--theme-foreground-muted);font-size:0.85rem">Behörden-Quellen</div>
+  <div style="padding:1rem;border-radius:8px" class="stat-card">
+    <div class="stat-label" style="font-size:0.85rem">Behörden-Quellen</div>
     <div style="font-size:2rem;font-weight:600">${summary.total_authorities}</div>
   </div>
-  <div style="padding:1rem;background:var(--theme-background-b);border:1px solid var(--theme-foreground-faintest);border-radius:8px">
-    <div style="color:var(--theme-foreground-muted);font-size:0.85rem">Anbieter im Index</div>
+  <div style="padding:1rem;border-radius:8px" class="stat-card">
+    <div class="stat-label" style="font-size:0.85rem">Anbieter im Index</div>
     <div style="font-size:2rem;font-weight:600">${summary.total_suppliers}</div>
   </div>
-  <div style="padding:1rem;background:var(--theme-background-b);border:1px solid var(--theme-foreground-faintest);border-radius:8px">
-    <div style="color:var(--theme-foreground-muted);font-size:0.85rem">Städte mit Daten</div>
+  <div style="padding:1rem;border-radius:8px" class="stat-card">
+    <div class="stat-label" style="font-size:0.85rem">Städte mit Daten</div>
     <div style="font-size:2rem;font-weight:600">${summary.total_cities}</div>
   </div>
-  <div style="padding:1rem;background:var(--theme-background-b);border:1px solid var(--theme-foreground-faintest);border-radius:8px">
-    <div style="color:var(--theme-foreground-muted);font-size:0.85rem">Anbieter Top-Klasse</div>
+  <div style="padding:1rem;border-radius:8px" class="stat-card">
+    <div class="stat-label" style="font-size:0.85rem">Anbieter Top-Klasse</div>
     <div style="font-size:2rem;font-weight:600">${summary.supplier_tiers.A}</div>
   </div>
 </div>`

@@ -29,14 +29,24 @@ toc: false
 }
 .cta-card {
   padding: 1.5rem;
-  background: var(--theme-background-b);
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
   border-radius: 8px;
-  border: 1px solid var(--theme-foreground-faintest);
-  color: var(--theme-foreground);
+  color: #1a1a1a;
 }
-.cta-card h3 { margin-top: 0; color: var(--theme-foreground); }
-.cta-card p { color: var(--theme-foreground-muted); }
-.cta-card a { color: var(--theme-foreground-focus); font-weight: 600; }
+.cta-card h3 { margin-top: 0; color: inherit; }
+.cta-card p { color: #525252; }
+.cta-card a { color: #3b82f6; font-weight: 600; }
+
+@media (prefers-color-scheme: dark) {
+  .cta-card {
+    background: #1f2123;
+    border-color: #3a3c3e;
+    color: #f5f5f5;
+  }
+  .cta-card p { color: #b0b0b0; }
+  .cta-card a { color: #5fa8f5; }
+}
 </style>
 
 <div class="hero">

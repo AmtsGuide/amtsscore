@@ -61,11 +61,11 @@ Inputs.table(specials.items, {
 ```js
 html`<div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:1rem;margin:1rem 0">
 ${specials.items.map(s => html`
-  <div style="padding:1.25rem;background:var(--theme-background-b);border:1px solid var(--theme-foreground-faintest);border-radius:8px">
-    <div style="font-size:0.85rem;color:var(--theme-foreground-muted);margin-bottom:0.25rem">${s.stadt} • ${s.bundesland}</div>
+  <div class="stat-card" style="padding:1.25rem;border-radius:8px">
+    <div class="stat-label" style="font-size:0.85rem;margin-bottom:0.25rem">${s.stadt} • ${s.bundesland}</div>
     <div style="font-weight:600;margin-bottom:0.5rem">${s.service}</div>
-    <div style="font-size:0.9rem;color:var(--theme-foreground-muted);margin-bottom:0.75rem">${s.highlight}</div>
-    <div><a href="/specials/${s.slug}" style="color:var(--theme-foreground-focus);font-weight:600">Detail →</a></div>
+    <div class="stat-label" style="font-size:0.9rem;margin-bottom:0.75rem">${s.highlight}</div>
+    <div><a href="/specials/${s.slug}" style="font-weight:600">Detail →</a></div>
   </div>
 `)}
 </div>`
