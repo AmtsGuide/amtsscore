@@ -23,7 +23,9 @@ Transparente, nachprüfbare Methodik der AmtsScore-Messung. Wer kritisiert, krit
 **Phase v2 (Q4/2026):** 100 Städte.
 **Phase v3 (Q1/2027):** 401 Bürgerämter Deutschland-weit.
 
-## Die 10 Dimensionen
+## Die 12 Dimensionen
+
+### Grundlagen: Was Bürger:innen heute brauchen (D1–D10)
 
 | # | Dimension | Was wird gemessen | Werkzeug | Max-Score |
 |---|---|---|---|---|
@@ -38,25 +40,38 @@ Transparente, nachprüfbare Methodik der AmtsScore-Messung. Wer kritisiert, krit
 | 9 | **Auffindbarkeit / SEO** | Wird die Stadt-Website bei typischen Bürger-Anfragen gefunden? Strukturierte Sitemap? Robots? | Sitemap-Validität + Bing/Google-SERP-Position für Top-10-Anliegen | 0–10 |
 | 10 | **Aktualität** | Wann wurden Inhalte zuletzt aktualisiert? Tote Links? | Last-Modified-Header + Linkchecker | 0–10 |
 
+### Zukunft: Was Bürger:innen 2026+ brauchen (D11–D12)
+
+Verwaltung-Websites bedienen nicht mehr nur Menschen. Sie bedienen auch **KI-Assistenten, Apps, Aggregatoren, Software-Agenten**. Eine Stadt-Website, die für ChatGPT, Perplexity oder Claude unsichtbar ist, wird ihre Bürger:innen ab 2027 nicht mehr erreichen. Diese zwei Dimensionen messen die **Maschinen-Lesbarkeit + KI-Bereitschaft**.
+
+| # | Dimension | Was wird gemessen | Werkzeug | Max-Score |
+|---|---|---|---|---|
+| 11 | **Maschinen-Lesbarkeit + KI-Bereitschaft** | `llms.txt` vorhanden? Robots.txt erlaubt AI-Bots (GPTBot, ChatGPT-User, PerplexityBot, ClaudeBot, Google-Extended)? Non-JS-Rendering (Bot-Readable HTML)? Stabile Permalinks? | HTTP-Probe + DOM-Test mit deaktiviertem JS | 0–10 |
+| 12 | **Maschinen-Schnittstellen (API + MCP)** | Öffentliche API für Service-Abfragen (REST/GraphQL)? OpenAPI/Swagger-Dokumentation? MCP-Server-Endpunkt? | URL-Probe für `/api`, `/.well-known/mcp`, OpenAPI-Discovery | 0–10 |
+
+**Heute werden fast alle Städte D11 + D12 nahe Null haben.** Das ist Absicht. AmtsScore macht sichtbar, was als nächstes kommt — bevor es zu spät ist.
+
+Siehe Glossar: [Maschinen-Lesbarkeit + KI-Bereitschaft](/glossar/ai-readiness).
+
 ## Gewichtung v0
 
-Alle Dimensionen mit Gleichgewicht (10 × 10%) für v0. Vorteil: keine implizite Wertung, einfach erklärbar.
+Alle Dimensionen mit Gleichgewicht (12 × 1/12 ≈ 8,33%) für v0. Vorteil: keine implizite Wertung, einfach erklärbar.
 
-**Geplante Anpassung in v1:** Gewichtung nach Bürger-Relevanz (Dimensionen 1, 2, 4, 8 bekommen höhere Gewichte). Anpassung wird transparent dokumentiert + es wird historisch beide Versionen (v0-Gleichgewicht + v1-relevanzgewichtet) publiziert, sodass keine Stadt "über Nacht abstürzt" durch Methodik-Änderung.
+**Geplante Anpassung in v1:** Gewichtung nach Bürger-Relevanz. Die Grundlagen-Dimensionen (D1, D2, D4, D8) bekommen höhere Gewichte, weil sie Bürger:innen unmittelbar betreffen. Die Zukunfts-Dimensionen (D11, D12) behalten in v1 noch volles Gewicht — wir wollen den Anpassungsdruck nicht senken. Anpassung wird transparent dokumentiert; v0-Gleichgewicht und v1-relevanzgewichtet werden parallel publiziert, sodass keine Stadt "über Nacht abstürzt" durch Methodik-Änderung.
 
 ## Composite-Berechnung
 
 ```
-AmtsScore = sum(w_i * sub_score_i) for i in 1..10
+AmtsScore = sum(w_i * sub_score_i) for i in 1..12
 ```
 
-Mit `w_i = 0.1` in v0 (Gleichgewicht).
+Mit `w_i = 1/12 ≈ 0.0833` in v0 (Gleichgewicht).
 
 Ergebnis: 0.0 (komplett analog) bis 10.0 (Spitzenklasse).
 
-## Tier-Einteilung (für Award-Phase ab Year 2)
+## Klassen-Einteilung (für Award-Phase ab Year 2)
 
-| AmtsScore-Bereich | Tier | Zertifikat-Anrecht |
+| AmtsScore-Bereich | Klasse | Zertifikat-Anrecht |
 |---|---|---|
 | 9.0–10.0 | **AmtsScore Gold** | Ja |
 | 7.5–8.9 | **AmtsScore Silber** | Ja |

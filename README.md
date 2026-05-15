@@ -8,7 +8,7 @@ Continuous data-driven measurement of digital performance of German Verwaltungs-
 
 ## Was AmtsScore ist
 
-Eine Initiative der **AmtsGuide GmbH** (German Innovation Award Winner 2026, Kategorie B2C E-Business). AmtsScore misst die digitale Performance einzelner deutscher Stadt-Websites mit einem reproduzierbaren 10-Dimensionen-Composite-Score (0–10).
+Eine Initiative von **AmtsGuide** (German Innovation Award Winner 2026, Kategorie B2C E-Business). AmtsScore misst die digitale Performance einzelner deutscher Stadt-Websites mit einem reproduzierbaren 10-Dimensionen-Composite-Score (0–10).
 
 ## Was hier im Repo ist
 

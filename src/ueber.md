@@ -5,7 +5,7 @@ toc: false
 
 # Über AmtsScore
 
-AmtsScore ist eine Initiative der **AmtsGuide GmbH** (Berlin, gegründet 2019). AmtsGuide ist **Winner des German Innovation Award 2026** in der Kategorie B2C E-Business.
+AmtsScore ist eine Initiative von **AmtsGuide**. AmtsGuide ist **Winner des German Innovation Award 2026** in der Kategorie B2C E-Business.
 
 ## Auftrag
 
@@ -27,7 +27,7 @@ AmtsScore misst die digitale Performance deutscher Verwaltungs-Websites — kont
 
 ## Impressum
 
-**AmtsGuide GmbH**
+**AmtsGuide (Blinktank GmbH)**
 Berlin
 Deutschland
 
@@ -43,13 +43,6 @@ Web: [amtsguide.de](https://amtsguide.de)
 AmtsScore-Site selbst setzt **keine Tracker, keine Cookies**. Server-Logs werden ohne IP-Speicherung geführt.
 
 Die AmtsScore-Methodik scannt öffentliche Verwaltungs-Websites. Beim Scan werden ausschließlich öffentliche HTML/HTTP-Daten der Stadt-Websites erfasst — keine personenbezogenen Daten der Bürger:innen.
-
-## Beirat (geplant)
-
-Geplant für Q3/2026 Launch:
-- Lena-Sophie Müller (Initiative D21) — eingeladen
-- Prof. Gerhard Hammerschmid (Hertie School) — eingeladen
-- 1–2 Stadt-CIO:innen — TBD
 
 ## Kontakt
 

@@ -1,13 +1,14 @@
 /* AmtsScore custom styling
- * Matches Observable Framework documentation typography (Inter + Spline Sans Mono).
+ * Inter + Spline Sans Mono (matching observablehq.com/documentation).
+ * Light/dark mode via html[data-theme] attribute, controlled by JS toggle.
  */
 
 @import url("observablehq:default.css");
 @import url("observablehq:theme-air.css");
 
 :root {
-  --serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-  --sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --monospace: "Spline Sans Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 }
 
@@ -21,17 +22,57 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: -0.01em;
 }
 
-h1 {
-  font-weight: 700;
-  letter-spacing: -0.02em;
-}
-
-h2 {
-  font-weight: 600;
-  letter-spacing: -0.015em;
-}
+h1 { font-weight: 700; letter-spacing: -0.02em; }
+h2 { font-weight: 600; letter-spacing: -0.015em; }
 
 code, pre, kbd, samp {
   font-family: var(--monospace);
   font-feature-settings: normal;
+}
+
+/* Auto dark mode: respect prefers-color-scheme unless user has toggled */
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme="light"]) {
+    --theme-background-a: #1d1f21;
+    --theme-background-b: #2a2c2e;
+    --theme-background-alt: #2a2c2e;
+    --theme-foreground: #f5f5f5;
+    --theme-foreground-alt: #e5e5e5;
+    --theme-foreground-muted: #b0b0b0;
+    --theme-foreground-faint: #777;
+    --theme-foreground-fainter: #555;
+    --theme-foreground-faintest: #3a3c3e;
+    --theme-foreground-focus: #4ea1f7;
+    --theme-foreground-warning: #f7c54e;
+    --theme-foreground-error: #f74e4e;
+    --theme-foreground-green: #4ef79b;
+    color-scheme: dark;
+    background: var(--theme-background-a);
+    color: var(--theme-foreground);
+  }
+  html:not([data-theme="light"]) body { background: var(--theme-background-a); }
+}
+
+/* Manual dark override (independent of OS pref) */
+html[data-theme="dark"] {
+  --theme-background-a: #1d1f21;
+  --theme-background-b: #2a2c2e;
+  --theme-background-alt: #2a2c2e;
+  --theme-foreground: #f5f5f5;
+  --theme-foreground-alt: #e5e5e5;
+  --theme-foreground-muted: #b0b0b0;
+  --theme-foreground-faint: #777;
+  --theme-foreground-fainter: #555;
+  --theme-foreground-faintest: #3a3c3e;
+  --theme-foreground-focus: #4ea1f7;
+  --theme-foreground-warning: #f7c54e;
+  --theme-foreground-error: #f74e4e;
+  --theme-foreground-green: #4ef79b;
+  color-scheme: dark;
+  background: var(--theme-background-a);
+  color: var(--theme-foreground);
+}
+html[data-theme="dark"] body {
+  background: var(--theme-background-a);
+  color: var(--theme-foreground);
 }

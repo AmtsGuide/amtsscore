@@ -29,12 +29,14 @@ toc: false
 }
 .cta-card {
   padding: 1.5rem;
-  background: #f9fafb;
+  background: var(--theme-background-b);
   border-radius: 8px;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--theme-foreground-faintest);
+  color: var(--theme-foreground);
 }
-.cta-card h3 { margin-top: 0; }
-.cta-card a { color: #3b82f6; font-weight: 600; }
+.cta-card h3 { margin-top: 0; color: var(--theme-foreground); }
+.cta-card p { color: var(--theme-foreground-muted); }
+.cta-card a { color: var(--theme-foreground-focus); font-weight: 600; }
 </style>
 
 <div class="hero">
@@ -61,8 +63,13 @@ In der Zwischenzeit zeigen wir aus existierenden AmtsGuide-Scraper-Daten erste *
     <p><a href="/topics/halteverbot">Halteverbot-Topographie →</a></p>
   </div>
   <div class="cta-card">
+    <h3>Leuchttürme</h3>
+    <p>Service-Launches, die zeigen wie es geht. Berlin Gaststätten 2026, mehr in Recherche.</p>
+    <p><a href="/specials/">Leuchttürme →</a></p>
+  </div>
+  <div class="cta-card">
     <h3>Über AmtsScore</h3>
-    <p>Eine Initiative der AmtsGuide GmbH, German Innovation Award Winner 2026 (B2C E-Business).</p>
+    <p>Eine Initiative von AmtsGuide, German Innovation Award Winner 2026 (B2C E-Business).</p>
     <p><a href="/ueber">Mehr →</a></p>
   </div>
 </div>

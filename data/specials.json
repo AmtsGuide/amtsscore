@@ -1,0 +1,30 @@
+{
+  "schema_version": "v0.1",
+  "updated_at": "2026-05-15",
+  "items": [
+    {
+      "slug": "berlin-gaststaettenanmeldung-2026",
+      "service": "Gaststättenanmeldung",
+      "stadt": "Berlin",
+      "bundesland": "Berlin",
+      "leika_id": "99089004001000",
+      "live_seit": "2026",
+      "service_score": null,
+      "service_score_status": "Bewertung ausstehend — Recherche-Quellen werden geprüft",
+      "highlight": "Eigenständiger Online-Antrag für Gaststätten-Erlaubnis, vor 2026 mit Termin im Bezirksamt verbunden",
+      "url": null,
+      "url_status": "URL noch zu verifizieren",
+      "criteria_check": {
+        "end_to_end_digital": null,
+        "authentifizierung": null,
+        "schema_org": null,
+        "mobile_lighthouse_min_70": null,
+        "auffindbarkeit_top3": null,
+        "stabile_permalinks": null,
+        "pressereife": null,
+        "reproduzierbar": null
+      },
+      "sources": []
+    }
+  ]
+}
