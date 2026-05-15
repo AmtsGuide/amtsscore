@@ -34,8 +34,8 @@ export default {
     },
     { name: "Über AmtsScore", path: "/ueber" },
   ],
-  // Theme respects OS prefers-color-scheme. Light: air. Dark: near-midnight.
-  theme: ["air", "near-midnight"],
+  // Light mode only.
+  theme: "air",
   toc: true,
   search: true,
   output: "dist",
@@ -44,13 +44,6 @@ export default {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&display=swap">
-    <script>
-      // Cleanup any sticky theme override from previous experiments
-      try {
-        localStorage.removeItem('amtsscore-theme');
-        document.documentElement.removeAttribute('data-theme');
-      } catch(e) {}
-    </script>
   `,
   style: "style.css",
 };

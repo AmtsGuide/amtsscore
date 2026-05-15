@@ -5,18 +5,20 @@ toc: false
 
 <style>
 .hero {
-  background: #0d1117;
-  color: #f5f5f5;
+  background: var(--theme-background-alt);
+  color: var(--theme-foreground);
   padding: 4rem 2rem;
   border-radius: 12px;
   margin-bottom: 2rem;
+  border: 1px solid var(--theme-foreground-faintest);
 }
 .hero-logo { display: block; max-width: 300px; height: auto; margin: 0 0 1.5rem 0; }
-.hero h1 { font-size: 3rem; margin: 0 0 1rem 0; color: white; }
-.hero p { font-size: 1.25rem; opacity: 0.95; margin: 0; max-width: 60ch; }
+.hero h1 { font-size: 3rem; margin: 0 0 1rem 0; color: var(--theme-foreground); }
+.hero p { font-size: 1.25rem; margin: 0; max-width: 60ch; color: var(--theme-foreground-muted); }
 .tag {
   display: inline-block;
-  background: rgba(255,255,255,0.2);
+  background: var(--theme-foreground-faintest);
+  color: var(--theme-foreground-muted);
   padding: 0.25rem 0.75rem;
   border-radius: 999px;
   font-size: 0.85rem;
@@ -36,7 +38,7 @@ toc: false
 </style>
 
 <div class="hero">
-  <img src="./assets/logo-dark.svg" alt="AmtsScore" class="hero-logo">
+  <img src="./assets/logo-light.svg" alt="AmtsScore" class="hero-logo">
   <div class="tag">v0 / Pre-Launch</div>
   <h1>Wie digital ist Ihre Behörde wirklich?</h1>
   <p>AmtsScore misst die digitale Performance deutscher Verwaltungs-Websites. Quartalsweise, datenbasiert, methodisch offen.</p>
