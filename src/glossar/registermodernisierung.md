@@ -1,5 +1,5 @@
 ---
-title: Registermodernisierung: Once-Only-Prinzip
+title: "Registermodernisierung: Once-Only-Prinzip"
 toc: true
 ---
 

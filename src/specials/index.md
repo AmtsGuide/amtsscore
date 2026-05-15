@@ -1,5 +1,5 @@
 ---
-title: Leuchttürme: Service-Highlights deutscher Verwaltung
+title: "Leuchttürme: Service-Highlights deutscher Verwaltung"
 toc: true
 ---
 

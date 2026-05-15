@@ -1,5 +1,5 @@
 ---
-title: Schema.org: Strukturierte Daten für die Verwaltung
+title: "Schema.org: Strukturierte Daten für die Verwaltung"
 toc: true
 ---
 

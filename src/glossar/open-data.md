@@ -1,5 +1,5 @@
 ---
-title: Open Data: Offene Verwaltungsdaten
+title: "Open Data: Offene Verwaltungsdaten"
 toc: true
 ---
 

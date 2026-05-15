@@ -1,5 +1,5 @@
 ---
-title: LeiKa: Leistungskatalog der öffentlichen Verwaltung
+title: "LeiKa: Leistungskatalog der öffentlichen Verwaltung"
 toc: true
 ---
 

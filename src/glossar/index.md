@@ -1,5 +1,5 @@
 ---
-title: Glossar: Verwaltungsdigitalisierung
+title: "Glossar: Verwaltungsdigitalisierung"
 toc: true
 ---
 

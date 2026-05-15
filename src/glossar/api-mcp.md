@@ -1,5 +1,5 @@
 ---
-title: API + MCP: Maschinen-Schnittstellen für Behörden
+title: "API + MCP: Maschinen-Schnittstellen für Behörden"
 toc: true
 ---
 

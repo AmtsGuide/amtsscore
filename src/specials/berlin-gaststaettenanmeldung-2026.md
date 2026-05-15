@@ -1,5 +1,5 @@
 ---
-title: Berlin: Gaststättenanmeldung (Service-Launch 2026)
+title: "Berlin: Gaststättenanmeldung (Service-Launch 2026)"
 toc: true
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: OZG: Onlinezugangsgesetz
+title: "OZG: Onlinezugangsgesetz"
 toc: true
 ---
 

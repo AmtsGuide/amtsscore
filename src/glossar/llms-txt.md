@@ -1,5 +1,5 @@
 ---
-title: llms.txt: Die kuratierte KI-Karte
+title: "llms.txt: Die kuratierte KI-Karte"
 toc: true
 ---
 

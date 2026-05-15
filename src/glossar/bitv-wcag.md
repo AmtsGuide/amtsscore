@@ -1,5 +1,5 @@
 ---
-title: BITV / WCAG: Barrierefreiheit
+title: "BITV / WCAG: Barrierefreiheit"
 toc: true
 ---
 
