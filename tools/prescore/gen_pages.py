@@ -63,6 +63,8 @@ Inputs.table(cityTopics.map(t => ({{
   Geschwindigkeit: t.speed,
   Kosten: t.cost,
   Online: t.online,
+  Behörde: t.meta?.authority ?? "—",
+  Stand: t.meta?.verified_at ?? "—",
 }})), {{
   rows: 20,
   format: {{
@@ -98,7 +100,7 @@ Plot.plot({{
 }})
 ```
 
-## Rohwerte
+## Rohwerte + Quellen
 
 ```js
 Inputs.table(cityTopics.map(t => ({{
@@ -106,12 +108,14 @@ Inputs.table(cityTopics.map(t => ({{
   "Tage": t.raw.speed_days,
   "Euro": t.raw.cost_eur,
   "Online verfügbar": t.raw.online_available,
+  Quelle: t.meta?.source_url ?? "",
 }})), {{
   rows: 20,
   format: {{
     "Tage": (x) => x === null ? "—" : `${{x}} d`,
     "Euro": (x) => x === null ? "—" : `${{x.toFixed(0)}} €`,
     "Online verfügbar": (x) => x === true ? "ja" : x === false ? "nein" : "—",
+    Quelle: (url) => url ? htl.html`<a href="${{url}}" target="_blank" rel="noopener">öffnen ↗</a>` : "—",
   }}
 }})
 ```

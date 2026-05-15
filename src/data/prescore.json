@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-05-15T21:23:02+00:00",
+  "generated_at": "2026-05-15T22:04:38+00:00",
   "source": "AmtsGuide Facts API",
   "topics": [
     {
       "slug": "halteverbot",
       "label": "Halteverbot",
-      "n_cities": 24,
+      "n_cities": 11,
       "cities": [
         {
           "city": "München",
@@ -19,6 +19,13 @@
             "speed_days": 14,
             "cost_eur": null,
             "online_available": null
+          },
+          "meta": {
+            "authority": null,
+            "source_url": null,
+            "verified_at": "2026-01-18",
+            "status": "verified",
+            "raw_cost_max": null
           },
           "rank": 1
         },
@@ -35,6 +42,13 @@
             "cost_eur": 25,
             "online_available": null
           },
+          "meta": {
+            "authority": null,
+            "source_url": null,
+            "verified_at": "2026-01-20",
+            "status": "verified",
+            "raw_cost_max": 40
+          },
           "rank": 2
         },
         {
@@ -49,6 +63,13 @@
             "speed_days": 14,
             "cost_eur": null,
             "online_available": null
+          },
+          "meta": {
+            "authority": null,
+            "source_url": null,
+            "verified_at": "2026-01-20",
+            "status": "verified",
+            "raw_cost_max": null
           },
           "rank": 3
         },
@@ -65,6 +86,13 @@
             "cost_eur": null,
             "online_available": null
           },
+          "meta": {
+            "authority": null,
+            "source_url": null,
+            "verified_at": "2026-01-20",
+            "status": "verified",
+            "raw_cost_max": null
+          },
           "rank": 4
         },
         {
@@ -80,52 +108,14 @@
             "cost_eur": null,
             "online_available": null
           },
+          "meta": {
+            "authority": null,
+            "source_url": null,
+            "verified_at": "2026-01-20",
+            "status": "verified",
+            "raw_cost_max": null
+          },
           "rank": 5
-        },
-        {
-          "city": "Köln",
-          "city_slug": "koeln",
-          "bundesland": "Nordrhein-Westfalen",
-          "score": 8.8,
-          "speed": 8.8,
-          "cost": null,
-          "online": null,
-          "raw": {
-            "speed_days": 21,
-            "cost_eur": null,
-            "online_available": null
-          },
-          "rank": 6
-        },
-        {
-          "city": "Berlin Lichtenberg",
-          "city_slug": "berlin-lichtenberg",
-          "bundesland": null,
-          "score": 8.8,
-          "speed": 8.8,
-          "cost": null,
-          "online": null,
-          "raw": {
-            "speed_days": 21,
-            "cost_eur": null,
-            "online_available": null
-          },
-          "rank": 7
-        },
-        {
-          "city": "Berlin",
-          "city_slug": "berlin",
-          "bundesland": "Berlin",
-          "score": 7.5,
-          "speed": 7.5,
-          "cost": null,
-          "online": null,
-          "raw": {
-            "speed_days": 28,
-            "cost_eur": null,
-            "online_available": null
-          },
-          "rank": 8
         },
         {
           "city": "Hamburg",
@@ -140,7 +130,14 @@
             "cost_eur": 30,
             "online_available": null
           },
-          "rank": 9
+          "meta": {
+            "authority": null,
+            "source_url": null,
+            "verified_at": "2026-01-15",
+            "status": "verified",
+            "raw_cost_max": 200
+          },
+          "rank": 6
         },
         {
           "city": "Bremen",
@@ -155,104 +152,21 @@
             "cost_eur": 30,
             "online_available": null
           },
-          "rank": 10
-        },
-        {
-          "city": "Berlin Marzahn-Hellersdorf",
-          "city_slug": "berlin-marzahn-hellersdorf",
-          "bundesland": null,
-          "score": 7.5,
-          "speed": 7.5,
-          "cost": null,
-          "online": null,
-          "raw": {
-            "speed_days": 28,
-            "cost_eur": null,
-            "online_available": null
+          "meta": {
+            "authority": null,
+            "source_url": null,
+            "verified_at": "2026-02-02",
+            "status": "verified",
+            "raw_cost_max": 70
           },
-          "rank": 11
-        },
-        {
-          "city": "Berlin Mitte",
-          "city_slug": "berlin-mitte",
-          "bundesland": null,
-          "score": 7.5,
-          "speed": 7.5,
-          "cost": null,
-          "online": null,
-          "raw": {
-            "speed_days": 28,
-            "cost_eur": null,
-            "online_available": null
-          },
-          "rank": 12
-        },
-        {
-          "city": "Berlin Neukölln",
-          "city_slug": "berlin-neukoelln",
-          "bundesland": null,
-          "score": 7.5,
-          "speed": 7.5,
-          "cost": null,
-          "online": null,
-          "raw": {
-            "speed_days": 28,
-            "cost_eur": null,
-            "online_available": null
-          },
-          "rank": 13
-        },
-        {
-          "city": "Berlin Reinickendorf",
-          "city_slug": "berlin-reinickendorf",
-          "bundesland": null,
-          "score": 7.5,
-          "speed": 7.5,
-          "cost": null,
-          "online": null,
-          "raw": {
-            "speed_days": 28,
-            "cost_eur": null,
-            "online_available": null
-          },
-          "rank": 14
-        },
-        {
-          "city": "Berlin Spandau",
-          "city_slug": "berlin-spandau",
-          "bundesland": null,
-          "score": 7.5,
-          "speed": 7.5,
-          "cost": null,
-          "online": null,
-          "raw": {
-            "speed_days": 28,
-            "cost_eur": null,
-            "online_available": null
-          },
-          "rank": 15
-        },
-        {
-          "city": "Berlin Treptow-Köpenick",
-          "city_slug": "berlin-treptow-koepenick",
-          "bundesland": null,
-          "score": 7.5,
-          "speed": 7.5,
-          "cost": null,
-          "online": null,
-          "raw": {
-            "speed_days": 28,
-            "cost_eur": null,
-            "online_available": null
-          },
-          "rank": 16
+          "rank": 7
         },
         {
           "city": "Dortmund",
           "city_slug": "dortmund",
           "bundesland": "Nordrhein-Westfalen",
-          "score": 7.0,
-          "speed": 8.9,
+          "score": 5.3,
+          "speed": 5.7,
           "cost": 5.0,
           "online": null,
           "raw": {
@@ -260,7 +174,36 @@
             "cost_eur": 30,
             "online_available": null
           },
-          "rank": 17
+          "meta": {
+            "authority": null,
+            "source_url": null,
+            "verified_at": "2026-01-20",
+            "status": "verified",
+            "raw_cost_max": 40
+          },
+          "rank": 8
+        },
+        {
+          "city": "Köln",
+          "city_slug": "koeln",
+          "bundesland": "Nordrhein-Westfalen",
+          "score": 5.0,
+          "speed": 5.0,
+          "cost": null,
+          "online": null,
+          "raw": {
+            "speed_days": 21,
+            "cost_eur": null,
+            "online_available": null
+          },
+          "meta": {
+            "authority": null,
+            "source_url": null,
+            "verified_at": "2026-01-18",
+            "status": "verified",
+            "raw_cost_max": null
+          },
+          "rank": 9
         },
         {
           "city": "Düsseldorf",
@@ -275,97 +218,36 @@
             "cost_eur": 35,
             "online_available": null
           },
-          "rank": 18
-        },
-        {
-          "city": "Berlin Tempelhof-Schöneberg",
-          "city_slug": "berlin-tempelhof-schoeneberg",
-          "bundesland": null,
-          "score": 5.0,
-          "speed": 5.0,
-          "cost": null,
-          "online": null,
-          "raw": {
-            "speed_days": 42,
-            "cost_eur": null,
-            "online_available": null
+          "meta": {
+            "authority": null,
+            "source_url": null,
+            "verified_at": "2026-01-22",
+            "status": "verified",
+            "raw_cost_max": 35
           },
-          "rank": 19
+          "rank": 10
         },
         {
-          "city": "Berlin Friedrichshain-Kreuzberg",
-          "city_slug": "berlin-friedrichshain-kreuzberg",
-          "bundesland": null,
-          "score": 2.5,
-          "speed": 2.5,
-          "cost": null,
-          "online": null,
-          "raw": {
-            "speed_days": 56,
-            "cost_eur": null,
-            "online_available": null
-          },
-          "rank": 20
-        },
-        {
-          "city": "Berlin Pankow",
-          "city_slug": "berlin-pankow",
-          "bundesland": null,
-          "score": 2.5,
-          "speed": 2.5,
-          "cost": null,
-          "online": null,
-          "raw": {
-            "speed_days": 56,
-            "cost_eur": null,
-            "online_available": null
-          },
-          "rank": 21
-        },
-        {
-          "city": "Berlin Charlottenburg-Wilmersdorf",
-          "city_slug": "berlin-charlottenburg-wilmersdorf",
-          "bundesland": null,
+          "city": "Berlin",
+          "city_slug": "berlin",
+          "bundesland": "Berlin",
           "score": 0.0,
           "speed": 0.0,
           "cost": null,
           "online": null,
           "raw": {
-            "speed_days": 70,
+            "speed_days": 28,
             "cost_eur": null,
             "online_available": null
           },
-          "rank": 22
-        },
-        {
-          "city": "Berlin Charlottenburg",
-          "city_slug": "berlin-charlottenburg",
-          "bundesland": null,
-          "score": 0.0,
-          "speed": 0.0,
-          "cost": null,
-          "online": null,
-          "raw": {
-            "speed_days": 70,
-            "cost_eur": null,
-            "online_available": null
+          "meta": {
+            "authority": null,
+            "source_url": null,
+            "verified_at": "2026-01-15",
+            "status": "verified",
+            "raw_cost_max": null
           },
-          "rank": 23
-        },
-        {
-          "city": "Berlin Steglitz-Zehlendorf",
-          "city_slug": "berlin-steglitz-zehlendorf",
-          "bundesland": null,
-          "score": null,
-          "speed": null,
-          "cost": null,
-          "online": null,
-          "raw": {
-            "speed_days": null,
-            "cost_eur": null,
-            "online_available": null
-          },
-          "rank": null
+          "rank": 11
         }
       ]
     },
@@ -374,66 +256,6 @@
       "label": "KFZ-Zulassung (Neuzulassung)",
       "n_cities": 20,
       "cities": [
-        {
-          "city": "Bremen",
-          "city_slug": "bremen",
-          "bundesland": "Bremen",
-          "score": 10.0,
-          "speed": null,
-          "cost": 10.0,
-          "online": 10.0,
-          "raw": {
-            "speed_days": null,
-            "cost_eur": 12.0,
-            "online_available": true
-          },
-          "rank": 1
-        },
-        {
-          "city": "Düsseldorf",
-          "city_slug": "duesseldorf",
-          "bundesland": "Nordrhein-Westfalen",
-          "score": 10.0,
-          "speed": null,
-          "cost": 10.0,
-          "online": 10.0,
-          "raw": {
-            "speed_days": null,
-            "cost_eur": 12.0,
-            "online_available": true
-          },
-          "rank": 2
-        },
-        {
-          "city": "Essen",
-          "city_slug": "essen",
-          "bundesland": "Nordrhein-Westfalen",
-          "score": 10.0,
-          "speed": null,
-          "cost": 10.0,
-          "online": 10.0,
-          "raw": {
-            "speed_days": null,
-            "cost_eur": 12.0,
-            "online_available": true
-          },
-          "rank": 3
-        },
-        {
-          "city": "Frankfurt am Main",
-          "city_slug": "frankfurt-am-main",
-          "bundesland": "Hessen",
-          "score": 10.0,
-          "speed": null,
-          "cost": 10.0,
-          "online": 10.0,
-          "raw": {
-            "speed_days": null,
-            "cost_eur": 12.0,
-            "online_available": true
-          },
-          "rank": 4
-        },
         {
           "city": "Nürnberg",
           "city_slug": "nuernberg",
@@ -447,7 +269,17 @@
             "cost_eur": 12.0,
             "online_available": true
           },
-          "rank": 5
+          "meta": {
+            "authority": "Ordnungsamt der Stadt Nürnberg",
+            "source_url": "https://nuernberg.termine-reservieren.de/select2?md=8",
+            "verified_at": null,
+            "status": null,
+            "gebuehr_amt": 30.0,
+            "gebuehr_online": 12.0,
+            "terminpflicht": true,
+            "wartezeit_label": "kurzere Wartezeiten Di, Mi und Fr"
+          },
+          "rank": 1
         },
         {
           "city": "Stuttgart",
@@ -462,29 +294,49 @@
             "cost_eur": 12.0,
             "online_available": true
           },
-          "rank": 6
+          "meta": {
+            "authority": "Kfz-Zulassungs- und Führerscheinstelle der Landeshauptstadt Stuttgart",
+            "source_url": "https://www.stuttgart.de/service/oeffnungszeiten/termine-bei-der-kfz-zulassungsstelle",
+            "verified_at": null,
+            "status": null,
+            "gebuehr_amt": 30.0,
+            "gebuehr_online": 12.0,
+            "terminpflicht": false,
+            "wartezeit_label": "ohne Termin mehrere Stunden; mit Termin deutlich kurzer"
+          },
+          "rank": 2
         },
         {
           "city": "Wuppertal",
           "city_slug": "wuppertal",
           "bundesland": "Nordrhein-Westfalen",
           "score": 10.0,
-          "speed": null,
+          "speed": 10.0,
           "cost": 10.0,
           "online": 10.0,
           "raw": {
-            "speed_days": null,
+            "speed_days": 1,
             "cost_eur": 12.0,
             "online_available": true
           },
-          "rank": 7
+          "meta": {
+            "authority": "Straßenverkehrsamt der Stadt Wuppertal",
+            "source_url": "https://serviceportal.wuppertal.de",
+            "verified_at": null,
+            "status": null,
+            "gebuehr_amt": 26.0,
+            "gebuehr_online": 12.0,
+            "terminpflicht": true,
+            "wartezeit_label": "oft kurzfristig oder noch am selben Tag"
+          },
+          "rank": 3
         },
         {
           "city": "Bochum",
           "city_slug": "bochum",
           "bundesland": "Nordrhein-Westfalen",
-          "score": 9.8,
-          "speed": 9.6,
+          "score": 9.7,
+          "speed": 9.3,
           "cost": 10.0,
           "online": 10.0,
           "raw": {
@@ -492,14 +344,24 @@
             "cost_eur": 12.0,
             "online_available": true
           },
-          "rank": 8
+          "meta": {
+            "authority": "Buro für Kfz-Angelegenheiten / Straßenverkehrsamt Bochum",
+            "source_url": "https://www.bochum.de/Online-Terminbuchung",
+            "verified_at": null,
+            "status": null,
+            "gebuehr_amt": 26.0,
+            "gebuehr_online": 12.0,
+            "terminpflicht": true,
+            "wartezeit_label": "durchschnittlich 6 Tage"
+          },
+          "rank": 4
         },
         {
           "city": "Duisburg",
           "city_slug": "duisburg",
           "bundesland": "Nordrhein-Westfalen",
-          "score": 9.8,
-          "speed": 9.4,
+          "score": 9.6,
+          "speed": 9.1,
           "cost": 10.0,
           "online": 10.0,
           "raw": {
@@ -507,14 +369,24 @@
             "cost_eur": 12.0,
             "online_available": true
           },
-          "rank": 9
+          "meta": {
+            "authority": "Straßenverkehrsamt der Stadt Duisburg",
+            "source_url": "https://www.duisburg.de/allgemein/fachbereiche/terminvereinbarung-zulassung.php",
+            "verified_at": null,
+            "status": null,
+            "gebuehr_amt": 26.0,
+            "gebuehr_online": 12.0,
+            "terminpflicht": true,
+            "wartezeit_label": "ca. 1 Woche"
+          },
+          "rank": 5
         },
         {
           "city": "Dortmund",
           "city_slug": "dortmund",
           "bundesland": "Nordrhein-Westfalen",
-          "score": 9.6,
-          "speed": 9.1,
+          "score": 9.5,
+          "speed": 8.8,
           "cost": 10.0,
           "online": 10.0,
           "raw": {
@@ -522,29 +394,24 @@
             "cost_eur": 12.0,
             "online_available": true
           },
-          "rank": 10
-        },
-        {
-          "city": "Hannover",
-          "city_slug": "hannover",
-          "bundesland": "Niedersachsen",
-          "score": 9.6,
-          "speed": null,
-          "cost": 9.4,
-          "online": 10.0,
-          "raw": {
-            "speed_days": null,
-            "cost_eur": 12.8,
-            "online_available": true
+          "meta": {
+            "authority": "Straßenverkehrsamt / Dienstleistungszentrum Burgerdienste Dortmund",
+            "source_url": "https://www.dortmund.de/services/online-terminreservierung.html",
+            "verified_at": null,
+            "status": null,
+            "gebuehr_amt": 26.3,
+            "gebuehr_online": 12.0,
+            "terminpflicht": true,
+            "wartezeit_label": "4-14 Tage"
           },
-          "rank": 11
+          "rank": 6
         },
         {
           "city": "Leipzig",
           "city_slug": "leipzig",
           "bundesland": "Sachsen",
-          "score": 9.6,
-          "speed": 9.0,
+          "score": 9.5,
+          "speed": 8.7,
           "cost": 10.0,
           "online": 10.0,
           "raw": {
@@ -552,14 +419,49 @@
             "cost_eur": 12.0,
             "online_available": true
           },
-          "rank": 12
+          "meta": {
+            "authority": "Kfz-Zulassungsbehorde der Stadt Leipzig",
+            "source_url": "https://www.leipzig.de/service-portal/aemtertermine-online/terminvereinbarung-kfz-zulassungsbehoerde",
+            "verified_at": null,
+            "status": null,
+            "gebuehr_amt": 95.6,
+            "gebuehr_online": 12.0,
+            "terminpflicht": true,
+            "wartezeit_label": "1-2 Wochen"
+          },
+          "rank": 7
+        },
+        {
+          "city": "Hannover",
+          "city_slug": "hannover",
+          "bundesland": "Niedersachsen",
+          "score": 9.4,
+          "speed": 9.0,
+          "cost": 9.4,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 8,
+            "cost_eur": 12.8,
+            "online_available": true
+          },
+          "meta": {
+            "authority": "Zulassungsstelle Stadt Hannover / Zulassungsstelle Region Hannover",
+            "source_url": "https://termin.hannover.gov.de/m/kfz/extern/calendar/?uid=c5fa0833-b05c-43f5-a19a-450621f3fc9b",
+            "verified_at": null,
+            "status": null,
+            "gebuehr_amt": 27.0,
+            "gebuehr_online": 12.8,
+            "terminpflicht": true,
+            "wartezeit_label": "7-10 Werktage (Stadt), teils mehrere Wochen"
+          },
+          "rank": 8
         },
         {
           "city": "Bielefeld",
           "city_slug": "bielefeld",
           "bundesland": "Nordrhein-Westfalen",
-          "score": 9.4,
-          "speed": 8.4,
+          "score": 9.2,
+          "speed": 8.1,
           "cost": 10.0,
           "online": 10.0,
           "raw": {
@@ -567,14 +469,49 @@
             "cost_eur": 12.0,
             "online_available": true
           },
-          "rank": 13
+          "meta": {
+            "authority": "Kfz-Zulassungsbehorde im Ordnungsamt der Stadt Bielefeld",
+            "source_url": "https://www.bielefeld.de/node/6456",
+            "verified_at": null,
+            "status": null,
+            "gebuehr_amt": 36.5,
+            "gebuehr_online": 12.0,
+            "terminpflicht": true,
+            "wartezeit_label": "ca. 14 Tage"
+          },
+          "rank": 9
+        },
+        {
+          "city": "Bremen",
+          "city_slug": "bremen",
+          "bundesland": "Bremen",
+          "score": 9.2,
+          "speed": 8.1,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 14,
+            "cost_eur": 12.0,
+            "online_available": true
+          },
+          "meta": {
+            "authority": "Zentrale Kfz-Zulassungsbehorde im Burgeramt Bremen",
+            "source_url": "https://www.service.bremen.de",
+            "verified_at": null,
+            "status": null,
+            "gebuehr_amt": 30.6,
+            "gebuehr_online": 12.0,
+            "terminpflicht": true,
+            "wartezeit_label": "mehrere Tage bis Wochen"
+          },
+          "rank": 10
         },
         {
           "city": "Dresden",
           "city_slug": "dresden",
           "bundesland": "Sachsen",
-          "score": 9.4,
-          "speed": 8.4,
+          "score": 9.2,
+          "speed": 8.1,
           "cost": 10.0,
           "online": 10.0,
           "raw": {
@@ -582,14 +519,74 @@
             "cost_eur": 12.0,
             "online_available": true
           },
-          "rank": 14
+          "meta": {
+            "authority": "Kfz-Zulassungsbehorde im Ordnungsamt Dresden",
+            "source_url": "https://termine.dresden.de/netappoint/index.php?company=stadtdresden-kfz",
+            "verified_at": null,
+            "status": null,
+            "gebuehr_amt": 95.6,
+            "gebuehr_online": 12.0,
+            "terminpflicht": true,
+            "wartezeit_label": "bis zu 14 Tage"
+          },
+          "rank": 11
+        },
+        {
+          "city": "Essen",
+          "city_slug": "essen",
+          "bundesland": "Nordrhein-Westfalen",
+          "score": 8.8,
+          "speed": 7.1,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 21,
+            "cost_eur": 12.0,
+            "online_available": true
+          },
+          "meta": {
+            "authority": "Straßenverkehrsamt / Einwohneramt Essen",
+            "source_url": "https://www.essen.de/rathaus/onlinetermine_der_stadtessen.de.html",
+            "verified_at": null,
+            "status": null,
+            "gebuehr_amt": 27.0,
+            "gebuehr_online": 12.0,
+            "terminpflicht": true,
+            "wartezeit_label": "mehrere Wochen"
+          },
+          "rank": 12
+        },
+        {
+          "city": "Frankfurt am Main",
+          "city_slug": "frankfurt-am-main",
+          "bundesland": "Hessen",
+          "score": 8.8,
+          "speed": 7.1,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 21,
+            "cost_eur": 12.0,
+            "online_available": true
+          },
+          "meta": {
+            "authority": "Servicezentrum Rund ums Auto des Ordnungsamts Frankfurt",
+            "source_url": "https://tevis.ekom21.de/fra/select2?md=2",
+            "verified_at": null,
+            "status": null,
+            "gebuehr_amt": 26.0,
+            "gebuehr_online": 12.0,
+            "terminpflicht": true,
+            "wartezeit_label": "mehrere Wochen"
+          },
+          "rank": 13
         },
         {
           "city": "Hamburg",
           "city_slug": "hamburg",
           "bundesland": "Hamburg",
-          "score": 8.7,
-          "speed": 6.7,
+          "score": 8.6,
+          "speed": 6.5,
           "cost": 10.0,
           "online": 10.0,
           "raw": {
@@ -597,14 +594,24 @@
             "cost_eur": 12.0,
             "online_available": true
           },
-          "rank": 15
+          "meta": {
+            "authority": "Landesbetrieb Verkehr Hamburg (LBV)",
+            "source_url": "https://www.lbv-termine.de",
+            "verified_at": null,
+            "status": null,
+            "gebuehr_amt": 26.0,
+            "gebuehr_online": 12.0,
+            "terminpflicht": true,
+            "wartezeit_label": "ca. 20-31 Tage (je nach Standort)"
+          },
+          "rank": 14
         },
         {
           "city": "Münster",
           "city_slug": "muenster",
           "bundesland": "Nordrhein-Westfalen",
-          "score": 8.3,
-          "speed": 9.7,
+          "score": 8.2,
+          "speed": 9.4,
           "cost": 6.1,
           "online": 10.0,
           "raw": {
@@ -612,14 +619,24 @@
             "cost_eur": 17.5,
             "online_available": true
           },
-          "rank": 16
+          "meta": {
+            "authority": "Kfz-Zulassung im Ordnungsamt der Stadt Münster",
+            "source_url": "https://www.stadt-muenster.de/kfz/terminvereinbarung",
+            "verified_at": null,
+            "status": null,
+            "gebuehr_amt": 36.0,
+            "gebuehr_online": 17.5,
+            "terminpflicht": true,
+            "wartezeit_label": "ca. 5 Tage"
+          },
+          "rank": 15
         },
         {
           "city": "Bonn",
           "city_slug": "bonn",
           "bundesland": "Nordrhein-Westfalen",
-          "score": 7.8,
-          "speed": 10.0,
+          "score": 7.7,
+          "speed": 9.7,
           "cost": 4.6,
           "online": 10.0,
           "raw": {
@@ -627,20 +644,65 @@
             "cost_eur": 19.52,
             "online_available": true
           },
+          "meta": {
+            "authority": "Straßenverkehrsamt Bonn",
+            "source_url": "https://www.bonn.de/service-bieten/stadtverwaltung-a-bis-z/termine-reservieren.php",
+            "verified_at": null,
+            "status": null,
+            "gebuehr_amt": 30.0,
+            "gebuehr_online": 19.52,
+            "terminpflicht": true,
+            "wartezeit_label": "ca. 3 Tage"
+          },
+          "rank": 16
+        },
+        {
+          "city": "Düsseldorf",
+          "city_slug": "duesseldorf",
+          "bundesland": "Nordrhein-Westfalen",
+          "score": 7.4,
+          "speed": 3.6,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 45,
+            "cost_eur": 12.0,
+            "online_available": true
+          },
+          "meta": {
+            "authority": "Straßenverkehrsamt der Landeshauptstadt Düsseldorf",
+            "source_url": "https://termine.duesseldorf.de/select2?md=2",
+            "verified_at": null,
+            "status": null,
+            "gebuehr_amt": 30.6,
+            "gebuehr_online": 12.0,
+            "terminpflicht": true,
+            "wartezeit_label": "mehrere Wochen bis Monate"
+          },
           "rank": 17
         },
         {
           "city": "München",
           "city_slug": "muenchen",
           "bundesland": "Bayern",
-          "score": 5.9,
-          "speed": 5.8,
+          "score": 5.8,
+          "speed": 5.7,
           "cost": 3.9,
           "online": 10.0,
           "raw": {
             "speed_days": 31,
             "cost_eur": 20.5,
             "online_available": true
+          },
+          "meta": {
+            "authority": "Kfz-Zulassungsstelle des Kreisverwaltungsreferats (KVR)",
+            "source_url": "https://stadt.muenchen.de/terminvereinbarung_/terminvereinbarung_kfz.html",
+            "verified_at": null,
+            "status": null,
+            "gebuehr_amt": 30.0,
+            "gebuehr_online": 20.5,
+            "terminpflicht": true,
+            "wartezeit_label": "3-6 Wochen"
           },
           "rank": 18
         },
@@ -657,20 +719,40 @@
             "cost_eur": 22.22,
             "online_available": true
           },
+          "meta": {
+            "authority": "Landesamt für Burger- und Ordnungsangelegenheiten (LABO)",
+            "source_url": "https://www.berlin.de/labo",
+            "verified_at": null,
+            "status": null,
+            "gebuehr_amt": 30.6,
+            "gebuehr_online": 22.22,
+            "terminpflicht": true,
+            "wartezeit_label": "mehrere Wochen bis zu 10 Wochen"
+          },
           "rank": 19
         },
         {
           "city": "Köln",
           "city_slug": "koeln",
           "bundesland": "Nordrhein-Westfalen",
-          "score": 2.8,
-          "speed": 6.9,
+          "score": 2.7,
+          "speed": 6.7,
           "cost": 0.0,
           "online": 0.0,
           "raw": {
             "speed_days": 24,
             "cost_eur": 26.0,
             "online_available": false
+          },
+          "meta": {
+            "authority": "Straßenverkehrsamt Köln (Kfz-Zulassungsstelle)",
+            "source_url": "https://termine-online.stadt-koeln.de",
+            "verified_at": null,
+            "status": null,
+            "gebuehr_amt": 26.0,
+            "gebuehr_online": null,
+            "terminpflicht": true,
+            "wartezeit_label": "3-4 Wochen"
           },
           "rank": 20
         }
@@ -682,21 +764,6 @@
       "n_cities": 30,
       "cities": [
         {
-          "city": "Dresden",
-          "city_slug": "dresden",
-          "bundesland": "Sachsen",
-          "score": 10.0,
-          "speed": null,
-          "cost": 10.0,
-          "online": 10.0,
-          "raw": {
-            "speed_days": null,
-            "cost_eur": 470,
-            "online_available": true
-          },
-          "rank": 1
-        },
-        {
           "city": "Leipzig",
           "city_slug": "leipzig",
           "bundesland": "Sachsen",
@@ -705,24 +772,84 @@
           "cost": 10.0,
           "online": 10.0,
           "raw": {
+            "speed_days": 0,
+            "cost_eur": 470,
+            "online_available": true
+          },
+          "meta": {
+            "authority": "Ordnungsamt Leipzig",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 20,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 970,
+            "ihk_name": "Industrie- und Handelskammer Leipzig",
+            "processing_time_label": "15-20 Minuten vor Ort oder 3 Tage bei Online-Anmeldung"
+          },
+          "rank": 1
+        },
+        {
+          "city": "Dresden",
+          "city_slug": "dresden",
+          "bundesland": "Sachsen",
+          "score": 9.6,
+          "speed": 8.9,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
             "speed_days": 3,
             "cost_eur": 470,
             "online_available": true
           },
+          "meta": {
+            "authority": "{'name': 'Ordnungsamt Dresden – Abteilung Gewerbeangelegenheiten', 'address': 'Dr.-Külz-Ring 19, 01069 Dresden', 'phone': '0351 4885811', 'email': 'gewerbeangelegenheiten@dresden.de', 'online_portals': ['https://gewerbe.buergerdienste-online.de/dresden', 'https://amt24.sachsen.de']}",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 20,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 970,
+            "ihk_name": "Industrie- und Handelskammer Dresden",
+            "processing_time_label": "wenige Tage"
+          },
           "rank": 2
         },
         {
-          "city": "Hamburg",
-          "city_slug": "hamburg",
-          "bundesland": "Hamburg",
+          "city": "Frankfurt am Main",
+          "city_slug": "frankfurt-am-main",
+          "bundesland": "Hessen",
           "score": 9.5,
-          "speed": 8.8,
-          "cost": 10.0,
+          "speed": 10.0,
+          "cost": 8.8,
           "online": 10.0,
           "raw": {
-            "speed_days": 6,
-            "cost_eur": 470,
+            "speed_days": 0,
+            "cost_eur": 475.5,
             "online_available": true
+          },
+          "meta": {
+            "authority": "Ordnungsamt der Stadt Frankfurt, Abteilung Gewerbe",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 25.5,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 975.5,
+            "ihk_name": null,
+            "processing_time_label": "20 Minuten"
           },
           "rank": 3
         },
@@ -735,9 +862,24 @@
           "cost": 8.7,
           "online": 10.0,
           "raw": {
-            "speed_days": 3,
+            "speed_days": 0,
             "cost_eur": 476,
             "online_available": true
+          },
+          "meta": {
+            "authority": "{'name': 'Gewerbeamt Rostock', 'address': 'Rathaus Rostock, Schillingallee 1, 18057 Rostock', 'opening_hours': 'Mo–Fr typisch 8–16 Uhr'}",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 26,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 976,
+            "ihk_name": "Industrie- und Handelskammer Rostock",
+            "processing_time_label": "{'in_person': 'sofort', 'written_electronic': '3 Tage'}"
           },
           "rank": 4
         },
@@ -754,35 +896,80 @@
             "cost_eur": 475,
             "online_available": true
           },
+          "meta": {
+            "authority": "{'name': 'Gewerbeamt Erfurt', 'address': 'Rathaus, Unteres Wollzeugsviertel 1, 99084 Erfurt', 'organization': 'Stadtverwaltung Erfurt, Bürgerservice'}",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 25,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 975,
+            "ihk_name": "IHK",
+            "processing_time_label": "Das Gewerbe muss gleichzeitig mit der Aufnahme der Tätigkeit angemeldet werden."
+          },
           "rank": 5
         },
         {
-          "city": "Frankfurt am Main",
-          "city_slug": "frankfurt-am-main",
-          "bundesland": "Hessen",
+          "city": "Hamburg",
+          "city_slug": "hamburg",
+          "bundesland": "Hamburg",
           "score": 9.2,
-          "speed": null,
-          "cost": 8.8,
+          "speed": 7.9,
+          "cost": 10.0,
           "online": 10.0,
           "raw": {
-            "speed_days": null,
-            "cost_eur": 475.5,
+            "speed_days": 6,
+            "cost_eur": 470,
             "online_available": true
+          },
+          "meta": {
+            "authority": "Bezirksamt",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 20,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 970,
+            "ihk_name": ":null",
+            "processing_time_label": "Online: 3 bis 10 Tagen; Per Post: etwa 4 Wochen"
           },
           "rank": 6
         },
         {
-          "city": "Bremen",
-          "city_slug": "bremen",
-          "bundesland": "Bremen",
+          "city": "Berlin",
+          "city_slug": "berlin",
+          "bundesland": "Berlin",
           "score": 9.0,
           "speed": 10.0,
-          "cost": 7.4,
+          "cost": 7.6,
           "online": 10.0,
           "raw": {
-            "speed_days": 3,
-            "cost_eur": 482,
+            "speed_days": 0,
+            "cost_eur": 481,
             "online_available": true
+          },
+          "meta": {
+            "authority": "Ordnungsamt des Bezirks nach Betriebssitz",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 31,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 981,
+            "ihk_name": "Industrie- und Handelskammer (IHK)",
+            "processing_time_label": "sofort bei persönlicher Vorsprache; einige Tage bei Post/Online-Bearbeitung"
           },
           "rank": 7
         },
@@ -790,61 +977,331 @@
           "city": "Mannheim",
           "city_slug": "mannheim",
           "bundesland": "Baden-Württemberg",
-          "score": 8.5,
-          "speed": null,
+          "score": 9.0,
+          "speed": 9.6,
           "cost": 7.8,
           "online": 10.0,
           "raw": {
-            "speed_days": null,
+            "speed_days": 1,
             "cost_eur": 480,
             "online_available": true
           },
-          "rank": 8
-        },
-        {
-          "city": "Berlin",
-          "city_slug": "berlin",
-          "bundesland": "Berlin",
-          "score": 8.4,
-          "speed": null,
-          "cost": 7.6,
-          "online": 10.0,
-          "raw": {
-            "speed_days": null,
-            "cost_eur": 481,
-            "online_available": true
+          "meta": {
+            "authority": "{'name': 'Fachbereich Wirtschafts- und Strukturförderung, Stadt Mannheim', 'address': 'Mannheim', 'phone': '0621 293-2525', 'email': 'gewerbe@mannheim.de', 'website': 'www.mannheim.de/de/wirtschaft-entwickeln/unternehmensservice/gewerbean-ab-und-ummeldung-online-auskunft'}",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 30,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 980,
+            "ihk_name": "Industrie- und Handelskammer Rhein-Neckar",
+            "processing_time_label": "sofort bei persönlicher Vorsprache, variabel bei schriftlicher/online Anmeldung"
           },
-          "rank": 9
+          "rank": 8
         },
         {
           "city": "Bielefeld",
           "city_slug": "bielefeld",
           "bundesland": "Nordrhein-Westfalen",
-          "score": 8.1,
-          "speed": null,
+          "score": 8.9,
+          "speed": 10.0,
           "cost": 7.2,
           "online": 10.0,
           "raw": {
-            "speed_days": null,
+            "speed_days": 0,
             "cost_eur": 483,
             "online_available": true
           },
-          "rank": 10
+          "meta": {
+            "authority": "Ordnungsamt Geschäftsbereich Sicherheit, Ordnung, Gewerbe Abteilung Gewerberechtliche Verfahren",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 33,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 983,
+            "ihk_name": "Industrie- und Handelskammer",
+            "processing_time_label": "Die Gewerbeanmeldung erfolgt sofort, wenn alle erforderlichen Unterlagen vorliegen."
+          },
+          "rank": 9
         },
         {
           "city": "Bochum",
           "city_slug": "bochum",
           "bundesland": "Nordrhein-Westfalen",
-          "score": 8.1,
-          "speed": null,
+          "score": 8.9,
+          "speed": 10.0,
           "cost": 7.2,
           "online": 10.0,
           "raw": {
-            "speed_days": null,
+            "speed_days": 0,
             "cost_eur": 483,
             "online_available": true
           },
+          "meta": {
+            "authority": "Ordnungs- und Veterinäramt Bochum, Marienplatz 2, 44787 Bochum",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 33,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 983,
+            "ihk_name": "IHK Mittleres Ruhrgebiet",
+            "processing_time_label": "ca. 15-20 Min"
+          },
+          "rank": 10
+        },
+        {
+          "city": "Dortmund",
+          "city_slug": "dortmund",
+          "bundesland": "Nordrhein-Westfalen",
+          "score": 8.9,
+          "speed": 10.0,
+          "cost": 7.2,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 0,
+            "cost_eur": 483,
+            "online_available": true
+          },
+          "meta": {
+            "authority": "{'name': 'Gewerbemeldestelle des Ordnungsamts Dortmund', 'street': 'Augustastr. 1-3', 'postal_code': '44282', 'city': 'Dortmund'}",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 33,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 983,
+            "ihk_name": "NULL",
+            "processing_time_label": "15-30 Minuten vor Ort, Gewerbeschein sofort oder innerhalb weniger Tage; online wenige Tage"
+          },
           "rank": 11
+        },
+        {
+          "city": "Düsseldorf",
+          "city_slug": "duesseldorf",
+          "bundesland": "Nordrhein-Westfalen",
+          "score": 8.9,
+          "speed": 10.0,
+          "cost": 7.2,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 0,
+            "cost_eur": 483,
+            "online_available": true
+          },
+          "meta": {
+            "authority": "{'name': 'Gewerbemeldestelle Düsseldorf', 'address': 'Worringer Straße 111, 40210 Düsseldorf', 'contact': 'Persönliche Vorsprachen möglich; telefonische Auskünfte und Terminvereinbarungen unterstützt'}",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 33,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 983,
+            "ihk_name": "IHK Düsseldorf",
+            "processing_time_label": "Bei persönlicher Vorsprache können Sie die Gewerbemeldung in der Regel sofort mitnehmen."
+          },
+          "rank": 12
+        },
+        {
+          "city": "Kassel",
+          "city_slug": "kassel",
+          "bundesland": "Hessen",
+          "score": 8.9,
+          "speed": 10.0,
+          "cost": 7.2,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 0,
+            "cost_eur": 483,
+            "online_available": true
+          },
+          "meta": {
+            "authority": "{'name': 'Gewerbeamt Kassel",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 33,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 983,
+            "ihk_name": null,
+            "processing_time_label": "15–20 Minuten"
+          },
+          "rank": 13
+        },
+        {
+          "city": "Freiburg",
+          "city_slug": "freiburg",
+          "bundesland": "Baden-Württemberg",
+          "score": 8.7,
+          "speed": 10.0,
+          "cost": 6.7,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 0,
+            "cost_eur": 485,
+            "online_available": true
+          },
+          "meta": {
+            "authority": "{'name': 'Ordnungsamt Freiburg",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 35,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 985,
+            "ihk_name": "IHK Südlicher Oberrhein",
+            "processing_time_label": "15-20 Min"
+          },
+          "rank": 14
+        },
+        {
+          "city": "Bremen",
+          "city_slug": "bremen",
+          "bundesland": "Bremen",
+          "score": 8.5,
+          "speed": 8.9,
+          "cost": 7.4,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 3,
+            "cost_eur": 482,
+            "online_available": true
+          },
+          "meta": {
+            "authority": "Gewerbeamt Bremen",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 32,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 982,
+            "ihk_name": ",null,",
+            "processing_time_label": "3 Tage"
+          },
+          "rank": 15
+        },
+        {
+          "city": "Köln",
+          "city_slug": "koeln",
+          "bundesland": "Nordrhein-Westfalen",
+          "score": 8.4,
+          "speed": 8.9,
+          "cost": 7.2,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 3,
+            "cost_eur": 483,
+            "online_available": true
+          },
+          "meta": {
+            "authority": "Bürgeramt Köln",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 33,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 983,
+            "ihk_name": null,
+            "processing_time_label": "sofort bis wenige Tage"
+          },
+          "rank": 16
+        },
+        {
+          "city": "Mainz",
+          "city_slug": "mainz",
+          "bundesland": "Rheinland-Pfalz",
+          "score": 8.3,
+          "speed": 10.0,
+          "cost": 5.7,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 0,
+            "cost_eur": 490,
+            "online_available": true
+          },
+          "meta": {
+            "authority": "Rechts- und Ordnungsamt Mainz, Mainzer Innenstadt",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 40,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 990,
+            "ihk_name": ".",
+            "processing_time_label": "15–20 Minuten"
+          },
+          "rank": 17
+        },
+        {
+          "city": "Wuppertal",
+          "city_slug": "wuppertal",
+          "bundesland": "Nordrhein-Westfalen",
+          "score": 8.3,
+          "speed": 8.6,
+          "cost": 7.2,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 4,
+            "cost_eur": 483,
+            "online_available": true
+          },
+          "meta": {
+            "authority": "Ordnungs- und Gewerbeangelegenheiten, Bußgeld, Fahrerlaubnisangelegenheiten",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 33,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 983,
+            "ihk_name": "Bergische Industrie- und Handelskammer Wuppertal-Solingen-Remscheid",
+            "processing_time_label": "Bei persönlicher Vorsprache sofort, bei schriftlicher Anzeige innerhalb von 4 Werktagen."
+          },
+          "rank": 18
         },
         {
           "city": "Bonn",
@@ -859,22 +1316,22 @@
             "cost_eur": 483,
             "online_available": true
           },
-          "rank": 12
-        },
-        {
-          "city": "Dortmund",
-          "city_slug": "dortmund",
-          "bundesland": "Nordrhein-Westfalen",
-          "score": 8.1,
-          "speed": null,
-          "cost": 7.2,
-          "online": 10.0,
-          "raw": {
-            "speed_days": null,
-            "cost_eur": 483,
-            "online_available": true
+          "meta": {
+            "authority": "{'name': 'Gewerbeamt Bonn', 'address': 'Stadthaus, Berliner Platz 2, 53111 Bonn', 'phone': '0228 77 2543', 'email': 'gewerbe@bonn.de', 'website': 'https://www.bonn.de/vv/produkte/Gewerbeanmeldung.php'}",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 33,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 983,
+            "ihk_name": "IHK Bonn/Rhein-Sieg",
+            "processing_time_label": null
           },
-          "rank": 13
+          "rank": 19
         },
         {
           "city": "Duisburg",
@@ -889,22 +1346,22 @@
             "cost_eur": 483,
             "online_available": true
           },
-          "rank": 14
-        },
-        {
-          "city": "Düsseldorf",
-          "city_slug": "duesseldorf",
-          "bundesland": "Nordrhein-Westfalen",
-          "score": 8.1,
-          "speed": null,
-          "cost": 7.2,
-          "online": 10.0,
-          "raw": {
-            "speed_days": null,
-            "cost_eur": 483,
-            "online_available": true
+          "meta": {
+            "authority": "Stadt Duisburg, Bürger- und Ordnungsamt, Königstr. 63-65",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 33,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 983,
+            "ihk_name": "Industrie- und Handelskammer Niederrhein",
+            "processing_time_label": null
           },
-          "rank": 15
+          "rank": 20
         },
         {
           "city": "Essen",
@@ -919,74 +1376,89 @@
             "cost_eur": 483,
             "online_available": true
           },
-          "rank": 16
+          "meta": {
+            "authority": "{'name': 'Gewerbemeldestelle der Stadt Essen', 'street': 'Am Porscheplatz 1', 'postal_code': '45127', 'city': 'Essen', 'phone': '0201-88-32777', 'email': 'gewerbemeldestelle@essen.de'}",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 33,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 983,
+            "ihk_name": "Industrie- und Handelskammer Essen, Oberhausen, Mülheim an der Ruhr zu Essen",
+            "processing_time_label": null
+          },
+          "rank": 21
         },
         {
-          "city": "Kassel",
-          "city_slug": "kassel",
-          "bundesland": "Hessen",
-          "score": 8.1,
-          "speed": null,
-          "cost": 7.2,
+          "city": "München",
+          "city_slug": "muenchen",
+          "bundesland": "Bayern",
+          "score": 7.4,
+          "speed": 10.0,
+          "cost": 3.5,
           "online": 10.0,
           "raw": {
-            "speed_days": null,
-            "cost_eur": 483,
+            "speed_days": 0,
+            "cost_eur": 500,
             "online_available": true
           },
-          "rank": 17
+          "meta": {
+            "authority": "Kreisverwaltungsreferat",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 50,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 1000,
+            "ihk_name": "IHK für München und Oberbayern",
+            "processing_time_label": "15–20 Minuten"
+          },
+          "rank": 22
         },
         {
-          "city": "Köln",
-          "city_slug": "koeln",
-          "bundesland": "Nordrhein-Westfalen",
-          "score": 8.1,
-          "speed": null,
-          "cost": 7.2,
+          "city": "Saarbrücken",
+          "city_slug": "saarbruecken",
+          "bundesland": "Saarland",
+          "score": 7.0,
+          "speed": 10.0,
+          "cost": 2.4,
           "online": 10.0,
           "raw": {
-            "speed_days": null,
-            "cost_eur": 483,
+            "speed_days": 0,
+            "cost_eur": 505,
             "online_available": true
           },
-          "rank": 18
-        },
-        {
-          "city": "Wuppertal",
-          "city_slug": "wuppertal",
-          "bundesland": "Nordrhein-Westfalen",
-          "score": 8.1,
-          "speed": null,
-          "cost": 7.2,
-          "online": 10.0,
-          "raw": {
-            "speed_days": null,
-            "cost_eur": 483,
-            "online_available": true
+          "meta": {
+            "authority": "{'name': 'Gewerbemeldestelle Saarbrücken",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 55,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 1005,
+            "ihk_name": "IHK",
+            "processing_time_label": "ca. 20 Minuten"
           },
-          "rank": 19
-        },
-        {
-          "city": "Freiburg",
-          "city_slug": "freiburg",
-          "bundesland": "Baden-Württemberg",
-          "score": 7.8,
-          "speed": null,
-          "cost": 6.7,
-          "online": 10.0,
-          "raw": {
-            "speed_days": null,
-            "cost_eur": 485,
-            "online_available": true
-          },
-          "rank": 20
+          "rank": 23
         },
         {
           "city": "Magdeburg",
           "city_slug": "magdeburg",
           "bundesland": "Sachsen-Anhalt",
-          "score": 7.2,
-          "speed": 10.0,
+          "score": 6.8,
+          "speed": 8.9,
           "cost": 3.0,
           "online": 10.0,
           "raw": {
@@ -994,37 +1466,82 @@
             "cost_eur": 502,
             "online_available": true
           },
-          "rank": 21
+          "meta": {
+            "authority": "{'name': 'Gewerbeamt Magdeburg",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 52,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 1002,
+            "ihk_name": ".",
+            "processing_time_label": "sofort bei persönlicher Vorsprache; 3 Tage bei schriftlicher oder elektronischer Anmeldung"
+          },
+          "rank": 24
         },
         {
-          "city": "Mainz",
-          "city_slug": "mainz",
-          "bundesland": "Rheinland-Pfalz",
-          "score": 7.1,
-          "speed": null,
-          "cost": 5.7,
+          "city": "Stuttgart",
+          "city_slug": "stuttgart",
+          "bundesland": "Baden-Württemberg",
+          "score": 6.8,
+          "speed": 10.0,
+          "cost": 2.0,
           "online": 10.0,
           "raw": {
-            "speed_days": null,
-            "cost_eur": 490,
+            "speed_days": 0,
+            "cost_eur": 507,
             "online_available": true
           },
-          "rank": 22
+          "meta": {
+            "authority": "{'name': 'Amt für öffentliche Ordnung, Abt. Gewerbeamt, Landeshauptstadt Stuttgart', 'address': 'Königstraße 37, 70173 Stuttgart', 'opening_hours': 'Mo–Fr 8–12 Uhr und 14–16 Uhr'}",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 57,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 1007,
+            "ihk_name": ":null",
+            "processing_time_label": "10-15 Minuten"
+          },
+          "rank": 25
         },
         {
-          "city": "München",
-          "city_slug": "muenchen",
-          "bundesland": "Bayern",
-          "score": 5.7,
-          "speed": null,
-          "cost": 3.5,
+          "city": "Potsdam",
+          "city_slug": "potsdam",
+          "bundesland": "Brandenburg",
+          "score": 6.0,
+          "speed": 10.0,
+          "cost": 0.0,
           "online": 10.0,
           "raw": {
-            "speed_days": null,
-            "cost_eur": 500,
+            "speed_days": 0,
+            "cost_eur": 516,
             "online_available": true
           },
-          "rank": 23
+          "meta": {
+            "authority": "{'name': 'Gewerbeamt der Landeshauptstadt Potsdam', 'phone': '0331 289-1690', 'email': 'Gewerbeangelegenheiten@Rathaus.Potsdam.de', 'website': 'vv.potsdam.de'}",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 66,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 1016,
+            "ihk_name": null,
+            "processing_time_label": "15-20 Minuten"
+          },
+          "rank": 26
         },
         {
           "city": "Nürnberg",
@@ -1039,7 +1556,52 @@
             "cost_eur": 500,
             "online_available": true
           },
-          "rank": 24
+          "meta": {
+            "authority": "Gewerbeamt Nürnberg",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 50,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 1000,
+            "ihk_name": "IHK für München und Oberbayern",
+            "processing_time_label": null
+          },
+          "rank": 27
+        },
+        {
+          "city": "Hannover",
+          "city_slug": "hannover",
+          "bundesland": "Niedersachsen",
+          "score": 5.6,
+          "speed": 8.9,
+          "cost": 0.2,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 3,
+            "cost_eur": 515,
+            "online_available": true
+          },
+          "meta": {
+            "authority": "Gewerbeamt der Stadt Hannover",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 65,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 1015,
+            "ihk_name": "IHK Hannover",
+            "processing_time_label": "wenige Tage"
+          },
+          "rank": 28
         },
         {
           "city": "Kiel",
@@ -1054,29 +1616,29 @@
             "cost_eur": 480,
             "online_available": true
           },
-          "rank": 25
-        },
-        {
-          "city": "Saarbrücken",
-          "city_slug": "saarbruecken",
-          "bundesland": "Saarland",
-          "score": 4.9,
-          "speed": null,
-          "cost": 2.4,
-          "online": 10.0,
-          "raw": {
-            "speed_days": null,
-            "cost_eur": 505,
-            "online_available": true
+          "meta": {
+            "authority": "Gewerbeamt der Stadt Kiel, Düsternbrooker Weg 90, 24105 Kiel",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 30,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 980,
+            "ihk_name": "IHK zu Kiel",
+            "processing_time_label": "4 Wochen"
           },
-          "rank": 26
+          "rank": 29
         },
         {
           "city": "Augsburg",
           "city_slug": "augsburg",
           "bundesland": "Bayern",
-          "score": 4.8,
-          "speed": 5.6,
+          "score": 4.5,
+          "speed": 5.0,
           "cost": 1.3,
           "online": 10.0,
           "raw": {
@@ -1084,50 +1646,20 @@
             "cost_eur": 510,
             "online_available": true
           },
-          "rank": 27
-        },
-        {
-          "city": "Stuttgart",
-          "city_slug": "stuttgart",
-          "bundesland": "Baden-Württemberg",
-          "score": 4.7,
-          "speed": null,
-          "cost": 2.0,
-          "online": 10.0,
-          "raw": {
-            "speed_days": null,
-            "cost_eur": 507,
-            "online_available": true
-          },
-          "rank": 28
-        },
-        {
-          "city": "Hannover",
-          "city_slug": "hannover",
-          "bundesland": "Niedersachsen",
-          "score": 3.5,
-          "speed": null,
-          "cost": 0.2,
-          "online": 10.0,
-          "raw": {
-            "speed_days": null,
-            "cost_eur": 515,
-            "online_available": true
-          },
-          "rank": 29
-        },
-        {
-          "city": "Potsdam",
-          "city_slug": "potsdam",
-          "bundesland": "Brandenburg",
-          "score": 3.3,
-          "speed": null,
-          "cost": 0.0,
-          "online": 10.0,
-          "raw": {
-            "speed_days": null,
-            "cost_eur": 516,
-            "online_available": true
+          "meta": {
+            "authority": "{'name': 'Ordnungs- und Gewerbeamt der Stadt Augsburg', 'address': 'An der Blauen Kappe 18, 86152 Augsburg', 'phone': '0821 324 08 21', 'fax': '0821 324 44 27', 'email': 'ordnungsbehoerde@augsburg.de'}",
+            "source_url": null,
+            "verified_at": null,
+            "status": null,
+            "fee_breakdown": {
+              "gewerbe": 60,
+              "notar_min": 300,
+              "notar_max": 800,
+              "hr_eintrag": 150
+            },
+            "total_max": 1010,
+            "ihk_name": "Schwaben IHK",
+            "processing_time_label": "etwa 14 Tage"
           },
           "rank": 30
         }
@@ -1140,7 +1672,7 @@
       "city_slug": "leipzig",
       "bundesland": "Sachsen",
       "topic_count": 3,
-      "avg_score": 9.9,
+      "avg_score": 9.8,
       "rank": 1
     },
     {
@@ -1148,7 +1680,7 @@
       "city_slug": "frankfurt-am-main",
       "bundesland": "Hessen",
       "topic_count": 3,
-      "avg_score": 9.7,
+      "avg_score": 9.4,
       "rank": 2
     },
     {
@@ -1156,15 +1688,15 @@
       "city_slug": "essen",
       "bundesland": "Nordrhein-Westfalen",
       "topic_count": 3,
-      "avg_score": 9.4,
+      "avg_score": 9.0,
       "rank": 3
     },
     {
-      "city": "Bremen",
-      "city_slug": "bremen",
-      "bundesland": "Bremen",
+      "city": "Stuttgart",
+      "city_slug": "stuttgart",
+      "bundesland": "Baden-Württemberg",
       "topic_count": 3,
-      "avg_score": 8.8,
+      "avg_score": 8.9,
       "rank": 4
     },
     {
@@ -1172,15 +1704,15 @@
       "city_slug": "hamburg",
       "bundesland": "Hamburg",
       "topic_count": 3,
-      "avg_score": 8.6,
+      "avg_score": 8.4,
       "rank": 5
     },
     {
-      "city": "Stuttgart",
-      "city_slug": "stuttgart",
-      "bundesland": "Baden-Württemberg",
+      "city": "Bremen",
+      "city_slug": "bremen",
+      "bundesland": "Bremen",
       "topic_count": 3,
-      "avg_score": 8.2,
+      "avg_score": 8.4,
       "rank": 6
     },
     {
@@ -1188,23 +1720,23 @@
       "city_slug": "dortmund",
       "bundesland": "Nordrhein-Westfalen",
       "topic_count": 3,
-      "avg_score": 8.2,
+      "avg_score": 7.9,
       "rank": 7
-    },
-    {
-      "city": "Düsseldorf",
-      "city_slug": "duesseldorf",
-      "bundesland": "Nordrhein-Westfalen",
-      "topic_count": 3,
-      "avg_score": 7.7,
-      "rank": 8
     },
     {
       "city": "München",
       "city_slug": "muenchen",
       "bundesland": "Bayern",
       "topic_count": 3,
-      "avg_score": 7.2,
+      "avg_score": 7.7,
+      "rank": 8
+    },
+    {
+      "city": "Düsseldorf",
+      "city_slug": "duesseldorf",
+      "bundesland": "Nordrhein-Westfalen",
+      "topic_count": 3,
+      "avg_score": 7.1,
       "rank": 9
     },
     {
@@ -1212,7 +1744,7 @@
       "city_slug": "koeln",
       "bundesland": "Nordrhein-Westfalen",
       "topic_count": 3,
-      "avg_score": 6.6,
+      "avg_score": 5.4,
       "rank": 10
     },
     {
@@ -1220,7 +1752,7 @@
       "city_slug": "berlin",
       "bundesland": "Berlin",
       "topic_count": 3,
-      "avg_score": 6.3,
+      "avg_score": 4.0,
       "rank": 11
     },
     {
@@ -1228,36 +1760,36 @@
       "city_slug": "dresden",
       "bundesland": "Sachsen",
       "topic_count": 2,
-      "avg_score": 9.7,
+      "avg_score": 9.4,
       "rank": 12
-    },
-    {
-      "city": "Wuppertal",
-      "city_slug": "wuppertal",
-      "bundesland": "Nordrhein-Westfalen",
-      "topic_count": 2,
-      "avg_score": 9.1,
-      "rank": 13
     },
     {
       "city": "Bochum",
       "city_slug": "bochum",
       "bundesland": "Nordrhein-Westfalen",
       "topic_count": 2,
-      "avg_score": 8.9,
-      "rank": 14
+      "avg_score": 9.3,
+      "rank": 13
     },
     {
-      "city": "Duisburg",
-      "city_slug": "duisburg",
+      "city": "Wuppertal",
+      "city_slug": "wuppertal",
       "bundesland": "Nordrhein-Westfalen",
       "topic_count": 2,
-      "avg_score": 8.9,
-      "rank": 15
+      "avg_score": 9.2,
+      "rank": 14
     },
     {
       "city": "Bielefeld",
       "city_slug": "bielefeld",
+      "bundesland": "Nordrhein-Westfalen",
+      "topic_count": 2,
+      "avg_score": 9.1,
+      "rank": 15
+    },
+    {
+      "city": "Duisburg",
+      "city_slug": "duisburg",
       "bundesland": "Nordrhein-Westfalen",
       "topic_count": 2,
       "avg_score": 8.8,
@@ -1284,7 +1816,7 @@
       "city_slug": "hannover",
       "bundesland": "Niedersachsen",
       "topic_count": 2,
-      "avg_score": 6.5,
+      "avg_score": 7.5,
       "rank": 19
     },
     {
@@ -1304,108 +1836,68 @@
       "rank": 21
     },
     {
-      "city": "Berlin Lichtenberg",
-      "city_slug": "berlin-lichtenberg",
-      "bundesland": null,
-      "topic_count": 1,
-      "avg_score": 8.8,
-      "rank": 22
-    },
-    {
       "city": "Mannheim",
       "city_slug": "mannheim",
       "bundesland": "Baden-Württemberg",
       "topic_count": 1,
-      "avg_score": 8.5,
-      "rank": 23
-    },
-    {
-      "city": "Münster",
-      "city_slug": "muenster",
-      "bundesland": "Nordrhein-Westfalen",
-      "topic_count": 1,
-      "avg_score": 8.3,
-      "rank": 24
+      "avg_score": 9.0,
+      "rank": 22
     },
     {
       "city": "Kassel",
       "city_slug": "kassel",
       "bundesland": "Hessen",
       "topic_count": 1,
-      "avg_score": 8.1,
-      "rank": 25
+      "avg_score": 8.9,
+      "rank": 23
     },
     {
       "city": "Freiburg",
       "city_slug": "freiburg",
       "bundesland": "Baden-Württemberg",
       "topic_count": 1,
-      "avg_score": 7.8,
-      "rank": 26
-    },
-    {
-      "city": "Berlin Marzahn-Hellersdorf",
-      "city_slug": "berlin-marzahn-hellersdorf",
-      "bundesland": null,
-      "topic_count": 1,
-      "avg_score": 7.5,
-      "rank": 27
-    },
-    {
-      "city": "Berlin Mitte",
-      "city_slug": "berlin-mitte",
-      "bundesland": null,
-      "topic_count": 1,
-      "avg_score": 7.5,
-      "rank": 28
-    },
-    {
-      "city": "Berlin Neukölln",
-      "city_slug": "berlin-neukoelln",
-      "bundesland": null,
-      "topic_count": 1,
-      "avg_score": 7.5,
-      "rank": 29
-    },
-    {
-      "city": "Berlin Reinickendorf",
-      "city_slug": "berlin-reinickendorf",
-      "bundesland": null,
-      "topic_count": 1,
-      "avg_score": 7.5,
-      "rank": 30
-    },
-    {
-      "city": "Berlin Spandau",
-      "city_slug": "berlin-spandau",
-      "bundesland": null,
-      "topic_count": 1,
-      "avg_score": 7.5,
-      "rank": 31
-    },
-    {
-      "city": "Berlin Treptow-Köpenick",
-      "city_slug": "berlin-treptow-koepenick",
-      "bundesland": null,
-      "topic_count": 1,
-      "avg_score": 7.5,
-      "rank": 32
-    },
-    {
-      "city": "Magdeburg",
-      "city_slug": "magdeburg",
-      "bundesland": "Sachsen-Anhalt",
-      "topic_count": 1,
-      "avg_score": 7.2,
-      "rank": 33
+      "avg_score": 8.7,
+      "rank": 24
     },
     {
       "city": "Mainz",
       "city_slug": "mainz",
       "bundesland": "Rheinland-Pfalz",
       "topic_count": 1,
-      "avg_score": 7.1,
-      "rank": 34
+      "avg_score": 8.3,
+      "rank": 25
+    },
+    {
+      "city": "Münster",
+      "city_slug": "muenster",
+      "bundesland": "Nordrhein-Westfalen",
+      "topic_count": 1,
+      "avg_score": 8.2,
+      "rank": 26
+    },
+    {
+      "city": "Saarbrücken",
+      "city_slug": "saarbruecken",
+      "bundesland": "Saarland",
+      "topic_count": 1,
+      "avg_score": 7.0,
+      "rank": 27
+    },
+    {
+      "city": "Magdeburg",
+      "city_slug": "magdeburg",
+      "bundesland": "Sachsen-Anhalt",
+      "topic_count": 1,
+      "avg_score": 6.8,
+      "rank": 28
+    },
+    {
+      "city": "Potsdam",
+      "city_slug": "potsdam",
+      "bundesland": "Brandenburg",
+      "topic_count": 1,
+      "avg_score": 6.0,
+      "rank": 29
     },
     {
       "city": "Kiel",
@@ -1413,78 +1905,22 @@
       "bundesland": "Schleswig-Holstein",
       "topic_count": 1,
       "avg_score": 5.1,
-      "rank": 35
-    },
-    {
-      "city": "Berlin Tempelhof-Schöneberg",
-      "city_slug": "berlin-tempelhof-schoeneberg",
-      "bundesland": null,
-      "topic_count": 1,
-      "avg_score": 5.0,
-      "rank": 36
-    },
-    {
-      "city": "Saarbrücken",
-      "city_slug": "saarbruecken",
-      "bundesland": "Saarland",
-      "topic_count": 1,
-      "avg_score": 4.9,
-      "rank": 37
+      "rank": 30
     },
     {
       "city": "Augsburg",
       "city_slug": "augsburg",
       "bundesland": "Bayern",
       "topic_count": 1,
-      "avg_score": 4.8,
-      "rank": 38
-    },
-    {
-      "city": "Potsdam",
-      "city_slug": "potsdam",
-      "bundesland": "Brandenburg",
-      "topic_count": 1,
-      "avg_score": 3.3,
-      "rank": 39
-    },
-    {
-      "city": "Berlin Friedrichshain-Kreuzberg",
-      "city_slug": "berlin-friedrichshain-kreuzberg",
-      "bundesland": null,
-      "topic_count": 1,
-      "avg_score": 2.5,
-      "rank": 40
-    },
-    {
-      "city": "Berlin Pankow",
-      "city_slug": "berlin-pankow",
-      "bundesland": null,
-      "topic_count": 1,
-      "avg_score": 2.5,
-      "rank": 41
-    },
-    {
-      "city": "Berlin Charlottenburg-Wilmersdorf",
-      "city_slug": "berlin-charlottenburg-wilmersdorf",
-      "bundesland": null,
-      "topic_count": 1,
-      "avg_score": 0.0,
-      "rank": 42
-    },
-    {
-      "city": "Berlin Charlottenburg",
-      "city_slug": "berlin-charlottenburg",
-      "bundesland": null,
-      "topic_count": 1,
-      "avg_score": 0.0,
-      "rank": 43
+      "avg_score": 4.5,
+      "rank": 31
     }
   ],
   "state_summary": [
     {
       "bundesland": "Sachsen",
       "n_datapoints": 5,
-      "avg_score": 9.8,
+      "avg_score": 9.7,
       "rank": 1
     },
     {
@@ -1506,76 +1942,221 @@
       "rank": 4
     },
     {
-      "bundesland": "Bremen",
-      "n_datapoints": 3,
-      "avg_score": 8.8,
+      "bundesland": "Baden-Württemberg",
+      "n_datapoints": 5,
+      "avg_score": 8.9,
       "rank": 5
     },
     {
       "bundesland": "Hamburg",
       "n_datapoints": 3,
-      "avg_score": 8.6,
+      "avg_score": 8.4,
       "rank": 6
     },
     {
-      "bundesland": "Nordrhein-Westfalen",
-      "n_datapoints": 23,
-      "avg_score": 8.3,
+      "bundesland": "Bremen",
+      "n_datapoints": 3,
+      "avg_score": 8.4,
       "rank": 7
-    },
-    {
-      "bundesland": "Baden-Württemberg",
-      "n_datapoints": 5,
-      "avg_score": 8.2,
-      "rank": 8
-    },
-    {
-      "bundesland": "Sachsen-Anhalt",
-      "n_datapoints": 1,
-      "avg_score": 7.2,
-      "rank": 9
     },
     {
       "bundesland": "Rheinland-Pfalz",
       "n_datapoints": 1,
-      "avg_score": 7.1,
+      "avg_score": 8.3,
+      "rank": 8
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "n_datapoints": 23,
+      "avg_score": 8.0,
+      "rank": 9
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "n_datapoints": 2,
+      "avg_score": 7.5,
       "rank": 10
     },
     {
       "bundesland": "Bayern",
       "n_datapoints": 6,
-      "avg_score": 7.0,
+      "avg_score": 7.2,
       "rank": 11
     },
     {
-      "bundesland": "Niedersachsen",
-      "n_datapoints": 2,
-      "avg_score": 6.5,
+      "bundesland": "Saarland",
+      "n_datapoints": 1,
+      "avg_score": 7.0,
       "rank": 12
     },
     {
-      "bundesland": "Berlin",
-      "n_datapoints": 3,
-      "avg_score": 6.3,
+      "bundesland": "Sachsen-Anhalt",
+      "n_datapoints": 1,
+      "avg_score": 6.8,
       "rank": 13
+    },
+    {
+      "bundesland": "Brandenburg",
+      "n_datapoints": 1,
+      "avg_score": 6.0,
+      "rank": 14
     },
     {
       "bundesland": "Schleswig-Holstein",
       "n_datapoints": 1,
       "avg_score": 5.1,
-      "rank": 14
-    },
-    {
-      "bundesland": "Saarland",
-      "n_datapoints": 1,
-      "avg_score": 4.9,
       "rank": 15
     },
     {
-      "bundesland": "Brandenburg",
-      "n_datapoints": 1,
-      "avg_score": 3.3,
+      "bundesland": "Berlin",
+      "n_datapoints": 3,
+      "avg_score": 4.0,
       "rank": 16
+    }
+  ],
+  "halteverbot_bezirke": [
+    {
+      "slug": "berlin-charlottenburg-wilmersdorf",
+      "name": "Berlin Charlottenburg-Wilmersdorf",
+      "processing_days": 70,
+      "cost_min": null,
+      "cost_max": null,
+      "status": "verified",
+      "updated": "2026-02-04"
+    },
+    {
+      "slug": "berlin-charlottenburg",
+      "name": "Berlin Charlottenburg",
+      "processing_days": 70,
+      "cost_min": null,
+      "cost_max": null,
+      "status": "verified",
+      "updated": "2026-02-04"
+    },
+    {
+      "slug": "berlin-friedrichshain-kreuzberg",
+      "name": "Berlin Friedrichshain-Kreuzberg",
+      "processing_days": 56,
+      "cost_min": null,
+      "cost_max": null,
+      "status": "verified",
+      "updated": "2026-02-04"
+    },
+    {
+      "slug": "berlin-lichtenberg",
+      "name": "Berlin Lichtenberg",
+      "processing_days": 21,
+      "cost_min": null,
+      "cost_max": null,
+      "status": "verified",
+      "updated": "2026-02-04"
+    },
+    {
+      "slug": "berlin-marzahn-hellersdorf",
+      "name": "Berlin Marzahn-Hellersdorf",
+      "processing_days": 28,
+      "cost_min": null,
+      "cost_max": null,
+      "status": "verified",
+      "updated": "2026-02-04"
+    },
+    {
+      "slug": "berlin-mitte",
+      "name": "Berlin Mitte",
+      "processing_days": 28,
+      "cost_min": null,
+      "cost_max": null,
+      "status": "verified",
+      "updated": "2026-02-04"
+    },
+    {
+      "slug": "berlin-neukoelln",
+      "name": "Berlin Neukölln",
+      "processing_days": 28,
+      "cost_min": null,
+      "cost_max": null,
+      "status": "verified",
+      "updated": "2026-02-04"
+    },
+    {
+      "slug": "berlin-pankow",
+      "name": "Berlin Pankow",
+      "processing_days": 56,
+      "cost_min": null,
+      "cost_max": null,
+      "status": "verified",
+      "updated": "2026-02-04"
+    },
+    {
+      "slug": "berlin-reinickendorf",
+      "name": "Berlin Reinickendorf",
+      "processing_days": 28,
+      "cost_min": null,
+      "cost_max": null,
+      "status": "verified",
+      "updated": "2026-02-04"
+    },
+    {
+      "slug": "berlin-spandau",
+      "name": "Berlin Spandau",
+      "processing_days": 28,
+      "cost_min": null,
+      "cost_max": null,
+      "status": "verified",
+      "updated": "2026-02-04"
+    },
+    {
+      "slug": "berlin-steglitz-zehlendorf",
+      "name": "Berlin Steglitz-Zehlendorf",
+      "processing_days": null,
+      "cost_min": null,
+      "cost_max": null,
+      "status": "pending",
+      "updated": "2026-02-04"
+    },
+    {
+      "slug": "berlin-tempelhof-schoeneberg",
+      "name": "Berlin Tempelhof-Schöneberg",
+      "processing_days": 42,
+      "cost_min": null,
+      "cost_max": null,
+      "status": "verified",
+      "updated": "2026-02-04"
+    },
+    {
+      "slug": "berlin-treptow-koepenick",
+      "name": "Berlin Treptow-Köpenick",
+      "processing_days": 28,
+      "cost_min": null,
+      "cost_max": null,
+      "status": "verified",
+      "updated": "2026-02-04"
+    }
+  ],
+  "data_gaps": [
+    {
+      "slug": "halteverbot",
+      "label": "Halteverbot",
+      "n_cities": 11,
+      "null_cost": 6,
+      "null_speed": 0,
+      "null_authority": 11
+    },
+    {
+      "slug": "kfz-zulassung",
+      "label": "KFZ-Zulassung (Neuzulassung)",
+      "n_cities": 20,
+      "null_cost": 0,
+      "null_speed": 2,
+      "null_authority": 0
+    },
+    {
+      "slug": "gmbh-gruendung",
+      "label": "GmbH-Gründung (Mustervertrag)",
+      "n_cities": 30,
+      "null_cost": 0,
+      "null_speed": 5,
+      "null_authority": 0
     }
   ],
   "method": "Bürger-Outcome-Pre-Score: 40% cost + 40% speed + 20% online availability, linear normalization per topic."

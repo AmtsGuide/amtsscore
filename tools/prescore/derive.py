@@ -118,22 +118,54 @@ def fetch(path: str) -> dict:
     return r.json()["data"]
 
 
-def parse_days(text: str | None) -> int | None:
+def parse_days(text) -> int | None:
+    """Best-effort: turn German wartezeit/processing strings into days.
+
+    Handles ranges, "Wochen"/"Tage"/"Werktage", "ca."/"etwa", "Minuten"→0,
+    "sofort"→0, "mehrere Wochen"→21, "wenige Tage"→3.
+    """
     if not text:
         return None
     if isinstance(text, (int, float)):
         return int(text)
+    if isinstance(text, dict):
+        text = text.get("in_person") or text.get("written_electronic") or ""
     s = str(text).lower()
-    # "etwa 14 Tage", "5-10 Tage", "mehrere Wochen bis zu 10 Wochen"
-    m = re.search(r"(\d+)\s*[-–bis]+\s*(\d+)\s*(tage?|wochen?)", s)
+    if "sofort" in s and not re.search(r"\bbis\b|\boder\b|\bschriftlich", s):
+        return 0
+    if re.search(r"\bminuten?\b|\bmin\b", s):
+        return 0
+    # "5-10 Tage" or "5 bis 10 Wochen" or "20-31 Tage"
+    m = re.search(r"(\d+)\s*(?:[-–]|bis(?:\s+zu)?)\s*(\d+)\s*(werktag|tage?|wochen?|monat)", s)
     if m:
         a, b, unit = int(m.group(1)), int(m.group(2)), m.group(3)
         avg = (a + b) / 2
-        return int(avg * 7) if unit.startswith("woche") else int(avg)
-    m = re.search(r"(\d+)\s*(tage?|wochen?)", s)
+        if unit.startswith("woche"):
+            return int(avg * 7)
+        if unit.startswith("monat"):
+            return int(avg * 30)
+        return int(avg)
+    m = re.search(r"(\d+)\s*(werktag|tage?|wochen?|monat)", s)
     if m:
         n, unit = int(m.group(1)), m.group(2)
-        return n * 7 if unit.startswith("woche") else n
+        if unit.startswith("woche"):
+            return n * 7
+        if unit.startswith("monat"):
+            return n * 30
+        return n
+    # Qualitative anchors
+    if "mehrere wochen bis monate" in s:
+        return 45
+    if "mehrere wochen" in s:
+        return 21
+    if "mehrere tage bis wochen" in s:
+        return 14
+    if "mehrere tage" in s:
+        return 5
+    if "wenige tage" in s:
+        return 3
+    if "kurzfristig" in s or "selben tag" in s or "sofort" in s:
+        return 1
     return None
 
 
@@ -166,15 +198,26 @@ def normalize(values: list[float | None], invert: bool = True) -> dict[int, floa
 
 
 def gather_halteverbot() -> list[dict]:
+    """City-level only. Bezirke are kept separately for browsing but
+    excluded from the city ranking."""
     data = fetch("/calculator/halteverbot/")
     rows = []
     for slug, loc in data["locations"].items():
+        if loc.get("type") != "city":
+            continue
         rows.append({
             "city_slug": slug,
             "city": loc["name"],
             "_speed_raw": loc.get("processing_days"),
             "_cost_raw": loc.get("cost_min"),
             "_online_raw": None,
+            "meta": {
+                "authority": None,
+                "source_url": None,
+                "verified_at": loc.get("updated"),
+                "status": loc.get("status"),
+                "raw_cost_max": loc.get("cost_max"),
+            },
         })
     return rows
 
@@ -191,12 +234,23 @@ def gather_kfz() -> list[dict]:
         gebuehr_amt = parse_eur(r.get("gebuehr", {}).get("amt"))
         gebuehr_online = parse_eur(r.get("gebuehr", {}).get("online"))
         cost = gebuehr_online or gebuehr_amt
+        links = r.get("links") or {}
         by_city[slug] = {
             "city_slug": slug,
             "city": r["cityName"],
             "_speed_raw": parse_days(r.get("wartezeit")),
             "_cost_raw": cost,
             "_online_raw": bool(r.get("ikfz")),
+            "meta": {
+                "authority": r.get("behoerde"),
+                "source_url": links.get("termin") or links.get("ikfz"),
+                "verified_at": None,
+                "status": None,
+                "gebuehr_amt": gebuehr_amt,
+                "gebuehr_online": gebuehr_online,
+                "terminpflicht": r.get("terminpflicht"),
+                "wartezeit_label": r.get("wartezeit"),
+            },
         }
     return list(by_city.values())
 
@@ -216,8 +270,42 @@ def gather_gmbh() -> list[dict]:
             "_speed_raw": parse_days(r.get("processingTime")),
             "_cost_raw": r.get("totalMin"),
             "_online_raw": bool(r.get("onlineAvailable")),
+            "meta": {
+                "authority": (r.get("gewerbeamt") or "").split("(")[0].strip() or None,
+                "source_url": None,
+                "verified_at": None,
+                "status": None,
+                "fee_breakdown": {
+                    "gewerbe": r.get("gewerbeFee"),
+                    "notar_min": r.get("notarMin"),
+                    "notar_max": r.get("notarMax"),
+                    "hr_eintrag": r.get("hrEintrag"),
+                },
+                "total_max": r.get("totalMax"),
+                "ihk_name": r.get("ihkName"),
+                "processing_time_label": r.get("processingTime"),
+            },
         }
     return list(by_city.values())
+
+
+def gather_halteverbot_bezirke() -> list[dict]:
+    """Berlin Bezirke for the Berlin city page detail view (not ranked)."""
+    data = fetch("/calculator/halteverbot/")
+    rows = []
+    for slug, loc in data["locations"].items():
+        if loc.get("type") != "bezirk":
+            continue
+        rows.append({
+            "slug": slug,
+            "name": loc["name"],
+            "processing_days": loc.get("processing_days"),
+            "cost_min": loc.get("cost_min"),
+            "cost_max": loc.get("cost_max"),
+            "status": loc.get("status"),
+            "updated": loc.get("updated"),
+        })
+    return rows
 
 
 def score_topic(slug: str, label: str, rows: list[dict]) -> dict:
@@ -260,6 +348,7 @@ def score_topic(slug: str, label: str, rows: list[dict]) -> dict:
                 "cost_eur": r["_cost_raw"],
                 "online_available": r["_online_raw"],
             },
+            "meta": r.get("meta") or {},
         })
 
     scored.sort(key=lambda x: (x["score"] is None, -(x["score"] or 0)))
@@ -319,12 +408,29 @@ def main():
     for i, row in enumerate(state_summary, start=1):
         row["rank"] = i
 
+    # Per-topic gap report: how many cities have null cost / speed / online.
+    gaps = []
+    for t in all_topics:
+        null_cost = sum(1 for c in t["cities"] if c["raw"]["cost_eur"] is None)
+        null_speed = sum(1 for c in t["cities"] if c["raw"]["speed_days"] is None)
+        null_authority = sum(1 for c in t["cities"]
+                             if not c.get("meta", {}).get("authority"))
+        gaps.append({
+            "slug": t["slug"], "label": t["label"], "n_cities": t["n_cities"],
+            "null_cost": null_cost, "null_speed": null_speed,
+            "null_authority": null_authority,
+        })
+
+    bezirke = gather_halteverbot_bezirke()
+
     out = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "source": "AmtsGuide Facts API",
         "topics": all_topics,
         "city_summary": summary,
         "state_summary": state_summary,
+        "halteverbot_bezirke": bezirke,
+        "data_gaps": gaps,
         "method": "Bürger-Outcome-Pre-Score: 40% cost + 40% speed + 20% online availability, linear normalization per topic.",
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)

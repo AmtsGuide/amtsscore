@@ -26,6 +26,8 @@ Inputs.table(prescore.cities.map(c => ({
   "Tage": c.raw.speed_days,
   "Kosten ab": c.raw.cost_eur,
   "Online": c.raw.online_available,
+  Behörde: c.meta?.authority ?? "—",
+  IHK: c.meta?.ihk_name ?? "—",
 })), {
   rows: 50,
   format: {
@@ -35,6 +37,12 @@ Inputs.table(prescore.cities.map(c => ({
     "Online": (x) => x ? "ja" : "nein",
   }
 })
+```
+
+```js
+const gmbhGap = (await FileAttachment("../data/prescore.json").json())
+  .data_gaps.find(g => g.slug === "gmbh-gruendung");
+html`<p><strong>Daten-Lücken:</strong> ${gmbhGap.null_speed}/${gmbhGap.n_cities} Städte ohne strukturierbare Bearbeitungszeit.</p>`
 ```
 
 ## Kosten-Verteilung

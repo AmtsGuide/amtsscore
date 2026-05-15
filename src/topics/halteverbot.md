@@ -30,6 +30,7 @@ Inputs.table(prescore.cities.map(c => ({
   Score: c.score,
   "Tage": c.raw.speed_days,
   "Euro": c.raw.cost_eur,
+  Stand: c.meta?.verified_at ?? "—",
 })), {
   rows: 40,
   format: {
@@ -39,6 +40,34 @@ Inputs.table(prescore.cities.map(c => ({
   }
 })
 ```
+
+```js
+const hvGap = (await FileAttachment("../data/prescore.json").json())
+  .data_gaps.find(g => g.slug === "halteverbot");
+const bezirke = (await FileAttachment("../data/prescore.json").json()).halteverbot_bezirke;
+```
+
+```js
+html`<p><strong>Daten-Lücken:</strong> ${hvGap.null_cost}/${hvGap.n_cities} Städte ohne Kosten-Angabe in AmtsGuide. Bei diesen geht der Kosten-Anteil nicht in den Score ein.</p>`
+```
+
+## Berlin nach Bezirk (separate Ansicht)
+
+```js
+Inputs.table(bezirke.map(b => ({
+  Bezirk: b.name.replace("Berlin ", ""),
+  "Bearbeitungstage": b.processing_days,
+  "Stand": b.updated,
+  Status: b.status,
+})), {
+  rows: 20,
+  format: {
+    Bearbeitungstage: (x) => x === null ? "—" : `${x} d`,
+  }
+})
+```
+
+Berlin (Stadt-Level) wird oben im Ranking geführt, nicht die einzelnen Bezirke. Bezirks-Daten dienen der Detail-Recherche.
 
 ## Zusammenfassung
 

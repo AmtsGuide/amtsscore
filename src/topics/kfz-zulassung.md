@@ -26,6 +26,8 @@ Inputs.table(prescore.cities.map(c => ({
   "Tage Wartezeit": c.raw.speed_days,
   "Gebühr": c.raw.cost_eur,
   "i-Kfz": c.raw.online_available,
+  Behörde: c.meta?.authority ?? "—",
+  Quelle: c.meta?.source_url ?? "",
 })), {
   rows: 30,
   format: {
@@ -33,8 +35,15 @@ Inputs.table(prescore.cities.map(c => ({
     "Tage Wartezeit": (x) => x === null ? "—" : `${x} d`,
     "Gebühr": (x) => x === null ? "—" : `${x.toFixed(2)} €`,
     "i-Kfz": (x) => x ? "ja" : "nein",
+    Quelle: (url) => url ? htl.html`<a href="${url}" target="_blank" rel="noopener">öffnen ↗</a>` : "—",
   }
 })
+```
+
+```js
+const kfzGap = (await FileAttachment("../data/prescore.json").json())
+  .data_gaps.find(g => g.slug === "kfz-zulassung");
+html`<p><strong>Daten-Lücken:</strong> ${kfzGap.null_speed}/${kfzGap.n_cities} Städte ohne strukturierbare Wartezeit (qualitative Strings nicht maschinenlesbar).</p>`
 ```
 
 ## Verteilung Wartezeit

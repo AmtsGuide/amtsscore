@@ -6,7 +6,7 @@
   "service_short": "Gaststätten-Erlaubnis",
   "url": "https://service.berlin.de/dienstleistung/327483/",
   "live_seit": "2026-01-01",
-  "checked_at": "2026-05-15T20:44:04+00:00",
+  "checked_at": "2026-05-15T21:03:33+00:00",
   "checks": {
     "1_end_to_end_digital": {
       "passes": true,
