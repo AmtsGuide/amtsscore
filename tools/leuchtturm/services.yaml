@@ -1,0 +1,28 @@
+# AmtsScore Leuchtturm registry.
+# Add a service entry here, run `python tools/leuchtturm/check.py --slug <slug>`,
+# the result lands in src/data/specials/<slug>.json and the matching markdown
+# page renders it.
+#
+# Fields:
+#   slug:           filename slug (also the URL path)
+#   stadt:          city name
+#   bundesland:     state
+#   service:        full service name
+#   service_short:  short label for tables
+#   url:            canonical service URL to measure
+#   serp_query:     SERP query used for criterion #5
+#   live_seit:      ISO date of digital launch
+#   pressereife:    pass | fail | pending (manual)
+#   reproduzierbar: pass | fail | pending (manual)
+
+services:
+  - slug: berlin-gaststaettenanmeldung-2026
+    stadt: Berlin
+    bundesland: Berlin
+    service: "Gaststättengewerbe: Erlaubnis beantragen"
+    service_short: "Gaststätten-Erlaubnis"
+    url: "https://service.berlin.de/dienstleistung/327483/"
+    serp_query: "Gaststättenanmeldung Berlin"
+    live_seit: "2026-01-01"
+    pressereife: pending
+    reproduzierbar: pending
