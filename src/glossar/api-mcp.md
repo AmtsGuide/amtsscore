@@ -33,7 +33,7 @@ GET /api/v1/dienstleistungen?stadt=berlin&thema=halteverbot
 
 - Aggregator-Apps (wie AmtsGuide) können Bürger:innen direkt zur richtigen Stadt-Leistung lotsen
 - KI-Agenten können Halteverbote im Auftrag von Bürgern beantragen
-- Drittanbieter (Anwälte, Beratungen) können integrierte Tools bauen
+- Externe Tools (Anwaltskanzleien, Beratungen, eigene Entwickler) können integrierte Anwendungen bauen
 - Datenjournalismus kann fundierte Vergleiche ziehen
 
 ## OpenAPI / Swagger-Dokumentation

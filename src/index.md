@@ -58,7 +58,7 @@ In der Zwischenzeit zeigen wir aus existierenden AmtsGuide-Scraper-Daten erste *
   </div>
   <div class="cta-card">
     <h3>Topic-Daten</h3>
-    <p>Pre-AmtsScore-Auswertung: was kostet ein Halteverbot wo? Wie lange dauert es? Wo gibt es Anbieter?</p>
+    <p>Pre-AmtsScore-Auswertung: was kostet ein Halteverbot wo? Wie lange dauert die Bearbeitung? Wie schneiden Städte im Vergleich ab?</p>
     <p><a href="/topics/halteverbot">Halteverbot-Topographie →</a></p>
   </div>
   <div class="cta-card">

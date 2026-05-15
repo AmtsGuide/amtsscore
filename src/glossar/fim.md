@@ -19,7 +19,7 @@ FIM verknüpft sich mit [LeiKa](/glossar/leika), jede LeiKa-Leistung hat (ideale
 
 ## Was FIM löst
 
-Vor FIM: jede Stadt schrieb ihre eigene "Was ist Halteverbot?"-Erklärung. Texte abweichend, Datenfelder anders benannt, Prozesse divers. Bürger:innen verstehen unterschiedliche Versionen. Software-Anbieter müssen für jede Stadt neu entwickeln.
+Vor FIM: jede Stadt schrieb ihre eigene "Was ist Halteverbot?"-Erklärung. Texte abweichend, Datenfelder anders benannt, Prozesse divers. Bürger:innen verstehen unterschiedliche Versionen. Software-Häuser müssen für jede Stadt neu entwickeln.
 
 Mit FIM: ein Stammtext, eine Datenfeld-Definition, ein referenzierbarer Prozess. Stadt kann sie übernehmen oder lokal überschreiben.
 

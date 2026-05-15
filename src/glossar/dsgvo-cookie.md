@@ -51,7 +51,7 @@ Weil sie öffentlich sind, **dürfen und sollten** sie von beliebigen Dritten ve
 - KI-Assistenten (ChatGPT, Perplexity, Claude, Google AI Overviews)
 - Statistik-Plattformen
 - US-amerikanische Datenfirmen
-- Chinesische, indische, brasilianische Anbieter, wer auch immer
+- Chinesische, indische, brasilianische Plattformen, wer auch immer
 
 Es gibt keinen rechtlichen Grund, diese Daten nicht maschinenlesbar bereitzustellen.
 
