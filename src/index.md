@@ -5,8 +5,8 @@ toc: false
 
 <style>
 .hero {
-  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
-  color: white;
+  background: #0d1117;
+  color: #f5f5f5;
   padding: 4rem 2rem;
   border-radius: 12px;
   margin-bottom: 2rem;
