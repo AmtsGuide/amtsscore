@@ -1,7 +1,11 @@
 /* AmtsScore custom styling.
  * Inter + Spline Sans Mono (matching observablehq.com/documentation).
  * Theme follows OS prefers-color-scheme via Observable Framework's native
- * theme: ["air", "near-midnight"] in observablehq.config.ts. No manual toggle.
+ * theme: ["air", "near-midnight"] in observablehq.config.ts.
+ *
+ * Cards use CSS light-dark() which respects color-scheme (set by the
+ * Observable theme array). No prefers-color-scheme media query, no JS,
+ * no data-theme override, no localStorage. Browser-native.
  */
 
 @import url("observablehq:default.css");
@@ -10,6 +14,7 @@
   --serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --monospace: "Spline Sans Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  color-scheme: light dark;
 }
 
 html, body {
@@ -30,25 +35,13 @@ code, pre, kbd, samp {
   font-feature-settings: normal;
 }
 
-/* Stat cards (used on Topic-Daten pages) */
+/* Stat cards (used on Topic-Daten + Specials pages) */
 .stat-card {
   padding: 1rem;
-  background: #f9fafb;
-  border: 1px solid #e5e7eb;
-  color: #1a1a1a;
+  background: light-dark(#f9fafb, #1f2123);
+  border: 1px solid light-dark(#e5e7eb, #3a3c3e);
+  color: light-dark(#1a1a1a, #f5f5f5);
 }
 .stat-label {
-  color: #525252;
+  color: light-dark(#525252, #b0b0b0);
 }
-
-@media (prefers-color-scheme: dark) {
-  .stat-card {
-    background: #1f2123;
-    border-color: #3a3c3e;
-    color: #f5f5f5;
-  }
-  .stat-label {
-    color: #b0b0b0;
-  }
-}
-
