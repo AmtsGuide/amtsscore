@@ -47,6 +47,7 @@ const withWait = prescore.cities.filter(c => c.raw.speed_days != null)
 ```js
 Plot.plot({
   marginLeft: 140,
+  marginRight: 80,
   width: 800,
   height: 30 + withWait.length * 22,
   x: {label: "Wartezeit (Tage)", grid: true},

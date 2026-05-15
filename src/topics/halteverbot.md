@@ -68,6 +68,7 @@ const withCost = summary.cities.filter(c => c.cost_min_avg != null).sort((a,b) =
 ```js
 Plot.plot({
   marginLeft: 140,
+  marginRight: 80,
   width: 800,
   height: 30 + withCost.length * 22,
   x: {label: "Mindestgebühr (€)", grid: true},
@@ -100,6 +101,7 @@ const withDays = summary.cities.filter(c => c.processing_days_avg != null).sort(
 ```js
 Plot.plot({
   marginLeft: 140,
+  marginRight: 80,
   width: 800,
   height: 30 + withDays.length * 22,
   x: {label: "Durchschnittliche Bearbeitungstage", grid: true},

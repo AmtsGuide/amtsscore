@@ -47,6 +47,7 @@ const withCost = prescore.cities.filter(c => c.raw.cost_eur != null)
 ```js
 Plot.plot({
   marginLeft: 140,
+  marginRight: 80,
   width: 800,
   height: 30 + withCost.length * 20,
   x: {label: "Mindest-Gründungskosten (€)", grid: true},

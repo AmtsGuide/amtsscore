@@ -40,6 +40,7 @@ Inputs.table(d.state_summary.map(s => {
 Plot.plot({
   width: 800, height: 30 + d.state_summary.length * 22,
   marginLeft: 180,
+  marginRight: 90,
   x: {label: "⌀ Pre-Score (0-10)", domain: [0, 10], grid: true},
   y: {label: null},
   marks: [
