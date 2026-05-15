@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T21:18:20+00:00",
+  "generated_at": "2026-05-15T21:23:02+00:00",
   "source": "AmtsGuide Facts API",
   "topics": [
     {
@@ -10,6 +10,7 @@
         {
           "city": "München",
           "city_slug": "muenchen",
+          "bundesland": "Bayern",
           "score": 10.0,
           "speed": 10.0,
           "cost": null,
@@ -24,6 +25,7 @@
         {
           "city": "Essen",
           "city_slug": "essen",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 10.0,
           "speed": 10.0,
           "cost": 10.0,
@@ -38,6 +40,7 @@
         {
           "city": "Frankfurt am Main",
           "city_slug": "frankfurt-am-main",
+          "bundesland": "Hessen",
           "score": 10.0,
           "speed": 10.0,
           "cost": null,
@@ -52,6 +55,7 @@
         {
           "city": "Leipzig",
           "city_slug": "leipzig",
+          "bundesland": "Sachsen",
           "score": 10.0,
           "speed": 10.0,
           "cost": null,
@@ -66,6 +70,7 @@
         {
           "city": "Stuttgart",
           "city_slug": "stuttgart",
+          "bundesland": "Baden-Württemberg",
           "score": 10.0,
           "speed": 10.0,
           "cost": null,
@@ -80,6 +85,7 @@
         {
           "city": "Köln",
           "city_slug": "koeln",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 8.8,
           "speed": 8.8,
           "cost": null,
@@ -94,6 +100,7 @@
         {
           "city": "Berlin Lichtenberg",
           "city_slug": "berlin-lichtenberg",
+          "bundesland": null,
           "score": 8.8,
           "speed": 8.8,
           "cost": null,
@@ -108,6 +115,7 @@
         {
           "city": "Berlin",
           "city_slug": "berlin",
+          "bundesland": "Berlin",
           "score": 7.5,
           "speed": 7.5,
           "cost": null,
@@ -122,6 +130,7 @@
         {
           "city": "Hamburg",
           "city_slug": "hamburg",
+          "bundesland": "Hamburg",
           "score": 7.5,
           "speed": 10.0,
           "cost": 5.0,
@@ -136,6 +145,7 @@
         {
           "city": "Bremen",
           "city_slug": "bremen",
+          "bundesland": "Bremen",
           "score": 7.5,
           "speed": 10.0,
           "cost": 5.0,
@@ -150,6 +160,7 @@
         {
           "city": "Berlin Marzahn-Hellersdorf",
           "city_slug": "berlin-marzahn-hellersdorf",
+          "bundesland": null,
           "score": 7.5,
           "speed": 7.5,
           "cost": null,
@@ -164,6 +175,7 @@
         {
           "city": "Berlin Mitte",
           "city_slug": "berlin-mitte",
+          "bundesland": null,
           "score": 7.5,
           "speed": 7.5,
           "cost": null,
@@ -178,6 +190,7 @@
         {
           "city": "Berlin Neukölln",
           "city_slug": "berlin-neukoelln",
+          "bundesland": null,
           "score": 7.5,
           "speed": 7.5,
           "cost": null,
@@ -192,6 +205,7 @@
         {
           "city": "Berlin Reinickendorf",
           "city_slug": "berlin-reinickendorf",
+          "bundesland": null,
           "score": 7.5,
           "speed": 7.5,
           "cost": null,
@@ -206,6 +220,7 @@
         {
           "city": "Berlin Spandau",
           "city_slug": "berlin-spandau",
+          "bundesland": null,
           "score": 7.5,
           "speed": 7.5,
           "cost": null,
@@ -220,6 +235,7 @@
         {
           "city": "Berlin Treptow-Köpenick",
           "city_slug": "berlin-treptow-koepenick",
+          "bundesland": null,
           "score": 7.5,
           "speed": 7.5,
           "cost": null,
@@ -234,6 +250,7 @@
         {
           "city": "Dortmund",
           "city_slug": "dortmund",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 7.0,
           "speed": 8.9,
           "cost": 5.0,
@@ -248,6 +265,7 @@
         {
           "city": "Düsseldorf",
           "city_slug": "duesseldorf",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 5.0,
           "speed": 10.0,
           "cost": 0.0,
@@ -262,6 +280,7 @@
         {
           "city": "Berlin Tempelhof-Schöneberg",
           "city_slug": "berlin-tempelhof-schoeneberg",
+          "bundesland": null,
           "score": 5.0,
           "speed": 5.0,
           "cost": null,
@@ -276,6 +295,7 @@
         {
           "city": "Berlin Friedrichshain-Kreuzberg",
           "city_slug": "berlin-friedrichshain-kreuzberg",
+          "bundesland": null,
           "score": 2.5,
           "speed": 2.5,
           "cost": null,
@@ -290,6 +310,7 @@
         {
           "city": "Berlin Pankow",
           "city_slug": "berlin-pankow",
+          "bundesland": null,
           "score": 2.5,
           "speed": 2.5,
           "cost": null,
@@ -304,6 +325,7 @@
         {
           "city": "Berlin Charlottenburg-Wilmersdorf",
           "city_slug": "berlin-charlottenburg-wilmersdorf",
+          "bundesland": null,
           "score": 0.0,
           "speed": 0.0,
           "cost": null,
@@ -318,6 +340,7 @@
         {
           "city": "Berlin Charlottenburg",
           "city_slug": "berlin-charlottenburg",
+          "bundesland": null,
           "score": 0.0,
           "speed": 0.0,
           "cost": null,
@@ -332,6 +355,7 @@
         {
           "city": "Berlin Steglitz-Zehlendorf",
           "city_slug": "berlin-steglitz-zehlendorf",
+          "bundesland": null,
           "score": null,
           "speed": null,
           "cost": null,
@@ -353,6 +377,7 @@
         {
           "city": "Bremen",
           "city_slug": "bremen",
+          "bundesland": "Bremen",
           "score": 10.0,
           "speed": null,
           "cost": 10.0,
@@ -367,6 +392,7 @@
         {
           "city": "Düsseldorf",
           "city_slug": "duesseldorf",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 10.0,
           "speed": null,
           "cost": 10.0,
@@ -381,6 +407,7 @@
         {
           "city": "Essen",
           "city_slug": "essen",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 10.0,
           "speed": null,
           "cost": 10.0,
@@ -395,6 +422,7 @@
         {
           "city": "Frankfurt am Main",
           "city_slug": "frankfurt-am-main",
+          "bundesland": "Hessen",
           "score": 10.0,
           "speed": null,
           "cost": 10.0,
@@ -409,6 +437,7 @@
         {
           "city": "Nürnberg",
           "city_slug": "nuernberg",
+          "bundesland": "Bayern",
           "score": 10.0,
           "speed": null,
           "cost": 10.0,
@@ -423,6 +452,7 @@
         {
           "city": "Stuttgart",
           "city_slug": "stuttgart",
+          "bundesland": "Baden-Württemberg",
           "score": 10.0,
           "speed": null,
           "cost": 10.0,
@@ -437,6 +467,7 @@
         {
           "city": "Wuppertal",
           "city_slug": "wuppertal",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 10.0,
           "speed": null,
           "cost": 10.0,
@@ -451,6 +482,7 @@
         {
           "city": "Bochum",
           "city_slug": "bochum",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 9.8,
           "speed": 9.6,
           "cost": 10.0,
@@ -465,6 +497,7 @@
         {
           "city": "Duisburg",
           "city_slug": "duisburg",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 9.8,
           "speed": 9.4,
           "cost": 10.0,
@@ -479,6 +512,7 @@
         {
           "city": "Dortmund",
           "city_slug": "dortmund",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 9.6,
           "speed": 9.1,
           "cost": 10.0,
@@ -493,6 +527,7 @@
         {
           "city": "Hannover",
           "city_slug": "hannover",
+          "bundesland": "Niedersachsen",
           "score": 9.6,
           "speed": null,
           "cost": 9.4,
@@ -507,6 +542,7 @@
         {
           "city": "Leipzig",
           "city_slug": "leipzig",
+          "bundesland": "Sachsen",
           "score": 9.6,
           "speed": 9.0,
           "cost": 10.0,
@@ -521,6 +557,7 @@
         {
           "city": "Bielefeld",
           "city_slug": "bielefeld",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 9.4,
           "speed": 8.4,
           "cost": 10.0,
@@ -535,6 +572,7 @@
         {
           "city": "Dresden",
           "city_slug": "dresden",
+          "bundesland": "Sachsen",
           "score": 9.4,
           "speed": 8.4,
           "cost": 10.0,
@@ -549,6 +587,7 @@
         {
           "city": "Hamburg",
           "city_slug": "hamburg",
+          "bundesland": "Hamburg",
           "score": 8.7,
           "speed": 6.7,
           "cost": 10.0,
@@ -563,6 +602,7 @@
         {
           "city": "Münster",
           "city_slug": "muenster",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 8.3,
           "speed": 9.7,
           "cost": 6.1,
@@ -577,6 +617,7 @@
         {
           "city": "Bonn",
           "city_slug": "bonn",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 7.8,
           "speed": 10.0,
           "cost": 4.6,
@@ -591,6 +632,7 @@
         {
           "city": "München",
           "city_slug": "muenchen",
+          "bundesland": "Bayern",
           "score": 5.9,
           "speed": 5.8,
           "cost": 3.9,
@@ -605,6 +647,7 @@
         {
           "city": "Berlin",
           "city_slug": "berlin",
+          "bundesland": "Berlin",
           "score": 3.1,
           "speed": 0.0,
           "cost": 2.7,
@@ -619,6 +662,7 @@
         {
           "city": "Köln",
           "city_slug": "koeln",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 2.8,
           "speed": 6.9,
           "cost": 0.0,
@@ -640,6 +684,7 @@
         {
           "city": "Dresden",
           "city_slug": "dresden",
+          "bundesland": "Sachsen",
           "score": 10.0,
           "speed": null,
           "cost": 10.0,
@@ -654,6 +699,7 @@
         {
           "city": "Leipzig",
           "city_slug": "leipzig",
+          "bundesland": "Sachsen",
           "score": 10.0,
           "speed": 10.0,
           "cost": 10.0,
@@ -668,6 +714,7 @@
         {
           "city": "Hamburg",
           "city_slug": "hamburg",
+          "bundesland": "Hamburg",
           "score": 9.5,
           "speed": 8.8,
           "cost": 10.0,
@@ -682,6 +729,7 @@
         {
           "city": "Rostock",
           "city_slug": "rostock",
+          "bundesland": "Mecklenburg-Vorpommern",
           "score": 9.5,
           "speed": 10.0,
           "cost": 8.7,
@@ -696,6 +744,7 @@
         {
           "city": "Erfurt",
           "city_slug": "erfurt",
+          "bundesland": "Thüringen",
           "score": 9.3,
           "speed": null,
           "cost": 8.9,
@@ -710,6 +759,7 @@
         {
           "city": "Frankfurt am Main",
           "city_slug": "frankfurt-am-main",
+          "bundesland": "Hessen",
           "score": 9.2,
           "speed": null,
           "cost": 8.8,
@@ -724,6 +774,7 @@
         {
           "city": "Bremen",
           "city_slug": "bremen",
+          "bundesland": "Bremen",
           "score": 9.0,
           "speed": 10.0,
           "cost": 7.4,
@@ -738,6 +789,7 @@
         {
           "city": "Mannheim",
           "city_slug": "mannheim",
+          "bundesland": "Baden-Württemberg",
           "score": 8.5,
           "speed": null,
           "cost": 7.8,
@@ -752,6 +804,7 @@
         {
           "city": "Berlin",
           "city_slug": "berlin",
+          "bundesland": "Berlin",
           "score": 8.4,
           "speed": null,
           "cost": 7.6,
@@ -766,6 +819,7 @@
         {
           "city": "Bielefeld",
           "city_slug": "bielefeld",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 8.1,
           "speed": null,
           "cost": 7.2,
@@ -780,6 +834,7 @@
         {
           "city": "Bochum",
           "city_slug": "bochum",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 8.1,
           "speed": null,
           "cost": 7.2,
@@ -794,6 +849,7 @@
         {
           "city": "Bonn",
           "city_slug": "bonn",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 8.1,
           "speed": null,
           "cost": 7.2,
@@ -808,6 +864,7 @@
         {
           "city": "Dortmund",
           "city_slug": "dortmund",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 8.1,
           "speed": null,
           "cost": 7.2,
@@ -822,6 +879,7 @@
         {
           "city": "Duisburg",
           "city_slug": "duisburg",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 8.1,
           "speed": null,
           "cost": 7.2,
@@ -836,6 +894,7 @@
         {
           "city": "Düsseldorf",
           "city_slug": "duesseldorf",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 8.1,
           "speed": null,
           "cost": 7.2,
@@ -850,6 +909,7 @@
         {
           "city": "Essen",
           "city_slug": "essen",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 8.1,
           "speed": null,
           "cost": 7.2,
@@ -864,6 +924,7 @@
         {
           "city": "Kassel",
           "city_slug": "kassel",
+          "bundesland": "Hessen",
           "score": 8.1,
           "speed": null,
           "cost": 7.2,
@@ -878,6 +939,7 @@
         {
           "city": "Köln",
           "city_slug": "koeln",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 8.1,
           "speed": null,
           "cost": 7.2,
@@ -892,6 +954,7 @@
         {
           "city": "Wuppertal",
           "city_slug": "wuppertal",
+          "bundesland": "Nordrhein-Westfalen",
           "score": 8.1,
           "speed": null,
           "cost": 7.2,
@@ -906,6 +969,7 @@
         {
           "city": "Freiburg",
           "city_slug": "freiburg",
+          "bundesland": "Baden-Württemberg",
           "score": 7.8,
           "speed": null,
           "cost": 6.7,
@@ -920,6 +984,7 @@
         {
           "city": "Magdeburg",
           "city_slug": "magdeburg",
+          "bundesland": "Sachsen-Anhalt",
           "score": 7.2,
           "speed": 10.0,
           "cost": 3.0,
@@ -934,6 +999,7 @@
         {
           "city": "Mainz",
           "city_slug": "mainz",
+          "bundesland": "Rheinland-Pfalz",
           "score": 7.1,
           "speed": null,
           "cost": 5.7,
@@ -948,6 +1014,7 @@
         {
           "city": "München",
           "city_slug": "muenchen",
+          "bundesland": "Bayern",
           "score": 5.7,
           "speed": null,
           "cost": 3.5,
@@ -962,6 +1029,7 @@
         {
           "city": "Nürnberg",
           "city_slug": "nuernberg",
+          "bundesland": "Bayern",
           "score": 5.7,
           "speed": null,
           "cost": 3.5,
@@ -976,6 +1044,7 @@
         {
           "city": "Kiel",
           "city_slug": "kiel",
+          "bundesland": "Schleswig-Holstein",
           "score": 5.1,
           "speed": 0.0,
           "cost": 7.8,
@@ -990,6 +1059,7 @@
         {
           "city": "Saarbrücken",
           "city_slug": "saarbruecken",
+          "bundesland": "Saarland",
           "score": 4.9,
           "speed": null,
           "cost": 2.4,
@@ -1004,6 +1074,7 @@
         {
           "city": "Augsburg",
           "city_slug": "augsburg",
+          "bundesland": "Bayern",
           "score": 4.8,
           "speed": 5.6,
           "cost": 1.3,
@@ -1018,6 +1089,7 @@
         {
           "city": "Stuttgart",
           "city_slug": "stuttgart",
+          "bundesland": "Baden-Württemberg",
           "score": 4.7,
           "speed": null,
           "cost": 2.0,
@@ -1032,6 +1104,7 @@
         {
           "city": "Hannover",
           "city_slug": "hannover",
+          "bundesland": "Niedersachsen",
           "score": 3.5,
           "speed": null,
           "cost": 0.2,
@@ -1046,6 +1119,7 @@
         {
           "city": "Potsdam",
           "city_slug": "potsdam",
+          "bundesland": "Brandenburg",
           "score": 3.3,
           "speed": null,
           "cost": 0.0,
@@ -1064,6 +1138,7 @@
     {
       "city": "Leipzig",
       "city_slug": "leipzig",
+      "bundesland": "Sachsen",
       "topic_count": 3,
       "avg_score": 9.9,
       "rank": 1
@@ -1071,6 +1146,7 @@
     {
       "city": "Frankfurt am Main",
       "city_slug": "frankfurt-am-main",
+      "bundesland": "Hessen",
       "topic_count": 3,
       "avg_score": 9.7,
       "rank": 2
@@ -1078,6 +1154,7 @@
     {
       "city": "Essen",
       "city_slug": "essen",
+      "bundesland": "Nordrhein-Westfalen",
       "topic_count": 3,
       "avg_score": 9.4,
       "rank": 3
@@ -1085,6 +1162,7 @@
     {
       "city": "Bremen",
       "city_slug": "bremen",
+      "bundesland": "Bremen",
       "topic_count": 3,
       "avg_score": 8.8,
       "rank": 4
@@ -1092,6 +1170,7 @@
     {
       "city": "Hamburg",
       "city_slug": "hamburg",
+      "bundesland": "Hamburg",
       "topic_count": 3,
       "avg_score": 8.6,
       "rank": 5
@@ -1099,6 +1178,7 @@
     {
       "city": "Stuttgart",
       "city_slug": "stuttgart",
+      "bundesland": "Baden-Württemberg",
       "topic_count": 3,
       "avg_score": 8.2,
       "rank": 6
@@ -1106,6 +1186,7 @@
     {
       "city": "Dortmund",
       "city_slug": "dortmund",
+      "bundesland": "Nordrhein-Westfalen",
       "topic_count": 3,
       "avg_score": 8.2,
       "rank": 7
@@ -1113,6 +1194,7 @@
     {
       "city": "Düsseldorf",
       "city_slug": "duesseldorf",
+      "bundesland": "Nordrhein-Westfalen",
       "topic_count": 3,
       "avg_score": 7.7,
       "rank": 8
@@ -1120,6 +1202,7 @@
     {
       "city": "München",
       "city_slug": "muenchen",
+      "bundesland": "Bayern",
       "topic_count": 3,
       "avg_score": 7.2,
       "rank": 9
@@ -1127,6 +1210,7 @@
     {
       "city": "Köln",
       "city_slug": "koeln",
+      "bundesland": "Nordrhein-Westfalen",
       "topic_count": 3,
       "avg_score": 6.6,
       "rank": 10
@@ -1134,6 +1218,7 @@
     {
       "city": "Berlin",
       "city_slug": "berlin",
+      "bundesland": "Berlin",
       "topic_count": 3,
       "avg_score": 6.3,
       "rank": 11
@@ -1141,6 +1226,7 @@
     {
       "city": "Dresden",
       "city_slug": "dresden",
+      "bundesland": "Sachsen",
       "topic_count": 2,
       "avg_score": 9.7,
       "rank": 12
@@ -1148,6 +1234,7 @@
     {
       "city": "Wuppertal",
       "city_slug": "wuppertal",
+      "bundesland": "Nordrhein-Westfalen",
       "topic_count": 2,
       "avg_score": 9.1,
       "rank": 13
@@ -1155,6 +1242,7 @@
     {
       "city": "Bochum",
       "city_slug": "bochum",
+      "bundesland": "Nordrhein-Westfalen",
       "topic_count": 2,
       "avg_score": 8.9,
       "rank": 14
@@ -1162,6 +1250,7 @@
     {
       "city": "Duisburg",
       "city_slug": "duisburg",
+      "bundesland": "Nordrhein-Westfalen",
       "topic_count": 2,
       "avg_score": 8.9,
       "rank": 15
@@ -1169,6 +1258,7 @@
     {
       "city": "Bielefeld",
       "city_slug": "bielefeld",
+      "bundesland": "Nordrhein-Westfalen",
       "topic_count": 2,
       "avg_score": 8.8,
       "rank": 16
@@ -1176,6 +1266,7 @@
     {
       "city": "Bonn",
       "city_slug": "bonn",
+      "bundesland": "Nordrhein-Westfalen",
       "topic_count": 2,
       "avg_score": 7.9,
       "rank": 17
@@ -1183,6 +1274,7 @@
     {
       "city": "Nürnberg",
       "city_slug": "nuernberg",
+      "bundesland": "Bayern",
       "topic_count": 2,
       "avg_score": 7.8,
       "rank": 18
@@ -1190,6 +1282,7 @@
     {
       "city": "Hannover",
       "city_slug": "hannover",
+      "bundesland": "Niedersachsen",
       "topic_count": 2,
       "avg_score": 6.5,
       "rank": 19
@@ -1197,6 +1290,7 @@
     {
       "city": "Rostock",
       "city_slug": "rostock",
+      "bundesland": "Mecklenburg-Vorpommern",
       "topic_count": 1,
       "avg_score": 9.5,
       "rank": 20
@@ -1204,6 +1298,7 @@
     {
       "city": "Erfurt",
       "city_slug": "erfurt",
+      "bundesland": "Thüringen",
       "topic_count": 1,
       "avg_score": 9.3,
       "rank": 21
@@ -1211,6 +1306,7 @@
     {
       "city": "Berlin Lichtenberg",
       "city_slug": "berlin-lichtenberg",
+      "bundesland": null,
       "topic_count": 1,
       "avg_score": 8.8,
       "rank": 22
@@ -1218,6 +1314,7 @@
     {
       "city": "Mannheim",
       "city_slug": "mannheim",
+      "bundesland": "Baden-Württemberg",
       "topic_count": 1,
       "avg_score": 8.5,
       "rank": 23
@@ -1225,6 +1322,7 @@
     {
       "city": "Münster",
       "city_slug": "muenster",
+      "bundesland": "Nordrhein-Westfalen",
       "topic_count": 1,
       "avg_score": 8.3,
       "rank": 24
@@ -1232,6 +1330,7 @@
     {
       "city": "Kassel",
       "city_slug": "kassel",
+      "bundesland": "Hessen",
       "topic_count": 1,
       "avg_score": 8.1,
       "rank": 25
@@ -1239,6 +1338,7 @@
     {
       "city": "Freiburg",
       "city_slug": "freiburg",
+      "bundesland": "Baden-Württemberg",
       "topic_count": 1,
       "avg_score": 7.8,
       "rank": 26
@@ -1246,6 +1346,7 @@
     {
       "city": "Berlin Marzahn-Hellersdorf",
       "city_slug": "berlin-marzahn-hellersdorf",
+      "bundesland": null,
       "topic_count": 1,
       "avg_score": 7.5,
       "rank": 27
@@ -1253,6 +1354,7 @@
     {
       "city": "Berlin Mitte",
       "city_slug": "berlin-mitte",
+      "bundesland": null,
       "topic_count": 1,
       "avg_score": 7.5,
       "rank": 28
@@ -1260,6 +1362,7 @@
     {
       "city": "Berlin Neukölln",
       "city_slug": "berlin-neukoelln",
+      "bundesland": null,
       "topic_count": 1,
       "avg_score": 7.5,
       "rank": 29
@@ -1267,6 +1370,7 @@
     {
       "city": "Berlin Reinickendorf",
       "city_slug": "berlin-reinickendorf",
+      "bundesland": null,
       "topic_count": 1,
       "avg_score": 7.5,
       "rank": 30
@@ -1274,6 +1378,7 @@
     {
       "city": "Berlin Spandau",
       "city_slug": "berlin-spandau",
+      "bundesland": null,
       "topic_count": 1,
       "avg_score": 7.5,
       "rank": 31
@@ -1281,6 +1386,7 @@
     {
       "city": "Berlin Treptow-Köpenick",
       "city_slug": "berlin-treptow-koepenick",
+      "bundesland": null,
       "topic_count": 1,
       "avg_score": 7.5,
       "rank": 32
@@ -1288,6 +1394,7 @@
     {
       "city": "Magdeburg",
       "city_slug": "magdeburg",
+      "bundesland": "Sachsen-Anhalt",
       "topic_count": 1,
       "avg_score": 7.2,
       "rank": 33
@@ -1295,6 +1402,7 @@
     {
       "city": "Mainz",
       "city_slug": "mainz",
+      "bundesland": "Rheinland-Pfalz",
       "topic_count": 1,
       "avg_score": 7.1,
       "rank": 34
@@ -1302,6 +1410,7 @@
     {
       "city": "Kiel",
       "city_slug": "kiel",
+      "bundesland": "Schleswig-Holstein",
       "topic_count": 1,
       "avg_score": 5.1,
       "rank": 35
@@ -1309,6 +1418,7 @@
     {
       "city": "Berlin Tempelhof-Schöneberg",
       "city_slug": "berlin-tempelhof-schoeneberg",
+      "bundesland": null,
       "topic_count": 1,
       "avg_score": 5.0,
       "rank": 36
@@ -1316,6 +1426,7 @@
     {
       "city": "Saarbrücken",
       "city_slug": "saarbruecken",
+      "bundesland": "Saarland",
       "topic_count": 1,
       "avg_score": 4.9,
       "rank": 37
@@ -1323,6 +1434,7 @@
     {
       "city": "Augsburg",
       "city_slug": "augsburg",
+      "bundesland": "Bayern",
       "topic_count": 1,
       "avg_score": 4.8,
       "rank": 38
@@ -1330,6 +1442,7 @@
     {
       "city": "Potsdam",
       "city_slug": "potsdam",
+      "bundesland": "Brandenburg",
       "topic_count": 1,
       "avg_score": 3.3,
       "rank": 39
@@ -1337,6 +1450,7 @@
     {
       "city": "Berlin Friedrichshain-Kreuzberg",
       "city_slug": "berlin-friedrichshain-kreuzberg",
+      "bundesland": null,
       "topic_count": 1,
       "avg_score": 2.5,
       "rank": 40
@@ -1344,6 +1458,7 @@
     {
       "city": "Berlin Pankow",
       "city_slug": "berlin-pankow",
+      "bundesland": null,
       "topic_count": 1,
       "avg_score": 2.5,
       "rank": 41
@@ -1351,6 +1466,7 @@
     {
       "city": "Berlin Charlottenburg-Wilmersdorf",
       "city_slug": "berlin-charlottenburg-wilmersdorf",
+      "bundesland": null,
       "topic_count": 1,
       "avg_score": 0.0,
       "rank": 42
@@ -1358,9 +1474,108 @@
     {
       "city": "Berlin Charlottenburg",
       "city_slug": "berlin-charlottenburg",
+      "bundesland": null,
       "topic_count": 1,
       "avg_score": 0.0,
       "rank": 43
+    }
+  ],
+  "state_summary": [
+    {
+      "bundesland": "Sachsen",
+      "n_datapoints": 5,
+      "avg_score": 9.8,
+      "rank": 1
+    },
+    {
+      "bundesland": "Mecklenburg-Vorpommern",
+      "n_datapoints": 1,
+      "avg_score": 9.5,
+      "rank": 2
+    },
+    {
+      "bundesland": "Hessen",
+      "n_datapoints": 4,
+      "avg_score": 9.3,
+      "rank": 3
+    },
+    {
+      "bundesland": "Thüringen",
+      "n_datapoints": 1,
+      "avg_score": 9.3,
+      "rank": 4
+    },
+    {
+      "bundesland": "Bremen",
+      "n_datapoints": 3,
+      "avg_score": 8.8,
+      "rank": 5
+    },
+    {
+      "bundesland": "Hamburg",
+      "n_datapoints": 3,
+      "avg_score": 8.6,
+      "rank": 6
+    },
+    {
+      "bundesland": "Nordrhein-Westfalen",
+      "n_datapoints": 23,
+      "avg_score": 8.3,
+      "rank": 7
+    },
+    {
+      "bundesland": "Baden-Württemberg",
+      "n_datapoints": 5,
+      "avg_score": 8.2,
+      "rank": 8
+    },
+    {
+      "bundesland": "Sachsen-Anhalt",
+      "n_datapoints": 1,
+      "avg_score": 7.2,
+      "rank": 9
+    },
+    {
+      "bundesland": "Rheinland-Pfalz",
+      "n_datapoints": 1,
+      "avg_score": 7.1,
+      "rank": 10
+    },
+    {
+      "bundesland": "Bayern",
+      "n_datapoints": 6,
+      "avg_score": 7.0,
+      "rank": 11
+    },
+    {
+      "bundesland": "Niedersachsen",
+      "n_datapoints": 2,
+      "avg_score": 6.5,
+      "rank": 12
+    },
+    {
+      "bundesland": "Berlin",
+      "n_datapoints": 3,
+      "avg_score": 6.3,
+      "rank": 13
+    },
+    {
+      "bundesland": "Schleswig-Holstein",
+      "n_datapoints": 1,
+      "avg_score": 5.1,
+      "rank": 14
+    },
+    {
+      "bundesland": "Saarland",
+      "n_datapoints": 1,
+      "avg_score": 4.9,
+      "rank": 15
+    },
+    {
+      "bundesland": "Brandenburg",
+      "n_datapoints": 1,
+      "avg_score": 3.3,
+      "rank": 16
     }
   ],
   "method": "Bürger-Outcome-Pre-Score: 40% cost + 40% speed + 20% online availability, linear normalization per topic."

@@ -49,6 +49,62 @@ CITY_DISPLAY = {
     "saarbruecken": "Saarbrücken",
     "halle-saale": "Halle (Saale)",
     "muelheim-an-der-ruhr": "Mülheim an der Ruhr",
+    "moenchengladbach": "Mönchengladbach",
+}
+
+# city slug -> Bundesland.
+BUNDESLAND = {
+    # Berlin / Hamburg / Bremen are city-states
+    "berlin": "Berlin",
+    "hamburg": "Hamburg",
+    "bremen": "Bremen", "bremerhaven": "Bremen",
+    # Bayern
+    "muenchen": "Bayern", "nuernberg": "Bayern", "augsburg": "Bayern",
+    "wuerzburg": "Bayern", "regensburg": "Bayern", "ingolstadt": "Bayern",
+    "fuerth": "Bayern", "erlangen": "Bayern",
+    # Baden-Württemberg
+    "stuttgart": "Baden-Württemberg", "karlsruhe": "Baden-Württemberg",
+    "mannheim": "Baden-Württemberg", "heidelberg": "Baden-Württemberg",
+    "freiburg": "Baden-Württemberg", "ulm": "Baden-Württemberg",
+    "heilbronn": "Baden-Württemberg", "pforzheim": "Baden-Württemberg",
+    # Hessen
+    "frankfurt-am-main": "Hessen", "wiesbaden": "Hessen",
+    "kassel": "Hessen", "darmstadt": "Hessen", "offenbach": "Hessen",
+    # NRW
+    "koeln": "Nordrhein-Westfalen", "duesseldorf": "Nordrhein-Westfalen",
+    "dortmund": "Nordrhein-Westfalen", "essen": "Nordrhein-Westfalen",
+    "duisburg": "Nordrhein-Westfalen", "bochum": "Nordrhein-Westfalen",
+    "wuppertal": "Nordrhein-Westfalen", "muenster": "Nordrhein-Westfalen",
+    "bielefeld": "Nordrhein-Westfalen", "bonn": "Nordrhein-Westfalen",
+    "gelsenkirchen": "Nordrhein-Westfalen", "krefeld": "Nordrhein-Westfalen",
+    "aachen": "Nordrhein-Westfalen", "leverkusen": "Nordrhein-Westfalen",
+    "oberhausen": "Nordrhein-Westfalen", "hagen": "Nordrhein-Westfalen",
+    "moenchengladbach": "Nordrhein-Westfalen",
+    "neuss": "Nordrhein-Westfalen", "paderborn": "Nordrhein-Westfalen",
+    "recklinghausen": "Nordrhein-Westfalen", "solingen": "Nordrhein-Westfalen",
+    "herne": "Nordrhein-Westfalen", "muelheim-an-der-ruhr": "Nordrhein-Westfalen",
+    "siegen": "Nordrhein-Westfalen",
+    # Sachsen
+    "leipzig": "Sachsen", "dresden": "Sachsen", "chemnitz": "Sachsen",
+    # Sachsen-Anhalt
+    "magdeburg": "Sachsen-Anhalt", "halle-saale": "Sachsen-Anhalt",
+    # Thüringen
+    "erfurt": "Thüringen", "jena": "Thüringen",
+    # Mecklenburg-Vorpommern
+    "rostock": "Mecklenburg-Vorpommern", "schwerin": "Mecklenburg-Vorpommern",
+    # Schleswig-Holstein
+    "kiel": "Schleswig-Holstein", "luebeck": "Schleswig-Holstein",
+    # Niedersachsen
+    "hannover": "Niedersachsen", "braunschweig": "Niedersachsen",
+    "oldenburg": "Niedersachsen", "osnabrueck": "Niedersachsen",
+    "wolfsburg": "Niedersachsen", "goettingen": "Niedersachsen",
+    # Rheinland-Pfalz
+    "mainz": "Rheinland-Pfalz", "ludwigshafen": "Rheinland-Pfalz",
+    "koblenz": "Rheinland-Pfalz", "trier": "Rheinland-Pfalz",
+    # Saarland
+    "saarbruecken": "Saarland",
+    # Brandenburg
+    "potsdam": "Brandenburg", "cottbus": "Brandenburg",
 }
 
 
@@ -194,6 +250,7 @@ def score_topic(slug: str, label: str, rows: list[dict]) -> dict:
         scored.append({
             "city": r["city"],
             "city_slug": r["city_slug"],
+            "bundesland": BUNDESLAND.get(r["city_slug"]),
             "score": total,
             "speed": s,
             "cost": c,
@@ -238,6 +295,7 @@ def main():
 
     summary = [
         {"city": v["display"], "city_slug": k,
+         "bundesland": BUNDESLAND.get(k),
          "topic_count": len(v["scores"]),
          "avg_score": round(sum(v["scores"]) / len(v["scores"]), 1)}
         for k, v in by_slug.items()
@@ -246,11 +304,27 @@ def main():
     for i, row in enumerate(summary, start=1):
         row["rank"] = i
 
+    by_state: dict[str, list[float]] = {}
+    for t in all_topics:
+        for c in t["cities"]:
+            if c["score"] is None or not c.get("bundesland"):
+                continue
+            by_state.setdefault(c["bundesland"], []).append(c["score"])
+    state_summary = [
+        {"bundesland": st, "n_datapoints": len(scs),
+         "avg_score": round(sum(scs) / len(scs), 1)}
+        for st, scs in by_state.items()
+    ]
+    state_summary.sort(key=lambda x: -x["avg_score"])
+    for i, row in enumerate(state_summary, start=1):
+        row["rank"] = i
+
     out = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "source": "AmtsGuide Facts API",
         "topics": all_topics,
         "city_summary": summary,
+        "state_summary": state_summary,
         "method": "Bürger-Outcome-Pre-Score: 40% cost + 40% speed + 20% online availability, linear normalization per topic.",
     }
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)

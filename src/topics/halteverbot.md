@@ -1,18 +1,40 @@
 ---
-title: "Halteverbot: Topic-Daten v0"
+title: "Halteverbot: Topic-Daten + Pre-AmtsScore"
 toc: true
 ---
 
 # Halteverbot
 
-Erste Auswertung aus dem AmtsGuide-Scraper. **Pre-AmtsScore**. diese Daten sind noch nicht nach der AmtsScore-Methodik gescort. Sie zeigen aber, was wir heute schon messen.
+Erste Auswertung aus dem AmtsGuide-Scraper plus **Pre-AmtsScore** pro Stadt
+(40% Kosten + 40% Geschwindigkeit, linear normalisiert).
 
 ```js
 const data = FileAttachment("../../data/halteverbot.json").json();
+const prescoreData = FileAttachment("../../data/prescore.json").json();
 ```
 
 ```js
 const summary = (await data);
+const prescore = (await prescoreData).topics.find(t => t.slug === "halteverbot");
+```
+
+## Pre-AmtsScore pro Stadt
+
+```js
+Inputs.table(prescore.cities.map(c => ({
+  Rang: c.rank,
+  Stadt: c.city,
+  Score: c.score,
+  "Tage": c.raw.speed_days,
+  "Euro": c.raw.cost_eur,
+})), {
+  rows: 40,
+  format: {
+    Score: (x) => x === null ? "—" : x.toFixed(1),
+    Tage: (x) => x === null ? "—" : `${x} d`,
+    Euro: (x) => x === null ? "—" : `${x.toFixed(0)} €`,
+  }
+})
 ```
 
 ## Zusammenfassung

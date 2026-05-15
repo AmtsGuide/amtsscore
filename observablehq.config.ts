@@ -2,13 +2,16 @@ export default {
   title: "AmtsScore",
   pages: [
     { name: "Methodik", path: "/methodology" },
-    { name: "Pre-AmtsScore", path: "/prescore" },
     {
-      name: "Topic-Daten v0",
+      name: "Topics",
       pages: [
         { name: "Halteverbot", path: "/topics/halteverbot" },
+        { name: "KFZ-Zulassung", path: "/topics/kfz-zulassung" },
+        { name: "GmbH-Gründung", path: "/topics/gmbh-gruendung" },
       ],
     },
+    { name: "Städte", path: "/staedte/" },
+    { name: "Bundesländer", path: "/bundeslaender/" },
     {
       name: "Leuchttürme",
       pages: [
