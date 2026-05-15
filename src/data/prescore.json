@@ -1,0 +1,1367 @@
+{
+  "generated_at": "2026-05-15T21:18:20+00:00",
+  "source": "AmtsGuide Facts API",
+  "topics": [
+    {
+      "slug": "halteverbot",
+      "label": "Halteverbot",
+      "n_cities": 24,
+      "cities": [
+        {
+          "city": "München",
+          "city_slug": "muenchen",
+          "score": 10.0,
+          "speed": 10.0,
+          "cost": null,
+          "online": null,
+          "raw": {
+            "speed_days": 14,
+            "cost_eur": null,
+            "online_available": null
+          },
+          "rank": 1
+        },
+        {
+          "city": "Essen",
+          "city_slug": "essen",
+          "score": 10.0,
+          "speed": 10.0,
+          "cost": 10.0,
+          "online": null,
+          "raw": {
+            "speed_days": 14,
+            "cost_eur": 25,
+            "online_available": null
+          },
+          "rank": 2
+        },
+        {
+          "city": "Frankfurt am Main",
+          "city_slug": "frankfurt-am-main",
+          "score": 10.0,
+          "speed": 10.0,
+          "cost": null,
+          "online": null,
+          "raw": {
+            "speed_days": 14,
+            "cost_eur": null,
+            "online_available": null
+          },
+          "rank": 3
+        },
+        {
+          "city": "Leipzig",
+          "city_slug": "leipzig",
+          "score": 10.0,
+          "speed": 10.0,
+          "cost": null,
+          "online": null,
+          "raw": {
+            "speed_days": 14,
+            "cost_eur": null,
+            "online_available": null
+          },
+          "rank": 4
+        },
+        {
+          "city": "Stuttgart",
+          "city_slug": "stuttgart",
+          "score": 10.0,
+          "speed": 10.0,
+          "cost": null,
+          "online": null,
+          "raw": {
+            "speed_days": 14,
+            "cost_eur": null,
+            "online_available": null
+          },
+          "rank": 5
+        },
+        {
+          "city": "Köln",
+          "city_slug": "koeln",
+          "score": 8.8,
+          "speed": 8.8,
+          "cost": null,
+          "online": null,
+          "raw": {
+            "speed_days": 21,
+            "cost_eur": null,
+            "online_available": null
+          },
+          "rank": 6
+        },
+        {
+          "city": "Berlin Lichtenberg",
+          "city_slug": "berlin-lichtenberg",
+          "score": 8.8,
+          "speed": 8.8,
+          "cost": null,
+          "online": null,
+          "raw": {
+            "speed_days": 21,
+            "cost_eur": null,
+            "online_available": null
+          },
+          "rank": 7
+        },
+        {
+          "city": "Berlin",
+          "city_slug": "berlin",
+          "score": 7.5,
+          "speed": 7.5,
+          "cost": null,
+          "online": null,
+          "raw": {
+            "speed_days": 28,
+            "cost_eur": null,
+            "online_available": null
+          },
+          "rank": 8
+        },
+        {
+          "city": "Hamburg",
+          "city_slug": "hamburg",
+          "score": 7.5,
+          "speed": 10.0,
+          "cost": 5.0,
+          "online": null,
+          "raw": {
+            "speed_days": 14,
+            "cost_eur": 30,
+            "online_available": null
+          },
+          "rank": 9
+        },
+        {
+          "city": "Bremen",
+          "city_slug": "bremen",
+          "score": 7.5,
+          "speed": 10.0,
+          "cost": 5.0,
+          "online": null,
+          "raw": {
+            "speed_days": 14,
+            "cost_eur": 30,
+            "online_available": null
+          },
+          "rank": 10
+        },
+        {
+          "city": "Berlin Marzahn-Hellersdorf",
+          "city_slug": "berlin-marzahn-hellersdorf",
+          "score": 7.5,
+          "speed": 7.5,
+          "cost": null,
+          "online": null,
+          "raw": {
+            "speed_days": 28,
+            "cost_eur": null,
+            "online_available": null
+          },
+          "rank": 11
+        },
+        {
+          "city": "Berlin Mitte",
+          "city_slug": "berlin-mitte",
+          "score": 7.5,
+          "speed": 7.5,
+          "cost": null,
+          "online": null,
+          "raw": {
+            "speed_days": 28,
+            "cost_eur": null,
+            "online_available": null
+          },
+          "rank": 12
+        },
+        {
+          "city": "Berlin Neukölln",
+          "city_slug": "berlin-neukoelln",
+          "score": 7.5,
+          "speed": 7.5,
+          "cost": null,
+          "online": null,
+          "raw": {
+            "speed_days": 28,
+            "cost_eur": null,
+            "online_available": null
+          },
+          "rank": 13
+        },
+        {
+          "city": "Berlin Reinickendorf",
+          "city_slug": "berlin-reinickendorf",
+          "score": 7.5,
+          "speed": 7.5,
+          "cost": null,
+          "online": null,
+          "raw": {
+            "speed_days": 28,
+            "cost_eur": null,
+            "online_available": null
+          },
+          "rank": 14
+        },
+        {
+          "city": "Berlin Spandau",
+          "city_slug": "berlin-spandau",
+          "score": 7.5,
+          "speed": 7.5,
+          "cost": null,
+          "online": null,
+          "raw": {
+            "speed_days": 28,
+            "cost_eur": null,
+            "online_available": null
+          },
+          "rank": 15
+        },
+        {
+          "city": "Berlin Treptow-Köpenick",
+          "city_slug": "berlin-treptow-koepenick",
+          "score": 7.5,
+          "speed": 7.5,
+          "cost": null,
+          "online": null,
+          "raw": {
+            "speed_days": 28,
+            "cost_eur": null,
+            "online_available": null
+          },
+          "rank": 16
+        },
+        {
+          "city": "Dortmund",
+          "city_slug": "dortmund",
+          "score": 7.0,
+          "speed": 8.9,
+          "cost": 5.0,
+          "online": null,
+          "raw": {
+            "speed_days": 20,
+            "cost_eur": 30,
+            "online_available": null
+          },
+          "rank": 17
+        },
+        {
+          "city": "Düsseldorf",
+          "city_slug": "duesseldorf",
+          "score": 5.0,
+          "speed": 10.0,
+          "cost": 0.0,
+          "online": null,
+          "raw": {
+            "speed_days": 14,
+            "cost_eur": 35,
+            "online_available": null
+          },
+          "rank": 18
+        },
+        {
+          "city": "Berlin Tempelhof-Schöneberg",
+          "city_slug": "berlin-tempelhof-schoeneberg",
+          "score": 5.0,
+          "speed": 5.0,
+          "cost": null,
+          "online": null,
+          "raw": {
+            "speed_days": 42,
+            "cost_eur": null,
+            "online_available": null
+          },
+          "rank": 19
+        },
+        {
+          "city": "Berlin Friedrichshain-Kreuzberg",
+          "city_slug": "berlin-friedrichshain-kreuzberg",
+          "score": 2.5,
+          "speed": 2.5,
+          "cost": null,
+          "online": null,
+          "raw": {
+            "speed_days": 56,
+            "cost_eur": null,
+            "online_available": null
+          },
+          "rank": 20
+        },
+        {
+          "city": "Berlin Pankow",
+          "city_slug": "berlin-pankow",
+          "score": 2.5,
+          "speed": 2.5,
+          "cost": null,
+          "online": null,
+          "raw": {
+            "speed_days": 56,
+            "cost_eur": null,
+            "online_available": null
+          },
+          "rank": 21
+        },
+        {
+          "city": "Berlin Charlottenburg-Wilmersdorf",
+          "city_slug": "berlin-charlottenburg-wilmersdorf",
+          "score": 0.0,
+          "speed": 0.0,
+          "cost": null,
+          "online": null,
+          "raw": {
+            "speed_days": 70,
+            "cost_eur": null,
+            "online_available": null
+          },
+          "rank": 22
+        },
+        {
+          "city": "Berlin Charlottenburg",
+          "city_slug": "berlin-charlottenburg",
+          "score": 0.0,
+          "speed": 0.0,
+          "cost": null,
+          "online": null,
+          "raw": {
+            "speed_days": 70,
+            "cost_eur": null,
+            "online_available": null
+          },
+          "rank": 23
+        },
+        {
+          "city": "Berlin Steglitz-Zehlendorf",
+          "city_slug": "berlin-steglitz-zehlendorf",
+          "score": null,
+          "speed": null,
+          "cost": null,
+          "online": null,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": null,
+            "online_available": null
+          },
+          "rank": null
+        }
+      ]
+    },
+    {
+      "slug": "kfz-zulassung",
+      "label": "KFZ-Zulassung (Neuzulassung)",
+      "n_cities": 20,
+      "cities": [
+        {
+          "city": "Bremen",
+          "city_slug": "bremen",
+          "score": 10.0,
+          "speed": null,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 12.0,
+            "online_available": true
+          },
+          "rank": 1
+        },
+        {
+          "city": "Düsseldorf",
+          "city_slug": "duesseldorf",
+          "score": 10.0,
+          "speed": null,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 12.0,
+            "online_available": true
+          },
+          "rank": 2
+        },
+        {
+          "city": "Essen",
+          "city_slug": "essen",
+          "score": 10.0,
+          "speed": null,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 12.0,
+            "online_available": true
+          },
+          "rank": 3
+        },
+        {
+          "city": "Frankfurt am Main",
+          "city_slug": "frankfurt-am-main",
+          "score": 10.0,
+          "speed": null,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 12.0,
+            "online_available": true
+          },
+          "rank": 4
+        },
+        {
+          "city": "Nürnberg",
+          "city_slug": "nuernberg",
+          "score": 10.0,
+          "speed": null,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 12.0,
+            "online_available": true
+          },
+          "rank": 5
+        },
+        {
+          "city": "Stuttgart",
+          "city_slug": "stuttgart",
+          "score": 10.0,
+          "speed": null,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 12.0,
+            "online_available": true
+          },
+          "rank": 6
+        },
+        {
+          "city": "Wuppertal",
+          "city_slug": "wuppertal",
+          "score": 10.0,
+          "speed": null,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 12.0,
+            "online_available": true
+          },
+          "rank": 7
+        },
+        {
+          "city": "Bochum",
+          "city_slug": "bochum",
+          "score": 9.8,
+          "speed": 9.6,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 6,
+            "cost_eur": 12.0,
+            "online_available": true
+          },
+          "rank": 8
+        },
+        {
+          "city": "Duisburg",
+          "city_slug": "duisburg",
+          "score": 9.8,
+          "speed": 9.4,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 7,
+            "cost_eur": 12.0,
+            "online_available": true
+          },
+          "rank": 9
+        },
+        {
+          "city": "Dortmund",
+          "city_slug": "dortmund",
+          "score": 9.6,
+          "speed": 9.1,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 9,
+            "cost_eur": 12.0,
+            "online_available": true
+          },
+          "rank": 10
+        },
+        {
+          "city": "Hannover",
+          "city_slug": "hannover",
+          "score": 9.6,
+          "speed": null,
+          "cost": 9.4,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 12.8,
+            "online_available": true
+          },
+          "rank": 11
+        },
+        {
+          "city": "Leipzig",
+          "city_slug": "leipzig",
+          "score": 9.6,
+          "speed": 9.0,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 10,
+            "cost_eur": 12.0,
+            "online_available": true
+          },
+          "rank": 12
+        },
+        {
+          "city": "Bielefeld",
+          "city_slug": "bielefeld",
+          "score": 9.4,
+          "speed": 8.4,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 14,
+            "cost_eur": 12.0,
+            "online_available": true
+          },
+          "rank": 13
+        },
+        {
+          "city": "Dresden",
+          "city_slug": "dresden",
+          "score": 9.4,
+          "speed": 8.4,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 14,
+            "cost_eur": 12.0,
+            "online_available": true
+          },
+          "rank": 14
+        },
+        {
+          "city": "Hamburg",
+          "city_slug": "hamburg",
+          "score": 8.7,
+          "speed": 6.7,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 25,
+            "cost_eur": 12.0,
+            "online_available": true
+          },
+          "rank": 15
+        },
+        {
+          "city": "Münster",
+          "city_slug": "muenster",
+          "score": 8.3,
+          "speed": 9.7,
+          "cost": 6.1,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 5,
+            "cost_eur": 17.5,
+            "online_available": true
+          },
+          "rank": 16
+        },
+        {
+          "city": "Bonn",
+          "city_slug": "bonn",
+          "score": 7.8,
+          "speed": 10.0,
+          "cost": 4.6,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 3,
+            "cost_eur": 19.52,
+            "online_available": true
+          },
+          "rank": 17
+        },
+        {
+          "city": "München",
+          "city_slug": "muenchen",
+          "score": 5.9,
+          "speed": 5.8,
+          "cost": 3.9,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 31,
+            "cost_eur": 20.5,
+            "online_available": true
+          },
+          "rank": 18
+        },
+        {
+          "city": "Berlin",
+          "city_slug": "berlin",
+          "score": 3.1,
+          "speed": 0.0,
+          "cost": 2.7,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 70,
+            "cost_eur": 22.22,
+            "online_available": true
+          },
+          "rank": 19
+        },
+        {
+          "city": "Köln",
+          "city_slug": "koeln",
+          "score": 2.8,
+          "speed": 6.9,
+          "cost": 0.0,
+          "online": 0.0,
+          "raw": {
+            "speed_days": 24,
+            "cost_eur": 26.0,
+            "online_available": false
+          },
+          "rank": 20
+        }
+      ]
+    },
+    {
+      "slug": "gmbh-gruendung",
+      "label": "GmbH-Gründung (Mustervertrag)",
+      "n_cities": 30,
+      "cities": [
+        {
+          "city": "Dresden",
+          "city_slug": "dresden",
+          "score": 10.0,
+          "speed": null,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 470,
+            "online_available": true
+          },
+          "rank": 1
+        },
+        {
+          "city": "Leipzig",
+          "city_slug": "leipzig",
+          "score": 10.0,
+          "speed": 10.0,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 3,
+            "cost_eur": 470,
+            "online_available": true
+          },
+          "rank": 2
+        },
+        {
+          "city": "Hamburg",
+          "city_slug": "hamburg",
+          "score": 9.5,
+          "speed": 8.8,
+          "cost": 10.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 6,
+            "cost_eur": 470,
+            "online_available": true
+          },
+          "rank": 3
+        },
+        {
+          "city": "Rostock",
+          "city_slug": "rostock",
+          "score": 9.5,
+          "speed": 10.0,
+          "cost": 8.7,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 3,
+            "cost_eur": 476,
+            "online_available": true
+          },
+          "rank": 4
+        },
+        {
+          "city": "Erfurt",
+          "city_slug": "erfurt",
+          "score": 9.3,
+          "speed": null,
+          "cost": 8.9,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 475,
+            "online_available": true
+          },
+          "rank": 5
+        },
+        {
+          "city": "Frankfurt am Main",
+          "city_slug": "frankfurt-am-main",
+          "score": 9.2,
+          "speed": null,
+          "cost": 8.8,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 475.5,
+            "online_available": true
+          },
+          "rank": 6
+        },
+        {
+          "city": "Bremen",
+          "city_slug": "bremen",
+          "score": 9.0,
+          "speed": 10.0,
+          "cost": 7.4,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 3,
+            "cost_eur": 482,
+            "online_available": true
+          },
+          "rank": 7
+        },
+        {
+          "city": "Mannheim",
+          "city_slug": "mannheim",
+          "score": 8.5,
+          "speed": null,
+          "cost": 7.8,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 480,
+            "online_available": true
+          },
+          "rank": 8
+        },
+        {
+          "city": "Berlin",
+          "city_slug": "berlin",
+          "score": 8.4,
+          "speed": null,
+          "cost": 7.6,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 481,
+            "online_available": true
+          },
+          "rank": 9
+        },
+        {
+          "city": "Bielefeld",
+          "city_slug": "bielefeld",
+          "score": 8.1,
+          "speed": null,
+          "cost": 7.2,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 483,
+            "online_available": true
+          },
+          "rank": 10
+        },
+        {
+          "city": "Bochum",
+          "city_slug": "bochum",
+          "score": 8.1,
+          "speed": null,
+          "cost": 7.2,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 483,
+            "online_available": true
+          },
+          "rank": 11
+        },
+        {
+          "city": "Bonn",
+          "city_slug": "bonn",
+          "score": 8.1,
+          "speed": null,
+          "cost": 7.2,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 483,
+            "online_available": true
+          },
+          "rank": 12
+        },
+        {
+          "city": "Dortmund",
+          "city_slug": "dortmund",
+          "score": 8.1,
+          "speed": null,
+          "cost": 7.2,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 483,
+            "online_available": true
+          },
+          "rank": 13
+        },
+        {
+          "city": "Duisburg",
+          "city_slug": "duisburg",
+          "score": 8.1,
+          "speed": null,
+          "cost": 7.2,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 483,
+            "online_available": true
+          },
+          "rank": 14
+        },
+        {
+          "city": "Düsseldorf",
+          "city_slug": "duesseldorf",
+          "score": 8.1,
+          "speed": null,
+          "cost": 7.2,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 483,
+            "online_available": true
+          },
+          "rank": 15
+        },
+        {
+          "city": "Essen",
+          "city_slug": "essen",
+          "score": 8.1,
+          "speed": null,
+          "cost": 7.2,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 483,
+            "online_available": true
+          },
+          "rank": 16
+        },
+        {
+          "city": "Kassel",
+          "city_slug": "kassel",
+          "score": 8.1,
+          "speed": null,
+          "cost": 7.2,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 483,
+            "online_available": true
+          },
+          "rank": 17
+        },
+        {
+          "city": "Köln",
+          "city_slug": "koeln",
+          "score": 8.1,
+          "speed": null,
+          "cost": 7.2,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 483,
+            "online_available": true
+          },
+          "rank": 18
+        },
+        {
+          "city": "Wuppertal",
+          "city_slug": "wuppertal",
+          "score": 8.1,
+          "speed": null,
+          "cost": 7.2,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 483,
+            "online_available": true
+          },
+          "rank": 19
+        },
+        {
+          "city": "Freiburg",
+          "city_slug": "freiburg",
+          "score": 7.8,
+          "speed": null,
+          "cost": 6.7,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 485,
+            "online_available": true
+          },
+          "rank": 20
+        },
+        {
+          "city": "Magdeburg",
+          "city_slug": "magdeburg",
+          "score": 7.2,
+          "speed": 10.0,
+          "cost": 3.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 3,
+            "cost_eur": 502,
+            "online_available": true
+          },
+          "rank": 21
+        },
+        {
+          "city": "Mainz",
+          "city_slug": "mainz",
+          "score": 7.1,
+          "speed": null,
+          "cost": 5.7,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 490,
+            "online_available": true
+          },
+          "rank": 22
+        },
+        {
+          "city": "München",
+          "city_slug": "muenchen",
+          "score": 5.7,
+          "speed": null,
+          "cost": 3.5,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 500,
+            "online_available": true
+          },
+          "rank": 23
+        },
+        {
+          "city": "Nürnberg",
+          "city_slug": "nuernberg",
+          "score": 5.7,
+          "speed": null,
+          "cost": 3.5,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 500,
+            "online_available": true
+          },
+          "rank": 24
+        },
+        {
+          "city": "Kiel",
+          "city_slug": "kiel",
+          "score": 5.1,
+          "speed": 0.0,
+          "cost": 7.8,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 28,
+            "cost_eur": 480,
+            "online_available": true
+          },
+          "rank": 25
+        },
+        {
+          "city": "Saarbrücken",
+          "city_slug": "saarbruecken",
+          "score": 4.9,
+          "speed": null,
+          "cost": 2.4,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 505,
+            "online_available": true
+          },
+          "rank": 26
+        },
+        {
+          "city": "Augsburg",
+          "city_slug": "augsburg",
+          "score": 4.8,
+          "speed": 5.6,
+          "cost": 1.3,
+          "online": 10.0,
+          "raw": {
+            "speed_days": 14,
+            "cost_eur": 510,
+            "online_available": true
+          },
+          "rank": 27
+        },
+        {
+          "city": "Stuttgart",
+          "city_slug": "stuttgart",
+          "score": 4.7,
+          "speed": null,
+          "cost": 2.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 507,
+            "online_available": true
+          },
+          "rank": 28
+        },
+        {
+          "city": "Hannover",
+          "city_slug": "hannover",
+          "score": 3.5,
+          "speed": null,
+          "cost": 0.2,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 515,
+            "online_available": true
+          },
+          "rank": 29
+        },
+        {
+          "city": "Potsdam",
+          "city_slug": "potsdam",
+          "score": 3.3,
+          "speed": null,
+          "cost": 0.0,
+          "online": 10.0,
+          "raw": {
+            "speed_days": null,
+            "cost_eur": 516,
+            "online_available": true
+          },
+          "rank": 30
+        }
+      ]
+    }
+  ],
+  "city_summary": [
+    {
+      "city": "Leipzig",
+      "city_slug": "leipzig",
+      "topic_count": 3,
+      "avg_score": 9.9,
+      "rank": 1
+    },
+    {
+      "city": "Frankfurt am Main",
+      "city_slug": "frankfurt-am-main",
+      "topic_count": 3,
+      "avg_score": 9.7,
+      "rank": 2
+    },
+    {
+      "city": "Essen",
+      "city_slug": "essen",
+      "topic_count": 3,
+      "avg_score": 9.4,
+      "rank": 3
+    },
+    {
+      "city": "Bremen",
+      "city_slug": "bremen",
+      "topic_count": 3,
+      "avg_score": 8.8,
+      "rank": 4
+    },
+    {
+      "city": "Hamburg",
+      "city_slug": "hamburg",
+      "topic_count": 3,
+      "avg_score": 8.6,
+      "rank": 5
+    },
+    {
+      "city": "Stuttgart",
+      "city_slug": "stuttgart",
+      "topic_count": 3,
+      "avg_score": 8.2,
+      "rank": 6
+    },
+    {
+      "city": "Dortmund",
+      "city_slug": "dortmund",
+      "topic_count": 3,
+      "avg_score": 8.2,
+      "rank": 7
+    },
+    {
+      "city": "Düsseldorf",
+      "city_slug": "duesseldorf",
+      "topic_count": 3,
+      "avg_score": 7.7,
+      "rank": 8
+    },
+    {
+      "city": "München",
+      "city_slug": "muenchen",
+      "topic_count": 3,
+      "avg_score": 7.2,
+      "rank": 9
+    },
+    {
+      "city": "Köln",
+      "city_slug": "koeln",
+      "topic_count": 3,
+      "avg_score": 6.6,
+      "rank": 10
+    },
+    {
+      "city": "Berlin",
+      "city_slug": "berlin",
+      "topic_count": 3,
+      "avg_score": 6.3,
+      "rank": 11
+    },
+    {
+      "city": "Dresden",
+      "city_slug": "dresden",
+      "topic_count": 2,
+      "avg_score": 9.7,
+      "rank": 12
+    },
+    {
+      "city": "Wuppertal",
+      "city_slug": "wuppertal",
+      "topic_count": 2,
+      "avg_score": 9.1,
+      "rank": 13
+    },
+    {
+      "city": "Bochum",
+      "city_slug": "bochum",
+      "topic_count": 2,
+      "avg_score": 8.9,
+      "rank": 14
+    },
+    {
+      "city": "Duisburg",
+      "city_slug": "duisburg",
+      "topic_count": 2,
+      "avg_score": 8.9,
+      "rank": 15
+    },
+    {
+      "city": "Bielefeld",
+      "city_slug": "bielefeld",
+      "topic_count": 2,
+      "avg_score": 8.8,
+      "rank": 16
+    },
+    {
+      "city": "Bonn",
+      "city_slug": "bonn",
+      "topic_count": 2,
+      "avg_score": 7.9,
+      "rank": 17
+    },
+    {
+      "city": "Nürnberg",
+      "city_slug": "nuernberg",
+      "topic_count": 2,
+      "avg_score": 7.8,
+      "rank": 18
+    },
+    {
+      "city": "Hannover",
+      "city_slug": "hannover",
+      "topic_count": 2,
+      "avg_score": 6.5,
+      "rank": 19
+    },
+    {
+      "city": "Rostock",
+      "city_slug": "rostock",
+      "topic_count": 1,
+      "avg_score": 9.5,
+      "rank": 20
+    },
+    {
+      "city": "Erfurt",
+      "city_slug": "erfurt",
+      "topic_count": 1,
+      "avg_score": 9.3,
+      "rank": 21
+    },
+    {
+      "city": "Berlin Lichtenberg",
+      "city_slug": "berlin-lichtenberg",
+      "topic_count": 1,
+      "avg_score": 8.8,
+      "rank": 22
+    },
+    {
+      "city": "Mannheim",
+      "city_slug": "mannheim",
+      "topic_count": 1,
+      "avg_score": 8.5,
+      "rank": 23
+    },
+    {
+      "city": "Münster",
+      "city_slug": "muenster",
+      "topic_count": 1,
+      "avg_score": 8.3,
+      "rank": 24
+    },
+    {
+      "city": "Kassel",
+      "city_slug": "kassel",
+      "topic_count": 1,
+      "avg_score": 8.1,
+      "rank": 25
+    },
+    {
+      "city": "Freiburg",
+      "city_slug": "freiburg",
+      "topic_count": 1,
+      "avg_score": 7.8,
+      "rank": 26
+    },
+    {
+      "city": "Berlin Marzahn-Hellersdorf",
+      "city_slug": "berlin-marzahn-hellersdorf",
+      "topic_count": 1,
+      "avg_score": 7.5,
+      "rank": 27
+    },
+    {
+      "city": "Berlin Mitte",
+      "city_slug": "berlin-mitte",
+      "topic_count": 1,
+      "avg_score": 7.5,
+      "rank": 28
+    },
+    {
+      "city": "Berlin Neukölln",
+      "city_slug": "berlin-neukoelln",
+      "topic_count": 1,
+      "avg_score": 7.5,
+      "rank": 29
+    },
+    {
+      "city": "Berlin Reinickendorf",
+      "city_slug": "berlin-reinickendorf",
+      "topic_count": 1,
+      "avg_score": 7.5,
+      "rank": 30
+    },
+    {
+      "city": "Berlin Spandau",
+      "city_slug": "berlin-spandau",
+      "topic_count": 1,
+      "avg_score": 7.5,
+      "rank": 31
+    },
+    {
+      "city": "Berlin Treptow-Köpenick",
+      "city_slug": "berlin-treptow-koepenick",
+      "topic_count": 1,
+      "avg_score": 7.5,
+      "rank": 32
+    },
+    {
+      "city": "Magdeburg",
+      "city_slug": "magdeburg",
+      "topic_count": 1,
+      "avg_score": 7.2,
+      "rank": 33
+    },
+    {
+      "city": "Mainz",
+      "city_slug": "mainz",
+      "topic_count": 1,
+      "avg_score": 7.1,
+      "rank": 34
+    },
+    {
+      "city": "Kiel",
+      "city_slug": "kiel",
+      "topic_count": 1,
+      "avg_score": 5.1,
+      "rank": 35
+    },
+    {
+      "city": "Berlin Tempelhof-Schöneberg",
+      "city_slug": "berlin-tempelhof-schoeneberg",
+      "topic_count": 1,
+      "avg_score": 5.0,
+      "rank": 36
+    },
+    {
+      "city": "Saarbrücken",
+      "city_slug": "saarbruecken",
+      "topic_count": 1,
+      "avg_score": 4.9,
+      "rank": 37
+    },
+    {
+      "city": "Augsburg",
+      "city_slug": "augsburg",
+      "topic_count": 1,
+      "avg_score": 4.8,
+      "rank": 38
+    },
+    {
+      "city": "Potsdam",
+      "city_slug": "potsdam",
+      "topic_count": 1,
+      "avg_score": 3.3,
+      "rank": 39
+    },
+    {
+      "city": "Berlin Friedrichshain-Kreuzberg",
+      "city_slug": "berlin-friedrichshain-kreuzberg",
+      "topic_count": 1,
+      "avg_score": 2.5,
+      "rank": 40
+    },
+    {
+      "city": "Berlin Pankow",
+      "city_slug": "berlin-pankow",
+      "topic_count": 1,
+      "avg_score": 2.5,
+      "rank": 41
+    },
+    {
+      "city": "Berlin Charlottenburg-Wilmersdorf",
+      "city_slug": "berlin-charlottenburg-wilmersdorf",
+      "topic_count": 1,
+      "avg_score": 0.0,
+      "rank": 42
+    },
+    {
+      "city": "Berlin Charlottenburg",
+      "city_slug": "berlin-charlottenburg",
+      "topic_count": 1,
+      "avg_score": 0.0,
+      "rank": 43
+    }
+  ],
+  "method": "Bürger-Outcome-Pre-Score: 40% cost + 40% speed + 20% online availability, linear normalization per topic."
+}

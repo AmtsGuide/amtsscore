@@ -2,6 +2,7 @@ export default {
   title: "AmtsScore",
   pages: [
     { name: "Methodik", path: "/methodology" },
+    { name: "Pre-AmtsScore", path: "/prescore" },
     {
       name: "Topic-Daten v0",
       pages: [
