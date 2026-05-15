@@ -48,7 +48,7 @@ toc: false
 
 AmtsScore befindet sich in **öffentlicher Methodik-Kommentierung**. Die [Methodik v0.1](/methodology) liegt zur Diskussion vor. Erste vollständige Messung der 20 deutschen Großstädte erwartet **Q3/2026**.
 
-In der Zwischenzeit zeigen wir aus existierenden AmtsGuide-Scraper-Daten erste **Topic-Auswertungen**. Behördengang-Daten pro Stadt, ohne AmtsScore-Bewertung.
+In der Zwischenzeit zeigen wir aus bestehenden AmtsGuide-Daten erste **Topic-Auswertungen**. Behördengang-Daten pro Stadt, ohne AmtsScore-Bewertung.
 
 <div class="cta-grid">
   <div class="cta-card">

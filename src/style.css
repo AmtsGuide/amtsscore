@@ -65,9 +65,27 @@ code, pre, kbd, samp {
 }
 .amtsscore-headerlink svg { display: block; }
 
-/* Hide the row-selection checkbox column on Inputs.table — we use it for
- * display only, not for selection. */
+/* Collapse the row-selection checkbox column on Inputs.table to zero width
+ * (display:none alone leaves Observable's column-auto-sizing thinking the
+ * column still claims its 19px width). */
 form[class*="inputs-"][class*="-table"] thead th:first-child,
 form[class*="inputs-"][class*="-table"] tbody td:first-child {
-  display: none;
+  width: 0 !important;
+  min-width: 0 !important;
+  max-width: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  overflow: hidden;
+}
+form[class*="inputs-"][class*="-table"] thead th:first-child *,
+form[class*="inputs-"][class*="-table"] tbody td:first-child * {
+  display: none !important;
+}
+/* Tables left-aligned, not centred or right-shifted. */
+form[class*="inputs-"][class*="-table"] {
+  text-align: left;
+}
+form[class*="inputs-"][class*="-table"] table {
+  margin-left: 0;
+  margin-right: auto;
 }

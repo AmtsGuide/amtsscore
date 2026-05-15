@@ -5,10 +5,11 @@ toc: true
 
 # GmbH-Gründung (Mustervertrag, 1 Gesellschafter)
 
-Pre-AmtsScore pro Stadt:
-**40% Kosten** (Gewerbeamt + Notar + HR-Eintrag, ohne Stammkapital)
-+ **40% Geschwindigkeit** (Bearbeitungszeit)
-+ **20% Online-Verfügbarkeit**, linear normalisiert.
+Pre-AmtsScore pro Stadt aus AmtsGuide-Daten, linear normalisiert:
+
+- **40% Kosten** (Gewerbeamt + Notar + HR-Eintrag, ohne Stammkapital)
+- **40% Geschwindigkeit** (Bearbeitungszeit)
+- **20% Online-Verfügbarkeit**
 
 ```js
 const prescore = (await FileAttachment("../data/prescore.json").json())

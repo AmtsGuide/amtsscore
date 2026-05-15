@@ -5,9 +5,11 @@ toc: true
 
 # KFZ-Zulassung (Neuzulassung)
 
-Pre-AmtsScore pro Stadt aus AmtsGuide-Daten:
-**40% Kosten** (Gebühr) + **40% Geschwindigkeit** (Wartezeit)
-+ **20% Online-Verfügbarkeit** (i-Kfz), linear normalisiert.
+Pre-AmtsScore pro Stadt aus AmtsGuide-Daten, linear normalisiert:
+
+- **40% Kosten** (Gebühr)
+- **40% Geschwindigkeit** (Wartezeit)
+- **20% Online-Verfügbarkeit** (i-Kfz)
 
 ```js
 const prescore = (await FileAttachment("../data/prescore.json").json())
@@ -71,9 +73,8 @@ Plot.plot({
 ## Methodik
 
 Daten aus der [AmtsGuide Facts API](https://amtsguide.de/api/v1/calculator/kfz/results),
-Vorgang `neuzulassung`. Wartezeit-Strings ("mehrere Wochen bis zu 10 Wochen")
-werden heuristisch in Tage übersetzt, vgl.
-`tools/prescore/derive.py::parse_days`.
+Vorgang `neuzulassung`. Wartezeits-Angaben ("mehrere Wochen bis zu 10 Wochen")
+werden heuristisch in Tage übersetzt (Mittelwert × 7).
 
 Diese Pre-Wertung misst Bürger-Outcome (was kostet es, wie lange dauert es).
 Sie ersetzt nicht die AmtsScore-Website-Bewertung der zuständigen Behörde,

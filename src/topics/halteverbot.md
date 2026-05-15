@@ -5,8 +5,11 @@ toc: true
 
 # Halteverbot
 
-Erste Auswertung aus dem AmtsGuide-Scraper plus **Pre-AmtsScore** pro Stadt
-(40% Kosten + 40% Geschwindigkeit, linear normalisiert).
+Erste Auswertung aus AmtsGuide-Daten plus **Pre-AmtsScore** pro Stadt, linear normalisiert:
+
+- **40% Kosten** (Mindestgebühr)
+- **40% Geschwindigkeit** (Bearbeitungstage)
+- **20% Online-Verfügbarkeit** (heute überall null. das Topic ist offline-only)
 
 ```js
 const data = FileAttachment("../data/halteverbot.json").json();
@@ -147,8 +150,8 @@ Inputs.table(summary.cities, {
 
 Diese Auswertung ist **Pre-AmtsScore v0**:
 
-- Daten stammen aus dem AmtsGuide-Scraper (Stand März 2026), nicht aus der noch zu implementierenden AmtsScore-Pipeline
-- Keine 10-Dimensionen-Bewertung pro Stadt-Website
+- Daten stammen aus AmtsGuide (Stand März 2026), nicht aus der vollen AmtsScore-Messung
+- Keine 12-Dimensionen-Bewertung pro Stadt-Website
 - Kein Composite-Score 0-10
 - Statt dessen: nackte Daten zu Behörden-Wartezeiten und Gebühren
 

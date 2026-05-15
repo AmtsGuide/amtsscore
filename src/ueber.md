@@ -48,4 +48,4 @@ Die AmtsScore-Methodik scannt öffentliche Verwaltungs-Websites. Beim Scan werde
 
 Fragen, Anregungen, Methodik-Kritik: **ad@blinktank.de**
 
-Pull Requests willkommen sobald das Public-Repo (geplant Q3/2026) online ist.
+Pull Requests willkommen: [github.com/AmtsGuide/amtsscore](https://github.com/AmtsGuide/amtsscore).
