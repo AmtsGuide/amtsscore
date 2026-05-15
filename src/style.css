@@ -1,10 +1,10 @@
-/* AmtsScore custom styling
+/* AmtsScore custom styling.
  * Inter + Spline Sans Mono (matching observablehq.com/documentation).
- * Light/dark mode via html[data-theme] attribute, controlled by JS toggle.
+ * Theme follows OS prefers-color-scheme via Observable Framework's native
+ * theme: ["air", "near-midnight"] in observablehq.config.ts. No manual toggle.
  */
 
 @import url("observablehq:default.css");
-@import url("observablehq:theme-air.css");
 
 :root {
   --serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -28,133 +28,4 @@ h2 { font-weight: 600; letter-spacing: -0.015em; }
 code, pre, kbd, samp {
   font-family: var(--monospace);
   font-feature-settings: normal;
-}
-
-/* Auto dark mode: respect prefers-color-scheme unless user has toggled */
-@media (prefers-color-scheme: dark) {
-  html:not([data-theme="light"]) {
-    --theme-background-a: #1d1f21;
-    --theme-background-b: #2a2c2e;
-    --theme-background-alt: #2a2c2e;
-    --theme-foreground: #f5f5f5;
-    --theme-foreground-alt: #e5e5e5;
-    --theme-foreground-muted: #b0b0b0;
-    --theme-foreground-faint: #777;
-    --theme-foreground-fainter: #555;
-    --theme-foreground-faintest: #3a3c3e;
-    --theme-foreground-focus: #4ea1f7;
-    --theme-foreground-warning: #f7c54e;
-    --theme-foreground-error: #f74e4e;
-    --theme-foreground-green: #4ef79b;
-    color-scheme: dark;
-    background: var(--theme-background-a);
-    color: var(--theme-foreground);
-  }
-  html:not([data-theme="light"]) body { background: var(--theme-background-a); }
-}
-
-/* Manual dark override (independent of OS pref) */
-html[data-theme="dark"] {
-  --theme-background-a: #1d1f21;
-  --theme-background-b: #2a2c2e;
-  --theme-background-alt: #2a2c2e;
-  --theme-foreground: #f5f5f5;
-  --theme-foreground-alt: #e5e5e5;
-  --theme-foreground-muted: #b0b0b0;
-  --theme-foreground-faint: #777;
-  --theme-foreground-fainter: #555;
-  --theme-foreground-faintest: #3a3c3e;
-  --theme-foreground-focus: #4ea1f7;
-  --theme-foreground-warning: #f7c54e;
-  --theme-foreground-error: #f74e4e;
-  --theme-foreground-green: #4ef79b;
-  color-scheme: dark;
-  background: var(--theme-background-a);
-  color: var(--theme-foreground);
-}
-html[data-theme="dark"] body {
-  background: var(--theme-background-a);
-  color: var(--theme-foreground);
-}
-
-/* Code block readability in dark mode.
- * Observable's default syntax highlight uses dark blue tokens, near-invisible
- * on dark backgrounds. Override .hljs-* with readable palette. */
-html[data-theme="dark"] pre,
-@media (prefers-color-scheme: dark) {
-  html:not([data-theme="light"]) pre {
-    background: #0f1112 !important;
-    color: #e5e5e5;
-    border: 1px solid var(--theme-foreground-faintest);
-  }
-}
-
-html[data-theme="dark"] pre,
-html[data-theme="dark"] code,
-html:not([data-theme="light"]) pre,
-html:not([data-theme="light"]) code {
-  /* enforce dark background even where Observable injects inline styles */
-}
-
-html[data-theme="dark"] pre { background: #0f1112; color: #e5e5e5; }
-html[data-theme="dark"] :not(pre) > code { background: #2a2c2e; color: #e5e5e5; padding: 0.1rem 0.3rem; border-radius: 3px; }
-
-html[data-theme="dark"] .hljs,
-html[data-theme="dark"] pre .hljs { background: #0f1112; color: #e5e5e5; }
-html[data-theme="dark"] .hljs-comment,
-html[data-theme="dark"] .hljs-quote { color: #6c7378; font-style: italic; }
-html[data-theme="dark"] .hljs-keyword,
-html[data-theme="dark"] .hljs-selector-tag,
-html[data-theme="dark"] .hljs-section,
-html[data-theme="dark"] .hljs-name,
-html[data-theme="dark"] .hljs-tag { color: #c678dd; }
-html[data-theme="dark"] .hljs-string,
-html[data-theme="dark"] .hljs-attr,
-html[data-theme="dark"] .hljs-symbol,
-html[data-theme="dark"] .hljs-bullet,
-html[data-theme="dark"] .hljs-addition { color: #98c379; }
-html[data-theme="dark"] .hljs-number,
-html[data-theme="dark"] .hljs-literal,
-html[data-theme="dark"] .hljs-meta,
-html[data-theme="dark"] .hljs-built_in { color: #d19a66; }
-html[data-theme="dark"] .hljs-title,
-html[data-theme="dark"] .hljs-function,
-html[data-theme="dark"] .hljs-class { color: #61afef; }
-html[data-theme="dark"] .hljs-variable,
-html[data-theme="dark"] .hljs-template-variable,
-html[data-theme="dark"] .hljs-property { color: #e06c75; }
-html[data-theme="dark"] .hljs-type,
-html[data-theme="dark"] .hljs-params { color: #56b6c2; }
-html[data-theme="dark"] .hljs-deletion { color: #e06c75; }
-
-/* Same rules for auto-dark via prefers-color-scheme */
-@media (prefers-color-scheme: dark) {
-  html:not([data-theme="light"]) pre { background: #0f1112; color: #e5e5e5; }
-  html:not([data-theme="light"]) :not(pre) > code { background: #2a2c2e; color: #e5e5e5; padding: 0.1rem 0.3rem; border-radius: 3px; }
-  html:not([data-theme="light"]) .hljs { background: #0f1112; color: #e5e5e5; }
-  html:not([data-theme="light"]) .hljs-comment,
-  html:not([data-theme="light"]) .hljs-quote { color: #6c7378; font-style: italic; }
-  html:not([data-theme="light"]) .hljs-keyword,
-  html:not([data-theme="light"]) .hljs-selector-tag,
-  html:not([data-theme="light"]) .hljs-section,
-  html:not([data-theme="light"]) .hljs-name,
-  html:not([data-theme="light"]) .hljs-tag { color: #c678dd; }
-  html:not([data-theme="light"]) .hljs-string,
-  html:not([data-theme="light"]) .hljs-attr,
-  html:not([data-theme="light"]) .hljs-symbol,
-  html:not([data-theme="light"]) .hljs-bullet,
-  html:not([data-theme="light"]) .hljs-addition { color: #98c379; }
-  html:not([data-theme="light"]) .hljs-number,
-  html:not([data-theme="light"]) .hljs-literal,
-  html:not([data-theme="light"]) .hljs-meta,
-  html:not([data-theme="light"]) .hljs-built_in { color: #d19a66; }
-  html:not([data-theme="light"]) .hljs-title,
-  html:not([data-theme="light"]) .hljs-function,
-  html:not([data-theme="light"]) .hljs-class { color: #61afef; }
-  html:not([data-theme="light"]) .hljs-variable,
-  html:not([data-theme="light"]) .hljs-template-variable,
-  html:not([data-theme="light"]) .hljs-property { color: #e06c75; }
-  html:not([data-theme="light"]) .hljs-type,
-  html:not([data-theme="light"]) .hljs-params { color: #56b6c2; }
-  html:not([data-theme="light"]) .hljs-deletion { color: #e06c75; }
 }
