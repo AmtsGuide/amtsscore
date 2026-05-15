@@ -1,7 +1,7 @@
 /* AmtsScore custom styling.
  * Inter + Spline Sans Mono (matching observablehq.com/documentation).
- * Default theme follows OS via Observable Framework's theme: ["air", "near-midnight"].
- * Manual override via sidebar sun/moon toggle (sets html[data-theme]).
+ * Theme follows OS via Observable Framework's theme: ["air", "near-midnight"].
+ * No manual switcher — OS dark mode toggle drives everything.
  */
 
 @import url("observablehq:default.css");
@@ -31,8 +31,8 @@ code, pre, kbd, samp {
   font-feature-settings: normal;
 }
 
-/* Cards (CTA, stat, specials) use Observable's theme vars so they follow
- * whatever theme is active — including our data-theme overrides below. */
+/* Cards use Observable's theme vars so they follow whichever theme
+ * is active via prefers-color-scheme. No override, no toggle. */
 .cta-card, .stat-card {
   padding: 1rem;
   background: var(--theme-background-alt);
@@ -41,49 +41,3 @@ code, pre, kbd, samp {
   border-radius: 8px;
 }
 .stat-label { color: var(--theme-foreground-muted); }
-
-/* Manual theme override: when user clicks the toggle, force the
- * corresponding theme by overriding Observable's --theme-* vars at the
- * root level. Higher specificity than the OS-gated theme CSS. */
-html[data-theme="light"] {
-  color-scheme: light;
-  --theme-background: #fff;
-  --theme-background-alt: #f9fafb;
-  --theme-foreground: #1a1a1a;
-  --theme-foreground-alt: #2a2a2a;
-  --theme-foreground-muted: #525252;
-  --theme-foreground-faint: #757575;
-  --theme-foreground-fainter: #a0a0a0;
-  --theme-foreground-faintest: #e5e7eb;
-  --theme-foreground-focus: #3b82f6;
-}
-html[data-theme="dark"] {
-  color-scheme: dark;
-  --theme-background: #1d1f21;
-  --theme-background-alt: #2a2c2e;
-  --theme-foreground: #f5f5f5;
-  --theme-foreground-alt: #e5e5e5;
-  --theme-foreground-muted: #b0b0b0;
-  --theme-foreground-faint: #888;
-  --theme-foreground-fainter: #555;
-  --theme-foreground-faintest: #3a3c3e;
-  --theme-foreground-focus: #4ea1f7;
-}
-
-/* Sidebar-bottom switcher: icon-only, separator line above */
-#theme-toggle-wrap {
-  margin-top: auto;
-  padding: 0.75rem 1.25rem 1rem;
-  border-top: 1px solid var(--theme-foreground-faintest);
-}
-#theme-toggle {
-  background: transparent;
-  border: none;
-  padding: 0.25rem;
-  color: var(--theme-foreground-muted);
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  opacity: 0.8;
-}
-#theme-toggle:hover { opacity: 1; color: var(--theme-foreground); }
