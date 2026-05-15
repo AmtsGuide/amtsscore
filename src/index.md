@@ -11,6 +11,7 @@ toc: false
   border-radius: 12px;
   margin-bottom: 2rem;
 }
+.hero-logo { display: block; max-width: 300px; height: auto; margin: 0 0 1.5rem 0; }
 .hero h1 { font-size: 3rem; margin: 0 0 1rem 0; color: white; }
 .hero p { font-size: 1.25rem; opacity: 0.95; margin: 0; max-width: 60ch; }
 .tag {
@@ -35,6 +36,7 @@ toc: false
 </style>
 
 <div class="hero">
+  <img src="./assets/logo-dark.svg" alt="AmtsScore" class="hero-logo">
   <div class="tag">v0 / Pre-Launch</div>
   <h1>Wie digital ist Ihre Behörde wirklich?</h1>
   <p>AmtsScore misst die digitale Performance deutscher Verwaltungs-Websites. Quartalsweise, datenbasiert, methodisch offen.</p>
