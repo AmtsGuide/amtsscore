@@ -52,20 +52,41 @@ html`<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px
 ## 8-Kriterien-Bewertung
 
 ```js
+function befund(key, c) {
+  const ev = c.evidence;
+  switch (key) {
+    case "1_end_to_end_digital":
+      return Array.isArray(ev) && ev.length ? `Signale: ${ev.join(", ")}` : "keine Online-Antrags-Signale";
+    case "2_authentifizierung":
+      return Array.isArray(ev) && ev.length ? ev.join(", ") : "keine Anbindung sichtbar";
+    case "3_schema_org":
+      return Array.isArray(ev) && ev.length ? `Typen: ${ev.join(", ")}` : "kein Schema.org-Markup";
+    case "4_lighthouse_mobile":
+      return typeof ev === "number" ? `Score ${ev}/100` : (c.passes === null ? "Messung ausstehend" : "");
+    case "5_serp_top3":
+      return ev && ev.position ? `Position ${ev.position} für „${ev.query}"` : "nicht in den Top-10";
+    case "6_stable_permalink":
+      if (!ev) return "";
+      return ev.issues && ev.issues.length ? `Probleme: ${ev.issues.join(", ")}` : "saubere URL, keine Session-IDs";
+    case "7_pressereife":
+    case "8_reproduzierbar":
+      return ev === "pass" ? "verifiziert" : ev === "fail" ? "nicht erfüllt" : "redaktionell ausstehend";
+    default:
+      return "";
+  }
+}
+```
+
+```js
 Inputs.table(
   criteria.map(([n, label, key]) => ({
     "#": n,
     Kriterium: label,
     Status: passIcon(data.checks[key].passes),
     Bewertung: passLabel(data.checks[key].passes),
-    Evidenz: Array.isArray(data.checks[key].evidence)
-      ? data.checks[key].evidence.join(", ")
-      : typeof data.checks[key].evidence === "object" && data.checks[key].evidence !== null
-        ? JSON.stringify(data.checks[key].evidence)
-        : data.checks[key].evidence ?? "",
-    Hinweis: data.checks[key].note || "",
+    Befund: befund(key, data.checks[key]),
   })),
-  {rows: 10, layout: "auto", width: {"#": 30, Status: 50, Bewertung: 110}}
+  {rows: 10, layout: "auto", width: {"#": 30, Status: 60, Bewertung: 120}}
 )
 ```
 
