@@ -1,9 +1,9 @@
 ---
-title: OZG — Onlinezugangsgesetz
+title: OZG: Onlinezugangsgesetz
 toc: true
 ---
 
-# OZG — Onlinezugangsgesetz
+# OZG: Onlinezugangsgesetz
 
 Das **Onlinezugangsgesetz (OZG)** verpflichtet Bund, Länder und Kommunen, ihre Verwaltungsleistungen elektronisch über Verwaltungsportale anzubieten. Ursprüngliche Frist: Ende 2022. **Praktisch nicht eingehalten.**
 
@@ -27,24 +27,24 @@ OZG-Leistungen werden in vier Reifestufen klassifiziert:
 | **3** | Vollständig digital, mit Authentifizierung |
 | **4** | Once-Only, Daten werden registerübergreifend genutzt |
 
-## OZG-konform vs. wirklich digital
+## OZG-konform vs, wirklich digital
 
-"OZG-konform" laut Selbstauskunft heißt oft nur **Stufe 1 oder 2** — Information online, vielleicht ein PDF zum Download. Echte digitale Bürger-Erfahrung beginnt erst ab **Stufe 3**.
+"OZG-konform" laut Selbstauskunft heißt oft nur **Stufe 1 oder 2**. Information online, vielleicht ein PDF zum Download. Echte digitale Bürger-Erfahrung beginnt erst ab **Stufe 3**.
 
-Das ist genau die Lücke, die AmtsScore misst: **Was steht tatsächlich auf der Website?** — unabhängig von OZG-Status-Selbstmeldungen.
+Das ist genau die Lücke, die AmtsScore misst: **Was steht tatsächlich auf der Website?**. unabhängig von OZG-Status-Selbstmeldungen.
 
 ## In AmtsScore-Methodik
 
-**Geplant für v1+:** Eigene Dimension "OZG-Reifegrad pro Top-Leistung pro Stadt". Automatisierte Klassifikation der OZG-Reifestufe für die häufigsten 10–20 Bürger-Anliegen (Anmelden, Personalausweis, Halteverbot, Gewerbeanmeldung, ...).
+**Geplant für v1+:** Eigene Dimension "OZG-Reifegrad pro Top-Leistung pro Stadt". Automatisierte Klassifikation der OZG-Reifestufe für die häufigsten 10-20 Bürger-Anliegen (Anmelden, Personalausweis, Halteverbot, Gewerbeanmeldung, ...).
 
 Aktuell deckt AmtsScore v0.1 verwandte Aspekte ab:
 
-- **D1 Online-Termin-Buchung** — Voraussetzung für Stufe 3
-- **D2 Anzahl Online-Dienstleistungen** — quantitative Sicht auf das OZG-Portfolio
-- **D9 SEO/Auffindbarkeit** — finden Bürger:innen die Online-Leistung überhaupt?
+- **D1 Online-Termin-Buchung**. Voraussetzung für Stufe 3
+- **D2 Anzahl Online-Dienstleistungen**: quantitative Sicht auf das OZG-Portfolio
+- **D9 SEO/Auffindbarkeit**: finden Bürger:innen die Online-Leistung überhaupt?
 
 ## Quellen
 
 - [Bundesministerium des Innern: OZG](https://www.bmi.bund.de/DE/themen/moderne-verwaltung/verwaltungsmodernisierung/onlinezugangsgesetz/onlinezugangsgesetz-node.html)
-- [OZG-Informationsplattform](https://informationsplattform.ozg-umsetzung.de/) — offizieller Status-Tracker
-- [Bertelsmann Stiftung: OZG-Studien](https://www.bertelsmann-stiftung.de/de/themen/aktuelle-meldungen/2024/april/ozg-umsetzung-stockt-warum-deutschland-digital-zurueckfaellt) — externe Analysen
+- [OZG-Informationsplattform](https://informationsplattform.ozg-umsetzung.de/), offizieller Status-Tracker
+- [Bertelsmann Stiftung: OZG-Studien](https://www.bertelsmann-stiftung.de/de/themen/aktuelle-meldungen/2024/april/ozg-umsetzung-stockt-warum-deutschland-digital-zurueckfaellt), externe Analysen

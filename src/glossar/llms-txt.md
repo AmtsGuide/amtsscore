@@ -1,11 +1,11 @@
 ---
-title: llms.txt — Die kuratierte KI-Karte
+title: llms.txt: Die kuratierte KI-Karte
 toc: true
 ---
 
 # llms.txt
 
-**`/llms.txt`** ist eine 2024 vorgeschlagene Standard-Datei für Websites, die KI-Crawlern eine **kuratierte Karte** ihres Inhalts gibt — was wichtig ist, wo es liegt, wie es zu interpretieren ist.
+**`/llms.txt`** ist eine 2024 vorgeschlagene Standard-Datei für Websites, die KI-Crawlern eine **kuratierte Karte** ihres Inhalts gibt, was wichtig ist, wo es liegt, wie es zu interpretieren ist.
 
 Ähnlich wie `robots.txt` (für Suchmaschinen) und `sitemap.xml` (für Web-Crawler) ist `llms.txt` für **Large Language Models**.
 
@@ -36,10 +36,10 @@ Eine Stadt-Website ist groß und chaotisch. Ein KI-Crawler hat keine Geduld, all
 
 Vorteile:
 
-1. **Präzisere KI-Antworten** — ChatGPT oder Perplexity zitieren die echten Dienstleistungs-Seiten, nicht zufällige Subseiten
-2. **Less Halluzination** — die KI hat klar dokumentierte Quellen statt Vermutungen
-3. **Stadt-Kontrolle** — die Stadt entscheidet, welche Inhalte für KI relevant sind
-4. **Server-Schutz** — KI-Bots crawlen weniger umfassend, wenn `llms.txt` sie zu den richtigen Stellen führt
+1. **Präzisere KI-Antworten**. ChatGPT oder Perplexity zitieren die echten Dienstleistungs-Seiten, nicht zufällige Subseiten
+2. **Less Halluzination**. die KI hat klar dokumentierte Quellen statt Vermutungen
+3. **Stadt-Kontrolle**. die Stadt entscheidet, welche Inhalte für KI relevant sind
+4. **Server-Schutz**. KI-Bots crawlen weniger umfassend, wenn `llms.txt` sie zu den richtigen Stellen führt
 
 ## Begleitend: Markdown-Versionen einzelner Seiten
 
@@ -47,7 +47,7 @@ Best Practice: jede HTML-Seite hat optional eine `.md`-Version unter gleichem Pf
 
 `/dienstleistung/halteverbot` (HTML für Menschen) + `/dienstleistung/halteverbot.md` (Markdown für KI).
 
-Die `.md`-Version enthält nur den semantischen Kern: Überschriften, Absätze, Listen, Tabellen — ohne Navigation, Header, Footer, Cookie-Banner, Sidebars.
+Die `.md`-Version enthält nur den semantischen Kern: Überschriften, Absätze, Listen, Tabellen, ohne Navigation, Header, Footer, Cookie-Banner, Sidebars.
 
 ## Realität in DE
 
@@ -66,6 +66,6 @@ Max: 10 Punkte. Realistischer v0-Score für deutsche Städte: 0.
 
 ## Quellen
 
-- [llmstxt.org](https://llmstxt.org/) — offizielle Standard-Webseite (Jeremy Howard / Answer.AI)
-- [llms.txt von Anthropic](https://docs.anthropic.com/llms.txt) — Beispiel-Implementierung
-- [llms.txt Hub](https://llmstxt.site/) — kuratierte Liste aktiver llms.txt-Implementierungen
+- [llmstxt.org](https://llmstxt.org/), offizielle Standard-Webseite (Jeremy Howard / Answer.AI)
+- [llms.txt von Anthropic](https://docs.anthropic.com/llms.txt). Beispiel-Implementierung
+- [llms.txt Hub](https://llmstxt.site/), kuratierte Liste aktiver llms.txt-Implementierungen

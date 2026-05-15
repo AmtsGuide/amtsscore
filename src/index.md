@@ -49,7 +49,7 @@ toc: false
 
 AmtsScore befindet sich in **öffentlicher Methodik-Kommentierung**. Die [Methodik v0.1](/methodology) liegt zur Diskussion vor. Erste vollständige Messung der 20 deutschen Großstädte erwartet **Q3/2026**.
 
-In der Zwischenzeit zeigen wir aus existierenden AmtsGuide-Scraper-Daten erste **Topic-Auswertungen** — Behördengang-Daten pro Stadt, ohne AmtsScore-Bewertung.
+In der Zwischenzeit zeigen wir aus existierenden AmtsGuide-Scraper-Daten erste **Topic-Auswertungen**. Behördengang-Daten pro Stadt, ohne AmtsScore-Bewertung.
 
 <div class="cta-grid">
   <div class="cta-card">
@@ -78,7 +78,7 @@ In der Zwischenzeit zeigen wir aus existierenden AmtsGuide-Scraper-Daten erste *
 
 Andere Reports messen *Themen* (Trendradar, ThemenRadar) oder *Bürger-Befindlichkeit* (eGovernment Monitor). Niemand misst kontinuierlich, was tatsächlich auf den Verwaltungs-Websites passiert. **AmtsScore schließt diese Lücke.**
 
-- **Datengetrieben** — kein Survey, keine Selbstauskunft
-- **Reproduzierbar** — Methodik öffentlich, Daten downloadbar (CC BY 4.0)
-- **Quartalsweise** — Veränderung wird sichtbar
-- **Bürger-Perspektive** — was sieht die Bürger:in, nicht was meldet die IT
+- **Datengetrieben**: kein Survey, keine Selbstauskunft
+- **Reproduzierbar**. Methodik öffentlich, Daten downloadbar (CC BY 4.0)
+- **Quartalsweise**. Veränderung wird sichtbar
+- **Bürger-Perspektive**: was sieht die Bürger:in, nicht was meldet die IT

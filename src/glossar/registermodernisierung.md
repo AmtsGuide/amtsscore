@@ -1,11 +1,11 @@
 ---
-title: Registermodernisierung — Once-Only-Prinzip
+title: Registermodernisierung: Once-Only-Prinzip
 toc: true
 ---
 
 # Registermodernisierung
 
-Die deutsche **Registermodernisierung** soll das EU-weite **Once-Only-Prinzip** umsetzen: Bürger:innen geben Behörden ihre Daten nur **einmal** — alle anderen Behörden ziehen sie aus dem zuständigen Register.
+Die deutsche **Registermodernisierung** soll das EU-weite **Once-Only-Prinzip** umsetzen: Bürger:innen geben Behörden ihre Daten nur **einmal**. alle anderen Behörden ziehen sie aus dem zuständigen Register.
 
 ## Status quo (was Bürger heute erleben)
 
@@ -21,17 +21,17 @@ Mit Registermodernisierung:
 
 ## Identifikationsnummer
 
-Voraussetzung: eine eindeutige Identifikationsnummer pro Bürger:in, die quer durch alle Register verwendet wird. In DE: **Steuer-Identifikationsnummer** (Steuer-ID) als Hauptkandidat — kontrovers diskutiert wegen Datenschutz-Bedenken.
+Voraussetzung: eine eindeutige Identifikationsnummer pro Bürger:in, die quer durch alle Register verwendet wird. In DE: **Steuer-Identifikationsnummer** (Steuer-ID) als Hauptkandidat, kontrovers diskutiert wegen Datenschutz-Bedenken.
 
 ## Realität
 
-Registermodernisierungsgesetz von 2021. **Umsetzungsfrist 2025** — nicht vollständig eingehalten. Pilotbetrieb läuft, flächendeckende Nutzung steht noch aus.
+Registermodernisierungsgesetz von 2021. **Umsetzungsfrist 2025**. nicht vollständig eingehalten. Pilotbetrieb läuft, flächendeckende Nutzung steht noch aus.
 
 ## In AmtsScore-Methodik
 
-**Geplant für v2+:** Dimension "Once-Only-Bereitstellung" — Anteil der Antragsformulare einer Stadt, die durch Register-Anbindung Daten vorbefüllen statt manuell vom Bürger einzufordern.
+**Geplant für v2+:** Dimension "Once-Only-Bereitstellung". Anteil der Antragsformulare einer Stadt, die durch Register-Anbindung Daten vorbefüllen statt manuell vom Bürger einzufordern.
 
-Aktuell schwer messbar — die Register-Anbindung passiert serverseitig, ist von außen nicht direkt sichtbar. Aber: das Vorhandensein einer "Daten vorausgefüllt"-Erfahrung ist sichtbar.
+Aktuell schwer messbar, die Register-Anbindung passiert serverseitig, ist von außen nicht direkt sichtbar. Aber: das Vorhandensein einer "Daten vorausgefüllt"-Erfahrung ist sichtbar.
 
 ## Quellen
 

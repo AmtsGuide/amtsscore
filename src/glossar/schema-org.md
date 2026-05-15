@@ -1,5 +1,5 @@
 ---
-title: Schema.org — Strukturierte Daten für die Verwaltung
+title: Schema.org: Strukturierte Daten für die Verwaltung
 toc: true
 ---
 
@@ -43,10 +43,10 @@ JSON-LD-Block im HTML-Head:
 
 ## Warum es zählt
 
-- **Google Rich Results** — bessere Darstellung in der Google-Suche (Termin direkt im SERP-Card)
-- **KI-Assistenten** — ChatGPT, Perplexity, Google AI können Stadt-Info zuverlässig zitieren
-- **Voice-Assistenten** — "Alexa, wie viel kostet ein Halteverbot in Berlin?"
-- **Bundesportal-Integration** — strukturierte Daten lassen sich automatisch aggregieren
+- **Google Rich Results**: bessere Darstellung in der Google-Suche (Termin direkt im SERP-Card)
+- **KI-Assistenten**. ChatGPT, Perplexity, Google AI können Stadt-Info zuverlässig zitieren
+- **Voice-Assistenten**. "Alexa, wie viel kostet ein Halteverbot in Berlin?"
+- **Bundesportal-Integration**: strukturierte Daten lassen sich automatisch aggregieren
 
 ## Realität
 
@@ -56,12 +56,12 @@ Die meisten Stadt-Websites haben **kein** Schema.org-Markup. Wenn überhaupt, da
 
 AmtsScore prüft pro Stadt:
 
-- **JSON-LD vorhanden** — Boolean
-- **Schema-Typen gefunden** — Welche der relevanten Typen sind im Einsatz?
-- **Anzahl Seiten mit Schema** — Tiefe der Markierung
+- **JSON-LD vorhanden**. Boolean
+- **Schema-Typen gefunden**. Welche der relevanten Typen sind im Einsatz?
+- **Anzahl Seiten mit Schema**. Tiefe der Markierung
 
 ## Quellen
 
-- [schema.org/GovernmentService](https://schema.org/GovernmentService) — Typdefinition
-- [Google Rich Results Test](https://search.google.com/test/rich-results) — Validierung
-- [Schema.org Vollindex](https://schema.org/docs/full.html) — alle Typen
+- [schema.org/GovernmentService](https://schema.org/GovernmentService). Typdefinition
+- [Google Rich Results Test](https://search.google.com/test/rich-results). Validierung
+- [Schema.org Vollindex](https://schema.org/docs/full.html), alle Typen

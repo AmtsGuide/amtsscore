@@ -21,7 +21,7 @@ Eine Verwaltungs-Website hat 2026 nicht mehr nur menschliche Besucher:innen. Sie
 
 ### `llms.txt`
 
-[`llms.txt`](/glossar/llms-txt) ist die explizite Karte für KI-Crawler — was sie indexieren sollen, wie sie es interpretieren, welche kanonischen Endpunkte existieren. Ohne `llms.txt` rät die KI; mit `llms.txt` weiß sie.
+[`llms.txt`](/glossar/llms-txt) ist die explizite Karte für KI-Crawler, was sie indexieren sollen, wie sie es interpretieren, welche kanonischen Endpunkte existieren. Ohne `llms.txt` rät die KI; mit `llms.txt` weiß sie.
 
 ### AI-Bot-Erlaubnis
 
@@ -60,22 +60,22 @@ Viele KI-Bots crawlen ohne JavaScript-Execution (Kosten, Komplexität, Sicherhei
 
 **Stand 2026: keine deutsche Stadt-Website erfüllt diese Kriterien vollständig.** Viele blockieren AI-Bots aktiv. Wenige haben `llms.txt`. Non-JS-Rendering ist die Ausnahme bei modernen Single-Page-Apps. Permalinks sind oft URL-Müll.
 
-Das ist der **strategische Punkt** von AmtsScore: wir setzen die Latte für 2027+. Heute scoren alle nahe Null — das ist die Schlagzeile, nicht das Problem.
+Das ist der **strategische Punkt** von AmtsScore: wir setzen die Latte für 2027+. Heute scoren alle nahe Null, das ist die Schlagzeile, nicht das Problem.
 
 ## In AmtsScore-Methodik (Dimension 11)
 
-D11 misst alle vier dynamischen Kriterien automatisiert. Erwartete v0-Scores: 0–3 von 10 für die meisten Städte. Wer 4+ erreicht, hat aktiv mitgedacht.
+D11 misst alle vier dynamischen Kriterien automatisiert. Erwartete v0-Scores: 0-3 von 10 für die meisten Städte. Wer 4+ erreicht, hat aktiv mitgedacht.
 
 ## Verwandte Begriffe
 
-- [llms.txt](/glossar/llms-txt) — die kuratierte KI-Karte
-- [API + MCP](/glossar/api-mcp) — die maschinenlesbare Schnittstelle
-- [Schema.org](/glossar/schema-org) — strukturierte Daten (D6)
+- [llms.txt](/glossar/llms-txt), die kuratierte KI-Karte
+- [API + MCP](/glossar/api-mcp), die maschinenlesbare Schnittstelle
+- [Schema.org](/glossar/schema-org), strukturierte Daten (D6)
 
 ## Quellen
 
-- [llms.txt Initiative von Answer.AI](https://llmstxt.org/) — der Standard-Vorschlag
-- [OpenAI: GPTBot Documentation](https://platform.openai.com/docs/gptbot) — User-Agent-Strings + Best Practices
-- [Anthropic: Claude bot list](https://docs.anthropic.com/) — Bot-User-Agents
-- [Perplexity: PerplexityBot](https://docs.perplexity.ai/) — Crawl-Verhalten
-- [Google: Google-Extended](https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers) — der separate AI-Crawl
+- [llms.txt Initiative von Answer.AI](https://llmstxt.org/), der Standard-Vorschlag
+- [OpenAI: GPTBot Documentation](https://platform.openai.com/docs/gptbot). User-Agent-Strings + Best Practices
+- [Anthropic: Claude bot list](https://docs.anthropic.com/). Bot-User-Agents
+- [Perplexity: PerplexityBot](https://docs.perplexity.ai/). Crawl-Verhalten
+- [Google: Google-Extended](https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers), der separate AI-Crawl

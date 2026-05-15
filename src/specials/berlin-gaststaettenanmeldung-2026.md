@@ -1,9 +1,9 @@
 ---
-title: Berlin — Gaststättenanmeldung (Service-Launch 2026)
+title: Berlin: Gaststättenanmeldung (Service-Launch 2026)
 toc: true
 ---
 
-# Berlin — Gaststättenanmeldung 2026
+# Berlin: Gaststättenanmeldung 2026
 
 **Status:** Recherche läuft. Detail-Bewertung folgt.
 
@@ -32,7 +32,7 @@ Recherche-Pipeline:
 
 - [ ] Pressemitteilungen Berliner Senat (Verkehr / Wirtschaft)
 - [ ] [Berlin Service-Portal](https://service.berlin.de/)
-- [ ] [Bezirksamt-Mitteilungen](https://www.berlin.de/ba-mitte/) — IHK-Berlin-Mitteilungen
+- [ ] [Bezirksamt-Mitteilungen](https://www.berlin.de/ba-mitte/). IHK-Berlin-Mitteilungen
 - [ ] Behörden-Spiegel Index
 - [ ] Local-Press-Mentions (Tagesspiegel, Berliner Morgenpost)
 

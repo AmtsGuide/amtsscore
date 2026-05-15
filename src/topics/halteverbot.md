@@ -1,11 +1,11 @@
 ---
-title: Halteverbot — Topic-Daten v0
+title: Halteverbot: Topic-Daten v0
 toc: true
 ---
 
 # Halteverbot
 
-Erste Auswertung aus dem AmtsGuide-Scraper. **Pre-AmtsScore** — diese Daten sind noch nicht nach der AmtsScore-Methodik gescort. Sie zeigen aber, was wir heute schon messen.
+Erste Auswertung aus dem AmtsGuide-Scraper. **Pre-AmtsScore**. diese Daten sind noch nicht nach der AmtsScore-Methodik gescort. Sie zeigen aber, was wir heute schon messen.
 
 ```js
 const data = FileAttachment("../../data/halteverbot.json").json();
@@ -169,7 +169,7 @@ Diese Auswertung ist **Pre-AmtsScore v0**:
 
 - Daten stammen aus dem AmtsGuide-Scraper (Stand März 2026), nicht aus der noch zu implementierenden AmtsScore-Pipeline
 - Keine 10-Dimensionen-Bewertung pro Stadt-Website
-- Kein Composite-Score 0–10
+- Kein Composite-Score 0-10
 - Statt dessen: nackte Daten zu Behörden-Wartezeiten, Gebühren und Marktverfügbarkeit von Dienstleistern
 
 Die AmtsScore-Methodik (siehe `/methodology`) misst hingegen die digitale Performance der Stadt-Verwaltungs-Websites selbst. Beide Ebenen sind komplementär:
