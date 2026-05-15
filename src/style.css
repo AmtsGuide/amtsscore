@@ -52,31 +52,26 @@ code, pre, kbd, samp {
   }
 }
 
-/* Theme switcher anchored at sidebar bottom */
+/* Theme switcher anchored at sidebar bottom — icon-only, currentColor */
 #theme-toggle-wrap {
   margin-top: auto;
-  padding: 1rem 1.25rem 1.5rem;
+  padding: 0.75rem 1.25rem 1rem;
   border-top: 1px solid #e5e7eb;
 }
 #theme-toggle {
   background: transparent;
-  border: 1px solid #d1d5db;
-  border-radius: 6px;
-  padding: 0.4rem 0.7rem;
-  font: 500 0.85rem/1 var(--sans-serif);
+  border: none;
+  padding: 0.25rem;
   color: inherit;
   cursor: pointer;
-  width: 100%;
-  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  opacity: 0.7;
 }
-#theme-toggle:hover {
-  background: #f3f4f6;
-}
+#theme-toggle:hover { opacity: 1; }
 
 @media (prefers-color-scheme: dark) {
   #theme-toggle-wrap { border-top-color: #3a3c3e; }
-  #theme-toggle { border-color: #4a4c4e; }
-  #theme-toggle:hover { background: #2a2c2e; }
 }
 
 /* Manual override via [data-theme] (set by the toggle JS).

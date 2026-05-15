@@ -50,16 +50,19 @@ export default {
         const root = document.documentElement;
         const stored = localStorage.getItem(KEY);
         if (stored === 'dark' || stored === 'light') root.dataset.theme = stored;
-        function label(t) {
-          return t === 'dark' ? '🌙 dunkel' : t === 'light' ? '☀️ hell' : '🌓 auto';
+        const SUN = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>';
+        const MOON = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+        function effective() {
+          if (root.dataset.theme) return root.dataset.theme;
+          return matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         }
-        function cycle() {
-          const cur = root.dataset.theme || 'auto';
-          const next = cur === 'auto' ? 'light' : cur === 'light' ? 'dark' : 'auto';
-          if (next === 'auto') { delete root.dataset.theme; localStorage.removeItem(KEY); }
-          else { root.dataset.theme = next; localStorage.setItem(KEY, next); }
+        function icon() { return effective() === 'dark' ? SUN : MOON; }
+        function toggle() {
+          const next = effective() === 'dark' ? 'light' : 'dark';
+          root.dataset.theme = next;
+          localStorage.setItem(KEY, next);
           const btn = document.getElementById('theme-toggle');
-          if (btn) btn.textContent = label(next);
+          if (btn) btn.innerHTML = icon();
         }
         function mount() {
           if (document.getElementById('theme-toggle')) return;
@@ -70,8 +73,9 @@ export default {
           btn.id = 'theme-toggle';
           btn.type = 'button';
           btn.title = 'Theme wechseln';
-          btn.textContent = label(localStorage.getItem(KEY) || 'auto');
-          btn.onclick = cycle;
+          btn.setAttribute('aria-label', 'Theme wechseln');
+          btn.innerHTML = icon();
+          btn.onclick = toggle;
           wrap.appendChild(btn);
           if (sidebar) sidebar.appendChild(wrap);
           else (document.body || document.documentElement).appendChild(wrap);
