@@ -47,7 +47,7 @@ export default {
   `,
   header: `
     <div class="amtsscore-header">
-      <a href="https://amtsguide.de" target="_blank" rel="noopener" aria-label="AmtsGuide" class="amtsscore-headerlink amtsscore-ag">
+      <a href="https://amtsguide.de/de/" target="_blank" rel="noopener" aria-label="AmtsGuide" class="amtsscore-headerlink amtsscore-ag">
         <svg width="20" height="20" viewBox="0 0 768 768" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <rect width="768" height="768" rx="120" fill="#1a3da5"/>
           <path fill="#ffffff" d="M122.6 229.5c20-2.8 37.7-4.3 55-7.8 34.6-7.1 65.5-23.2 94-43.4 32.3-23.1 64-47.1 96-70.6 16.2-11.9 16.4-11.9 33 .3 31.5 23.1 62.6 46.7 94.3 69.3 41.2 29.4 86.5 48.3 138 50.1 12.9.4 15.2 2.7 15.1 15.1-.7 70.3-2.5 140.6-21.5 208.9-22.2 79.9-69.2 140.8-142.6 179.7-27.4 14.5-56.8 25.4-85.7 37-6.8 2.8-15.9 4-22.6 1.9-57.4-18-111-43.1-155.6-84.8-46.9-43.9-72.3-99.3-85.4-160.9-12.8-60.8-14.7-122.5-14.3-184.2 0-3.4 1.3-6.7 2.2-10.6z"/>
