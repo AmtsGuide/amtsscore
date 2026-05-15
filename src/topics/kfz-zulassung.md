@@ -10,7 +10,7 @@ Pre-AmtsScore pro Stadt aus AmtsGuide-Daten:
 + **20% Online-Verfügbarkeit** (i-Kfz), linear normalisiert.
 
 ```js
-const prescore = (await FileAttachment("../../data/prescore.json").json())
+const prescore = (await FileAttachment("../data/prescore.json").json())
   .topics.find(t => t.slug === "kfz-zulassung");
 ```
 

@@ -11,7 +11,7 @@ Pre-AmtsScore pro Stadt:
 + **20% Online-Verfügbarkeit**, linear normalisiert.
 
 ```js
-const prescore = (await FileAttachment("../../data/prescore.json").json())
+const prescore = (await FileAttachment("../data/prescore.json").json())
   .topics.find(t => t.slug === "gmbh-gruendung");
 ```
 

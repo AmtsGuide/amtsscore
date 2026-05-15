@@ -9,8 +9,8 @@ Erste Auswertung aus dem AmtsGuide-Scraper plus **Pre-AmtsScore** pro Stadt
 (40% Kosten + 40% Geschwindigkeit, linear normalisiert).
 
 ```js
-const data = FileAttachment("../../data/halteverbot.json").json();
-const prescoreData = FileAttachment("../../data/prescore.json").json();
+const data = FileAttachment("../data/halteverbot.json").json();
+const prescoreData = FileAttachment("../data/prescore.json").json();
 ```
 
 ```js
