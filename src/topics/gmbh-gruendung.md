@@ -19,22 +19,25 @@ const prescore = (await FileAttachment("../data/prescore.json").json())
 ## Pro Stadt
 
 ```js
+const authorityName = (a) => {
+  if (a == null) return "—";
+  if (typeof a === "string") return a;
+  if (typeof a === "object") return a.name ?? a.organization ?? "—";
+  return String(a);
+};
 Inputs.table(prescore.cities.map(c => ({
   Rang: c.rank,
   Stadt: c.city,
-  Score: c.score,
-  "Tage": c.raw.speed_days,
-  "Kosten ab": c.raw.cost_eur,
-  "Online": c.raw.online_available,
-  Behörde: c.meta?.authority ?? "—",
+  Score: c.score === null ? null : Number(c.score.toFixed(1)),
+  "Tage": c.raw.speed_days === null ? "—" : `${c.raw.speed_days} d`,
+  "Kosten ab (€)": c.raw.cost_eur === null ? "—" : `${c.raw.cost_eur.toFixed(0)} €`,
+  "Online": c.raw.online_available === null ? "—" : (c.raw.online_available ? "ja" : "nein"),
+  Behörde: authorityName(c.meta?.authority),
   IHK: c.meta?.ihk_name ?? "—",
 })), {
   rows: 50,
   format: {
     Score: (x) => x === null ? "—" : x.toFixed(1),
-    "Tage": (x) => x === null ? "—" : `${x} d`,
-    "Kosten ab": (x) => x === null ? "—" : `${x.toFixed(0)} €`,
-    "Online": (x) => x ? "ja" : "nein",
   }
 })
 ```

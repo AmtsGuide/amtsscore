@@ -78,22 +78,28 @@ Inputs.table(topicAvgs, {rows: 10})
 ## Score-Verteilung
 
 ```js
-Plot.plot({
-  width: 700, height: 30 + stateTopicRows.length * 18,
-  marginLeft: 130,
-  x: {label: "Score (0-10)", domain: [0, 10], grid: true},
-  y: {label: null},
-  color: {legend: true},
-  marks: [
-    Plot.dot(stateTopicRows.filter(r => r.score !== null), {
-      x: "score",
-      y: "city",
-      fill: "topic",
-      r: 5,
-    }),
-    Plot.ruleX([0])
-  ]
-})
+const scoredRows = stateTopicRows.filter(r => r.score !== null);
+```
+
+```js
+scoredRows.length === 0
+  ? html`<p style="opacity:0.7"><em>Keine messbaren Topic-Datenpunkte in diesem Bundesland.</em></p>`
+  : Plot.plot({
+      width: 700, height: 30 + scoredRows.length * 18,
+      marginLeft: 130,
+      x: {label: "Score (0-10)", domain: [0, 10], grid: true},
+      y: {label: null},
+      color: {legend: true},
+      marks: [
+        Plot.dot(scoredRows, {
+          x: "score",
+          y: "city",
+          fill: "topic",
+          r: 5,
+        }),
+        Plot.ruleX([0])
+      ]
+    })
 ```
 
 → [alle Bundesländer](/bundeslaender/) · [alle Städte](/staedte/) · [Methodik](/methodology)

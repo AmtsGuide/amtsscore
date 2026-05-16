@@ -82,30 +82,33 @@ Inputs.table(d.cities.map(c => ({
 
 ## Per Dimension
 
-```js
-const dimChoice = view(Inputs.select(
-  d.dimensions.map(dim => dim.key),
-  {label: "Dimension", format: (k) => d.dimensions.find(x => x.key === k).label}
-))
-```
+Alle Dimensionen nebeneinander — jede Stadt × jede Dimension auf einen Blick.
 
 ```js
-const dim = d.dimensions.find(x => x.key === dimChoice);
-const rows = d.cities
-  .map(c => ({stadt: c.city, value: c.dimensions[dimChoice]}))
-  .filter(r => r.value !== null)
-  .sort((a,b) => b.value - a.value);
+const dimRows = d.dimensions.flatMap(dim =>
+  d.cities
+    .map(c => ({
+      stadt: c.city,
+      dimension: dim.label,
+      dim_key: dim.key,
+      value: c.dimensions[dim.key],
+    }))
+    .filter(r => r.value !== null)
+);
 ```
 
 ```js
 Plot.plot({
-  marginLeft: 130, marginRight: 50,
-  width: 800, height: 30 + rows.length * 22,
-  x: {label: `${dim.label} (Score)`, domain: [0, 10], grid: true},
+  width: 1100,
+  marginLeft: 110,
+  marginRight: 30,
+  marginTop: 40,
+  x: {domain: [0, 10], grid: true, ticks: 3, label: "Score"},
   y: {label: null},
+  fx: {label: null, padding: 0.1},
+  facet: {data: dimRows, x: "dimension"},
   marks: [
-    Plot.barX(rows, {x: "value", y: "stadt", sort: {y: "x", reverse: true}, fill: "#1a3da5"}),
-    Plot.text(rows, {x: "value", y: "stadt", text: d => d.value.toFixed(1), dx: 5, textAnchor: "start", fontSize: 11})
+    Plot.barX(dimRows, {x: "value", y: "stadt", sort: {y: "x", reverse: true}, fill: "#1a3da5"}),
   ]
 })
 ```

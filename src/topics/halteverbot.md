@@ -27,16 +27,14 @@ const prescore = (await prescoreData).topics.find(t => t.slug === "halteverbot")
 Inputs.table(prescore.cities.map(c => ({
   Rang: c.rank,
   Stadt: c.city,
-  Score: c.score,
-  "Tage": c.raw.speed_days,
-  "Euro": c.raw.cost_eur,
+  Score: c.score === null ? null : Number(c.score.toFixed(1)),
+  "Tage": c.raw.speed_days === null ? "—" : `${c.raw.speed_days} d`,
+  "Kosten (€)": c.raw.cost_eur === null ? "—" : `${c.raw.cost_eur.toFixed(0)} €`,
   Stand: c.meta?.verified_at ?? "—",
 })), {
   rows: 40,
   format: {
     Score: (x) => x === null ? "—" : x.toFixed(1),
-    Tage: (x) => x === null ? "—" : `${x} d`,
-    Euro: (x) => x === null ? "—" : `${x.toFixed(0)} €`,
   }
 })
 ```
