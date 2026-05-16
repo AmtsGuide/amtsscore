@@ -51,6 +51,9 @@ export default {
   `,
   header: `
     <div class="amtsscore-header">
+      <a href="/" aria-label="AmtsScore Home" class="amtsscore-headerlink amtsscore-brand">
+        <img src="/assets/logo-light.svg" alt="AmtsScore" height="24">
+      </a>
       <a href="https://amtsguide.de/de/" target="_blank" rel="noopener" aria-label="AmtsGuide" class="amtsscore-headerlink amtsscore-ag">
         <svg width="20" height="20" viewBox="0 0 768 768" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <rect width="768" height="768" rx="120" fill="#1a3da5"/>

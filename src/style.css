@@ -89,3 +89,16 @@ form[class*="inputs-"][class*="-table"] table {
   margin-left: 0;
   margin-right: auto;
 }
+
+
+/* AmtsScore brand logo in the header (top-left) */
+.amtsscore-brand {
+  margin-right: auto;
+  padding-right: 0.75rem;
+}
+.amtsscore-brand img {
+  display: block;
+  height: 24px;
+  width: auto;
+}
+.amtsscore-brand:hover { opacity: 0.85; }
