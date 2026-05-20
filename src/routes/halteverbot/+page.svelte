@@ -114,7 +114,10 @@
 <div class="page">
 	<header>
 		<div class="header-inner">
-			<a href="/" class="back">← AmtsScore</a>
+			<a href="/" class="back">
+				<img src="/assets/amtsguide-icon.svg" alt="AmtsGuide" height="28" width="28" />
+				AmtsScore
+			</a>
 			<span class="run-date">Messung: {d.run_date}</span>
 		</div>
 	</header>
