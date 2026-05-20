@@ -197,6 +197,9 @@
 						{#if c.grund}
 							<p class="card-grund">{c.grund}</p>
 						{/if}
+						{#if c.note}
+							<span class="card-note">{c.note}</span>
+						{/if}
 						{#if c.url}
 							<a href={c.url} target="_blank" rel="noopener" class="card-link">{new URL(c.url).hostname.replace('www.','')}</a>
 						{/if}
