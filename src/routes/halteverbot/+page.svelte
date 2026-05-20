@@ -355,10 +355,34 @@
 		margin-top: auto;
 	}
 	.card-link:hover { color: #1a3da5; }
-	.card-note {
-		font-size: 10px; font-weight: 500; color: #94a3b8;
-		text-transform: uppercase; letter-spacing: 0.05em;
+	.city-card--wide {
+		grid-column: 1 / -1;
 	}
+
+	/* Bezirk sub-grid */
+	.bezirk-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 10px;
+		margin-top: 14px;
+		padding-top: 14px;
+		border-top: 1px solid #f1f5f9;
+	}
+	@media (max-width: 900px) { .bezirk-grid { grid-template-columns: repeat(2, 1fr); } }
+	@media (max-width: 480px) { .bezirk-grid { grid-template-columns: 1fr; } }
+
+	.bezirk-card {
+		background: #f8fafc;
+		border: 1px solid #e2e8f0;
+		border-radius: 6px;
+		padding: 10px 12px;
+		display: flex; flex-direction: column; gap: 6px;
+	}
+	.bezirk-header {
+		display: flex; align-items: center; justify-content: space-between; gap: 6px;
+	}
+	.bezirk-name { font-size: 12px; font-weight: 600; color: #0f172a; }
+	.bezirk-grund { font-size: 11px; color: #94a3b8; line-height: 1.5; margin: 0; }
 
 	.footnote { font-size: 11px; color: #9ca3af; margin-top: 48px; }
 </style>
