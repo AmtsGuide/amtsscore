@@ -181,6 +181,27 @@
 			</div>
 		</div>
 
+		<!-- City cards -->
+		<div class="cities-section">
+			<h2 class="cities-heading">Alle 16 Landeshauptstädte</h2>
+			<div class="cities-grid">
+				{#each sorted as c}
+					<div class="city-card" style="border-top-color:{STATUS_COLOR[c.status]}">
+						<div class="card-top">
+							<span class="card-city">{c.city}</span>
+							<span class="card-badge" style="background:{STATUS_COLOR[c.status]}20;color:{STATUS_COLOR[c.status]}">{STATUS_LABEL[c.status]}</span>
+						</div>
+						{#if c.grund}
+							<p class="card-grund">{c.grund}</p>
+						{/if}
+						{#if c.url}
+							<a href={c.url} target="_blank" rel="noopener" class="card-link">{new URL(c.url).hostname.replace('www.','')}</a>
+						{/if}
+					</div>
+				{/each}
+			</div>
+		</div>
+
 		<div class="footnote">
 			Methodik: Brave Search → Gov-Domain-Filter → Seitentext → Claude Haiku · 16 Landeshauptstädte (je eine pro Bundesland)
 		</div>
