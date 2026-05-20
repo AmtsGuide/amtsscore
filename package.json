@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "clean": "rm -rf src/.observablehq/cache dist",
-    "build": "observable build",
+    "build": "OBSERVABLE_TELEMETRY_DISABLE=true observable build",
     "dev": "observable preview",
     "deploy": "observable deploy",
     "observable": "observable"
