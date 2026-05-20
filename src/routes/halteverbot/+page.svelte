@@ -295,5 +295,41 @@
 	}
 	.cta:hover { background: #eff6ff; }
 
+	/* City cards */
+	.cities-section { margin-top: 64px; }
+	.cities-heading {
+		font-size: 13px; font-weight: 600; letter-spacing: 0.06em;
+		text-transform: uppercase; color: #9ca3af;
+		margin: 0 0 24px; border-bottom: 1px solid #e5e7eb; padding-bottom: 12px;
+	}
+	.cities-grid {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 16px;
+	}
+	@media (max-width: 900px) { .cities-grid { grid-template-columns: repeat(2, 1fr); } }
+	@media (max-width: 480px) { .cities-grid { grid-template-columns: 1fr; } }
+
+	.city-card {
+		border: 1px solid #e5e7eb; border-top: 3px solid;
+		border-radius: 6px; padding: 14px 16px;
+		display: flex; flex-direction: column; gap: 8px;
+	}
+	.card-top {
+		display: flex; align-items: flex-start;
+		justify-content: space-between; gap: 8px;
+	}
+	.card-city { font-size: 14px; font-weight: 700; color: #0f172a; }
+	.card-badge {
+		font-size: 10px; font-weight: 600; padding: 2px 7px;
+		border-radius: 99px; white-space: nowrap; flex-shrink: 0;
+	}
+	.card-grund { font-size: 12px; color: #6b7280; line-height: 1.5; margin: 0; }
+	.card-link {
+		font-size: 11px; color: #1a3da5; text-decoration: none;
+		font-family: monospace; opacity: 0.7;
+	}
+	.card-link:hover { opacity: 1; }
+
 	.footnote { font-size: 11px; color: #9ca3af; margin-top: 48px; }
 </style>
