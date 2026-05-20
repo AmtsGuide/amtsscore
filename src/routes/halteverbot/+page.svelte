@@ -79,6 +79,7 @@
 					y: event.clientY - rect.top - 16,
 					city: f.properties.name,
 					status: STATUS_LABEL[c.status] ?? c.status,
+					statusKey: c.status,
 					grund: c.grund ?? '',
 					url: c.url ?? '',
 				};
@@ -121,7 +122,7 @@
 					{#if tooltip.visible}
 						<div class="tooltip" style="left:{tooltip.x}px;top:{tooltip.y}px">
 							<div class="tt-city">{tooltip.city}</div>
-							<div class="tt-status" style="color:{STATUS_COLOR[d.cities.find((c:any)=>c.city===tooltip.city)?.status]}">{tooltip.status}</div>
+							<div class="tt-status" style="color:{STATUS_COLOR[tooltip.statusKey]}">{tooltip.status}</div>
 							<div class="tt-grund">{tooltip.grund}</div>
 							{#if tooltip.url}
 								<div class="tt-url">{new URL(tooltip.url).hostname.replace('www.','')}</div>
