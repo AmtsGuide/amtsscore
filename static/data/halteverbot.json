@@ -135,8 +135,8 @@
           "city": "Berlin Friedrichshain-Kreuzberg",
           "status": "NUR_INFO",
           "level": 2,
-          "url": "https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/",
-          "grund": "Die Seite ist eine Übersichtsseite des Straßen- und Grünflächenamts, die keine direkten Links zum Halteverbot-Antrag oder zum Online-Dienst enthält.",
+          "url": "https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/dienstleistungen/artikel.1193371.php",
+          "grund": "Die Seite informiert über das Verfahren, verweist aber auf externe Firmen für die Antragsstellung und die örtliche Straßenverkehrsbehörde ohne digitale Antragsmöglichkeit.",
           "source_tier": "httpx"
         },
         {
