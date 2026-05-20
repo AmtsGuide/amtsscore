@@ -343,6 +343,10 @@
 		margin-top: auto;
 	}
 	.card-link:hover { color: #1a3da5; }
+	.card-note {
+		font-size: 10px; font-weight: 500; color: #94a3b8;
+		text-transform: uppercase; letter-spacing: 0.05em;
+	}
 
 	.footnote { font-size: 11px; color: #9ca3af; margin-top: 48px; }
 </style>
