@@ -27,6 +27,11 @@
 	for (const c of d.cities) counts[c.status] = (counts[c.status] ?? 0) + 1;
 	const hat = (counts['VOLLSTÄNDIG'] ?? 0) + (counts['TEILWEISE'] ?? 0);
 
+	const STATUS_ORDER: Record<string, number> = { VOLLSTÄNDIG: 0, TEILWEISE: 1, NUR_INFO: 2, NICHT_GEFUNDEN: 3 };
+	const sorted = [...d.cities].sort((a: any, b: any) =>
+		(STATUS_ORDER[a.status] ?? 9) - (STATUS_ORDER[b.status] ?? 9)
+	);
+
 	let mapEl: HTMLDivElement;
 	let tooltip = { visible: false, x: 0, y: 0, city: '', status: '', grund: '', url: '', statusKey: '' };
 
