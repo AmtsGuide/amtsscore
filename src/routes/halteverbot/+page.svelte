@@ -186,10 +186,13 @@
 			<h2 class="cities-heading">Alle 16 Landeshauptstädte</h2>
 			<div class="cities-grid">
 				{#each sorted as c}
-					<div class="city-card" style="border-top-color:{STATUS_COLOR[c.status]}">
-						<div class="card-top">
+					<div class="city-card">
+						<div class="card-header">
 							<span class="card-city">{c.city}</span>
-							<span class="card-badge" style="background:{STATUS_COLOR[c.status]}20;color:{STATUS_COLOR[c.status]}">{STATUS_LABEL[c.status]}</span>
+							<span class="card-status">
+								<span class="card-dot" style="background:{STATUS_COLOR[c.status]}"></span>
+								{STATUS_LABEL[c.status]}
+							</span>
 						</div>
 						{#if c.grund}
 							<p class="card-grund">{c.grund}</p>
