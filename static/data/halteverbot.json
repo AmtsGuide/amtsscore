@@ -1,0 +1,151 @@
+{
+  "process": "halteverbot",
+  "label": "Halteverbot einrichten",
+  "run_date": "2026-05-20",
+  "cities": [
+    {
+      "process": "halteverbot",
+      "city": "Hamburg",
+      "status": "TEILWEISE",
+      "level": 3,
+      "url": "https://www.hamburg.de/service/info/halteverbotszone-beantragen/11263054/n0/",
+      "grund": "Ein Online-Service ist vorhanden, aber der Seiteninhalt bricht ab und zeigt nicht den vollständigen digitalen Prozess.",
+      "source_tier": "httpx"
+    },
+    {
+      "process": "halteverbot",
+      "city": "München",
+      "status": "TEILWEISE",
+      "level": 3,
+      "url": "https://stadt.muenchen.de/service/info/temporare-anordnungen-morgb23/1072585/",
+      "grund": "Online-Beantragung ist möglich, aber Bürger müssen Schilder selbst beschaffen, aufstellen und entfernen sowie eine Vornotierungsliste ausfüllen.",
+      "source_tier": "httpx"
+    },
+    {
+      "process": "halteverbot",
+      "city": "Stuttgart",
+      "status": "TEILWEISE",
+      "level": 3,
+      "url": "https://www.stuttgart.de/organigramm/leistungen/parkplatzabsperrung-oder-halteverbotszone-fuer-umzug-beantragen",
+      "grund": "Online-Antrag ist über service-bw.de möglich, aber der Text bricht ab und zeigt keine vollständige Abschlussbestätigung des Prozesses.",
+      "source_tier": "httpx"
+    },
+    {
+      "process": "halteverbot",
+      "city": "Düsseldorf",
+      "status": "TEILWEISE",
+      "level": 3,
+      "url": "https://service.duesseldorf.de/suche/-/egov-bis-detail/dienstleistung/609/show",
+      "grund": "Ein Online-Antrag ist vorhanden (\"Zum Online-Antrag\"), aber die Bezahlung per EC-Cash ist technisch nicht möglich und die Beschilderung muss durch externe Firmen aufgestellt werden.",
+      "source_tier": "httpx"
+    },
+    {
+      "process": "halteverbot",
+      "city": "Wiesbaden",
+      "status": "TEILWEISE",
+      "level": 3,
+      "url": "https://www.wiesbaden.de/vv/produkte/34/141010100000380634.php",
+      "grund": "Ein schriftlicher Antrag (formlos oder über Formular) ist erforderlich, kann aber per Post, Fax oder Email eingereicht werden; ein vollständig digitaler Online-Antrag ist nicht vorhanden.",
+      "source_tier": "httpx"
+    },
+    {
+      "process": "halteverbot",
+      "city": "Kiel",
+      "status": "TEILWEISE",
+      "level": 3,
+      "url": "https://www.kiel.de/de/politik_verwaltung/service/_leistung.php?id=8958611",
+      "grund": "Ein Online-Antrag für befristete Haltverbotszonen ist erwähnt, aber die Seite zeigt hauptsächlich Informationen zu Zuständigkeiten ohne direkten Link zum abschließbaren digitalen Prozess.",
+      "source_tier": "httpx"
+    },
+    {
+      "process": "halteverbot",
+      "city": "Saarbrücken",
+      "status": "TEILWEISE",
+      "level": 3,
+      "url": "https://service.saarland.de/detail?areaId=&pstGroupId=&pstCatId=100048521&pstId=100573112",
+      "grund": "Die Seite bietet Informationen und ein Serviceportal für die Antragstellung an, der tatsächliche vollständige digitale Abschluss des Prozesses ist jedoch nicht dokumentiert.",
+      "source_tier": "httpx"
+    },
+    {
+      "process": "halteverbot",
+      "city": "Dresden",
+      "status": "TEILWEISE",
+      "level": 3,
+      "url": "https://www.dresden.de/de/rathaus/dienstleistungen/verkehrsregelnde-anordnung-ausnahmegenehmigung-veranstaltungen-und-private-maerkte.php",
+      "grund": "Ein PDF-Formular ist verfügbar, aber der Antrag muss per Post oder physisch eingereicht werden, ein vollständig digitaler Prozess ist nicht möglich.",
+      "source_tier": "httpx"
+    },
+    {
+      "process": "halteverbot",
+      "city": "Erfurt",
+      "status": "TEILWEISE",
+      "level": 3,
+      "url": "https://www.erfurt.de/ef/de/rathaus/bservice/leistungen/leistung-1370.htmc",
+      "grund": "Formulare und Informationen sind vorhanden, aber kein vollständig digitaler Antragsprozess erkennbar; die Beauftragung einer Verkehrssicherungsfirma muss eigenständig erfolgen.",
+      "source_tier": "httpx"
+    },
+    {
+      "process": "halteverbot",
+      "city": "Potsdam",
+      "status": "TEILWEISE",
+      "level": 3,
+      "url": "https://vv.potsdam.de/vv/produkte/173010100000003796.php",
+      "grund": "Ein Online-Service für die Straßensondernutzung - Umzug ist verlinkt, aber der vollständige digitale Antragsprozess ist auf dieser Informationsseite nicht abgebildet.",
+      "source_tier": "httpx"
+    },
+    {
+      "process": "halteverbot",
+      "city": "Schwerin",
+      "status": "TEILWEISE",
+      "level": 3,
+      "url": "https://serviceportal.schwerin.de/dienstleistungen/-/egov-bis-detail/dienstleistung/13839/show",
+      "grund": "Die Seite bietet Informationen und Leistungsbeschreibung zum Prozess, das Antragsformular oder der Online-Dienst ist jedoch nicht vollständig dargestellt (Text bricht ab).",
+      "source_tier": "httpx"
+    },
+    {
+      "process": "halteverbot",
+      "city": "Bremen",
+      "status": "TEILWEISE",
+      "level": 3,
+      "url": "https://www.polizei.bremen.de/service/formulare-und-antraege-60362",
+      "grund": "Ein Antragsformular (PDF) ist vorhanden, aber es ist kein vollständig digitaler Prozess möglich, da das Formular heruntergeladen und eingereicht werden muss.",
+      "source_tier": "httpx"
+    },
+    {
+      "process": "halteverbot",
+      "city": "Berlin",
+      "status": "NUR_INFO",
+      "level": 2,
+      "url": "https://service.berlin.de/dienstleistung/325649/",
+      "grund": "Die Seite bietet Informationen zum Prozess und nennt zuständige Behörden, ermöglicht aber keinen digitalen Antrag oder Terminbuchung.",
+      "source_tier": "httpx"
+    },
+    {
+      "process": "halteverbot",
+      "city": "Hannover",
+      "status": "NUR_INFO",
+      "level": 2,
+      "url": "https://www.hannover.de/Leben-in-der-Region-Hannover/Mobilit%C3%A4t/Kraftfahrzeug-Stra%C3%9Fe/Stra%C3%9Fenverkehrsbeh%C3%B6rden",
+      "grund": "Die Seite enthält nur Zuständigkeitsinformationen und Kontaktdaten der Verkehrsbehörden, ermöglicht aber keinen digitalen Antrag oder Termin für die Einrichtung eines Halteverbots.",
+      "source_tier": "httpx"
+    },
+    {
+      "process": "halteverbot",
+      "city": "Mainz",
+      "status": "NUR_INFO",
+      "level": 2,
+      "url": "https://www.mainz.de/vv/produkte/stadtplanungsamt/temporaere-halteverbotszone-beantragen.php",
+      "grund": "Die Seite enthält nur Informationen zur Halteverbotszone, zeigt aber keinen funktionierenden Link zu einem digitalen Antragsformular oder Online-Verfahren.",
+      "source_tier": "httpx"
+    },
+    {
+      "process": "halteverbot",
+      "city": "Magdeburg",
+      "status": "NUR_INFO",
+      "level": 2,
+      "url": "https://www.magdeburg.de/index.php?ModID=7&FID=37.1036.1&object=tx%7C37.1036.1",
+      "grund": "Die Seite enthält nur Kontaktinformationen und Zuständigkeiten der Behörde, bietet aber keine Möglichkeit zur digitalen Antragstellung oder Terminvergabe für ein Halteverbot.",
+      "source_tier": "httpx"
+    }
+  ]
+}
