@@ -3,3 +3,5 @@ dist/
 src/.observablehq/cache/
 .DS_Store
 *.log
+.svelte-kit/
+_src_of_backup/
