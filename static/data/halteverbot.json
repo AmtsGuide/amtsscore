@@ -118,7 +118,8 @@
       "level": 2,
       "url": "https://service.berlin.de/dienstleistung/325649/",
       "grund": "Die Seite bietet Informationen zum Prozess und nennt zuständige Behörden, ermöglicht aber keinen digitalen Antrag oder Terminbuchung.",
-      "source_tier": "httpx"
+      "source_tier": "httpx",
+      "note": "Zuständigkeit: 12 Bezirksämter"
     },
     {
       "process": "halteverbot",
