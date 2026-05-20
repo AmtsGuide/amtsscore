@@ -241,7 +241,7 @@
 		max-width: 1100px; margin: 0 auto; padding: 0 32px;
 		height: 52px; display: flex; align-items: center; justify-content: space-between;
 	}
-	.back { font-size: 13px; color: #1a3da5; text-decoration: none; font-weight: 500; }
+	.back { font-size: 13px; color: #1a3da5; text-decoration: none; font-weight: 500; display: flex; align-items: center; gap: 8px; }
 	.run-date { font-size: 11px; color: #9ca3af; }
 
 	main { max-width: 1100px; margin: 0 auto; padding: 48px 32px 64px; }
