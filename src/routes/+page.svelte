@@ -22,7 +22,7 @@
 	<header class="header">
 		<div class="header-inner">
 			<a href="https://amtsguide.de" target="_blank" rel="noopener" class="brand">
-				<img src="/assets/logo-light.svg" alt="AmtsScore" height="22" />
+				<img src="/assets/amtsguide-icon.svg" alt="AmtsGuide" height="32" width="32" />
 				<span>AmtsScore</span>
 			</a>
 			<nav>
