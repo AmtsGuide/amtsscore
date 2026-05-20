@@ -314,25 +314,32 @@
 	@media (max-width: 480px) { .cities-grid { grid-template-columns: 1fr; } }
 
 	.city-card {
-		border: 1px solid #e5e7eb; border-top: 3px solid;
-		border-radius: 6px; padding: 14px 16px;
-		display: flex; flex-direction: column; gap: 8px;
+		background: #fff;
+		border: 1px solid #e2e8f0;
+		border-radius: 10px;
+		padding: 18px 20px;
+		display: flex; flex-direction: column; gap: 10px;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.03);
 	}
-	.card-top {
+	.card-header {
 		display: flex; align-items: flex-start;
-		justify-content: space-between; gap: 8px;
+		justify-content: space-between; gap: 10px;
 	}
-	.card-city { font-size: 14px; font-weight: 700; color: #0f172a; }
-	.card-badge {
-		font-size: 10px; font-weight: 600; padding: 2px 7px;
-		border-radius: 99px; white-space: nowrap; flex-shrink: 0;
+	.card-city { font-size: 15px; font-weight: 600; color: #0f172a; line-height: 1.3; }
+	.card-status {
+		display: flex; align-items: center; gap: 5px;
+		font-size: 11px; color: #64748b; white-space: nowrap; flex-shrink: 0;
+		padding-top: 2px;
 	}
-	.card-grund { font-size: 12px; color: #6b7280; line-height: 1.5; margin: 0; }
+	.card-dot {
+		width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0;
+	}
+	.card-grund { font-size: 12px; color: #64748b; line-height: 1.6; margin: 0; }
 	.card-link {
-		font-size: 11px; color: #1a3da5; text-decoration: none;
-		font-family: monospace; opacity: 0.7;
+		font-size: 11px; color: #94a3b8; text-decoration: none; font-family: monospace;
+		margin-top: auto;
 	}
-	.card-link:hover { opacity: 1; }
+	.card-link:hover { color: #1a3da5; }
 
 	.footnote { font-size: 11px; color: #9ca3af; margin-top: 48px; }
 </style>
