@@ -122,112 +122,124 @@
       "note": "Zuständigkeit: 12 Bezirksämter — je nach Bezirk unterschiedliche Online-Präsenz",
       "bezirke": [
         {
-          "bezirk": "Charlottenburg-Wilmersdorf",
+          "process": "halteverbot",
           "city": "Berlin Charlottenburg-Wilmersdorf",
           "status": "NICHT_GEFUNDEN",
           "level": 0,
           "url": "https://www.berlin.de/ba-charlottenburg-wilmersdorf/",
-          "grund": "Die Seite ist eine allgemeine Willkommensseite des Bezirks ohne spezifische Informationen zum Prozess der Halteverboteinrichtung.",
-          "source_tier": "httpx"
+          "grund": "Die Seite ist eine allgemeine Willkommensseite des Bezirks ohne spezifische Informationen zum Prozess 'Halteverbot einrichten'.",
+          "source_tier": "httpx",
+          "bezirk": "Charlottenburg-Wilmersdorf"
         },
         {
-          "bezirk": "Friedrichshain-Kreuzberg",
+          "process": "halteverbot",
           "city": "Berlin Friedrichshain-Kreuzberg",
           "status": "NUR_INFO",
           "level": 2,
           "url": "https://www.berlin.de/ba-friedrichshain-kreuzberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/dienstleistungen/artikel.1193371.php",
-          "grund": "Die Seite informiert über das Verfahren, verweist aber auf externe Firmen für die Antragsstellung und die örtliche Straßenverkehrsbehörde ohne digitale Antragsmöglichkeit.",
-          "source_tier": "httpx"
+          "grund": "Die Seite informiert über das Verfahren, verweist aber auf externe Firmen für die Antragstellung und nennt nur Kontaktdaten der Behörde, ohne einen digitalen Antragsprozess anzubieten.",
+          "source_tier": "httpx",
+          "bezirk": "Friedrichshain-Kreuzberg"
         },
         {
-          "bezirk": "Lichtenberg",
+          "process": "halteverbot",
           "city": "Berlin Lichtenberg",
           "status": "NUR_INFO",
           "level": 2,
           "url": "https://www.berlin.de/ba-lichtenberg/politik-und-verwaltung/behoerdenwegweiser/artikel.250475.php",
-          "grund": "Die Seite enthält nur Kontaktinformationen und Ansprechpartner des Straßen- und Grünflächenamts, aber keinen direkten Zugang zu einem digitalen Antragssystem oder Formular für die Einrichtung eines Halteverbots.",
-          "source_tier": "httpx"
+          "grund": "Die Seite zeigt nur Kontaktdaten und Organisationsstruktur des Straßen- und Grünflächenamts; ein Antrag für ein Halteverbot kann nicht direkt gestellt werden.",
+          "source_tier": "httpx",
+          "bezirk": "Lichtenberg"
         },
         {
-          "bezirk": "Marzahn-Hellersdorf",
+          "process": "halteverbot",
           "city": "Berlin Marzahn-Hellersdorf",
           "status": "NICHT_GEFUNDEN",
           "level": 0,
           "url": null,
-          "grund": "Kein Online-Auftritt verlinkt — nur E-Mail-Kontakt auf service.berlin.de",
-          "source_tier": "none"
+          "grund": "Kein Online-Auftritt — nur direkter Kontakt bekannt",
+          "source_tier": "none",
+          "bezirk": "Marzahn-Hellersdorf"
         },
         {
-          "bezirk": "Mitte",
+          "process": "halteverbot",
           "city": "Berlin Mitte",
           "status": "NUR_INFO",
           "level": 2,
           "url": "https://www.berlin.de/ba-mitte/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/",
-          "grund": "Die Seite bietet nur Informationen zu verschiedenen Fachbereichen des Straßen- und Grünflächenamts, enthält aber keine spezifischen Informationen oder Formulare zum Einrichten eines Haltverbots.",
-          "source_tier": "httpx"
+          "grund": "Die Seite bietet nur allgemeine Informationen zum Straßen- und Grünflächenamt Mitte, enthält aber keine spezifischen Informationen oder digitale Anträge zum Prozess 'Halteverbot einrichten'.",
+          "source_tier": "httpx",
+          "bezirk": "Mitte"
         },
         {
-          "bezirk": "Neukölln",
+          "process": "halteverbot",
           "city": "Berlin Neukölln",
-          "status": "NUR_INFO",
-          "level": 2,
+          "status": "TEILWEISE",
+          "level": 3,
           "url": "https://www.berlin.de/ba-neukoelln/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassen-und-verwaltung/strassen-verkehrsbehoerde/artikel.685441.php",
-          "grund": "Die Seite enthält Informationen zu Zuständigkeiten und Anforderungen für Halteverbote, bietet aber keine Möglichkeit zur digitalen Antragstellung oder Online-Terminvergabe.",
-          "source_tier": "httpx"
+          "grund": "Die Seite erklärt den Prozess und Anforderungen für Halteverbote, bietet aber nur formlose Antragstellung an - kein vollständig digitales Verfahren.",
+          "source_tier": "httpx",
+          "bezirk": "Neukölln"
         },
         {
-          "bezirk": "Pankow",
+          "process": "halteverbot",
           "city": "Berlin Pankow",
           "status": "TEILWEISE",
           "level": 3,
           "url": "https://www.berlin.de/ba-pankow/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenverkehrsbehoerde/",
-          "grund": "Die Seite enthält Informationen zum Prozess und eine E-Mail-Adresse für die Antragstellung, aber keinen vollständigen digitalen Online-Antrag.",
-          "source_tier": "httpx"
+          "grund": "Die Seite informiert über das Verfahren und nennt die Kontaktdaten (E-Mail, Fax, Post) für die Antragstellung, ermöglicht aber keinen vollständig digitalen Online-Antrag.",
+          "source_tier": "httpx",
+          "bezirk": "Pankow"
         },
         {
-          "bezirk": "Reinickendorf",
+          "process": "halteverbot",
           "city": "Berlin Reinickendorf",
           "status": "NUR_INFO",
           "level": 2,
           "url": "https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/verwaltung/artikel.716705.php",
-          "grund": "Die Seite enthält nur eine Übersicht der Fachbereichs-Aufgaben und der Straßenverkehrsbehörde, bietet aber keinen direkten Zugang zu einem Antragsformular oder Online-Prozess für die Einrichtung eines Halteverbots.",
-          "source_tier": "httpx"
+          "grund": "Die Seite beschreibt die Organisationsstruktur der Straßenverkehrsbehörde, enthält aber keinen Link zu einem Antrag oder Formular für die Einrichtung eines Halteverbots.",
+          "source_tier": "httpx",
+          "bezirk": "Reinickendorf"
         },
         {
-          "bezirk": "Spandau",
+          "process": "halteverbot",
           "city": "Berlin Spandau",
           "status": "NICHT_GEFUNDEN",
           "level": 0,
           "url": "https://www.berlin.de/ba-spandau/index.html",
-          "grund": "Die Seite des Bezirksamts Spandau enthält keine Informationen zum Prozess 'Halteverbot einrichten'.",
-          "source_tier": "httpx"
+          "grund": "Die Seite ist eine allgemeine Übersichtsseite des Bezirksamts Spandau; es gibt keine spezifischen Informationen zum Prozess der Halteverboteinrichtung.",
+          "source_tier": "httpx",
+          "bezirk": "Spandau"
         },
         {
-          "bezirk": "Steglitz-Zehlendorf",
+          "process": "halteverbot",
           "city": "Berlin Steglitz-Zehlendorf",
           "status": "NICHT_GEFUNDEN",
           "level": 0,
           "url": "https://www.berlin.de/ba-steglitz-zehlendorf/",
-          "grund": "Die Seite enthält keine Informationen zum Prozess 'Halteverbot einrichten' und zeigt nur allgemeine Inhalte des Bezirksamts Steglitz-Zehlendorf.",
-          "source_tier": "httpx"
+          "grund": "Die Seite enthält nur allgemeine Informationen des Bezirksamts und keine spezifischen Informationen zum Prozess 'Halteverbot einrichten'.",
+          "source_tier": "httpx",
+          "bezirk": "Steglitz-Zehlendorf"
         },
         {
-          "bezirk": "Tempelhof-Schöneberg",
+          "process": "halteverbot",
           "city": "Berlin Tempelhof-Schöneberg",
           "status": "NUR_INFO",
           "level": 2,
           "url": "https://www.berlin.de/ba-tempelhof-schoeneberg/politik-und-verwaltung/aemter/strassen-und-gruenflaechenamt/strassenverkehrsbehoerde/artikel.1135696.php",
-          "grund": "Die Seite enthält nur Kontaktdaten und Ansprechpersonen der Straßenverkehrsbehörde, bietet aber keinen digitalen Antragsprozess für die Einrichtung eines Halteverbots an.",
-          "source_tier": "httpx"
+          "grund": "Die Seite enthält nur Kontaktdaten der zuständigen Behördenstelle, aber keine digitale Antragsmöglichkeit oder Formulare zum Einrichten eines Halteverbots.",
+          "source_tier": "httpx",
+          "bezirk": "Tempelhof-Schöneberg"
         },
         {
-          "bezirk": "Treptow-Köpenick",
+          "process": "halteverbot",
           "city": "Berlin Treptow-Köpenick",
           "status": "NICHT_GEFUNDEN",
           "level": 0,
           "url": null,
-          "grund": "Kein Online-Auftritt verlinkt — nur E-Mail-Kontakt auf service.berlin.de",
-          "source_tier": "none"
+          "grund": "Kein Online-Auftritt — nur direkter Kontakt bekannt",
+          "source_tier": "none",
+          "bezirk": "Treptow-Köpenick"
         }
       ]
     },
