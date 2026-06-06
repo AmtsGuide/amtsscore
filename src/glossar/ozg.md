@@ -31,7 +31,7 @@ OZG-Leistungen werden in vier Reifestufen klassifiziert:
 
 "OZG-konform" laut Selbstauskunft heißt oft nur **Stufe 1 oder 2**. Information online, vielleicht ein PDF zum Download. Echte digitale Bürger-Erfahrung beginnt erst ab **Stufe 3**.
 
-Das ist genau die Lücke, die AmtsScore misst: **Was steht tatsächlich auf der Website?**. unabhängig von OZG-Status-Selbstmeldungen.
+Das ist genau die Lücke, die AmtsScore misst: **Was steht tatsächlich auf der Website?**. unabhängig von OZG-Stand-Selbstmeldungen.
 
 ## In AmtsScore-Methodik
 
@@ -46,5 +46,5 @@ Aktuell deckt AmtsScore v0.1 verwandte Aspekte ab:
 ## Quellen
 
 - [Bundesministerium des Innern: OZG](https://www.bmi.bund.de/DE/themen/moderne-verwaltung/verwaltungsmodernisierung/onlinezugangsgesetz/onlinezugangsgesetz-node.html)
-- [OZG-Informationsplattform](https://informationsplattform.ozg-umsetzung.de/), offizieller Status-Tracker
+- [OZG-Informationsplattform](https://informationsplattform.ozg-umsetzung.de/), offizieller Stand-Tracker
 - [Bertelsmann Stiftung: OZG-Studien](https://www.bertelsmann-stiftung.de/de/themen/aktuelle-meldungen/2024/april/ozg-umsetzung-stockt-warum-deutschland-digital-zurueckfaellt), externe Analysen

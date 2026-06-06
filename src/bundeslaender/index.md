@@ -1,5 +1,5 @@
 ---
-title: "Bundesländer: Pre-AmtsScore-Übersicht"
+title: "Bundesländer: AmtsScore-Vorabwert-Übersicht"
 toc: false
 ---
 
@@ -9,7 +9,7 @@ toc: false
 const d = await FileAttachment("../data/prescore.json").json();
 ```
 
-Alle 16 Bundesländer, gewichteter Durchschnitt über alle gemessenen Städte und Topics.
+Alle 16 Bundesländer, gewichteter Durchschnitt über alle gemessenen Städte und Themen.
 
 ## Ranking
 
@@ -21,27 +21,27 @@ Inputs.table(d.state_summary.map(s => {
   return {
     Rang: s.rank,
     Bundesland: s.bundesland,
-    "⌀ Score": s.avg_score,
+    "⌀ Wert": s.avg_score,
     Datenpunkte: s.n_datapoints,
     Detail: slug,
   };
 }), {
   rows: 16,
   format: {
-    "⌀ Score": (x) => x.toFixed(1),
+    "⌀ Wert": (x) => x.toFixed(1),
     Detail: (slug) => htl.html`<a href="/bundeslaender/${slug}">öffnen →</a>`,
   }
 })
 ```
 
-## Score-Verteilung
+## Wertverteilung
 
 ```js
 Plot.plot({
   width: 800, height: 30 + d.state_summary.length * 22,
   marginLeft: 180,
   marginRight: 90,
-  x: {label: "⌀ Pre-Score (0-10)", domain: [0, 10], grid: true},
+  x: {label: "⌀ Vorabwert (0-10)", domain: [0, 10], grid: true},
   y: {label: null},
   marks: [
     Plot.barX(d.state_summary, {

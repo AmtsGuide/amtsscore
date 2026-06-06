@@ -1,5 +1,5 @@
 ---
-title: "Nürnberg: Pre-AmtsScore"
+title: "Nürnberg: AmtsScore-Vorabwert"
 toc: false
 ---
 
@@ -22,11 +22,11 @@ html`<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px
     <div style="font-weight:600">${summary?.bundesland ?? "—"}</div>
   </div>
   <div class="stat-card">
-    <div class="stat-label" style="font-size:0.8rem">⌀ Pre-Score</div>
+    <div class="stat-label" style="font-size:0.8rem">⌀ Vorabwert</div>
     <div style="font-weight:600">${summary ? summary.avg_score.toFixed(1) + " / 10" : "—"}</div>
   </div>
   <div class="stat-card">
-    <div class="stat-label" style="font-size:0.8rem">Topics gemessen</div>
+    <div class="stat-label" style="font-size:0.8rem">Themen gemessen</div>
     <div style="font-weight:600">${summary?.topic_count ?? 0} / ${d.topics.length}</div>
   </div>
   <div class="stat-card">
@@ -36,13 +36,13 @@ html`<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px
 </div>`
 ```
 
-## Score pro Topic
+## Wert pro Thema
 
 ```js
 Inputs.table(cityTopics.map(t => ({
-  Topic: t.topic,
-  Score: t.score,
-  "Rang im Topic": t.rank,
+  Thema: t.topic,
+  Wert: t.score,
+  "Rang im Thema": t.rank,
   Geschwindigkeit: t.speed,
   Kosten: t.cost,
   Online: t.online,
@@ -51,7 +51,7 @@ Inputs.table(cityTopics.map(t => ({
 })), {
   rows: 20,
   format: {
-    Score: (x) => x === null ? "—" : x.toFixed(1),
+    Wert: (x) => x === null ? "—" : x.toFixed(1),
     Geschwindigkeit: (x) => x === null ? "—" : x.toFixed(1),
     Kosten: (x) => x === null ? "—" : x.toFixed(1),
     Online: (x) => x === null ? "—" : x === 10 ? "ja" : "nein",
@@ -59,13 +59,13 @@ Inputs.table(cityTopics.map(t => ({
 })
 ```
 
-## Score-Komponenten
+## Wert-Komponenten
 
 ```js
 Plot.plot({
   width: 700, height: 30 + cityTopics.length * 60,
   marginLeft: 130,
-  x: {label: "Score (0-10)", domain: [0, 10], grid: true},
+  x: {label: "Wert (0-10)", domain: [0, 10], grid: true},
   y: {label: null},
   marks: [
     Plot.barX(
@@ -87,7 +87,7 @@ Plot.plot({
 
 ```js
 Inputs.table(cityTopics.map(t => ({
-  Topic: t.topic,
+  Thema: t.topic,
   "Tage": t.raw.speed_days,
   "Euro": t.raw.cost_eur,
   "Online verfügbar": t.raw.online_available,
@@ -112,7 +112,7 @@ const stateCities = d.city_summary.filter(c => c.bundesland === summary?.bundesl
 ```js
 html`
 <p><strong>Im Bundesland (${summary?.bundesland ?? "—"}):</strong>
-${stateCities.length} Stadt${stateCities.length === 1 ? "" : "e"} mit Pre-Score-Daten,
+${stateCities.length} Stadt${stateCities.length === 1 ? "" : "e"} mit Vorabwert-Daten,
 Landesdurchschnitt ⌀ ${stateSummary?.avg_score.toFixed(1) ?? "—"}.</p>
 <p><strong>Bundesweit:</strong> Stadt-Durchschnitt ${(d.city_summary.reduce((a,c) => a + c.avg_score, 0) / d.city_summary.length).toFixed(1)}.</p>
 `

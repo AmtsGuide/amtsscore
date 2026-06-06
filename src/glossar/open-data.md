@@ -53,7 +53,7 @@ AmtsScore prüft pro Stadt:
 - **Anzahl der Datensätze**. Quantität als Indikator für Maturität
 - **Aktualität des letzten Datensatzes**: wird das Portal noch gepflegt?
 
-Eine Stadt ohne Open Data oder mit Portal-Leiche (letzter Eintrag 2020) bekommt einen niedrigen D5-Score, auch wenn andere Dimensionen gut sind.
+Eine Stadt ohne Open Data oder mit Portal-Leiche (letzter Eintrag 2020) bekommt einen niedrigen D5-Wert, auch wenn andere Dimensionen gut sind.
 
 ## Quellen
 

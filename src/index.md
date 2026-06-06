@@ -79,7 +79,7 @@ toc: false
 ```js
 const prescore = await FileAttachment("data/prescore.json").json();
 const eauto = await FileAttachment("data/eauto_prescore.json").json();
-const eautoHistory = await FileAttachment("data/history/eauto/index.json").json();
+const eautoHistorie = await FileAttachment("data/history/eauto/index.json").json();
 const prescoreTopicCount = prescore.topics.length;
 const prescoreCityCount = prescore.city_summary.length;
 const prescoreStateCount = prescore.state_summary.length;
@@ -87,40 +87,40 @@ const eautoSummary = eauto.summary;
 ```
 
 <div class="hero">
-  <div class="tag">v0 / Pre-Launch</div>
+  <div class="tag">v0 / vor dem Start</div>
   <h1>Wie digital ist die deutsche Verwaltung wirklich?</h1>
-  <p>AmtsScore misst die digitale Performance deutscher Verwaltungs-Websites. Quartalsweise, datenbasiert, methodisch offen.</p>
+  <p>AmtsScore misst die digitale Leistung deutscher Verwaltungs-Websites. Quartalsweise, datenbasiert, methodisch offen.</p>
 </div>
 
-## Status
+## Stand
 
 AmtsScore befindet sich in **öffentlicher Methodik-Kommentierung**. Die [Methodik v0.1](/methodik) liegt zur Diskussion vor. Erste vollständige Messung der 20 deutschen Großstädte erwartet **Q3/2026**.
 
-In der Zwischenzeit zeigen wir aus bestehenden AmtsGuide-Daten erste **Topic-Auswertungen**. Behördengang-Daten pro Stadt, ohne AmtsScore-Bewertung.
+In der Zwischenzeit zeigen wir aus bestehenden AmtsGuide-Daten erste **Themenauswertungen**. Behördengang-Daten pro Stadt, ohne AmtsScore-Bewertung.
 
 ## Aktueller Stand
 
 ```js
 html`<div class="summary-grid">
   <div class="summary-card">
-    <div class="summary-label">Topic-Auswertungen</div>
+    <div class="summary-label">Themenauswertungen</div>
     <div class="summary-value">${prescoreTopicCount}</div>
     <p style="margin:0.5rem 0 0;color:var(--theme-foreground-muted)">Halteverbot, Kfz-Zulassung, GmbH-Gründung</p>
   </div>
   <div class="summary-card">
-    <div class="summary-label">Städte mit Pre-Score-Daten</div>
+    <div class="summary-label">Städte mit Vorabwert-Daten</div>
     <div class="summary-value">${prescoreCityCount}</div>
     <p style="margin:0.5rem 0 0;color:var(--theme-foreground-muted)">${prescoreStateCount} Bundesländer abgedeckt</p>
   </div>
   <div class="summary-card">
-    <div class="summary-label">E-Auto Candidate Topics</div>
+    <div class="summary-label">E-Auto Kandidatenthemen</div>
     <div class="summary-value">${eautoSummary.candidate_ready_topic_count}</div>
-    <p style="margin:0.5rem 0 0;color:var(--theme-foreground-muted)">${eautoSummary.signal_count} Candidate Signals</p>
+    <p style="margin:0.5rem 0 0;color:var(--theme-foreground-muted)">${eautoSummary.signal_count} Kandidatensignale</p>
   </div>
   <div class="summary-card">
-    <div class="summary-label">E-Auto Preview Surfaces</div>
+    <div class="summary-label">E-Auto Vorschauflächen</div>
     <div class="summary-value">${eautoSummary.web_buildable_now_count}</div>
-    <p style="margin:0.5rem 0 0;color:var(--theme-foreground-muted)">Provider Evidence ausgeschlossen</p>
+    <p style="margin:0.5rem 0 0;color:var(--theme-foreground-muted)">Anbieter-Belege ausgeschlossen</p>
   </div>
 </div>`
 ```
@@ -129,16 +129,16 @@ html`<div class="summary-grid">
 
 <div class="news-list">
   <div class="news-item">
-    <h3>2026-06-06 · E-Auto Candidate Signals ergänzt</h3>
-    <p>Neue Preview-Seite für E-Auto: Candidate Signals, Source Coverage, Fact Coverage, Unknown Counts und Provider-Grenze im Methodology Review.</p>
+    <h3>2026-06-06 · E-Auto Kandidatensignale ergänzt</h3>
+    <p>Neue Vorschau-Seite für E-Auto: Kandidatensignale, Quellenabdeckung, Faktenabdeckung, Unbekannte und Anbietergrenze in der Methodenprüfung.</p>
   </div>
   <div class="news-item">
-    <h3>2026-06-04 · Erste E-Auto-History-Baseline</h3>
-    <p>Der erste Snapshot enthält 19 candidate-ready Topics, 133 Candidate Signals, 0 blocked Signals und 12 buildable Preview Surfaces.</p>
+    <h3>2026-06-04 · Erster E-Auto-Historienstand</h3>
+    <p>Der erste Datenstand enthält 19 kandidatentaugliche Themen, 133 Kandidatensignale, 0 blockierte Signale und 12 darstellbare Vorschauflächen.</p>
   </div>
   <div class="news-item">
     <h3>2026-05-20 · Observable-Datenstand gesichert</h3>
-    <p>Die bestehende AmtsScore-Datenlage wurde als Baseline festgehalten, damit spätere Änderungen gegen den vorherigen Stand vergleichbar bleiben.</p>
+    <p>Die bestehende AmtsScore-Datenlage wurde als Ausgangsstand festgehalten, damit spätere Änderungen gegen den vorherigen Stand vergleichbar bleiben.</p>
   </div>
 </div>
 
@@ -149,18 +149,18 @@ html`<div class="summary-grid">
     <p><a href="/methodik">Methodik v0.1 →</a></p>
   </div>
   <div class="cta-card">
-    <h3>Topic-Daten</h3>
-    <p>Pre-AmtsScore-Auswertung: was kostet ein Halteverbot wo? Wie lange dauert die Bearbeitung? Wie schneiden Städte im Vergleich ab?</p>
+    <h3>Themendaten</h3>
+    <p>AmtsScore-Vorabwert-Auswertung: was kostet ein Halteverbot wo? Wie lange dauert die Bearbeitung? Wie schneiden Städte im Vergleich ab?</p>
     <p><a href="/topics/halteverbot">Halteverbot-Topographie →</a></p>
   </div>
   <div class="cta-card">
-    <h3>E-Auto Candidate Signals</h3>
-    <p>Preview der E-Auto-Quellenlage: Candidate Signals, Abdeckung, Unbekannte und Provider-Grenze im Methodology Review.</p>
-    <p><a href="/topics/e-auto">E-Auto-Preview →</a></p>
+    <h3>E-Auto Kandidatensignale</h3>
+    <p>Vorschau der E-Auto-Quellenlage: Kandidatensignale, Abdeckung, Unbekannte und Anbietergrenze in der Methodenprüfung.</p>
+    <p><a href="/topics/e-auto">E-Auto-Vorschau →</a></p>
   </div>
   <div class="cta-card">
     <h3>Leuchttürme</h3>
-    <p>Service-Launches, die zeigen wie es geht. Berlin Gaststätten 2026, mehr in Recherche.</p>
+    <p>Dienststarts, die zeigen wie es geht. Berlin Gaststätten 2026, weitere Beispiele in Recherche.</p>
     <p><a href="/specials/">Leuchttürme →</a></p>
   </div>
   <div class="cta-card">
@@ -172,9 +172,9 @@ html`<div class="summary-grid">
 
 ## Was unterscheidet AmtsScore?
 
-Andere Reports messen *Themen* (Trendradar, ThemenRadar) oder *Bürger-Befindlichkeit* (eGovernment Monitor). Niemand misst kontinuierlich, was tatsächlich auf den Verwaltungs-Websites passiert. **AmtsScore schließt diese Lücke.**
+Andere Berichte messen *Themen* (Trendradar, ThemenRadar) oder *Bürger-Befindlichkeit* (eGovernment Monitor). Niemand misst kontinuierlich, was tatsächlich auf den Verwaltungs-Websites passiert. **AmtsScore schließt diese Lücke.**
 
-- **Datengetrieben**: kein Survey, keine Selbstauskunft
-- **Reproduzierbar**. Methodik öffentlich, Daten downloadbar (CC BY 4.0)
+- **Datengetrieben**: keine Umfrage, keine Selbstauskunft
+- **Reproduzierbar**. Methodik öffentlich, Daten herunterladbar (CC BY 4.0)
 - **Quartalsweise**. Veränderung wird sichtbar
 - **Bürger-Perspektive**: was sieht die Bürger:in, nicht was meldet die IT

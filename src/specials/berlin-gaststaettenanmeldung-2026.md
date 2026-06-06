@@ -13,12 +13,12 @@ const data = await FileAttachment("../data/specials/berlin-gaststaettenanmeldung
 const passIcon = (v) => v === true ? "✅" : v === false ? "❌" : "⏳";
 const passLabel = (v) => v === true ? "erfüllt" : v === false ? "nicht erfüllt" : "ausstehend";
 const criteria = [
-  ["1", "End-to-end digital", "1_end_to_end_digital"],
+  ["1", "Vollständig digital", "1_end_to_end_digital"],
   ["2", "Authentifizierung (eID / BundID / Servicekonto)", "2_authentifizierung"],
   ["3", "Schema.org GovernmentService", "3_schema_org"],
-  ["4", "Lighthouse Mobile Performance ≥ 70", "4_lighthouse_mobile"],
-  ["5", "SERP Top-3 für canonical query", "5_serp_top3"],
-  ["6", "Stabile Permalinks (keine Session-IDs)", "6_stable_permalink"],
+  ["4", "Lighthouse-Mobilleistung ≥ 70", "4_lighthouse_mobile"],
+  ["5", "Top-3 in Suchergebnissen für die kanonische Suchanfrage", "5_serp_top3"],
+  ["6", "Stabile Permalinks (keine Sitzungs-IDs)", "6_stable_permalink"],
   ["7", "Pressereife / offizielle Kommunikation", "7_pressereife"],
   ["8", "Reproduzierbar für andere Städte", "8_reproduzierbar"],
 ];
@@ -27,7 +27,7 @@ const criteria = [
 ```js
 html`<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0.75rem;margin:1rem 0">
   <div class="stat-card">
-    <div class="stat-label" style="font-size:0.8rem">Service</div>
+    <div class="stat-label" style="font-size:0.8rem">Dienst</div>
     <div style="font-weight:600">${data.service_short}</div>
   </div>
   <div class="stat-card">
@@ -35,19 +35,19 @@ html`<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px
     <div style="font-weight:600">${data.stadt}</div>
   </div>
   <div class="stat-card">
-    <div class="stat-label" style="font-size:0.8rem">Live seit</div>
+    <div class="stat-label" style="font-size:0.8rem">Verfügbar seit</div>
     <div style="font-weight:600">${data.live_seit}</div>
   </div>
   <div class="stat-card">
-    <div class="stat-label" style="font-size:0.8rem">Score</div>
+    <div class="stat-label" style="font-size:0.8rem">Wert</div>
     <div style="font-weight:600">${data.summary.passed} / ${data.summary.max} ${data.summary.is_leuchtturm ? '⭐' : ''}</div>
   </div>
 </div>`
 ```
 
-**Service-URL:** ${data.url}
+**Dienst-URL:** ${data.url}
 **Stand der Messung:** ${data.checked_at.slice(0,10)}.
-**Leuchtturm-Status:** ${data.summary.is_leuchtturm ? '⭐ Aufnahme (≥ 6/8 erfüllt)' : `nicht aufgenommen (${data.summary.passed}/8 erfüllt, Schwelle 6)`}.
+**Leuchtturm-Stand:** ${data.summary.is_leuchtturm ? '⭐ Aufnahme (≥ 6/8 erfüllt)' : `nicht aufgenommen (${data.summary.passed}/8 erfüllt, Schwelle 6)`}.
 
 ## 8-Kriterien-Bewertung
 
@@ -60,14 +60,14 @@ function befund(key, c) {
     case "2_authentifizierung":
       return Array.isArray(ev) && ev.length ? ev.join(", ") : "keine Anbindung sichtbar";
     case "3_schema_org":
-      return Array.isArray(ev) && ev.length ? `Typen: ${ev.join(", ")}` : "kein Schema.org-Markup";
+      return Array.isArray(ev) && ev.length ? `Typen: ${ev.join(", ")}` : "keine Schema.org-Auszeichnung";
     case "4_lighthouse_mobile":
-      return typeof ev === "number" ? `Score ${ev}/100` : (c.passes === null ? "Messung ausstehend" : "");
+      return typeof ev === "number" ? `Wert ${ev}/100` : (c.passes === null ? "Messung ausstehend" : "");
     case "5_serp_top3":
-      return ev && ev.position ? `Position ${ev.position} für „${ev.query}"` : "nicht in den Top-10";
+      return ev && ev.position ? `Position ${ev.position} für „${ev.query}"` : "nicht unter den ersten 10";
     case "6_stable_permalink":
       if (!ev) return "";
-      return ev.issues && ev.issues.length ? `Probleme: ${ev.issues.join(", ")}` : "saubere URL, keine Session-IDs";
+      return ev.issues && ev.issues.length ? `Probleme: ${ev.issues.join(", ")}` : "saubere URL, keine Sitzungs-IDs";
     case "7_pressereife":
     case "8_reproduzierbar":
       return ev === "pass" ? "verifiziert" : ev === "fail" ? "nicht erfüllt" : "redaktionell ausstehend";
@@ -82,11 +82,11 @@ Inputs.table(
   criteria.map(([n, label, key]) => ({
     "#": n,
     Kriterium: label,
-    Status: passIcon(data.checks[key].passes),
+    Stand: passIcon(data.checks[key].passes),
     Bewertung: passLabel(data.checks[key].passes),
     Befund: befund(key, data.checks[key]),
   })),
-  {rows: 10, layout: "auto", width: {"#": 30, Status: 60, Bewertung: 120}}
+  {rows: 10, layout: "auto", width: {"#": 30, Stand: 60, Bewertung: 120}}
 )
 ```
 
@@ -108,7 +108,7 @@ ${pending.length ? html`<p><strong>Ausstehend:</strong> ${pending.join(' · ')}<
 
 ## Methodische Anmerkungen
 
-Die automatischen Checks (1–6) laufen über das Open-Source-Tool im Repo unter
+Die automatischen Prüfungen (1–6) laufen über das quelloffene Werkzeug im Repo unter
 [`tools/leuchtturm/`](https://github.com/AmtsGuide/amtsscore/tree/main/tools/leuchtturm).
 Kriterium 1 ist eine Keyword-Heuristik, nutzbar als notwendige Bedingung, nicht als hinreichender Beweis.
 Kriterien 7 und 8 sind redaktionell und werden in
@@ -116,6 +116,6 @@ Kriterien 7 und 8 sind redaktionell und werden in
 
 ## Korrekturen vorschlagen
 
-Falls eine Aussage nicht stimmt oder eine Evidenz fehlt: Pull Request auf
+Falls eine Aussage nicht stimmt oder eine Evidenz fehlt: Änderungsvorschlag auf
 [GitHub](https://github.com/AmtsGuide/amtsscore) öffnen oder Mail an
 `ad@blinktank.de`.

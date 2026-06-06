@@ -1,5 +1,5 @@
 ---
-title: "Städte: Pre-AmtsScore-Übersicht"
+title: "Städte: AmtsScore-Vorabwert-Übersicht"
 toc: false
 ---
 
@@ -9,9 +9,9 @@ toc: false
 const d = await FileAttachment("../data/prescore.json").json();
 ```
 
-${d.city_summary.length} Städte mit Pre-AmtsScore-Daten. Klicken Sie eine Stadt für ihre Detailseite.
+${d.city_summary.length} Städte mit AmtsScore-Vorabwert-Daten. Klicken Sie eine Stadt für ihre Detailseite.
 
-## Stadt × Topic Matrix
+## Stadt-Themen-Matrix
 
 ```js
 const scoreBySlug = {};
@@ -28,8 +28,8 @@ const matrix = d.city_summary.map(c => ({
   Halteverbot: scoreBySlug[c.city_slug]?.["halteverbot"] ?? null,
   KFZ: scoreBySlug[c.city_slug]?.["kfz-zulassung"] ?? null,
   GmbH: scoreBySlug[c.city_slug]?.["gmbh-gruendung"] ?? null,
-  "⌀ Score": c.avg_score,
-  Topics: c.topic_count,
+  "⌀ Wert": c.avg_score,
+  Themen: c.topic_count,
   Detail: c.city_slug,
 }));
 ```
@@ -41,14 +41,14 @@ Inputs.table(matrix, {
     Halteverbot: (x) => x === null ? "—" : x.toFixed(1),
     KFZ: (x) => x === null ? "—" : x.toFixed(1),
     GmbH: (x) => x === null ? "—" : x.toFixed(1),
-    "⌀ Score": (x) => x.toFixed(1),
+    "⌀ Wert": (x) => x.toFixed(1),
     Detail: (slug) => htl.html`<a href="/staedte/${slug}">öffnen →</a>`,
   }
 })
 ```
 
-Volle Coverage (3/3 Topics): ${matrix.filter(c => c.Topics === 3).length} Städte.
-Teil-Coverage: ${matrix.filter(c => c.Topics < 3).length} Städte.
+Vollständige Abdeckung (3/3 Themen): ${matrix.filter(c => c.Themen === 3).length} Städte.
+Teilabdeckung: ${matrix.filter(c => c.Themen < 3).length} Städte.
 
 ## Verteilung
 
@@ -56,7 +56,7 @@ Teil-Coverage: ${matrix.filter(c => c.Topics < 3).length} Städte.
 Plot.plot({
   width: 800, height: 350,
   marginLeft: 60,
-  x: {label: "⌀ Pre-Score (0-10)", grid: true},
+  x: {label: "⌀ Vorabwert (0-10)", grid: true},
   y: {label: "Anzahl Städte"},
   marks: [
     Plot.rectY(d.city_summary, Plot.binX({y: "count"}, {x: "avg_score", thresholds: 20, fill: "#1a3da5"})),

@@ -31,7 +31,7 @@ LeiKa-Pflege ist Aufgabe der Bundesländer. Vollständigkeit + Aktualität varii
 
 ## In AmtsScore-Methodik
 
-**Geplant für v1+:** AmtsScore-Dimension "LeiKa-Coverage". Anteil der Top-20-Bürger-Leistungen, die auf der Stadt-Website eine korrekt verlinkte LeiKa-ID tragen.
+**Geplant für v1+:** AmtsScore-Dimension "LeiKa-Abdeckung". Anteil der Top-20-Bürger-Leistungen, die auf der Stadt-Website eine korrekt verlinkte LeiKa-ID tragen.
 
 ## Quellen
 

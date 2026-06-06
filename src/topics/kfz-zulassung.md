@@ -9,7 +9,7 @@ toc: true
 const d = await FileAttachment("../data/kfz_enriched.json").json();
 ```
 
-20 deutsche Großstädte, 9 Dimensionen, keine Kosten-Wertung (Gebühren sind FZV-reguliert und sagen nichts über Service-Qualität).
+20 deutsche Großstädte, 9 Dimensionen, keine Kosten-Wertung. Gebühren sind FZV-reguliert und sagen nichts über Dienstqualität.
 Stand der Messung: ${d.generated_at.slice(0,10)}.
 
 ## Wichtigste Befunde
@@ -27,7 +27,7 @@ html`<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px
   <div class="stat-card">
     <div class="stat-label" style="font-size:0.8rem">Schema.org GovernmentService</div>
     <div style="font-size:1.5rem;font-weight:600">${haveSchema} / ${d.n_cities}</div>
-    <div class="stat-label" style="font-size:0.8rem">Termin-URL trägt strukturiertes Markup</div>
+    <div class="stat-label" style="font-size:0.8rem">Termin-URL trägt strukturierte Daten</div>
   </div>
   <div class="stat-card">
     <div class="stat-label" style="font-size:0.8rem">llms.txt</div>
@@ -57,7 +57,7 @@ Inputs.table(d.cities.map(c => ({
   Wartezeit: c.dimensions.speed,
   "i-Kfz": c.dimensions.online,
   Standorte: c.dimensions.access,
-  "Walk-in": c.dimensions.friction,
+  "ohne Termin": c.dimensions.friction,
   eID: c.dimensions.auth,
   "Schema.org": c.dimensions.schema,
   "llms.txt": c.dimensions.llmstxt,
@@ -70,7 +70,7 @@ Inputs.table(d.cities.map(c => ({
     Wartezeit: (x) => x === null ? "—" : x.toFixed(1),
     "i-Kfz": (x) => x === null ? "—" : x.toFixed(0),
     Standorte: (x) => x === null ? "—" : x.toFixed(1),
-    "Walk-in": (x) => x === null ? "—" : x.toFixed(0),
+    "ohne Termin": (x) => x === null ? "—" : x.toFixed(0),
     eID: (x) => x === null ? "—" : x.toFixed(0),
     "Schema.org": (x) => x === null ? "—" : x.toFixed(0),
     "llms.txt": (x) => x === null ? "—" : x.toFixed(0),
@@ -80,9 +80,9 @@ Inputs.table(d.cities.map(c => ({
 })
 ```
 
-## Per Dimension
+## Je Dimension
 
-Alle Dimensionen nebeneinander — jede Stadt × jede Dimension auf einen Blick.
+Alle Dimensionen nebeneinander: jede Stadt und jede Dimension auf einen Blick.
 
 ```js
 const dimRows = d.dimensions.flatMap(dim =>
@@ -103,7 +103,7 @@ Plot.plot({
   marginLeft: 110,
   marginRight: 30,
   marginTop: 40,
-  x: {domain: [0, 10], grid: true, ticks: 3, label: "Score"},
+  x: {domain: [0, 10], grid: true, ticks: 3, label: "Wert"},
   y: {label: null},
   fx: {label: null, padding: 0.1},
   facet: {data: dimRows, x: "dimension"},
@@ -137,22 +137,22 @@ Inputs.table(d.cities.map(c => ({
 KFZ-Gebühren bundesweit nach FZV reguliert sind und Variationen kein
 Qualitäts-Signal sind.
 
-| # | Tier | Dimension | Quelle | Logik |
+| # | Ebene | Dimension | Quelle | Logik |
 |---|---|---|---|---|
 | 1 | 1 | Wartezeit | AmtsGuide `wartezeit` | weniger Tage = höher |
 | 2 | 1 | i-Kfz Online | AmtsGuide `ikfz` | binär 10/0 |
 | 3 | 1 | Standorte | AmtsGuide `standorte` count | mehr = höher |
-| 4 | 1 | Walk-in möglich | AmtsGuide `terminpflicht` | walk-in = 10, Termin-Pflicht = 5 |
-| 5 | 2 | eID-Anbindung | Termin-URL scan | BundID/BerlinID/Servicekonto/AusweisApp erwähnt |
+| 4 | 1 | Ohne Termin möglich | AmtsGuide `terminpflicht` | ohne Termin = 10, Terminpflicht = 5 |
+| 5 | 2 | eID-Anbindung | Termin-URL-Scan | BundID/BerlinID/Servicekonto/AusweisApp erwähnt |
 | 6 | 2 | Schema.org GovernmentService | Termin-URL JSON-LD | binär 10/0 |
 | 7 | 2 | llms.txt | Stadt-Domain `/llms.txt` | HTTP 200 = 10 |
 | 8 | 2 | HTTPS-Hygiene | Mozilla Observatory | A+→10, F→0 |
 | 9 | 3 | Presse-Stille | Brave Search "kritik wartezeit" | weniger Treffer = höher |
 
-**Tier 1** = direkt aus AmtsGuide-Daten. **Tier 2** = pro-Stadt Webfetch.
-**Tier 3** = externes Signal.
+**Ebene 1** = direkt aus AmtsGuide-Daten. **Ebene 2** = Webabruf pro Stadt.
+**Ebene 3** = externes Signal.
 
-Tools im öffentlichen Repo: [`tools/scan/kfz.py`](https://github.com/AmtsGuide/amtsscore/blob/main/tools/scan/kfz.py).
+Werkzeuge im öffentlichen Repo: [`tools/scan/kfz.py`](https://github.com/AmtsGuide/amtsscore/blob/main/tools/scan/kfz.py).
 Reproduzierbar mit `python tools/scan/kfz.py` (Brave API-Key empfohlen).
 
 ## Daten-Lücken
@@ -162,8 +162,8 @@ const nullSpeed = d.cities.filter(c => c.dimensions.speed === null).length;
 const nullObs = d.cities.filter(c => c.dimensions.https === null).length;
 const nullPress = d.cities.filter(c => c.dimensions.press === null).length;
 html`<ul>
-<li>${nullSpeed}/${d.n_cities} Städte ohne maschinenlesbare Wartezeit (qualitative Strings).</li>
-<li>${nullObs}/${d.n_cities} Städte ohne Mozilla-Observatory-Score (API-Ausfall im Messzeitraum, kein Stadt-Problem).</li>
-<li>${nullPress}/${d.n_cities} Städte ohne Presse-Signal (Brave-API-Quote / Query-Match).</li>
+<li>${nullSpeed}/${d.n_cities} Städte ohne maschinenlesbare Wartezeit (qualitative Texte).</li>
+<li>${nullObs}/${d.n_cities} Städte ohne Mozilla-Observatory-Wert (API-Ausfall im Messzeitraum, kein Stadt-Problem).</li>
+<li>${nullPress}/${d.n_cities} Städte ohne Presse-Signal (Brave-API-Kontingent / Suchtreffer).</li>
 </ul>`
 ```

@@ -37,7 +37,7 @@ JSON-LD-Block im HTML-Head:
 | **GovernmentOrganization** | Die Behörde |
 | **GovernmentBuilding** | Physisches Bürgeramt-Gebäude |
 | **OpeningHoursSpecification** | Öffnungszeiten |
-| **Service** (generisch) | Wenn GovernmentService zu eng |
+| **Dienst** (generisch) | Wenn GovernmentService zu eng |
 | **FAQPage** | Häufige Bürger-Fragen |
 | **ContactPoint** | Telefon, E-Mail, Adresse |
 

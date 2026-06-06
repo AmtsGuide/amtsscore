@@ -13,7 +13,7 @@ const head = `
 
 const header = `
 <div class="amtsscore-header">
-  <a href="/" aria-label="AmtsScore Home" class="amtsscore-headerlink amtsscore-brand">
+  <a href="/" aria-label="AmtsScore Startseite" class="amtsscore-headerlink amtsscore-brand">
     <img src="/assets/logo-light.svg" alt="AmtsScore" height="24" class="amtsscore-logo-light">
     <img src="/assets/logo-dark.svg" alt="AmtsScore" height="24" class="amtsscore-logo-dark">
   </a>
@@ -84,9 +84,9 @@ export default {
 	pages: [
 		{name: 'Methodik', path: '/methodik'},
 		{
-			name: 'Topics',
+			name: 'Themen',
 			pages: [
-				{name: 'E-Auto Candidate Signals', path: '/topics/e-auto'},
+				{name: 'E-Auto-Kandidatensignale', path: '/topics/e-auto'},
 				{name: 'Halteverbot', path: '/topics/halteverbot'},
 				{name: 'KFZ-Zulassung', path: '/topics/kfz-zulassung'},
 				{name: 'GmbH-Gründung', path: '/topics/gmbh-gruendung'},

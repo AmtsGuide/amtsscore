@@ -1,11 +1,11 @@
 ---
-title: "GmbH-Gründung: Topic-Daten + Pre-AmtsScore"
+title: "GmbH-Gründung: Themendaten + AmtsScore-Vorabwert"
 toc: true
 ---
 
 # GmbH-Gründung (Mustervertrag, 1 Gesellschafter)
 
-Pre-AmtsScore pro Stadt aus AmtsGuide-Daten, linear normalisiert:
+AmtsScore-Vorabwert pro Stadt aus AmtsGuide-Daten, linear normalisiert:
 
 - **40% Kosten** (Gewerbeamt + Notar + HR-Eintrag, ohne Stammkapital)
 - **40% Geschwindigkeit** (Bearbeitungszeit)
@@ -28,7 +28,7 @@ const authorityName = (a) => {
 Inputs.table(prescore.cities.map(c => ({
   Rang: c.rank,
   Stadt: c.city,
-  Score: c.score === null ? null : Number(c.score.toFixed(1)),
+  Wert: c.score === null ? null : Number(c.score.toFixed(1)),
   "Tage": c.raw.speed_days === null ? "—" : `${c.raw.speed_days} d`,
   "Kosten ab (€)": c.raw.cost_eur === null ? "—" : `${c.raw.cost_eur.toFixed(0)} €`,
   "Online": c.raw.online_available === null ? "—" : (c.raw.online_available ? "ja" : "nein"),
@@ -37,7 +37,7 @@ Inputs.table(prescore.cities.map(c => ({
 })), {
   rows: 50,
   format: {
-    Score: (x) => x === null ? "—" : x.toFixed(1),
+    Wert: (x) => x === null ? "—" : x.toFixed(1),
   }
 })
 ```
@@ -90,5 +90,5 @@ Variante `gesellschaftsvertrag=muster`, 1 Gesellschafter.
 Kosten = Gewerbeamt + Notar (min) + Handelsregister-Eintrag. Stammkapital
 (25.000 € gesetzlich) und jährliche IHK-Beiträge sind ausgeschlossen.
 
-Pre-Wertung misst Bürger-Outcome, nicht die digitale Performance der
+Die Vorabwertung misst das Bürgerergebnis, nicht die digitale Leistung der
 Verwaltungs-Website.

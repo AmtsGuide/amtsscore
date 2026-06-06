@@ -43,7 +43,7 @@ Andere Werkzeuge: WAVE (WebAIM), Lighthouse-Accessibility, Pa11y.
 AmtsScore misst Barrierefreiheit auf 4 Stadt-Seiten (Startseite + 3 Dienstleistungs-Seiten):
 
 - Anzahl axe-core-Verstöße
-- WCAG-AA-Compliance-Quote
+- WCAG-AA-Einhaltung-Quote
 - Vorhandensein der Barrierefreiheits-Erklärung
 
 Ergebnis ist eine **Untergrenze** (das was Maschinen erkennen). Volle manuelle Prüfung ist nicht skalierbar; AmtsScore identifiziert die schlechtesten Performer für gezielte tiefere Audits.

@@ -1,7 +1,6 @@
-# AmtsScore Methodik v0
+# AmtsScore-Methodik v0
 
-**Stand:** 2026-05-15 (v0.1 draft)
-**Status:** Pre-launch. Diskussion + Feedback erbeten vor v1 (Q1/2026-Release).
+**Stand:** 2026-05-15 (Entwurf v0.1). Diskussion und Feedback vor v1 sind ausdrücklich erwünscht.
 
 ## Zweck dieses Dokuments
 
@@ -11,8 +10,8 @@ Transparente, nachprüfbare Methodik der AmtsScore-Messung. Wer kritisiert, krit
 
 1. **Nur öffentlich messbare Daten.** Keine Umfragen, keine Selbstauskünfte, keine vertraulichen Quellen. Alle Daten lassen sich von jedem Dritten reproduzieren.
 2. **Bürger-Perspektive.** Was zählt, ist was eine Bürgerin auf der Website tatsächlich erreichen kann, nicht was die IT-Abteilung intern verwendet.
-3. **Multi-dimensional.** Der AmtsScore ist eine gewichtete Summe von 10 Sub-Scores. Eine Stadt mit perfektem Score in 9 Dimensionen und 0 in einer hat keinen perfekten AmtsScore.
-4. **Reproduzierbar.** Methodik + Daten + Code (später) sind öffentlich. Jeder Score lässt sich rückgängig nachvollziehen.
+3. **Mehrdimensional.** Der AmtsScore ist eine gewichtete Summe aus 10 Teilwerten. Eine Stadt mit perfektem Wert in 9 Dimensionen und 0 in einer hat keinen perfekten AmtsScore.
+4. **Reproduzierbar.** Methodik + Daten + Code (später) sind öffentlich. Jeder Wert lässt sich rückgängig nachvollziehen.
 5. **Kontinuierlich.** Quartalsweise Messung. Veränderung ist sichtbar.
 
 ## Messgegenstand
@@ -27,11 +26,11 @@ Transparente, nachprüfbare Methodik der AmtsScore-Messung. Wer kritisiert, krit
 
 ### Grundlagen: Was Bürger:innen heute brauchen (D1-D10)
 
-| # | Dimension | Was wird gemessen | Werkzeug | Max-Score |
+| # | Dimension | Was wird gemessen | Werkzeug | Max-Wert |
 |---|---|---|---|---|
 | 1 | **Online-Termin-Buchung** | Existiert eine Online-Buchung? Welcher Anteil der Dienstleistungen ist online buchbar? | Pattern-Detection (TerminVer / SAGA / Maerker etc.) + Sitemap-Scan | 0-10 |
 | 2 | **Anzahl Online-Dienstleistungen** | Wie viele Verwaltungsleistungen sind komplett online erledigbar (OZG-Kategorie 4)? | Sitemap + Page-Pattern (FIM/LeiKa) | 0-10 |
-| 3 | **Mobile / Lighthouse Performance** | Page-Speed + Mobile-Optimierung auf der Startseite + drei Dienstleistungs-Seiten | Lighthouse (Performance-Score) | 0-10 |
+| 3 | **Mobil / Lighthouse-Leistung** | Seitengeschwindigkeit und Mobil-Optimierung auf der Startseite plus drei Dienstleistungs-Seiten | Lighthouse-Leistungswert | 0-10 |
 | 4 | **Barrierefreiheit (BITV/WCAG)** | Automatische Prüfung gegen BITV 2.0 / WCAG 2.1 AA | axe-core | 0-10 |
 | 5 | **Open-Data-Portal** | Eigenes Open-Data-Portal verfügbar? Anzahl Datasets? Aktualität? | URL-Probe (`/opendata`, `opendata.{stadt}.de`) + GovData-Lookup | 0-10 |
 | 6 | **Strukturierte Daten** | Schema.org-Markup auf Dienstleistungs-Seiten (GovernmentService, GovernmentOrganization) | JSON-LD-Parse | 0-10 |
@@ -42,16 +41,16 @@ Transparente, nachprüfbare Methodik der AmtsScore-Messung. Wer kritisiert, krit
 
 ### Zukunft: Was Bürger:innen 2026+ brauchen (D11-D12)
 
-Verwaltung-Websites bedienen nicht mehr nur Menschen. Sie bedienen auch **KI-Assistenten, Apps, Aggregatoren, Software-Agenten**. Eine Stadt-Website, die für ChatGPT, Perplexity oder Claude unsichtbar ist, wird ihre Bürger:innen ab 2027 nicht mehr erreichen. Diese zwei Dimensionen messen die **Maschinen-Lesbarkeit + KI-Bereitschaft**.
+Verwaltungs-Websites bedienen nicht mehr nur Menschen. Sie bedienen auch **KI-Assistenten, Apps, Aggregatoren und Software-Agenten**. Eine Stadt-Website, die für ChatGPT, Perplexity oder Claude unsichtbar ist, wird ihre Bürger:innen ab 2027 nicht mehr erreichen. Diese zwei Dimensionen messen die **Maschinen-Lesbarkeit und KI-Bereitschaft**.
 
-| # | Dimension | Was wird gemessen | Werkzeug | Max-Score |
+| # | Dimension | Was wird gemessen | Werkzeug | Max-Wert |
 |---|---|---|---|---|
-| 11 | **Maschinen-Lesbarkeit + KI-Bereitschaft** | `llms.txt` vorhanden? Robots.txt erlaubt AI-Bots (GPTBot, ChatGPT-User, PerplexityBot, ClaudeBot, Google-Extended)? Non-JS-Rendering (Bot-Readable HTML)? Stabile Permalinks? | HTTP-Probe + DOM-Test mit deaktiviertem JS | 0-10 |
-| 12 | **Maschinen-Schnittstellen (API + MCP)** | Öffentliche API für Service-Abfragen (REST/GraphQL)? OpenAPI/Swagger-Dokumentation? MCP-Server-Endpunkt? | URL-Probe für `/api`, `/.well-known/mcp`, OpenAPI-Discovery | 0-10 |
+| 11 | **Maschinen-Lesbarkeit und KI-Bereitschaft** | `llms.txt` vorhanden? Robots.txt erlaubt KI-Bots (GPTBot, ChatGPT-User, PerplexityBot, ClaudeBot, Google-Extended)? Darstellung ohne JavaScript? Stabile Permalinks? | HTTP-Probe und DOM-Test mit deaktiviertem JS | 0-10 |
+| 12 | **Maschinen-Schnittstellen (API + MCP)** | Öffentliche API für Dienst-Abfragen (REST/GraphQL)? OpenAPI/Swagger-Dokumentation? MCP-Server-Endpunkt? | URL-Probe für `/api`, `/.well-known/mcp`, OpenAPI-Erkennung | 0-10 |
 
 **Heute werden fast alle Städte D11 + D12 nahe Null haben.** Das ist Absicht. AmtsScore macht sichtbar, was als nächstes kommt, bevor es zu spät ist.
 
-Siehe Glossar: [Maschinen-Lesbarkeit + KI-Bereitschaft](/glossar/ai-readiness).
+Siehe Glossar: [Maschinen-Lesbarkeit und KI-Bereitschaft](/glossar/ai-readiness).
 
 ## Gewichtung v0
 
@@ -59,17 +58,17 @@ Alle Dimensionen mit Gleichgewicht (12 × 1/12 ≈ 8,33%) für v0. Vorteil: kein
 
 **Geplante Anpassung in v1:** Gewichtung nach Bürger-Relevanz. Die Grundlagen-Dimensionen (D1, D2, D4, D8) bekommen höhere Gewichte, weil sie Bürger:innen unmittelbar betreffen. Die Zukunfts-Dimensionen (D11, D12) behalten in v1 noch volles Gewicht, wir wollen den Anpassungsdruck nicht senken. Anpassung wird transparent dokumentiert; v0-Gleichgewicht und v1-relevanzgewichtet werden parallel publiziert, sodass keine Stadt "über Nacht abstürzt" durch Methodik-Änderung.
 
-## Composite-Berechnung
+## Gesamtwert-Berechnung
 
-```
-AmtsScore = sum(w_i * sub_score_i) for i in 1..12
+```text
+AmtsScore = Summe aus Gewicht je Dimension mal Teilwert je Dimension
 ```
 
 Mit `w_i = 1/12 ≈ 0.0833` in v0 (Gleichgewicht).
 
 Ergebnis: 0.0 (komplett analog) bis 10.0 (Spitzenklasse).
 
-## Klassen-Einteilung (für Award-Phase ab Year 2)
+## Klassen-Einteilung (für Auszeichnungsphase ab Jahr 2)
 
 | AmtsScore-Bereich | Klasse | Zertifikat-Anrecht |
 |---|---|---|
@@ -84,29 +83,29 @@ Ergebnis: 0.0 (komplett analog) bis 10.0 (Spitzenklasse).
 - **Interne IT-Modernität** (z.B. Cloud-Migration, eAkte), nicht von außen messbar
 - **Mitarbeiter-Zufriedenheit**: gehört zu Umfragen, nicht zu Web-Messung
 - **Politische Ausrichtung**: irrelevant für Bürger-Erfahrung
-- **Telefon-Service / Vor-Ort-Service**: anderes Medium, andere Messung
-- **OZG-Compliance-Status laut Selbstauskunft**. Selbstauskünfte sind keine Messung
+- **Telefon-Dienst / Vor-Ort-Dienst**: anderes Medium, andere Messung
+- **OZG-Einhaltung-Stand laut Selbstauskunft**. Selbstauskünfte sind keine Messung
 
-Diese Punkte können in späteren Phasen (v3+) als separate Indizes folgen, aber AmtsScore v0 ist bewusst **rein Web-Performance**.
+Diese Punkte können in späteren Phasen (v3+) als separate Indizes folgen, aber AmtsScore v0 ist bewusst **rein Webleistung**.
 
 ## Fehlerquellen + Grenzen
 
 Klar zu kommunizieren in jeder Veröffentlichung:
 
 - Stichtag der Messung pro Stadt, manche Verbesserung kann zwischen Messung und Publikation entstehen
-- Lighthouse-Score variabel ±5%. wir messen 3× und nehmen den Median
-- axe-core erkennt ~30% aller BITV/WCAG-Verstöße, der Score ist eine Untergrenze, kein Vollaudit
+- Lighthouse-Wert variabel ±5%. Wir messen 3× und nehmen den Median
+- axe-core erkennt ~30% aller BITV/WCAG-Verstöße, der Wert ist eine Untergrenze, kein Vollaudit
 - Cookie-Banner-Bewertung ist regelbasiert, komplexe DSGVO-Klauseln werden simplifiziert
-- Schema.org-Markup ist freiwillig, fehlendes Markup ≠ schlechter Service, aber schlechte Auffindbarkeit für KI-Bots
+- Schema.org-Markup ist freiwillig, fehlendes Markup ≠ schlechter Dienst, aber schlechte Auffindbarkeit für KI-Bots
 - 20 Städte = nicht repräsentativ für DE-weite Verwaltungsqualität → in v0 explizit nur Großstadt-Ranking
 
-## Validierung + Peer-Review (vor v1-Release)
+## Validierung + Fachprüfung (vor v1-Veröffentlichung)
 
-Geplante Schritte vor erstem öffentlichen v1-Release:
+Geplante Schritte vor der ersten öffentlichen v1-Veröffentlichung:
 
-1. **Hochschul-Reviewer:** Hammerschmid (Hertie School) + ein:e BITV-Expert:in der HWR Berlin
-2. **Praxis-Reviewer:** 2-3 Stadt-CIOs (Berlin / Hamburg / Köln) prüfen Methodik anonymisiert
-3. **Öffentliche Kommentierungsphase:** Methodik-Paper auf amtsscore.de + GitHub, 4 Wochen Kommentare via Pull Request
+1. **Hochschul-Prüfende:** Hammerschmid (Hertie School) + ein:e BITV-Expert:in der HWR Berlin
+2. **Praxis-Prüfende:** 2-3 Stadt-CIOs (Berlin / Hamburg / Köln) prüfen Methodik anonymisiert
+3. **Öffentliche Kommentierungsphase:** Methodik-Papier auf amtsscore.de und GitHub, 4 Wochen Kommentare über Änderungsvorschläge
 4. **Datenschutz-Audit:** Kurze Prüfung durch datenschutz-cert ob Messmethodik selbst DSGVO-konform (kein Tracking von Bürger:innen während des Scans)
 
 Erst nach 1-4 wird der erste öffentliche AmtsScore-Index publiziert.
@@ -115,12 +114,12 @@ Erst nach 1-4 wird der erste öffentliche AmtsScore-Index publiziert.
 
 | Version | Datum | Änderungen |
 |---|---|---|
-| v0.1 | 2026-05-15 | Initialer Entwurf, 10 Dimensionen, Gleichgewicht. Pre-Review. |
+| v0.1 | 2026-05-15 | Erster Entwurf, 10 Dimensionen, Gleichgewicht. Vorprüfung. |
 
-Jede zukünftige Version wird hier dokumentiert mit Diff zur Vorversion. Methodik-Änderungen sind transparent rückwirkend nachvollziehbar.
+Jede zukünftige Version wird hier dokumentiert mit Vergleich zur Vorversion. Methodik-Änderungen sind transparent rückwirkend nachvollziehbar.
 
 ## Lizenz
 
-Methodik-Paper: **CC BY 4.0** (Namensnennung). Daten: **CC BY 4.0**. Code (später): **MIT**.
+Methodik-Papier: **CC BY 4.0** (Namensnennung). Daten: **CC BY 4.0**. Code (später): **MIT**.
 
 Jeder kann die Methodik adaptieren, aber nur AmtsGuide veröffentlicht den offiziellen AmtsScore-Index.

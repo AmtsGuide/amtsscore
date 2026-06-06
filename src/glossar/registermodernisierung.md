@@ -7,7 +7,7 @@ toc: true
 
 Die deutsche **Registermodernisierung** soll das EU-weite **Once-Only-Prinzip** umsetzen: Bürger:innen geben Behörden ihre Daten nur **einmal**. alle anderen Behörden ziehen sie aus dem zuständigen Register.
 
-## Status quo (was Bürger heute erleben)
+## Stand quo (was Bürger heute erleben)
 
 Beim Halteverbot-Antrag werden Name, Adresse, Geburtsdatum eingegeben. Bei der Kfz-Zulassung wieder. Beim Gewerbeantrag erneut. Bei der Steuererklärung nochmals. Jedes Register hat seine eigene Datenbasis, oft veraltet.
 

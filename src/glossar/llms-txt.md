@@ -62,7 +62,7 @@ Teil von D11 ([Maschinen-Lesbarkeit + KI-Bereitschaft](/glossar/ai-readiness)). 
 - **+3 Punkte:** ≥ 5 verlinkte Dienstleistungen mit eigenen `.md`-Versionen
 - **+3 Punkte:** Letzter Update < 90 Tage (gepflegt, nicht 2024-Leiche)
 
-Max: 10 Punkte. Realistischer v0-Score für deutsche Städte: 0.
+Max: 10 Punkte. Realistischer v0-Wert für deutsche Städte: 0.
 
 ## Quellen
 

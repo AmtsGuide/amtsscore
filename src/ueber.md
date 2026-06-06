@@ -5,25 +5,25 @@ toc: false
 
 # Über AmtsScore
 
-AmtsScore ist eine Initiative von **AmtsGuide**. AmtsGuide ist **Winner des German Innovation Award 2026** in der Kategorie B2C E-Business.
+AmtsScore ist eine Initiative von **AmtsGuide**. AmtsGuide ist **Gewinner des German Innovation Award 2026** in der Kategorie B2C E-Business.
 
 ## Auftrag
 
-AmtsScore misst die digitale Performance deutscher Verwaltungs-Websites, kontinuierlich, datenbasiert, methodisch offen. Wir füllen damit eine Lücke: Andere Initiativen messen Trendthemen (Trendradar) oder Bürger-Erfahrung (eGovernment Monitor), aber niemand misst, was tatsächlich auf den Stadt-Websites passiert.
+AmtsScore misst die digitale Leistung deutscher Verwaltungs-Websites, kontinuierlich, datenbasiert, methodisch offen. Wir füllen damit eine Lücke: Andere Initiativen messen Trendthemen (Trendradar) oder Bürger-Erfahrung (eGovernment Monitor), aber niemand misst, was tatsächlich auf den Stadt-Websites passiert.
 
 ## Methodik-Prinzipien
 
 - **Nur öffentlich messbare Daten**: keine Umfragen, keine Selbstauskünfte
 - **Bürger-Perspektive**: was die Bürger:in erreichen kann, nicht was die IT meldet
-- **Multi-dimensional**. 10 transparente Sub-Scores zu einem Composite (siehe [Methodik](/methodik))
-- **Reproduzierbar**. Methodik öffentlich, Daten downloadbar
+- **Mehrdimensional**. 10 transparente Teilwerte zu einem Gesamtwert (siehe [Methodik](/methodik))
+- **Reproduzierbar**. Methodik öffentlich, Daten herunterladbar
 - **Kontinuierlich**: quartalsweise Messung, Veränderung sichtbar
 
 ## Lizenz
 
 - Methodik: **CC BY 4.0**
 - Daten: **CC BY 4.0**
-- Site-Code (später): **MIT**
+- Website-Code (später): **MIT**
 
 ## Impressum
 
@@ -48,4 +48,4 @@ Die AmtsScore-Methodik scannt öffentliche Verwaltungs-Websites. Beim Scan werde
 
 Fragen, Anregungen, Methodik-Kritik: **ad@blinktank.de**
 
-Pull Requests willkommen: [github.com/AmtsGuide/amtsscore](https://github.com/AmtsGuide/amtsscore).
+Änderungsvorschläge sind willkommen: [github.com/AmtsGuide/amtsscore](https://github.com/AmtsGuide/amtsscore).

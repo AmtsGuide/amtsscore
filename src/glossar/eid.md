@@ -35,7 +35,7 @@ Eine Stadt-Website ist eine **eID-Akzeptanzstelle**, wenn sie für mindestens ei
 
 ## In AmtsScore-Methodik
 
-**Geplant für v1+:** Dimension "eID-Coverage". Anteil der Online-Dienstleistungen, die eID-Authentifizierung anbieten. Erkennbar an der NPA-Schaltfläche / AusweisApp-Integration auf der jeweiligen Antrags-Seite.
+**Geplant für v1+:** Dimension "eID-Abdeckung". Anteil der Online-Dienstleistungen, die eID-Authentifizierung anbieten. Erkennbar an der NPA-Schaltfläche / AusweisApp-Integration auf der jeweiligen Antrags-Seite.
 
 ## Quellen
 
