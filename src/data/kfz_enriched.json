@@ -1,0 +1,752 @@
+{
+  "generated_at": "2026-05-15T22:18:47+00:00",
+  "topic": "kfz-zulassung",
+  "topic_label": "KFZ-Zulassung (Neuzulassung)",
+  "n_cities": 20,
+  "dimensions": [
+    {
+      "key": "speed",
+      "label": "Wartezeit",
+      "tier": 1,
+      "invert": true
+    },
+    {
+      "key": "online",
+      "label": "i-Kfz Online",
+      "tier": 1,
+      "invert": false
+    },
+    {
+      "key": "access",
+      "label": "Standorte",
+      "tier": 1,
+      "invert": false
+    },
+    {
+      "key": "friction",
+      "label": "Walk-in möglich",
+      "tier": 1,
+      "invert": false
+    },
+    {
+      "key": "auth",
+      "label": "eID-Anbindung",
+      "tier": 2,
+      "invert": false
+    },
+    {
+      "key": "schema",
+      "label": "Schema.org",
+      "tier": 2,
+      "invert": false
+    },
+    {
+      "key": "llmstxt",
+      "label": "llms.txt",
+      "tier": 2,
+      "invert": false
+    },
+    {
+      "key": "https",
+      "label": "HTTPS-Hygiene",
+      "tier": 2,
+      "invert": false
+    },
+    {
+      "key": "press",
+      "label": "Presse-Stille",
+      "tier": 3,
+      "invert": true
+    }
+  ],
+  "cities": [
+    {
+      "slug": "bonn",
+      "city": "Bonn",
+      "authority": "Straßenverkehrsamt Bonn",
+      "source_url": "https://www.bonn.de/service-bieten/stadtverwaltung-a-bis-z/termine-reservieren.php",
+      "stadt_domain": "bonn.de",
+      "raw": {
+        "wartezeit_label": "ca. 3 Tage",
+        "speed_days": 3,
+        "ikfz": true,
+        "standorte_count": 4,
+        "terminpflicht": true,
+        "eid_evidence": [
+          "eID"
+        ],
+        "schema_types": [
+          "BreadcrumbList",
+          "ListItem"
+        ],
+        "llms_txt": false,
+        "observatory_grade": null,
+        "observatory_score": null,
+        "press_pain_results": 20
+      },
+      "dimensions": {
+        "speed": 9.7,
+        "online": 10.0,
+        "access": 7.5,
+        "friction": 5.0,
+        "auth": 10.0,
+        "schema": 0.0,
+        "llmstxt": 0.0,
+        "https": null,
+        "press": 0.0
+      },
+      "composite": 5.3,
+      "rank": 1
+    },
+    {
+      "slug": "stuttgart",
+      "city": "Stuttgart",
+      "authority": "Kfz-Zulassungs- und Führerscheinstelle der Landeshauptstadt Stuttgart",
+      "source_url": "https://www.stuttgart.de/service/oeffnungszeiten/termine-bei-der-kfz-zulassungsstelle",
+      "stadt_domain": "stuttgart.de",
+      "raw": {
+        "wartezeit_label": "ohne Termin mehrere Stunden; mit Termin deutlich kurzer",
+        "speed_days": null,
+        "ikfz": true,
+        "standorte_count": 3,
+        "terminpflicht": false,
+        "eid_evidence": [],
+        "schema_types": [
+          "BreadcrumbList",
+          "ListItem"
+        ],
+        "llms_txt": false,
+        "observatory_grade": null,
+        "observatory_score": null,
+        "press_pain_results": 18
+      },
+      "dimensions": {
+        "speed": null,
+        "online": 10.0,
+        "access": 5.0,
+        "friction": 10.0,
+        "auth": 0.0,
+        "schema": 0.0,
+        "llmstxt": 0.0,
+        "https": null,
+        "press": 10.0
+      },
+      "composite": 5.0,
+      "rank": 2
+    },
+    {
+      "slug": "wuppertal",
+      "city": "Wuppertal",
+      "authority": "Straßenverkehrsamt der Stadt Wuppertal",
+      "source_url": "https://serviceportal.wuppertal.de",
+      "stadt_domain": "wuppertal.de",
+      "raw": {
+        "wartezeit_label": "oft kurzfristig oder noch am selben Tag",
+        "speed_days": 1,
+        "ikfz": true,
+        "standorte_count": 1,
+        "terminpflicht": true,
+        "eid_evidence": [
+          "BundID",
+          "Mein Unternehmenskonto"
+        ],
+        "schema_types": [],
+        "llms_txt": false,
+        "observatory_grade": null,
+        "observatory_score": null,
+        "press_pain_results": 19
+      },
+      "dimensions": {
+        "speed": 10.0,
+        "online": 10.0,
+        "access": 0.0,
+        "friction": 5.0,
+        "auth": 10.0,
+        "schema": 0.0,
+        "llmstxt": 0.0,
+        "https": null,
+        "press": 5.0
+      },
+      "composite": 5.0,
+      "rank": 3
+    },
+    {
+      "slug": "bielefeld",
+      "city": "Bielefeld",
+      "authority": "Kfz-Zulassungsbehorde im Ordnungsamt der Stadt Bielefeld",
+      "source_url": "https://www.bielefeld.de/node/6456",
+      "stadt_domain": "bielefeld.de",
+      "raw": {
+        "wartezeit_label": "ca. 14 Tage",
+        "speed_days": 14,
+        "ikfz": true,
+        "standorte_count": 1,
+        "terminpflicht": true,
+        "eid_evidence": [
+          "eID",
+          "AusweisApp"
+        ],
+        "schema_types": [],
+        "llms_txt": false,
+        "observatory_grade": null,
+        "observatory_score": null,
+        "press_pain_results": 19
+      },
+      "dimensions": {
+        "speed": 8.1,
+        "online": 10.0,
+        "access": 0.0,
+        "friction": 5.0,
+        "auth": 10.0,
+        "schema": 0.0,
+        "llmstxt": 0.0,
+        "https": null,
+        "press": 5.0
+      },
+      "composite": 4.8,
+      "rank": 4
+    },
+    {
+      "slug": "dortmund",
+      "city": "Dortmund",
+      "authority": "Straßenverkehrsamt / Dienstleistungszentrum Burgerdienste Dortmund",
+      "source_url": "https://www.dortmund.de/services/online-terminreservierung.html",
+      "stadt_domain": "dortmund.de",
+      "raw": {
+        "wartezeit_label": "4-14 Tage",
+        "speed_days": 9,
+        "ikfz": true,
+        "standorte_count": 1,
+        "terminpflicht": true,
+        "eid_evidence": [
+          "eID"
+        ],
+        "schema_types": [
+          "ContactPoint",
+          "Organization",
+          "PostalAddress",
+          "Website"
+        ],
+        "llms_txt": false,
+        "observatory_grade": null,
+        "observatory_score": null,
+        "press_pain_results": 19
+      },
+      "dimensions": {
+        "speed": 8.8,
+        "online": 10.0,
+        "access": 0.0,
+        "friction": 5.0,
+        "auth": 10.0,
+        "schema": 0.0,
+        "llmstxt": 0.0,
+        "https": null,
+        "press": 5.0
+      },
+      "composite": 4.8,
+      "rank": 5
+    },
+    {
+      "slug": "leipzig",
+      "city": "Leipzig",
+      "authority": "Kfz-Zulassungsbehorde der Stadt Leipzig",
+      "source_url": "https://www.leipzig.de/service-portal/aemtertermine-online/terminvereinbarung-kfz-zulassungsbehoerde",
+      "stadt_domain": "leipzig.de",
+      "raw": {
+        "wartezeit_label": "1-2 Wochen",
+        "speed_days": 10,
+        "ikfz": true,
+        "standorte_count": 1,
+        "terminpflicht": true,
+        "eid_evidence": [
+          "eID"
+        ],
+        "schema_types": [],
+        "llms_txt": false,
+        "observatory_grade": null,
+        "observatory_score": null,
+        "press_pain_results": 19
+      },
+      "dimensions": {
+        "speed": 8.7,
+        "online": 10.0,
+        "access": 0.0,
+        "friction": 5.0,
+        "auth": 10.0,
+        "schema": 0.0,
+        "llmstxt": 0.0,
+        "https": null,
+        "press": 5.0
+      },
+      "composite": 4.8,
+      "rank": 6
+    },
+    {
+      "slug": "dresden",
+      "city": "Dresden",
+      "authority": "Kfz-Zulassungsbehorde im Ordnungsamt Dresden",
+      "source_url": "https://termine.dresden.de/netappoint/index.php?company=stadtdresden-kfz",
+      "stadt_domain": "dresden.de",
+      "raw": {
+        "wartezeit_label": "bis zu 14 Tage",
+        "speed_days": 14,
+        "ikfz": true,
+        "standorte_count": 1,
+        "terminpflicht": true,
+        "eid_evidence": [],
+        "schema_types": [],
+        "llms_txt": false,
+        "observatory_grade": null,
+        "observatory_score": null,
+        "press_pain_results": 18
+      },
+      "dimensions": {
+        "speed": 8.1,
+        "online": 10.0,
+        "access": 0.0,
+        "friction": 5.0,
+        "auth": 0.0,
+        "schema": 0.0,
+        "llmstxt": 0.0,
+        "https": null,
+        "press": 10.0
+      },
+      "composite": 4.1,
+      "rank": 7
+    },
+    {
+      "slug": "hamburg",
+      "city": "Hamburg",
+      "authority": "Landesbetrieb Verkehr Hamburg (LBV)",
+      "source_url": "https://www.lbv-termine.de",
+      "stadt_domain": "hamburg.de",
+      "raw": {
+        "wartezeit_label": "ca. 20-31 Tage (je nach Standort)",
+        "speed_days": 25,
+        "ikfz": true,
+        "standorte_count": 5,
+        "terminpflicht": true,
+        "eid_evidence": [],
+        "schema_types": [],
+        "llms_txt": false,
+        "observatory_grade": null,
+        "observatory_score": null,
+        "press_pain_results": 20
+      },
+      "dimensions": {
+        "speed": 6.5,
+        "online": 10.0,
+        "access": 10.0,
+        "friction": 5.0,
+        "auth": 0.0,
+        "schema": 0.0,
+        "llmstxt": 0.0,
+        "https": null,
+        "press": 0.0
+      },
+      "composite": 3.9,
+      "rank": 8
+    },
+    {
+      "slug": "hannover",
+      "city": "Hannover",
+      "authority": "Zulassungsstelle Stadt Hannover / Zulassungsstelle Region Hannover",
+      "source_url": "https://termin.hannover.gov.de/m/kfz/extern/calendar/?uid=c5fa0833-b05c-43f5-a19a-450621f3fc9b",
+      "stadt_domain": "hannover.de",
+      "raw": {
+        "wartezeit_label": "7-10 Werktage (Stadt), teils mehrere Wochen",
+        "speed_days": 8,
+        "ikfz": true,
+        "standorte_count": 2,
+        "terminpflicht": true,
+        "eid_evidence": [],
+        "schema_types": [],
+        "llms_txt": false,
+        "observatory_grade": null,
+        "observatory_score": null,
+        "press_pain_results": 19
+      },
+      "dimensions": {
+        "speed": 9.0,
+        "online": 10.0,
+        "access": 2.5,
+        "friction": 5.0,
+        "auth": 0.0,
+        "schema": 0.0,
+        "llmstxt": 0.0,
+        "https": null,
+        "press": 5.0
+      },
+      "composite": 3.9,
+      "rank": 9
+    },
+    {
+      "slug": "muenster",
+      "city": "Münster",
+      "authority": "Kfz-Zulassung im Ordnungsamt der Stadt Münster",
+      "source_url": "https://www.stadt-muenster.de/kfz/terminvereinbarung",
+      "stadt_domain": "stadt-muenster.de",
+      "raw": {
+        "wartezeit_label": "ca. 5 Tage",
+        "speed_days": 5,
+        "ikfz": true,
+        "standorte_count": 1,
+        "terminpflicht": true,
+        "eid_evidence": [],
+        "schema_types": [],
+        "llms_txt": false,
+        "observatory_grade": null,
+        "observatory_score": null,
+        "press_pain_results": 19
+      },
+      "dimensions": {
+        "speed": 9.4,
+        "online": 10.0,
+        "access": 0.0,
+        "friction": 5.0,
+        "auth": 0.0,
+        "schema": 0.0,
+        "llmstxt": 0.0,
+        "https": null,
+        "press": 5.0
+      },
+      "composite": 3.7,
+      "rank": 10
+    },
+    {
+      "slug": "frankfurt-am-main",
+      "city": "Frankfurt am Main",
+      "authority": "Servicezentrum Rund ums Auto des Ordnungsamts Frankfurt",
+      "source_url": "https://tevis.ekom21.de/fra/select2?md=2",
+      "stadt_domain": "frankfurt.de",
+      "raw": {
+        "wartezeit_label": "mehrere Wochen",
+        "speed_days": 21,
+        "ikfz": true,
+        "standorte_count": 1,
+        "terminpflicht": true,
+        "eid_evidence": [],
+        "schema_types": [],
+        "llms_txt": false,
+        "observatory_grade": null,
+        "observatory_score": null,
+        "press_pain_results": 19
+      },
+      "dimensions": {
+        "speed": 7.1,
+        "online": 10.0,
+        "access": 0.0,
+        "friction": 5.0,
+        "auth": 0.0,
+        "schema": 0.0,
+        "llmstxt": 0.0,
+        "https": null,
+        "press": 5.0
+      },
+      "composite": 3.4,
+      "rank": 11
+    },
+    {
+      "slug": "bremen",
+      "city": "Bremen",
+      "authority": "Zentrale Kfz-Zulassungsbehorde im Burgeramt Bremen",
+      "source_url": "https://www.service.bremen.de",
+      "stadt_domain": "bremen.de",
+      "raw": {
+        "wartezeit_label": "mehrere Tage bis Wochen",
+        "speed_days": 14,
+        "ikfz": true,
+        "standorte_count": 2,
+        "terminpflicht": true,
+        "eid_evidence": [],
+        "schema_types": [],
+        "llms_txt": false,
+        "observatory_grade": null,
+        "observatory_score": null,
+        "press_pain_results": 20
+      },
+      "dimensions": {
+        "speed": 8.1,
+        "online": 10.0,
+        "access": 2.5,
+        "friction": 5.0,
+        "auth": 0.0,
+        "schema": 0.0,
+        "llmstxt": 0.0,
+        "https": null,
+        "press": 0.0
+      },
+      "composite": 3.2,
+      "rank": 12
+    },
+    {
+      "slug": "essen",
+      "city": "Essen",
+      "authority": "Straßenverkehrsamt / Einwohneramt Essen",
+      "source_url": "https://www.essen.de/rathaus/onlinetermine_der_stadtessen.de.html",
+      "stadt_domain": "essen.de",
+      "raw": {
+        "wartezeit_label": "mehrere Wochen",
+        "speed_days": 21,
+        "ikfz": true,
+        "standorte_count": 2,
+        "terminpflicht": true,
+        "eid_evidence": [],
+        "schema_types": [],
+        "llms_txt": false,
+        "observatory_grade": null,
+        "observatory_score": null,
+        "press_pain_results": 20
+      },
+      "dimensions": {
+        "speed": 7.1,
+        "online": 10.0,
+        "access": 2.5,
+        "friction": 5.0,
+        "auth": 0.0,
+        "schema": 0.0,
+        "llmstxt": 0.0,
+        "https": null,
+        "press": 0.0
+      },
+      "composite": 3.1,
+      "rank": 13
+    },
+    {
+      "slug": "bochum",
+      "city": "Bochum",
+      "authority": "Buro für Kfz-Angelegenheiten / Straßenverkehrsamt Bochum",
+      "source_url": "https://www.bochum.de/Online-Terminbuchung",
+      "stadt_domain": "bochum.de",
+      "raw": {
+        "wartezeit_label": "durchschnittlich 6 Tage",
+        "speed_days": 6,
+        "ikfz": true,
+        "standorte_count": 1,
+        "terminpflicht": true,
+        "eid_evidence": [],
+        "schema_types": [
+          "Article"
+        ],
+        "llms_txt": false,
+        "observatory_grade": null,
+        "observatory_score": null,
+        "press_pain_results": 20
+      },
+      "dimensions": {
+        "speed": 9.3,
+        "online": 10.0,
+        "access": 0.0,
+        "friction": 5.0,
+        "auth": 0.0,
+        "schema": 0.0,
+        "llmstxt": 0.0,
+        "https": null,
+        "press": 0.0
+      },
+      "composite": 3.0,
+      "rank": 14
+    },
+    {
+      "slug": "duisburg",
+      "city": "Duisburg",
+      "authority": "Straßenverkehrsamt der Stadt Duisburg",
+      "source_url": "https://www.duisburg.de/allgemein/fachbereiche/terminvereinbarung-zulassung.php",
+      "stadt_domain": "duisburg.de",
+      "raw": {
+        "wartezeit_label": "ca. 1 Woche",
+        "speed_days": 7,
+        "ikfz": true,
+        "standorte_count": 1,
+        "terminpflicht": true,
+        "eid_evidence": [],
+        "schema_types": [
+          "BreadcrumbList",
+          "ListItem"
+        ],
+        "llms_txt": false,
+        "observatory_grade": null,
+        "observatory_score": null,
+        "press_pain_results": 20
+      },
+      "dimensions": {
+        "speed": 9.1,
+        "online": 10.0,
+        "access": 0.0,
+        "friction": 5.0,
+        "auth": 0.0,
+        "schema": 0.0,
+        "llmstxt": 0.0,
+        "https": null,
+        "press": 0.0
+      },
+      "composite": 3.0,
+      "rank": 15
+    },
+    {
+      "slug": "nuernberg",
+      "city": "Nürnberg",
+      "authority": "Ordnungsamt der Stadt Nürnberg",
+      "source_url": "https://nuernberg.termine-reservieren.de/select2?md=8",
+      "stadt_domain": "nuernberg.de",
+      "raw": {
+        "wartezeit_label": "kurzere Wartezeiten Di, Mi und Fr",
+        "speed_days": null,
+        "ikfz": true,
+        "standorte_count": 3,
+        "terminpflicht": true,
+        "eid_evidence": [],
+        "schema_types": [],
+        "llms_txt": false,
+        "observatory_grade": null,
+        "observatory_score": null,
+        "press_pain_results": 20
+      },
+      "dimensions": {
+        "speed": null,
+        "online": 10.0,
+        "access": 5.0,
+        "friction": 5.0,
+        "auth": 0.0,
+        "schema": 0.0,
+        "llmstxt": 0.0,
+        "https": null,
+        "press": 0.0
+      },
+      "composite": 2.9,
+      "rank": 16
+    },
+    {
+      "slug": "duesseldorf",
+      "city": "Düsseldorf",
+      "authority": "Straßenverkehrsamt der Landeshauptstadt Düsseldorf",
+      "source_url": "https://termine.duesseldorf.de/select2?md=2",
+      "stadt_domain": "duesseldorf.de",
+      "raw": {
+        "wartezeit_label": "mehrere Wochen bis Monate",
+        "speed_days": 21,
+        "ikfz": true,
+        "standorte_count": 1,
+        "terminpflicht": true,
+        "eid_evidence": [],
+        "schema_types": [],
+        "llms_txt": false,
+        "observatory_grade": null,
+        "observatory_score": null,
+        "press_pain_results": 20
+      },
+      "dimensions": {
+        "speed": 7.1,
+        "online": 10.0,
+        "access": 0.0,
+        "friction": 5.0,
+        "auth": 0.0,
+        "schema": 0.0,
+        "llmstxt": 0.0,
+        "https": null,
+        "press": 0.0
+      },
+      "composite": 2.8,
+      "rank": 17
+    },
+    {
+      "slug": "muenchen",
+      "city": "München",
+      "authority": "Kfz-Zulassungsstelle des Kreisverwaltungsreferats (KVR)",
+      "source_url": "https://stadt.muenchen.de/terminvereinbarung_/terminvereinbarung_kfz.html",
+      "stadt_domain": "muenchen.de",
+      "raw": {
+        "wartezeit_label": "3-6 Wochen",
+        "speed_days": 31,
+        "ikfz": true,
+        "standorte_count": 1,
+        "terminpflicht": true,
+        "eid_evidence": [],
+        "schema_types": [],
+        "llms_txt": false,
+        "observatory_grade": null,
+        "observatory_score": null,
+        "press_pain_results": 20
+      },
+      "dimensions": {
+        "speed": 5.7,
+        "online": 10.0,
+        "access": 0.0,
+        "friction": 5.0,
+        "auth": 0.0,
+        "schema": 0.0,
+        "llmstxt": 0.0,
+        "https": null,
+        "press": 0.0
+      },
+      "composite": 2.6,
+      "rank": 18
+    },
+    {
+      "slug": "berlin",
+      "city": "Berlin",
+      "authority": "Landesamt für Burger- und Ordnungsangelegenheiten (LABO)",
+      "source_url": "https://www.berlin.de/labo",
+      "stadt_domain": "berlin.de",
+      "raw": {
+        "wartezeit_label": "mehrere Wochen bis zu 10 Wochen",
+        "speed_days": 70,
+        "ikfz": true,
+        "standorte_count": 2,
+        "terminpflicht": true,
+        "eid_evidence": [],
+        "schema_types": [],
+        "llms_txt": false,
+        "observatory_grade": null,
+        "observatory_score": null,
+        "press_pain_results": 20
+      },
+      "dimensions": {
+        "speed": 0.0,
+        "online": 10.0,
+        "access": 2.5,
+        "friction": 5.0,
+        "auth": 0.0,
+        "schema": 0.0,
+        "llmstxt": 0.0,
+        "https": null,
+        "press": 0.0
+      },
+      "composite": 2.2,
+      "rank": 19
+    },
+    {
+      "slug": "koeln",
+      "city": "Köln",
+      "authority": "Straßenverkehrsamt Köln (Kfz-Zulassungsstelle)",
+      "source_url": "https://termine-online.stadt-koeln.de",
+      "stadt_domain": "stadt-koeln.de",
+      "raw": {
+        "wartezeit_label": "3-4 Wochen",
+        "speed_days": 24,
+        "ikfz": false,
+        "standorte_count": 1,
+        "terminpflicht": true,
+        "eid_evidence": [],
+        "schema_types": [],
+        "llms_txt": false,
+        "observatory_grade": null,
+        "observatory_score": null,
+        "press_pain_results": 20
+      },
+      "dimensions": {
+        "speed": 6.7,
+        "online": 0.0,
+        "access": 0.0,
+        "friction": 5.0,
+        "auth": 0.0,
+        "schema": 0.0,
+        "llmstxt": 0.0,
+        "https": null,
+        "press": 0.0
+      },
+      "composite": 1.5,
+      "rank": 20
+    }
+  ]
+}
