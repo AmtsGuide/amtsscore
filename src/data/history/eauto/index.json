@@ -1,0 +1,54 @@
+{
+  "current_snapshot": "2026-06-04",
+  "do_not_edit_by_hand": true,
+  "generated_by": "tools/eauto/import_amtsscore.py",
+  "history_model_version": "1.0",
+  "latest_diff": "diff-2026-06-04.json",
+  "latest_diff_summary": {
+    "event_count": 0,
+    "informational_event_count": 0,
+    "material_event_count": 0
+  },
+  "rollback_events": [],
+  "snapshot_family": "eauto_candidate_signals",
+  "snapshots": [
+    {
+      "content_hash": "80e863d65610e64a80e97f3c677187fcffe46ef5bb001350dabfac2f039728b6",
+      "diff_path": "diff-2026-06-04.json",
+      "path": "2026-06-04.json",
+      "review_status": "editor_review_required",
+      "snapshot": "2026-06-04",
+      "source_generation_dates": {
+        "amtsscore": "2026-06-04",
+        "final_audit": "2026-06-05",
+        "pipeline_check": "2026-06-05",
+        "topic_surface": "2026-06-05",
+        "web_consumer": "2026-06-05"
+      },
+      "summary": {
+        "blocked_signal_count": 0,
+        "calculator_route_ready_count": 0,
+        "candidate_ready_topic_count": 19,
+        "embedded_buildable_count": 12,
+        "provider_rows_used_as_evidence": false,
+        "review_statuses": {
+          "bridge_context": 5,
+          "buildable_preview": 11,
+          "not_ready": 2,
+          "provider_only": 2
+        },
+        "signal_count": 133,
+        "suppressed_cta_count": 8,
+        "suppressed_route_count": 20,
+        "topic_count": 20,
+        "topic_groups": {
+          "bridge": 5,
+          "core": 11,
+          "not_surfaceable": 2,
+          "provider_only": 2
+        },
+        "web_buildable_now_count": 12
+      }
+    }
+  ]
+}

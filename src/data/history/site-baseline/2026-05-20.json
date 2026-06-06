@@ -1,0 +1,183 @@
+{
+  "backup_source": "_src_of_backup",
+  "baseline_date": "2026-05-20",
+  "deployed_build_date": "2026-05-20",
+  "do_not_edit_by_hand": true,
+  "generated_by": "tools/eauto/import_amtsscore.py",
+  "history_model_version": "1.0",
+  "live_data_urls": {
+    "halteverbot": "https://amtsscore.de/_file/data/halteverbot.c734c525.json",
+    "kfz_enriched": "https://amtsscore.de/_file/data/kfz_enriched.692592bc.json",
+    "prescore": "https://amtsscore.de/_file/data/prescore.3200aa04.json"
+  },
+  "mismatch_detected": false,
+  "routes_from_source": [
+    "bundeslaender/baden-wuerttemberg",
+    "bundeslaender/bayern",
+    "bundeslaender/berlin",
+    "bundeslaender/brandenburg",
+    "bundeslaender/bremen",
+    "bundeslaender/hamburg",
+    "bundeslaender/hessen",
+    "bundeslaender/index",
+    "bundeslaender/mecklenburg-vorpommern",
+    "bundeslaender/niedersachsen",
+    "bundeslaender/nordrhein-westfalen",
+    "bundeslaender/rheinland-pfalz",
+    "bundeslaender/saarland",
+    "bundeslaender/sachsen",
+    "bundeslaender/sachsen-anhalt",
+    "bundeslaender/schleswig-holstein",
+    "bundeslaender/thueringen",
+    "glossar/ai-readiness",
+    "glossar/api-mcp",
+    "glossar/bitv-wcag",
+    "glossar/dsgvo-cookie",
+    "glossar/eid",
+    "glossar/fim",
+    "glossar/index",
+    "glossar/leika",
+    "glossar/llms-txt",
+    "glossar/open-data",
+    "glossar/ozg",
+    "glossar/registermodernisierung",
+    "glossar/schema-org",
+    "index",
+    "methodology",
+    "specials/berlin-gaststaettenanmeldung-2026",
+    "specials/index",
+    "staedte/augsburg",
+    "staedte/berlin",
+    "staedte/bielefeld",
+    "staedte/bochum",
+    "staedte/bonn",
+    "staedte/bremen",
+    "staedte/dortmund",
+    "staedte/dresden",
+    "staedte/duesseldorf",
+    "staedte/duisburg",
+    "staedte/erfurt",
+    "staedte/essen",
+    "staedte/frankfurt-am-main",
+    "staedte/freiburg",
+    "staedte/hamburg",
+    "staedte/hannover",
+    "staedte/index",
+    "staedte/kassel",
+    "staedte/kiel",
+    "staedte/koeln",
+    "staedte/leipzig",
+    "staedte/magdeburg",
+    "staedte/mainz",
+    "staedte/mannheim",
+    "staedte/muenchen",
+    "staedte/muenster",
+    "staedte/nuernberg",
+    "staedte/potsdam",
+    "staedte/rostock",
+    "staedte/saarbruecken",
+    "staedte/stuttgart",
+    "staedte/wuppertal",
+    "topics/gmbh-gruendung",
+    "topics/halteverbot",
+    "topics/kfz-zulassung",
+    "ueber"
+  ],
+  "snapshot_family": "site_baseline",
+  "summaries": {
+    "live": {
+      "halteverbot": {
+        "city_count": 38,
+        "scraped_at": "2026-03-29",
+        "total_authorities": 570,
+        "total_cities": 38
+      },
+      "kfz_enriched": {
+        "dimensions": [
+          "speed",
+          "online",
+          "access",
+          "friction",
+          "auth",
+          "schema",
+          "llmstxt",
+          "https",
+          "press"
+        ],
+        "generated_at": "2026-05-15T22:18:47+00:00",
+        "n_cities": 20,
+        "topic": "kfz-zulassung",
+        "topic_label": "KFZ-Zulassung (Neuzulassung)"
+      },
+      "prescore": {
+        "generated_at": "2026-05-15T22:04:38+00:00",
+        "source": "AmtsGuide Facts API",
+        "topic_count": 3,
+        "topics": [
+          {
+            "label": "Halteverbot",
+            "n_cities": 11,
+            "slug": "halteverbot"
+          },
+          {
+            "label": "KFZ-Zulassung (Neuzulassung)",
+            "n_cities": 20,
+            "slug": "kfz-zulassung"
+          },
+          {
+            "label": "GmbH-Gründung (Mustervertrag)",
+            "n_cities": 30,
+            "slug": "gmbh-gruendung"
+          }
+        ]
+      }
+    },
+    "local": {
+      "halteverbot": {
+        "city_count": 38,
+        "scraped_at": "2026-03-29",
+        "total_authorities": 570,
+        "total_cities": 38
+      },
+      "kfz_enriched": {
+        "dimensions": [
+          "speed",
+          "online",
+          "access",
+          "friction",
+          "auth",
+          "schema",
+          "llmstxt",
+          "https",
+          "press"
+        ],
+        "generated_at": "2026-05-15T22:18:47+00:00",
+        "n_cities": 20,
+        "topic": "kfz-zulassung",
+        "topic_label": "KFZ-Zulassung (Neuzulassung)"
+      },
+      "prescore": {
+        "generated_at": "2026-05-15T22:04:38+00:00",
+        "source": "AmtsGuide Facts API",
+        "topic_count": 3,
+        "topics": [
+          {
+            "label": "Halteverbot",
+            "n_cities": 11,
+            "slug": "halteverbot"
+          },
+          {
+            "label": "KFZ-Zulassung (Neuzulassung)",
+            "n_cities": 20,
+            "slug": "kfz-zulassung"
+          },
+          {
+            "label": "GmbH-Gründung (Mustervertrag)",
+            "n_cities": 30,
+            "slug": "gmbh-gruendung"
+          }
+        ]
+      }
+    }
+  }
+}

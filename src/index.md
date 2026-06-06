@@ -60,6 +60,11 @@ In der Zwischenzeit zeigen wir aus bestehenden AmtsGuide-Daten erste **Topic-Aus
     <p><a href="/topics/halteverbot">Halteverbot-Topographie →</a></p>
   </div>
   <div class="cta-card">
+    <h3>E-Auto Candidate Signals</h3>
+    <p>Preview der E-Auto-Quellenlage: Candidate Signals, Abdeckung, Unbekannte und Provider-Grenze im Methodology Review.</p>
+    <p><a href="/topics/e-auto">E-Auto-Preview →</a></p>
+  </div>
+  <div class="cta-card">
     <h3>Leuchttürme</h3>
     <p>Service-Launches, die zeigen wie es geht. Berlin Gaststätten 2026, mehr in Recherche.</p>
     <p><a href="/specials/">Leuchttürme →</a></p>

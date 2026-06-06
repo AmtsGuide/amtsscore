@@ -1,0 +1,2364 @@
+{
+  "content_hash": "80e863d65610e64a80e97f3c677187fcffe46ef5bb001350dabfac2f039728b6",
+  "current_snapshot": "2026-06-04",
+  "current_snapshot_path": "history/eauto/2026-06-04.json",
+  "do_not_edit_by_hand": true,
+  "gates": {
+    "blocked_signal_count": 0,
+    "failed_check_count": 0,
+    "final_audit_status": "accepted_with_diagnostics",
+    "hard_blocker_count": 0,
+    "pipeline_status": "accepted_with_diagnostics",
+    "provider_rows_used_as_evidence": false,
+    "topic_surface_status": "complete",
+    "warning_check_count": 1,
+    "web_consumer_status": "accepted"
+  },
+  "generated_by": "tools/eauto/import_amtsscore.py",
+  "history_model_version": "1.0",
+  "latest_diff_path": "history/eauto/diff-2026-06-04.json",
+  "review_status": "editor_review_required",
+  "snapshot_family": "eauto_candidate_signals",
+  "summary": {
+    "blocked_signal_count": 0,
+    "calculator_route_ready_count": 0,
+    "candidate_ready_topic_count": 19,
+    "embedded_buildable_count": 12,
+    "provider_rows_used_as_evidence": false,
+    "review_statuses": {
+      "bridge_context": 5,
+      "buildable_preview": 11,
+      "not_ready": 2,
+      "provider_only": 2
+    },
+    "signal_count": 133,
+    "suppressed_cta_count": 8,
+    "suppressed_route_count": 20,
+    "topic_count": 20,
+    "topic_groups": {
+      "bridge": 5,
+      "core": 11,
+      "not_surfaceable": 2,
+      "provider_only": 2
+    },
+    "web_buildable_now_count": 12
+  },
+  "topics": [
+    {
+      "blocked_signal_count": 0,
+      "blocking_issues": [],
+      "calculator_input_count": 0,
+      "calculator_status": "ready",
+      "calculator_unknown_input_count": 2,
+      "can_show_tool_cta": true,
+      "consumer_lanes": [
+        "writer",
+        "web",
+        "seo_tips",
+        "amtsscore"
+      ],
+      "cta_policy": "allow_cta",
+      "embedded_policy": "allow_embedded",
+      "fact_count": 10,
+      "final_state": "light_tool_ready",
+      "group": "core",
+      "has_calculator_surface": false,
+      "label": "E-Auto laden",
+      "official_fact_count": 10,
+      "official_source_count": 6,
+      "provider_evidence_excluded": true,
+      "provider_rows_available": true,
+      "provider_rows_used_as_evidence": false,
+      "public_claim_wording": "e-auto-laden has a source-backed interactive surface. Dedicated calculator route policy remains suppress_route.",
+      "review_status": "buildable_preview",
+      "route_policy": "suppress_route",
+      "score_scope_counts": {
+        "core_candidate": 4,
+        "diagnostic_only": 3
+      },
+      "signal_category_counts": {
+        "calculator_quality": 1,
+        "coverage": 1,
+        "fact_quality": 1,
+        "intake_cluster_context": 1,
+        "provider_boundary": 1,
+        "source_quality": 1,
+        "writer_intake_quality": 1
+      },
+      "signal_count": 7,
+      "source_artifact_ids": {
+        "signals": "e-auto-laden/amtsscore/signals.json",
+        "source_manifest": "intake-clusters/eauto/tool-bundles/e-auto-laden/source_manifest.json",
+        "tool_bundle": "intake-clusters/eauto/tool-bundles/e-auto-laden/tool_bundle.json",
+        "unknown_state_map": "intake-clusters/eauto/tool-bundles/e-auto-laden/unknown_state_map.json",
+        "writer_bundle": "intake-clusters/eauto/writer-bundles/e-auto-laden/bundle.json"
+      },
+      "source_artifact_paths": {
+        "signals": "/Users/andx/codex_scraper/output/e-auto-laden/amtsscore/signals.json",
+        "source_manifest": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/e-auto-laden/source_manifest.json",
+        "tool_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/e-auto-laden/tool_bundle.json",
+        "unknown_state_map": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/e-auto-laden/unknown_state_map.json",
+        "writer_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/writer-bundles/e-auto-laden/bundle.json"
+      },
+      "source_backed_fact_count": 10,
+      "source_count": 6,
+      "source_note_required": true,
+      "standalone_status": null,
+      "tool_status": "light_ready",
+      "tool_type": "static_lookup",
+      "topic_slug": "e-auto-laden",
+      "unknown_count": 3,
+      "web_buildable_now": true
+    },
+    {
+      "blocked_signal_count": 0,
+      "blocking_issues": [],
+      "calculator_input_count": 0,
+      "calculator_status": "ready",
+      "calculator_unknown_input_count": 4,
+      "can_show_tool_cta": true,
+      "consumer_lanes": [
+        "writer",
+        "web",
+        "seo_tips",
+        "amtsscore"
+      ],
+      "cta_policy": "allow_cta",
+      "embedded_policy": "allow_embedded",
+      "fact_count": 5,
+      "final_state": "light_tool_ready",
+      "group": "core",
+      "has_calculator_surface": true,
+      "label": "E-Auto-Förderung",
+      "official_fact_count": 3,
+      "official_source_count": 2,
+      "provider_evidence_excluded": true,
+      "provider_rows_available": true,
+      "provider_rows_used_as_evidence": false,
+      "public_claim_wording": "e-auto-foerderung has a source-backed interactive surface. Dedicated calculator route policy remains suppress_route.",
+      "review_status": "buildable_preview",
+      "route_policy": "suppress_route",
+      "score_scope_counts": {
+        "core_candidate": 4,
+        "diagnostic_only": 3
+      },
+      "signal_category_counts": {
+        "calculator_quality": 1,
+        "coverage": 1,
+        "fact_quality": 1,
+        "intake_cluster_context": 1,
+        "provider_boundary": 1,
+        "source_quality": 1,
+        "writer_intake_quality": 1
+      },
+      "signal_count": 7,
+      "source_artifact_ids": {
+        "signals": "e-auto-foerderung/amtsscore/signals.json",
+        "source_manifest": "intake-clusters/eauto/tool-bundles/e-auto-foerderung/source_manifest.json",
+        "tool_bundle": "intake-clusters/eauto/tool-bundles/e-auto-foerderung/tool_bundle.json",
+        "unknown_state_map": "intake-clusters/eauto/tool-bundles/e-auto-foerderung/unknown_state_map.json",
+        "writer_bundle": "intake-clusters/eauto/writer-bundles/e-auto-foerderung/bundle.json"
+      },
+      "source_artifact_paths": {
+        "signals": "/Users/andx/codex_scraper/output/e-auto-foerderung/amtsscore/signals.json",
+        "source_manifest": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/e-auto-foerderung/source_manifest.json",
+        "tool_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/e-auto-foerderung/tool_bundle.json",
+        "unknown_state_map": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/e-auto-foerderung/unknown_state_map.json",
+        "writer_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/writer-bundles/e-auto-foerderung/bundle.json"
+      },
+      "source_backed_fact_count": 3,
+      "source_count": 3,
+      "source_note_required": true,
+      "standalone_status": "standalone_ready",
+      "tool_status": "light_ready",
+      "tool_type": "eligibility_checker",
+      "topic_slug": "e-auto-foerderung",
+      "unknown_count": 4,
+      "web_buildable_now": true
+    },
+    {
+      "blocked_signal_count": 0,
+      "blocking_issues": [],
+      "calculator_input_count": 2,
+      "calculator_status": "ready",
+      "calculator_unknown_input_count": 2,
+      "can_show_tool_cta": true,
+      "consumer_lanes": [
+        "writer",
+        "web",
+        "seo_tips",
+        "amtsscore"
+      ],
+      "cta_policy": "allow_cta",
+      "embedded_policy": "allow_embedded",
+      "fact_count": 6,
+      "final_state": "light_tool_ready",
+      "group": "core",
+      "has_calculator_surface": true,
+      "label": "E-Kennzeichen",
+      "official_fact_count": 6,
+      "official_source_count": 6,
+      "provider_evidence_excluded": true,
+      "provider_rows_available": true,
+      "provider_rows_used_as_evidence": false,
+      "public_claim_wording": "e-kennzeichen has a source-backed interactive surface. Dedicated calculator route policy remains suppress_route.",
+      "review_status": "buildable_preview",
+      "route_policy": "suppress_route",
+      "score_scope_counts": {
+        "core_candidate": 4,
+        "diagnostic_only": 3
+      },
+      "signal_category_counts": {
+        "calculator_quality": 1,
+        "coverage": 1,
+        "fact_quality": 1,
+        "intake_cluster_context": 1,
+        "provider_boundary": 1,
+        "source_quality": 1,
+        "writer_intake_quality": 1
+      },
+      "signal_count": 7,
+      "source_artifact_ids": {
+        "signals": "e-kennzeichen/amtsscore/signals.json",
+        "source_manifest": "intake-clusters/eauto/tool-bundles/e-kennzeichen/source_manifest.json",
+        "tool_bundle": "intake-clusters/eauto/tool-bundles/e-kennzeichen/tool_bundle.json",
+        "unknown_state_map": "intake-clusters/eauto/tool-bundles/e-kennzeichen/unknown_state_map.json",
+        "writer_bundle": "intake-clusters/eauto/writer-bundles/e-kennzeichen/bundle.json"
+      },
+      "source_artifact_paths": {
+        "signals": "/Users/andx/codex_scraper/output/e-kennzeichen/amtsscore/signals.json",
+        "source_manifest": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/e-kennzeichen/source_manifest.json",
+        "tool_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/e-kennzeichen/tool_bundle.json",
+        "unknown_state_map": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/e-kennzeichen/unknown_state_map.json",
+        "writer_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/writer-bundles/e-kennzeichen/bundle.json"
+      },
+      "source_backed_fact_count": 6,
+      "source_count": 6,
+      "source_note_required": true,
+      "standalone_status": null,
+      "tool_status": "light_ready",
+      "tool_type": "document_checklist",
+      "topic_slug": "e-kennzeichen",
+      "unknown_count": 2,
+      "web_buildable_now": true
+    },
+    {
+      "blocked_signal_count": 0,
+      "blocking_issues": [],
+      "calculator_input_count": 1,
+      "calculator_status": "ready",
+      "calculator_unknown_input_count": 0,
+      "can_show_tool_cta": true,
+      "consumer_lanes": [
+        "writer",
+        "web",
+        "seo_tips",
+        "amtsscore"
+      ],
+      "cta_policy": "allow_cta",
+      "embedded_policy": "allow_embedded",
+      "fact_count": 4,
+      "final_state": "light_tool_ready",
+      "group": "core",
+      "has_calculator_surface": true,
+      "label": "Kfz-Steuer",
+      "official_fact_count": 4,
+      "official_source_count": 2,
+      "provider_evidence_excluded": true,
+      "provider_rows_available": true,
+      "provider_rows_used_as_evidence": false,
+      "public_claim_wording": "kfz-steuer has a source-backed interactive surface. Dedicated calculator route policy remains suppress_route.",
+      "review_status": "buildable_preview",
+      "route_policy": "suppress_route",
+      "score_scope_counts": {
+        "core_candidate": 4,
+        "diagnostic_only": 3
+      },
+      "signal_category_counts": {
+        "calculator_quality": 1,
+        "coverage": 1,
+        "fact_quality": 1,
+        "intake_cluster_context": 1,
+        "provider_boundary": 1,
+        "source_quality": 1,
+        "writer_intake_quality": 1
+      },
+      "signal_count": 7,
+      "source_artifact_ids": {
+        "signals": "kfz-steuer/amtsscore/signals.json",
+        "source_manifest": "intake-clusters/eauto/tool-bundles/kfz-steuer/source_manifest.json",
+        "tool_bundle": "intake-clusters/eauto/tool-bundles/kfz-steuer/tool_bundle.json",
+        "unknown_state_map": "intake-clusters/eauto/tool-bundles/kfz-steuer/unknown_state_map.json",
+        "writer_bundle": "intake-clusters/eauto/writer-bundles/kfz-steuer/bundle.json"
+      },
+      "source_artifact_paths": {
+        "signals": "/Users/andx/codex_scraper/output/kfz-steuer/amtsscore/signals.json",
+        "source_manifest": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/kfz-steuer/source_manifest.json",
+        "tool_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/kfz-steuer/tool_bundle.json",
+        "unknown_state_map": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/kfz-steuer/unknown_state_map.json",
+        "writer_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/writer-bundles/kfz-steuer/bundle.json"
+      },
+      "source_backed_fact_count": 4,
+      "source_count": 2,
+      "source_note_required": true,
+      "standalone_status": "not_live_outline_registered",
+      "tool_status": "light_ready",
+      "tool_type": "eligibility_checker",
+      "topic_slug": "kfz-steuer",
+      "unknown_count": 0,
+      "web_buildable_now": true
+    },
+    {
+      "blocked_signal_count": 0,
+      "blocking_issues": [],
+      "calculator_input_count": 2,
+      "calculator_status": "ready",
+      "calculator_unknown_input_count": 5,
+      "can_show_tool_cta": true,
+      "consumer_lanes": [
+        "writer",
+        "web",
+        "seo_tips",
+        "amtsscore"
+      ],
+      "cta_policy": "allow_cta",
+      "embedded_policy": "allow_embedded",
+      "fact_count": 25,
+      "final_state": "light_tool_ready",
+      "group": "core",
+      "has_calculator_surface": true,
+      "label": "Kfz-Zulassung",
+      "official_fact_count": 25,
+      "official_source_count": 6,
+      "provider_evidence_excluded": true,
+      "provider_rows_available": true,
+      "provider_rows_used_as_evidence": false,
+      "public_claim_wording": "kfz-zulassung has a source-backed interactive surface. Dedicated calculator route policy remains suppress_route.",
+      "review_status": "buildable_preview",
+      "route_policy": "suppress_route",
+      "score_scope_counts": {
+        "core_candidate": 4,
+        "diagnostic_only": 3
+      },
+      "signal_category_counts": {
+        "calculator_quality": 1,
+        "coverage": 1,
+        "fact_quality": 1,
+        "intake_cluster_context": 1,
+        "provider_boundary": 1,
+        "source_quality": 1,
+        "writer_intake_quality": 1
+      },
+      "signal_count": 7,
+      "source_artifact_ids": {
+        "signals": "kfz-zulassung/amtsscore/signals.json",
+        "source_manifest": "intake-clusters/eauto/tool-bundles/kfz-zulassung/source_manifest.json",
+        "tool_bundle": "intake-clusters/eauto/tool-bundles/kfz-zulassung/tool_bundle.json",
+        "unknown_state_map": "intake-clusters/eauto/tool-bundles/kfz-zulassung/unknown_state_map.json",
+        "writer_bundle": "intake-clusters/eauto/writer-bundles/kfz-zulassung/bundle.json"
+      },
+      "source_artifact_paths": {
+        "signals": "/Users/andx/codex_scraper/output/kfz-zulassung/amtsscore/signals.json",
+        "source_manifest": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/kfz-zulassung/source_manifest.json",
+        "tool_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/kfz-zulassung/tool_bundle.json",
+        "unknown_state_map": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/kfz-zulassung/unknown_state_map.json",
+        "writer_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/writer-bundles/kfz-zulassung/bundle.json"
+      },
+      "source_backed_fact_count": 25,
+      "source_count": 6,
+      "source_note_required": true,
+      "standalone_status": "standalone_ready",
+      "tool_status": "light_ready",
+      "tool_type": "document_checklist",
+      "topic_slug": "kfz-zulassung",
+      "unknown_count": 5,
+      "web_buildable_now": true
+    },
+    {
+      "blocked_signal_count": 0,
+      "blocking_issues": [],
+      "calculator_input_count": 0,
+      "calculator_status": "ready",
+      "calculator_unknown_input_count": 2,
+      "can_show_tool_cta": true,
+      "consumer_lanes": [
+        "writer",
+        "web",
+        "seo_tips",
+        "amtsscore"
+      ],
+      "cta_policy": "allow_cta",
+      "embedded_policy": "allow_embedded",
+      "fact_count": 10,
+      "final_state": "light_tool_ready",
+      "group": "core",
+      "has_calculator_surface": true,
+      "label": "Ladeinfrastruktur",
+      "official_fact_count": 10,
+      "official_source_count": 6,
+      "provider_evidence_excluded": true,
+      "provider_rows_available": true,
+      "provider_rows_used_as_evidence": false,
+      "public_claim_wording": "ladeinfrastruktur has a source-backed interactive surface. Dedicated calculator route policy remains suppress_route.",
+      "review_status": "buildable_preview",
+      "route_policy": "suppress_route",
+      "score_scope_counts": {
+        "core_candidate": 4,
+        "diagnostic_only": 3
+      },
+      "signal_category_counts": {
+        "calculator_quality": 1,
+        "coverage": 1,
+        "fact_quality": 1,
+        "intake_cluster_context": 1,
+        "provider_boundary": 1,
+        "source_quality": 1,
+        "writer_intake_quality": 1
+      },
+      "signal_count": 7,
+      "source_artifact_ids": {
+        "signals": "ladeinfrastruktur/amtsscore/signals.json",
+        "source_manifest": "intake-clusters/eauto/tool-bundles/ladeinfrastruktur/source_manifest.json",
+        "tool_bundle": "intake-clusters/eauto/tool-bundles/ladeinfrastruktur/tool_bundle.json",
+        "unknown_state_map": "intake-clusters/eauto/tool-bundles/ladeinfrastruktur/unknown_state_map.json",
+        "writer_bundle": "intake-clusters/eauto/writer-bundles/ladeinfrastruktur/bundle.json"
+      },
+      "source_artifact_paths": {
+        "signals": "/Users/andx/codex_scraper/output/ladeinfrastruktur/amtsscore/signals.json",
+        "source_manifest": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/ladeinfrastruktur/source_manifest.json",
+        "tool_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/ladeinfrastruktur/tool_bundle.json",
+        "unknown_state_map": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/ladeinfrastruktur/unknown_state_map.json",
+        "writer_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/writer-bundles/ladeinfrastruktur/bundle.json"
+      },
+      "source_backed_fact_count": 10,
+      "source_count": 6,
+      "source_note_required": true,
+      "standalone_status": null,
+      "tool_status": "light_ready",
+      "tool_type": "location_selector",
+      "topic_slug": "ladeinfrastruktur",
+      "unknown_count": 3,
+      "web_buildable_now": true
+    },
+    {
+      "blocked_signal_count": 0,
+      "blocking_issues": [],
+      "calculator_input_count": 0,
+      "calculator_status": "ready",
+      "calculator_unknown_input_count": 2,
+      "can_show_tool_cta": true,
+      "consumer_lanes": [
+        "writer",
+        "web",
+        "seo_tips",
+        "amtsscore"
+      ],
+      "cta_policy": "allow_cta",
+      "embedded_policy": "allow_embedded",
+      "fact_count": 10,
+      "final_state": "light_tool_ready",
+      "group": "core",
+      "has_calculator_surface": false,
+      "label": "Ladestation",
+      "official_fact_count": 10,
+      "official_source_count": 6,
+      "provider_evidence_excluded": true,
+      "provider_rows_available": true,
+      "provider_rows_used_as_evidence": false,
+      "public_claim_wording": "ladestation has a source-backed interactive surface. Dedicated calculator route policy remains suppress_route.",
+      "review_status": "buildable_preview",
+      "route_policy": "suppress_route",
+      "score_scope_counts": {
+        "core_candidate": 4,
+        "diagnostic_only": 3
+      },
+      "signal_category_counts": {
+        "calculator_quality": 1,
+        "coverage": 1,
+        "fact_quality": 1,
+        "intake_cluster_context": 1,
+        "provider_boundary": 1,
+        "source_quality": 1,
+        "writer_intake_quality": 1
+      },
+      "signal_count": 7,
+      "source_artifact_ids": {
+        "signals": "ladestation/amtsscore/signals.json",
+        "source_manifest": "intake-clusters/eauto/tool-bundles/ladestation/source_manifest.json",
+        "tool_bundle": "intake-clusters/eauto/tool-bundles/ladestation/tool_bundle.json",
+        "unknown_state_map": "intake-clusters/eauto/tool-bundles/ladestation/unknown_state_map.json",
+        "writer_bundle": "intake-clusters/eauto/writer-bundles/ladestation/bundle.json"
+      },
+      "source_artifact_paths": {
+        "signals": "/Users/andx/codex_scraper/output/ladestation/amtsscore/signals.json",
+        "source_manifest": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/ladestation/source_manifest.json",
+        "tool_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/ladestation/tool_bundle.json",
+        "unknown_state_map": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/ladestation/unknown_state_map.json",
+        "writer_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/writer-bundles/ladestation/bundle.json"
+      },
+      "source_backed_fact_count": 10,
+      "source_count": 6,
+      "source_note_required": true,
+      "standalone_status": null,
+      "tool_status": "light_ready",
+      "tool_type": "location_selector",
+      "topic_slug": "ladestation",
+      "unknown_count": 3,
+      "web_buildable_now": true
+    },
+    {
+      "blocked_signal_count": 0,
+      "blocking_issues": [],
+      "calculator_input_count": 0,
+      "calculator_status": "ready",
+      "calculator_unknown_input_count": 2,
+      "can_show_tool_cta": true,
+      "consumer_lanes": [
+        "writer",
+        "web",
+        "seo_tips",
+        "amtsscore"
+      ],
+      "cta_policy": "allow_cta",
+      "embedded_policy": "allow_embedded",
+      "fact_count": 10,
+      "final_state": "light_tool_ready",
+      "group": "core",
+      "has_calculator_surface": false,
+      "label": "Ladesäule",
+      "official_fact_count": 10,
+      "official_source_count": 6,
+      "provider_evidence_excluded": true,
+      "provider_rows_available": true,
+      "provider_rows_used_as_evidence": false,
+      "public_claim_wording": "ladesaeule has a source-backed interactive surface. Dedicated calculator route policy remains suppress_route.",
+      "review_status": "buildable_preview",
+      "route_policy": "suppress_route",
+      "score_scope_counts": {
+        "core_candidate": 4,
+        "diagnostic_only": 3
+      },
+      "signal_category_counts": {
+        "calculator_quality": 1,
+        "coverage": 1,
+        "fact_quality": 1,
+        "intake_cluster_context": 1,
+        "provider_boundary": 1,
+        "source_quality": 1,
+        "writer_intake_quality": 1
+      },
+      "signal_count": 7,
+      "source_artifact_ids": {
+        "signals": "ladesaeule/amtsscore/signals.json",
+        "source_manifest": "intake-clusters/eauto/tool-bundles/ladesaeule/source_manifest.json",
+        "tool_bundle": "intake-clusters/eauto/tool-bundles/ladesaeule/tool_bundle.json",
+        "unknown_state_map": "intake-clusters/eauto/tool-bundles/ladesaeule/unknown_state_map.json",
+        "writer_bundle": "intake-clusters/eauto/writer-bundles/ladesaeule/bundle.json"
+      },
+      "source_artifact_paths": {
+        "signals": "/Users/andx/codex_scraper/output/ladesaeule/amtsscore/signals.json",
+        "source_manifest": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/ladesaeule/source_manifest.json",
+        "tool_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/ladesaeule/tool_bundle.json",
+        "unknown_state_map": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/ladesaeule/unknown_state_map.json",
+        "writer_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/writer-bundles/ladesaeule/bundle.json"
+      },
+      "source_backed_fact_count": 10,
+      "source_count": 6,
+      "source_note_required": true,
+      "standalone_status": null,
+      "tool_status": "light_ready",
+      "tool_type": "location_selector",
+      "topic_slug": "ladesaeule",
+      "unknown_count": 3,
+      "web_buildable_now": true
+    },
+    {
+      "blocked_signal_count": 0,
+      "blocking_issues": [],
+      "calculator_input_count": 1,
+      "calculator_status": "ready",
+      "calculator_unknown_input_count": 1,
+      "can_show_tool_cta": true,
+      "consumer_lanes": [
+        "writer",
+        "web",
+        "seo_tips",
+        "amtsscore"
+      ],
+      "cta_policy": "allow_cta",
+      "embedded_policy": "allow_embedded",
+      "fact_count": 3,
+      "final_state": "light_tool_ready",
+      "group": "core",
+      "has_calculator_surface": true,
+      "label": "THG-Quote",
+      "official_fact_count": 3,
+      "official_source_count": 3,
+      "provider_evidence_excluded": true,
+      "provider_rows_available": true,
+      "provider_rows_used_as_evidence": false,
+      "public_claim_wording": "thg-quote has a source-backed interactive surface. Dedicated calculator route policy remains suppress_route.",
+      "review_status": "buildable_preview",
+      "route_policy": "suppress_route",
+      "score_scope_counts": {
+        "core_candidate": 4,
+        "diagnostic_only": 3
+      },
+      "signal_category_counts": {
+        "calculator_quality": 1,
+        "coverage": 1,
+        "fact_quality": 1,
+        "intake_cluster_context": 1,
+        "provider_boundary": 1,
+        "source_quality": 1,
+        "writer_intake_quality": 1
+      },
+      "signal_count": 7,
+      "source_artifact_ids": {
+        "signals": "thg-quote/amtsscore/signals.json",
+        "source_manifest": "intake-clusters/eauto/tool-bundles/thg-quote/source_manifest.json",
+        "tool_bundle": "intake-clusters/eauto/tool-bundles/thg-quote/tool_bundle.json",
+        "unknown_state_map": "intake-clusters/eauto/tool-bundles/thg-quote/unknown_state_map.json",
+        "writer_bundle": "intake-clusters/eauto/writer-bundles/thg-quote/bundle.json"
+      },
+      "source_artifact_paths": {
+        "signals": "/Users/andx/codex_scraper/output/thg-quote/amtsscore/signals.json",
+        "source_manifest": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/thg-quote/source_manifest.json",
+        "tool_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/thg-quote/tool_bundle.json",
+        "unknown_state_map": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/thg-quote/unknown_state_map.json",
+        "writer_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/writer-bundles/thg-quote/bundle.json"
+      },
+      "source_backed_fact_count": 2,
+      "source_count": 3,
+      "source_note_required": true,
+      "standalone_status": "not_live_outline_registered",
+      "tool_status": "light_ready",
+      "tool_type": "eligibility_checker",
+      "topic_slug": "thg-quote",
+      "unknown_count": 1,
+      "web_buildable_now": true
+    },
+    {
+      "blocked_signal_count": 0,
+      "blocking_issues": [],
+      "calculator_input_count": 0,
+      "calculator_status": "ready",
+      "calculator_unknown_input_count": 0,
+      "can_show_tool_cta": true,
+      "consumer_lanes": [
+        "writer",
+        "web",
+        "seo_tips",
+        "amtsscore"
+      ],
+      "cta_policy": "allow_cta",
+      "embedded_policy": "allow_embedded",
+      "fact_count": 3,
+      "final_state": "light_tool_ready",
+      "group": "core",
+      "has_calculator_surface": false,
+      "label": "Umweltbonus",
+      "official_fact_count": 3,
+      "official_source_count": 2,
+      "provider_evidence_excluded": true,
+      "provider_rows_available": true,
+      "provider_rows_used_as_evidence": false,
+      "public_claim_wording": "umweltbonus has a source-backed interactive surface. Dedicated calculator route policy remains suppress_route.",
+      "review_status": "buildable_preview",
+      "route_policy": "suppress_route",
+      "score_scope_counts": {
+        "core_candidate": 4,
+        "diagnostic_only": 3
+      },
+      "signal_category_counts": {
+        "calculator_quality": 1,
+        "coverage": 1,
+        "fact_quality": 1,
+        "intake_cluster_context": 1,
+        "provider_boundary": 1,
+        "source_quality": 1,
+        "writer_intake_quality": 1
+      },
+      "signal_count": 7,
+      "source_artifact_ids": {
+        "signals": "umweltbonus/amtsscore/signals.json",
+        "source_manifest": "intake-clusters/eauto/tool-bundles/umweltbonus/source_manifest.json",
+        "tool_bundle": "intake-clusters/eauto/tool-bundles/umweltbonus/tool_bundle.json",
+        "unknown_state_map": "intake-clusters/eauto/tool-bundles/umweltbonus/unknown_state_map.json",
+        "writer_bundle": "intake-clusters/eauto/writer-bundles/umweltbonus/bundle.json"
+      },
+      "source_artifact_paths": {
+        "signals": "/Users/andx/codex_scraper/output/umweltbonus/amtsscore/signals.json",
+        "source_manifest": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/umweltbonus/source_manifest.json",
+        "tool_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/umweltbonus/tool_bundle.json",
+        "unknown_state_map": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/umweltbonus/unknown_state_map.json",
+        "writer_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/writer-bundles/umweltbonus/bundle.json"
+      },
+      "source_backed_fact_count": 3,
+      "source_count": 3,
+      "source_note_required": true,
+      "standalone_status": null,
+      "tool_status": "light_ready",
+      "tool_type": "eligibility_checker",
+      "topic_slug": "umweltbonus",
+      "unknown_count": 1,
+      "web_buildable_now": true
+    },
+    {
+      "blocked_signal_count": 0,
+      "blocking_issues": [],
+      "calculator_input_count": 2,
+      "calculator_status": "ready",
+      "calculator_unknown_input_count": 2,
+      "can_show_tool_cta": true,
+      "consumer_lanes": [
+        "writer",
+        "web",
+        "seo_tips",
+        "amtsscore"
+      ],
+      "cta_policy": "allow_cta",
+      "embedded_policy": "allow_embedded",
+      "fact_count": 10,
+      "final_state": "light_tool_ready",
+      "group": "core",
+      "has_calculator_surface": true,
+      "label": "Wallbox-Förderung",
+      "official_fact_count": 10,
+      "official_source_count": 6,
+      "provider_evidence_excluded": true,
+      "provider_rows_available": true,
+      "provider_rows_used_as_evidence": false,
+      "public_claim_wording": "wallbox-foerderung has a source-backed interactive surface. Dedicated calculator route policy remains suppress_route.",
+      "review_status": "buildable_preview",
+      "route_policy": "suppress_route",
+      "score_scope_counts": {
+        "core_candidate": 4,
+        "diagnostic_only": 3
+      },
+      "signal_category_counts": {
+        "calculator_quality": 1,
+        "coverage": 1,
+        "fact_quality": 1,
+        "intake_cluster_context": 1,
+        "provider_boundary": 1,
+        "source_quality": 1,
+        "writer_intake_quality": 1
+      },
+      "signal_count": 7,
+      "source_artifact_ids": {
+        "signals": "wallbox-foerderung/amtsscore/signals.json",
+        "source_manifest": "intake-clusters/eauto/tool-bundles/wallbox-foerderung/source_manifest.json",
+        "tool_bundle": "intake-clusters/eauto/tool-bundles/wallbox-foerderung/tool_bundle.json",
+        "unknown_state_map": "intake-clusters/eauto/tool-bundles/wallbox-foerderung/unknown_state_map.json",
+        "writer_bundle": "intake-clusters/eauto/writer-bundles/wallbox-foerderung/bundle.json"
+      },
+      "source_artifact_paths": {
+        "signals": "/Users/andx/codex_scraper/output/wallbox-foerderung/amtsscore/signals.json",
+        "source_manifest": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/wallbox-foerderung/source_manifest.json",
+        "tool_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/wallbox-foerderung/tool_bundle.json",
+        "unknown_state_map": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/wallbox-foerderung/unknown_state_map.json",
+        "writer_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/writer-bundles/wallbox-foerderung/bundle.json"
+      },
+      "source_backed_fact_count": 10,
+      "source_count": 6,
+      "source_note_required": true,
+      "standalone_status": "standalone_ready",
+      "tool_status": "light_ready",
+      "tool_type": "location_selector",
+      "topic_slug": "wallbox-foerderung",
+      "unknown_count": 3,
+      "web_buildable_now": true
+    },
+    {
+      "blocked_signal_count": 0,
+      "blocking_issues": [],
+      "calculator_input_count": 0,
+      "calculator_status": "guide_only",
+      "calculator_unknown_input_count": 0,
+      "can_show_tool_cta": false,
+      "consumer_lanes": [
+        "writer",
+        "not_consumed"
+      ],
+      "cta_policy": "suppress_cta",
+      "embedded_policy": "suppress_embedded",
+      "fact_count": 2,
+      "final_state": "bridge_only_closed",
+      "group": "bridge",
+      "has_calculator_surface": false,
+      "label": "Energieberater",
+      "official_fact_count": 0,
+      "official_source_count": 0,
+      "provider_evidence_excluded": true,
+      "provider_rows_available": true,
+      "provider_rows_used_as_evidence": false,
+      "public_claim_wording": "energieberater is cluster bridge or reuse context. It does not prove standalone topic completion.",
+      "review_status": "bridge_context",
+      "route_policy": "suppress_route",
+      "score_scope_counts": {
+        "core_candidate": 4,
+        "diagnostic_only": 3
+      },
+      "signal_category_counts": {
+        "calculator_quality": 1,
+        "coverage": 1,
+        "fact_quality": 1,
+        "intake_cluster_context": 1,
+        "provider_boundary": 1,
+        "source_quality": 1,
+        "writer_intake_quality": 1
+      },
+      "signal_count": 7,
+      "source_artifact_ids": {
+        "signals": "energieberater/amtsscore/signals.json",
+        "source_manifest": "intake-clusters/eauto/tool-bundles/energieberater/source_manifest.json",
+        "tool_bundle": "intake-clusters/eauto/tool-bundles/energieberater/tool_bundle.json",
+        "unknown_state_map": "intake-clusters/eauto/tool-bundles/energieberater/unknown_state_map.json",
+        "writer_bundle": "intake-clusters/eauto/writer-bundles/energieberater/bundle.json"
+      },
+      "source_artifact_paths": {
+        "signals": "/Users/andx/codex_scraper/output/energieberater/amtsscore/signals.json",
+        "source_manifest": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/energieberater/source_manifest.json",
+        "tool_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/energieberater/tool_bundle.json",
+        "unknown_state_map": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/energieberater/unknown_state_map.json",
+        "writer_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/writer-bundles/energieberater/bundle.json"
+      },
+      "source_backed_fact_count": 0,
+      "source_count": 5,
+      "source_note_required": true,
+      "standalone_status": "standalone_ready",
+      "tool_status": "guide_only",
+      "tool_type": "guide_only",
+      "topic_slug": "energieberater",
+      "unknown_count": 2,
+      "web_buildable_now": false
+    },
+    {
+      "blocked_signal_count": 0,
+      "blocking_issues": [
+        "input_contract_missing",
+        "output_contract_missing",
+        "decision_or_lookup_map_not_source_backed",
+        "source_manifest_missing"
+      ],
+      "calculator_input_count": 0,
+      "calculator_status": "guide_only",
+      "calculator_unknown_input_count": 0,
+      "can_show_tool_cta": false,
+      "consumer_lanes": [
+        "writer",
+        "not_consumed"
+      ],
+      "cta_policy": "suppress_cta",
+      "embedded_policy": "suppress_embedded",
+      "fact_count": 2,
+      "final_state": "not_ready_closed",
+      "group": "bridge",
+      "has_calculator_surface": false,
+      "label": "PV-Wallbox",
+      "official_fact_count": 0,
+      "official_source_count": 0,
+      "provider_evidence_excluded": true,
+      "provider_rows_available": true,
+      "provider_rows_used_as_evidence": false,
+      "public_claim_wording": "pv-wallbox is cluster bridge or reuse context. It does not prove standalone topic completion.",
+      "review_status": "bridge_context",
+      "route_policy": "suppress_route",
+      "score_scope_counts": {
+        "core_candidate": 4,
+        "diagnostic_only": 3
+      },
+      "signal_category_counts": {
+        "calculator_quality": 1,
+        "coverage": 1,
+        "fact_quality": 1,
+        "intake_cluster_context": 1,
+        "provider_boundary": 1,
+        "source_quality": 1,
+        "writer_intake_quality": 1
+      },
+      "signal_count": 7,
+      "source_artifact_ids": {
+        "signals": "pv-wallbox/amtsscore/signals.json",
+        "source_manifest": "intake-clusters/eauto/tool-bundles/pv-wallbox/source_manifest.json",
+        "tool_bundle": "intake-clusters/eauto/tool-bundles/pv-wallbox/tool_bundle.json",
+        "unknown_state_map": "intake-clusters/eauto/tool-bundles/pv-wallbox/unknown_state_map.json",
+        "writer_bundle": "intake-clusters/eauto/writer-bundles/pv-wallbox/bundle.json"
+      },
+      "source_artifact_paths": {
+        "signals": "/Users/andx/codex_scraper/output/pv-wallbox/amtsscore/signals.json",
+        "source_manifest": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/pv-wallbox/source_manifest.json",
+        "tool_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/pv-wallbox/tool_bundle.json",
+        "unknown_state_map": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/pv-wallbox/unknown_state_map.json",
+        "writer_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/writer-bundles/pv-wallbox/bundle.json"
+      },
+      "source_backed_fact_count": 0,
+      "source_count": 4,
+      "source_note_required": true,
+      "standalone_status": null,
+      "tool_status": "blocked",
+      "tool_type": "readiness_checker",
+      "topic_slug": "pv-wallbox",
+      "unknown_count": 2,
+      "web_buildable_now": false
+    },
+    {
+      "blocked_signal_count": 0,
+      "blocking_issues": [],
+      "calculator_input_count": 6,
+      "calculator_status": "not_ready",
+      "calculator_unknown_input_count": 4,
+      "can_show_tool_cta": true,
+      "consumer_lanes": [
+        "writer",
+        "web",
+        "seo_tips",
+        "amtsscore"
+      ],
+      "cta_policy": "allow_cta",
+      "embedded_policy": "allow_embedded",
+      "fact_count": 5,
+      "final_state": "light_tool_ready",
+      "group": "bridge",
+      "has_calculator_surface": true,
+      "label": "Solaranlage",
+      "official_fact_count": 5,
+      "official_source_count": 5,
+      "provider_evidence_excluded": true,
+      "provider_rows_available": true,
+      "provider_rows_used_as_evidence": false,
+      "public_claim_wording": "solaranlage is cluster bridge or reuse context. It does not prove standalone topic completion.",
+      "review_status": "bridge_context",
+      "route_policy": "suppress_route",
+      "score_scope_counts": {
+        "core_candidate": 4,
+        "diagnostic_only": 3
+      },
+      "signal_category_counts": {
+        "calculator_quality": 1,
+        "coverage": 1,
+        "fact_quality": 1,
+        "intake_cluster_context": 1,
+        "provider_boundary": 1,
+        "source_quality": 1,
+        "writer_intake_quality": 1
+      },
+      "signal_count": 7,
+      "source_artifact_ids": {
+        "signals": "solaranlage/amtsscore/signals.json",
+        "source_manifest": "intake-clusters/eauto/tool-bundles/solaranlage/source_manifest.json",
+        "tool_bundle": "intake-clusters/eauto/tool-bundles/solaranlage/tool_bundle.json",
+        "unknown_state_map": "intake-clusters/eauto/tool-bundles/solaranlage/unknown_state_map.json",
+        "writer_bundle": "intake-clusters/eauto/writer-bundles/solaranlage/bundle.json"
+      },
+      "source_artifact_paths": {
+        "signals": "/Users/andx/codex_scraper/output/solaranlage/amtsscore/signals.json",
+        "source_manifest": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/solaranlage/source_manifest.json",
+        "tool_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/solaranlage/tool_bundle.json",
+        "unknown_state_map": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/solaranlage/unknown_state_map.json",
+        "writer_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/writer-bundles/solaranlage/bundle.json"
+      },
+      "source_backed_fact_count": 5,
+      "source_count": 6,
+      "source_note_required": true,
+      "standalone_status": "standalone_ready",
+      "tool_status": "light_ready",
+      "tool_type": "readiness_checker",
+      "topic_slug": "solaranlage",
+      "unknown_count": 4,
+      "web_buildable_now": true
+    },
+    {
+      "blocked_signal_count": 0,
+      "blocking_issues": [
+        "calculator:bridge_writer_bundle_cannot_satisfy_calculator_readiness"
+      ],
+      "calculator_input_count": 7,
+      "calculator_status": "not_ready",
+      "calculator_unknown_input_count": 4,
+      "can_show_tool_cta": false,
+      "consumer_lanes": [
+        "writer",
+        "not_consumed"
+      ],
+      "cta_policy": "suppress_cta",
+      "embedded_policy": "suppress_embedded",
+      "fact_count": 6,
+      "final_state": "not_ready_closed",
+      "group": "bridge",
+      "has_calculator_surface": true,
+      "label": "Solarstrom fürs Auto",
+      "official_fact_count": 2,
+      "official_source_count": 2,
+      "provider_evidence_excluded": true,
+      "provider_rows_available": false,
+      "provider_rows_used_as_evidence": false,
+      "public_claim_wording": "solarstrom-auto-laden is cluster bridge or reuse context. It does not prove standalone topic completion.",
+      "review_status": "bridge_context",
+      "route_policy": "suppress_route",
+      "score_scope_counts": {
+        "core_candidate": 4,
+        "diagnostic_only": 3
+      },
+      "signal_category_counts": {
+        "calculator_quality": 1,
+        "coverage": 1,
+        "fact_quality": 1,
+        "intake_cluster_context": 1,
+        "provider_boundary": 1,
+        "source_quality": 1,
+        "writer_intake_quality": 1
+      },
+      "signal_count": 7,
+      "source_artifact_ids": {
+        "signals": "solarstrom-auto-laden/amtsscore/signals.json",
+        "source_manifest": "intake-clusters/eauto/tool-bundles/solarstrom-auto-laden/source_manifest.json",
+        "tool_bundle": "intake-clusters/eauto/tool-bundles/solarstrom-auto-laden/tool_bundle.json",
+        "unknown_state_map": "intake-clusters/eauto/tool-bundles/solarstrom-auto-laden/unknown_state_map.json",
+        "writer_bundle": "intake-clusters/eauto/writer-bundles/solarstrom-auto-laden/bundle.json"
+      },
+      "source_artifact_paths": {
+        "signals": "/Users/andx/codex_scraper/output/solarstrom-auto-laden/amtsscore/signals.json",
+        "source_manifest": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/solarstrom-auto-laden/source_manifest.json",
+        "tool_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/solarstrom-auto-laden/tool_bundle.json",
+        "unknown_state_map": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/solarstrom-auto-laden/unknown_state_map.json",
+        "writer_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/writer-bundles/solarstrom-auto-laden/bundle.json"
+      },
+      "source_backed_fact_count": 6,
+      "source_count": 4,
+      "source_note_required": true,
+      "standalone_status": null,
+      "tool_status": "light_ready",
+      "tool_type": "location_selector",
+      "topic_slug": "solarstrom-auto-laden",
+      "unknown_count": 3,
+      "web_buildable_now": false
+    },
+    {
+      "blocked_signal_count": 0,
+      "blocking_issues": [
+        "input_contract_missing",
+        "output_contract_missing",
+        "decision_or_lookup_map_not_source_backed",
+        "source_manifest_missing"
+      ],
+      "calculator_input_count": 0,
+      "calculator_status": "guide_only",
+      "calculator_unknown_input_count": 0,
+      "can_show_tool_cta": false,
+      "consumer_lanes": [
+        "writer",
+        "not_consumed"
+      ],
+      "cta_policy": "suppress_cta",
+      "embedded_policy": "suppress_embedded",
+      "fact_count": 2,
+      "final_state": "not_ready_closed",
+      "group": "bridge",
+      "has_calculator_surface": false,
+      "label": "Solarteur",
+      "official_fact_count": 0,
+      "official_source_count": 0,
+      "provider_evidence_excluded": true,
+      "provider_rows_available": true,
+      "provider_rows_used_as_evidence": false,
+      "public_claim_wording": "solarteur is cluster bridge or reuse context. It does not prove standalone topic completion.",
+      "review_status": "bridge_context",
+      "route_policy": "suppress_route",
+      "score_scope_counts": {
+        "core_candidate": 4,
+        "diagnostic_only": 3
+      },
+      "signal_category_counts": {
+        "calculator_quality": 1,
+        "coverage": 1,
+        "fact_quality": 1,
+        "intake_cluster_context": 1,
+        "provider_boundary": 1,
+        "source_quality": 1,
+        "writer_intake_quality": 1
+      },
+      "signal_count": 7,
+      "source_artifact_ids": {
+        "signals": "solarteur/amtsscore/signals.json",
+        "source_manifest": "intake-clusters/eauto/tool-bundles/solarteur/source_manifest.json",
+        "tool_bundle": "intake-clusters/eauto/tool-bundles/solarteur/tool_bundle.json",
+        "unknown_state_map": "intake-clusters/eauto/tool-bundles/solarteur/unknown_state_map.json",
+        "writer_bundle": "intake-clusters/eauto/writer-bundles/solarteur/bundle.json"
+      },
+      "source_artifact_paths": {
+        "signals": "/Users/andx/codex_scraper/output/solarteur/amtsscore/signals.json",
+        "source_manifest": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/solarteur/source_manifest.json",
+        "tool_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/solarteur/tool_bundle.json",
+        "unknown_state_map": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/solarteur/unknown_state_map.json",
+        "writer_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/writer-bundles/solarteur/bundle.json"
+      },
+      "source_backed_fact_count": 0,
+      "source_count": 5,
+      "source_note_required": true,
+      "standalone_status": null,
+      "tool_status": "blocked",
+      "tool_type": "readiness_checker",
+      "topic_slug": "solarteur",
+      "unknown_count": 2,
+      "web_buildable_now": false
+    },
+    {
+      "blocked_signal_count": 0,
+      "blocking_issues": [],
+      "calculator_input_count": 0,
+      "calculator_status": "guide_only",
+      "calculator_unknown_input_count": 0,
+      "can_show_tool_cta": false,
+      "consumer_lanes": [
+        "writer",
+        "not_consumed"
+      ],
+      "cta_policy": "suppress_cta",
+      "embedded_policy": "suppress_embedded",
+      "fact_count": 2,
+      "final_state": "not_ready_closed",
+      "group": "not_surfaceable",
+      "has_calculator_surface": false,
+      "label": "E-Auto-Versicherung",
+      "official_fact_count": 1,
+      "official_source_count": 1,
+      "provider_evidence_excluded": true,
+      "provider_rows_available": true,
+      "provider_rows_used_as_evidence": false,
+      "public_claim_wording": "e-auto-versicherung is not product-publishable as a topic surface.",
+      "review_status": "not_ready",
+      "route_policy": "suppress_route",
+      "score_scope_counts": {
+        "core_candidate": 4,
+        "diagnostic_only": 3
+      },
+      "signal_category_counts": {
+        "calculator_quality": 1,
+        "coverage": 1,
+        "fact_quality": 1,
+        "intake_cluster_context": 1,
+        "provider_boundary": 1,
+        "source_quality": 1,
+        "writer_intake_quality": 1
+      },
+      "signal_count": 7,
+      "source_artifact_ids": {
+        "signals": "e-auto-versicherung/amtsscore/signals.json",
+        "source_manifest": "intake-clusters/eauto/tool-bundles/e-auto-versicherung/source_manifest.json",
+        "tool_bundle": "intake-clusters/eauto/tool-bundles/e-auto-versicherung/tool_bundle.json",
+        "unknown_state_map": "intake-clusters/eauto/tool-bundles/e-auto-versicherung/unknown_state_map.json",
+        "writer_bundle": "intake-clusters/eauto/writer-bundles/e-auto-versicherung/bundle.json"
+      },
+      "source_artifact_paths": {
+        "signals": "/Users/andx/codex_scraper/output/e-auto-versicherung/amtsscore/signals.json",
+        "source_manifest": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/e-auto-versicherung/source_manifest.json",
+        "tool_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/e-auto-versicherung/tool_bundle.json",
+        "unknown_state_map": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/e-auto-versicherung/unknown_state_map.json",
+        "writer_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/writer-bundles/e-auto-versicherung/bundle.json"
+      },
+      "source_backed_fact_count": 1,
+      "source_count": 2,
+      "source_note_required": true,
+      "standalone_status": null,
+      "tool_status": "not_ready",
+      "tool_type": "not_ready",
+      "topic_slug": "e-auto-versicherung",
+      "unknown_count": 1,
+      "web_buildable_now": false
+    },
+    {
+      "blocked_signal_count": 0,
+      "blocking_issues": [],
+      "calculator_input_count": 0,
+      "calculator_status": "guide_only",
+      "calculator_unknown_input_count": 0,
+      "can_show_tool_cta": false,
+      "consumer_lanes": [
+        "writer",
+        "not_consumed"
+      ],
+      "cta_policy": "suppress_cta",
+      "embedded_policy": "suppress_embedded",
+      "fact_count": 3,
+      "final_state": "not_ready_closed",
+      "group": "not_surfaceable",
+      "has_calculator_surface": false,
+      "label": "Gebrauchtwagen-E-Auto-Förderung",
+      "official_fact_count": 2,
+      "official_source_count": 2,
+      "provider_evidence_excluded": true,
+      "provider_rows_available": true,
+      "provider_rows_used_as_evidence": false,
+      "public_claim_wording": "gebrauchtwagen-eauto-foerderung is not product-publishable as a topic surface.",
+      "review_status": "not_ready",
+      "route_policy": "suppress_route",
+      "score_scope_counts": {
+        "core_candidate": 4,
+        "diagnostic_only": 3
+      },
+      "signal_category_counts": {
+        "calculator_quality": 1,
+        "coverage": 1,
+        "fact_quality": 1,
+        "intake_cluster_context": 1,
+        "provider_boundary": 1,
+        "source_quality": 1,
+        "writer_intake_quality": 1
+      },
+      "signal_count": 7,
+      "source_artifact_ids": {
+        "signals": "gebrauchtwagen-eauto-foerderung/amtsscore/signals.json",
+        "source_manifest": "intake-clusters/eauto/tool-bundles/gebrauchtwagen-eauto-foerderung/source_manifest.json",
+        "tool_bundle": "intake-clusters/eauto/tool-bundles/gebrauchtwagen-eauto-foerderung/tool_bundle.json",
+        "unknown_state_map": "intake-clusters/eauto/tool-bundles/gebrauchtwagen-eauto-foerderung/unknown_state_map.json",
+        "writer_bundle": "intake-clusters/eauto/writer-bundles/gebrauchtwagen-eauto-foerderung/bundle.json"
+      },
+      "source_artifact_paths": {
+        "signals": "/Users/andx/codex_scraper/output/gebrauchtwagen-eauto-foerderung/amtsscore/signals.json",
+        "source_manifest": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/gebrauchtwagen-eauto-foerderung/source_manifest.json",
+        "tool_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/gebrauchtwagen-eauto-foerderung/tool_bundle.json",
+        "unknown_state_map": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/gebrauchtwagen-eauto-foerderung/unknown_state_map.json",
+        "writer_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/writer-bundles/gebrauchtwagen-eauto-foerderung/bundle.json"
+      },
+      "source_backed_fact_count": 2,
+      "source_count": 2,
+      "source_note_required": true,
+      "standalone_status": null,
+      "tool_status": "not_ready",
+      "tool_type": "not_ready",
+      "topic_slug": "gebrauchtwagen-eauto-foerderung",
+      "unknown_count": 1,
+      "web_buildable_now": false
+    },
+    {
+      "blocked_signal_count": 0,
+      "blocking_issues": [],
+      "calculator_input_count": 0,
+      "calculator_status": null,
+      "calculator_unknown_input_count": 0,
+      "can_show_tool_cta": false,
+      "consumer_lanes": [
+        "writer",
+        "provider_sales"
+      ],
+      "cta_policy": "suppress_cta",
+      "embedded_policy": "suppress_embedded",
+      "fact_count": 0,
+      "final_state": "provider_only_ready",
+      "group": "provider_only",
+      "has_calculator_surface": false,
+      "label": "E-Auto-Händler-Pool",
+      "official_fact_count": 0,
+      "official_source_count": 0,
+      "provider_evidence_excluded": true,
+      "provider_rows_available": false,
+      "provider_rows_used_as_evidence": false,
+      "public_claim_wording": "supplier-pool-e-autohaendler is provider-only. Do not claim legal or official fact completion from provider rows.",
+      "review_status": "provider_only",
+      "route_policy": "suppress_route",
+      "score_scope_counts": {},
+      "signal_category_counts": {},
+      "signal_count": 0,
+      "source_artifact_ids": {
+        "signals": "supplier-pool-e-autohaendler/amtsscore/signals.json",
+        "source_manifest": null,
+        "tool_bundle": null,
+        "unknown_state_map": null,
+        "writer_bundle": "intake-clusters/eauto/writer-bundles/supplier-pool-e-autohaendler/bundle.json"
+      },
+      "source_artifact_paths": {
+        "signals": "/Users/andx/codex_scraper/output/supplier-pool-e-autohaendler/amtsscore/signals.json",
+        "source_manifest": null,
+        "tool_bundle": null,
+        "unknown_state_map": null,
+        "writer_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/writer-bundles/supplier-pool-e-autohaendler/bundle.json"
+      },
+      "source_backed_fact_count": 0,
+      "source_count": 0,
+      "source_note_required": true,
+      "standalone_status": "provider_only",
+      "tool_status": null,
+      "tool_type": null,
+      "topic_slug": "supplier-pool-e-autohaendler",
+      "unknown_count": 0,
+      "web_buildable_now": false
+    },
+    {
+      "blocked_signal_count": 0,
+      "blocking_issues": [],
+      "calculator_input_count": 0,
+      "calculator_status": "guide_only",
+      "calculator_unknown_input_count": 2,
+      "can_show_tool_cta": false,
+      "consumer_lanes": [
+        "writer",
+        "provider_sales"
+      ],
+      "cta_policy": "suppress_cta",
+      "embedded_policy": "suppress_embedded",
+      "fact_count": 10,
+      "final_state": "provider_only_ready",
+      "group": "provider_only",
+      "has_calculator_surface": false,
+      "label": "Wallbox-Installation",
+      "official_fact_count": 10,
+      "official_source_count": 6,
+      "provider_evidence_excluded": true,
+      "provider_rows_available": true,
+      "provider_rows_used_as_evidence": false,
+      "public_claim_wording": "wallbox-installation is provider-only. Do not claim legal or official fact completion from provider rows.",
+      "review_status": "provider_only",
+      "route_policy": "suppress_route",
+      "score_scope_counts": {
+        "core_candidate": 4,
+        "diagnostic_only": 3
+      },
+      "signal_category_counts": {
+        "calculator_quality": 1,
+        "coverage": 1,
+        "fact_quality": 1,
+        "intake_cluster_context": 1,
+        "provider_boundary": 1,
+        "source_quality": 1,
+        "writer_intake_quality": 1
+      },
+      "signal_count": 7,
+      "source_artifact_ids": {
+        "signals": "wallbox-installation/amtsscore/signals.json",
+        "source_manifest": "intake-clusters/eauto/tool-bundles/wallbox-installation/source_manifest.json",
+        "tool_bundle": "intake-clusters/eauto/tool-bundles/wallbox-installation/tool_bundle.json",
+        "unknown_state_map": "intake-clusters/eauto/tool-bundles/wallbox-installation/unknown_state_map.json",
+        "writer_bundle": "intake-clusters/eauto/writer-bundles/wallbox-installation/bundle.json"
+      },
+      "source_artifact_paths": {
+        "signals": "/Users/andx/codex_scraper/output/wallbox-installation/amtsscore/signals.json",
+        "source_manifest": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/wallbox-installation/source_manifest.json",
+        "tool_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/wallbox-installation/tool_bundle.json",
+        "unknown_state_map": "/Users/andx/codex_scraper/output/intake-clusters/eauto/tool-bundles/wallbox-installation/unknown_state_map.json",
+        "writer_bundle": "/Users/andx/codex_scraper/output/intake-clusters/eauto/writer-bundles/wallbox-installation/bundle.json"
+      },
+      "source_backed_fact_count": 10,
+      "source_count": 6,
+      "source_note_required": true,
+      "standalone_status": null,
+      "tool_status": "not_ready",
+      "tool_type": "provider_matcher",
+      "topic_slug": "wallbox-installation",
+      "unknown_count": 3,
+      "web_buildable_now": false
+    }
+  ],
+  "visual_rollups": {
+    "metrics": [
+      {
+        "date": "2026-06-04",
+        "metric": "candidate_ready_topic_count",
+        "value": 19
+      },
+      {
+        "date": "2026-06-04",
+        "metric": "signal_count",
+        "value": 133
+      },
+      {
+        "date": "2026-06-04",
+        "metric": "blocked_signal_count",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "metric": "web_buildable_now_count",
+        "value": 12
+      },
+      {
+        "date": "2026-06-04",
+        "metric": "suppressed_route_count",
+        "value": 20
+      }
+    ],
+    "topic_metrics": [
+      {
+        "date": "2026-06-04",
+        "field": "official_source_count",
+        "label": "E-Auto laden",
+        "topic_slug": "e-auto-laden",
+        "value": 6
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_count",
+        "label": "E-Auto laden",
+        "topic_slug": "e-auto-laden",
+        "value": 6
+      },
+      {
+        "date": "2026-06-04",
+        "field": "fact_count",
+        "label": "E-Auto laden",
+        "topic_slug": "e-auto-laden",
+        "value": 10
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_backed_fact_count",
+        "label": "E-Auto laden",
+        "topic_slug": "e-auto-laden",
+        "value": 10
+      },
+      {
+        "date": "2026-06-04",
+        "field": "unknown_count",
+        "label": "E-Auto laden",
+        "topic_slug": "e-auto-laden",
+        "value": 3
+      },
+      {
+        "date": "2026-06-04",
+        "field": "signal_count",
+        "label": "E-Auto laden",
+        "topic_slug": "e-auto-laden",
+        "value": 7
+      },
+      {
+        "date": "2026-06-04",
+        "field": "blocked_signal_count",
+        "label": "E-Auto laden",
+        "topic_slug": "e-auto-laden",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "official_source_count",
+        "label": "E-Auto-Förderung",
+        "topic_slug": "e-auto-foerderung",
+        "value": 2
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_count",
+        "label": "E-Auto-Förderung",
+        "topic_slug": "e-auto-foerderung",
+        "value": 3
+      },
+      {
+        "date": "2026-06-04",
+        "field": "fact_count",
+        "label": "E-Auto-Förderung",
+        "topic_slug": "e-auto-foerderung",
+        "value": 5
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_backed_fact_count",
+        "label": "E-Auto-Förderung",
+        "topic_slug": "e-auto-foerderung",
+        "value": 3
+      },
+      {
+        "date": "2026-06-04",
+        "field": "unknown_count",
+        "label": "E-Auto-Förderung",
+        "topic_slug": "e-auto-foerderung",
+        "value": 4
+      },
+      {
+        "date": "2026-06-04",
+        "field": "signal_count",
+        "label": "E-Auto-Förderung",
+        "topic_slug": "e-auto-foerderung",
+        "value": 7
+      },
+      {
+        "date": "2026-06-04",
+        "field": "blocked_signal_count",
+        "label": "E-Auto-Förderung",
+        "topic_slug": "e-auto-foerderung",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "official_source_count",
+        "label": "E-Kennzeichen",
+        "topic_slug": "e-kennzeichen",
+        "value": 6
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_count",
+        "label": "E-Kennzeichen",
+        "topic_slug": "e-kennzeichen",
+        "value": 6
+      },
+      {
+        "date": "2026-06-04",
+        "field": "fact_count",
+        "label": "E-Kennzeichen",
+        "topic_slug": "e-kennzeichen",
+        "value": 6
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_backed_fact_count",
+        "label": "E-Kennzeichen",
+        "topic_slug": "e-kennzeichen",
+        "value": 6
+      },
+      {
+        "date": "2026-06-04",
+        "field": "unknown_count",
+        "label": "E-Kennzeichen",
+        "topic_slug": "e-kennzeichen",
+        "value": 2
+      },
+      {
+        "date": "2026-06-04",
+        "field": "signal_count",
+        "label": "E-Kennzeichen",
+        "topic_slug": "e-kennzeichen",
+        "value": 7
+      },
+      {
+        "date": "2026-06-04",
+        "field": "blocked_signal_count",
+        "label": "E-Kennzeichen",
+        "topic_slug": "e-kennzeichen",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "official_source_count",
+        "label": "Kfz-Steuer",
+        "topic_slug": "kfz-steuer",
+        "value": 2
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_count",
+        "label": "Kfz-Steuer",
+        "topic_slug": "kfz-steuer",
+        "value": 2
+      },
+      {
+        "date": "2026-06-04",
+        "field": "fact_count",
+        "label": "Kfz-Steuer",
+        "topic_slug": "kfz-steuer",
+        "value": 4
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_backed_fact_count",
+        "label": "Kfz-Steuer",
+        "topic_slug": "kfz-steuer",
+        "value": 4
+      },
+      {
+        "date": "2026-06-04",
+        "field": "unknown_count",
+        "label": "Kfz-Steuer",
+        "topic_slug": "kfz-steuer",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "signal_count",
+        "label": "Kfz-Steuer",
+        "topic_slug": "kfz-steuer",
+        "value": 7
+      },
+      {
+        "date": "2026-06-04",
+        "field": "blocked_signal_count",
+        "label": "Kfz-Steuer",
+        "topic_slug": "kfz-steuer",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "official_source_count",
+        "label": "Kfz-Zulassung",
+        "topic_slug": "kfz-zulassung",
+        "value": 6
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_count",
+        "label": "Kfz-Zulassung",
+        "topic_slug": "kfz-zulassung",
+        "value": 6
+      },
+      {
+        "date": "2026-06-04",
+        "field": "fact_count",
+        "label": "Kfz-Zulassung",
+        "topic_slug": "kfz-zulassung",
+        "value": 25
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_backed_fact_count",
+        "label": "Kfz-Zulassung",
+        "topic_slug": "kfz-zulassung",
+        "value": 25
+      },
+      {
+        "date": "2026-06-04",
+        "field": "unknown_count",
+        "label": "Kfz-Zulassung",
+        "topic_slug": "kfz-zulassung",
+        "value": 5
+      },
+      {
+        "date": "2026-06-04",
+        "field": "signal_count",
+        "label": "Kfz-Zulassung",
+        "topic_slug": "kfz-zulassung",
+        "value": 7
+      },
+      {
+        "date": "2026-06-04",
+        "field": "blocked_signal_count",
+        "label": "Kfz-Zulassung",
+        "topic_slug": "kfz-zulassung",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "official_source_count",
+        "label": "Ladeinfrastruktur",
+        "topic_slug": "ladeinfrastruktur",
+        "value": 6
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_count",
+        "label": "Ladeinfrastruktur",
+        "topic_slug": "ladeinfrastruktur",
+        "value": 6
+      },
+      {
+        "date": "2026-06-04",
+        "field": "fact_count",
+        "label": "Ladeinfrastruktur",
+        "topic_slug": "ladeinfrastruktur",
+        "value": 10
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_backed_fact_count",
+        "label": "Ladeinfrastruktur",
+        "topic_slug": "ladeinfrastruktur",
+        "value": 10
+      },
+      {
+        "date": "2026-06-04",
+        "field": "unknown_count",
+        "label": "Ladeinfrastruktur",
+        "topic_slug": "ladeinfrastruktur",
+        "value": 3
+      },
+      {
+        "date": "2026-06-04",
+        "field": "signal_count",
+        "label": "Ladeinfrastruktur",
+        "topic_slug": "ladeinfrastruktur",
+        "value": 7
+      },
+      {
+        "date": "2026-06-04",
+        "field": "blocked_signal_count",
+        "label": "Ladeinfrastruktur",
+        "topic_slug": "ladeinfrastruktur",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "official_source_count",
+        "label": "Ladestation",
+        "topic_slug": "ladestation",
+        "value": 6
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_count",
+        "label": "Ladestation",
+        "topic_slug": "ladestation",
+        "value": 6
+      },
+      {
+        "date": "2026-06-04",
+        "field": "fact_count",
+        "label": "Ladestation",
+        "topic_slug": "ladestation",
+        "value": 10
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_backed_fact_count",
+        "label": "Ladestation",
+        "topic_slug": "ladestation",
+        "value": 10
+      },
+      {
+        "date": "2026-06-04",
+        "field": "unknown_count",
+        "label": "Ladestation",
+        "topic_slug": "ladestation",
+        "value": 3
+      },
+      {
+        "date": "2026-06-04",
+        "field": "signal_count",
+        "label": "Ladestation",
+        "topic_slug": "ladestation",
+        "value": 7
+      },
+      {
+        "date": "2026-06-04",
+        "field": "blocked_signal_count",
+        "label": "Ladestation",
+        "topic_slug": "ladestation",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "official_source_count",
+        "label": "Ladesäule",
+        "topic_slug": "ladesaeule",
+        "value": 6
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_count",
+        "label": "Ladesäule",
+        "topic_slug": "ladesaeule",
+        "value": 6
+      },
+      {
+        "date": "2026-06-04",
+        "field": "fact_count",
+        "label": "Ladesäule",
+        "topic_slug": "ladesaeule",
+        "value": 10
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_backed_fact_count",
+        "label": "Ladesäule",
+        "topic_slug": "ladesaeule",
+        "value": 10
+      },
+      {
+        "date": "2026-06-04",
+        "field": "unknown_count",
+        "label": "Ladesäule",
+        "topic_slug": "ladesaeule",
+        "value": 3
+      },
+      {
+        "date": "2026-06-04",
+        "field": "signal_count",
+        "label": "Ladesäule",
+        "topic_slug": "ladesaeule",
+        "value": 7
+      },
+      {
+        "date": "2026-06-04",
+        "field": "blocked_signal_count",
+        "label": "Ladesäule",
+        "topic_slug": "ladesaeule",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "official_source_count",
+        "label": "THG-Quote",
+        "topic_slug": "thg-quote",
+        "value": 3
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_count",
+        "label": "THG-Quote",
+        "topic_slug": "thg-quote",
+        "value": 3
+      },
+      {
+        "date": "2026-06-04",
+        "field": "fact_count",
+        "label": "THG-Quote",
+        "topic_slug": "thg-quote",
+        "value": 3
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_backed_fact_count",
+        "label": "THG-Quote",
+        "topic_slug": "thg-quote",
+        "value": 2
+      },
+      {
+        "date": "2026-06-04",
+        "field": "unknown_count",
+        "label": "THG-Quote",
+        "topic_slug": "thg-quote",
+        "value": 1
+      },
+      {
+        "date": "2026-06-04",
+        "field": "signal_count",
+        "label": "THG-Quote",
+        "topic_slug": "thg-quote",
+        "value": 7
+      },
+      {
+        "date": "2026-06-04",
+        "field": "blocked_signal_count",
+        "label": "THG-Quote",
+        "topic_slug": "thg-quote",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "official_source_count",
+        "label": "Umweltbonus",
+        "topic_slug": "umweltbonus",
+        "value": 2
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_count",
+        "label": "Umweltbonus",
+        "topic_slug": "umweltbonus",
+        "value": 3
+      },
+      {
+        "date": "2026-06-04",
+        "field": "fact_count",
+        "label": "Umweltbonus",
+        "topic_slug": "umweltbonus",
+        "value": 3
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_backed_fact_count",
+        "label": "Umweltbonus",
+        "topic_slug": "umweltbonus",
+        "value": 3
+      },
+      {
+        "date": "2026-06-04",
+        "field": "unknown_count",
+        "label": "Umweltbonus",
+        "topic_slug": "umweltbonus",
+        "value": 1
+      },
+      {
+        "date": "2026-06-04",
+        "field": "signal_count",
+        "label": "Umweltbonus",
+        "topic_slug": "umweltbonus",
+        "value": 7
+      },
+      {
+        "date": "2026-06-04",
+        "field": "blocked_signal_count",
+        "label": "Umweltbonus",
+        "topic_slug": "umweltbonus",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "official_source_count",
+        "label": "Wallbox-Förderung",
+        "topic_slug": "wallbox-foerderung",
+        "value": 6
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_count",
+        "label": "Wallbox-Förderung",
+        "topic_slug": "wallbox-foerderung",
+        "value": 6
+      },
+      {
+        "date": "2026-06-04",
+        "field": "fact_count",
+        "label": "Wallbox-Förderung",
+        "topic_slug": "wallbox-foerderung",
+        "value": 10
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_backed_fact_count",
+        "label": "Wallbox-Förderung",
+        "topic_slug": "wallbox-foerderung",
+        "value": 10
+      },
+      {
+        "date": "2026-06-04",
+        "field": "unknown_count",
+        "label": "Wallbox-Förderung",
+        "topic_slug": "wallbox-foerderung",
+        "value": 3
+      },
+      {
+        "date": "2026-06-04",
+        "field": "signal_count",
+        "label": "Wallbox-Förderung",
+        "topic_slug": "wallbox-foerderung",
+        "value": 7
+      },
+      {
+        "date": "2026-06-04",
+        "field": "blocked_signal_count",
+        "label": "Wallbox-Förderung",
+        "topic_slug": "wallbox-foerderung",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "official_source_count",
+        "label": "Energieberater",
+        "topic_slug": "energieberater",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_count",
+        "label": "Energieberater",
+        "topic_slug": "energieberater",
+        "value": 5
+      },
+      {
+        "date": "2026-06-04",
+        "field": "fact_count",
+        "label": "Energieberater",
+        "topic_slug": "energieberater",
+        "value": 2
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_backed_fact_count",
+        "label": "Energieberater",
+        "topic_slug": "energieberater",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "unknown_count",
+        "label": "Energieberater",
+        "topic_slug": "energieberater",
+        "value": 2
+      },
+      {
+        "date": "2026-06-04",
+        "field": "signal_count",
+        "label": "Energieberater",
+        "topic_slug": "energieberater",
+        "value": 7
+      },
+      {
+        "date": "2026-06-04",
+        "field": "blocked_signal_count",
+        "label": "Energieberater",
+        "topic_slug": "energieberater",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "official_source_count",
+        "label": "PV-Wallbox",
+        "topic_slug": "pv-wallbox",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_count",
+        "label": "PV-Wallbox",
+        "topic_slug": "pv-wallbox",
+        "value": 4
+      },
+      {
+        "date": "2026-06-04",
+        "field": "fact_count",
+        "label": "PV-Wallbox",
+        "topic_slug": "pv-wallbox",
+        "value": 2
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_backed_fact_count",
+        "label": "PV-Wallbox",
+        "topic_slug": "pv-wallbox",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "unknown_count",
+        "label": "PV-Wallbox",
+        "topic_slug": "pv-wallbox",
+        "value": 2
+      },
+      {
+        "date": "2026-06-04",
+        "field": "signal_count",
+        "label": "PV-Wallbox",
+        "topic_slug": "pv-wallbox",
+        "value": 7
+      },
+      {
+        "date": "2026-06-04",
+        "field": "blocked_signal_count",
+        "label": "PV-Wallbox",
+        "topic_slug": "pv-wallbox",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "official_source_count",
+        "label": "Solaranlage",
+        "topic_slug": "solaranlage",
+        "value": 5
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_count",
+        "label": "Solaranlage",
+        "topic_slug": "solaranlage",
+        "value": 6
+      },
+      {
+        "date": "2026-06-04",
+        "field": "fact_count",
+        "label": "Solaranlage",
+        "topic_slug": "solaranlage",
+        "value": 5
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_backed_fact_count",
+        "label": "Solaranlage",
+        "topic_slug": "solaranlage",
+        "value": 5
+      },
+      {
+        "date": "2026-06-04",
+        "field": "unknown_count",
+        "label": "Solaranlage",
+        "topic_slug": "solaranlage",
+        "value": 4
+      },
+      {
+        "date": "2026-06-04",
+        "field": "signal_count",
+        "label": "Solaranlage",
+        "topic_slug": "solaranlage",
+        "value": 7
+      },
+      {
+        "date": "2026-06-04",
+        "field": "blocked_signal_count",
+        "label": "Solaranlage",
+        "topic_slug": "solaranlage",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "official_source_count",
+        "label": "Solarstrom fürs Auto",
+        "topic_slug": "solarstrom-auto-laden",
+        "value": 2
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_count",
+        "label": "Solarstrom fürs Auto",
+        "topic_slug": "solarstrom-auto-laden",
+        "value": 4
+      },
+      {
+        "date": "2026-06-04",
+        "field": "fact_count",
+        "label": "Solarstrom fürs Auto",
+        "topic_slug": "solarstrom-auto-laden",
+        "value": 6
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_backed_fact_count",
+        "label": "Solarstrom fürs Auto",
+        "topic_slug": "solarstrom-auto-laden",
+        "value": 6
+      },
+      {
+        "date": "2026-06-04",
+        "field": "unknown_count",
+        "label": "Solarstrom fürs Auto",
+        "topic_slug": "solarstrom-auto-laden",
+        "value": 3
+      },
+      {
+        "date": "2026-06-04",
+        "field": "signal_count",
+        "label": "Solarstrom fürs Auto",
+        "topic_slug": "solarstrom-auto-laden",
+        "value": 7
+      },
+      {
+        "date": "2026-06-04",
+        "field": "blocked_signal_count",
+        "label": "Solarstrom fürs Auto",
+        "topic_slug": "solarstrom-auto-laden",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "official_source_count",
+        "label": "Solarteur",
+        "topic_slug": "solarteur",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_count",
+        "label": "Solarteur",
+        "topic_slug": "solarteur",
+        "value": 5
+      },
+      {
+        "date": "2026-06-04",
+        "field": "fact_count",
+        "label": "Solarteur",
+        "topic_slug": "solarteur",
+        "value": 2
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_backed_fact_count",
+        "label": "Solarteur",
+        "topic_slug": "solarteur",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "unknown_count",
+        "label": "Solarteur",
+        "topic_slug": "solarteur",
+        "value": 2
+      },
+      {
+        "date": "2026-06-04",
+        "field": "signal_count",
+        "label": "Solarteur",
+        "topic_slug": "solarteur",
+        "value": 7
+      },
+      {
+        "date": "2026-06-04",
+        "field": "blocked_signal_count",
+        "label": "Solarteur",
+        "topic_slug": "solarteur",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "official_source_count",
+        "label": "E-Auto-Versicherung",
+        "topic_slug": "e-auto-versicherung",
+        "value": 1
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_count",
+        "label": "E-Auto-Versicherung",
+        "topic_slug": "e-auto-versicherung",
+        "value": 2
+      },
+      {
+        "date": "2026-06-04",
+        "field": "fact_count",
+        "label": "E-Auto-Versicherung",
+        "topic_slug": "e-auto-versicherung",
+        "value": 2
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_backed_fact_count",
+        "label": "E-Auto-Versicherung",
+        "topic_slug": "e-auto-versicherung",
+        "value": 1
+      },
+      {
+        "date": "2026-06-04",
+        "field": "unknown_count",
+        "label": "E-Auto-Versicherung",
+        "topic_slug": "e-auto-versicherung",
+        "value": 1
+      },
+      {
+        "date": "2026-06-04",
+        "field": "signal_count",
+        "label": "E-Auto-Versicherung",
+        "topic_slug": "e-auto-versicherung",
+        "value": 7
+      },
+      {
+        "date": "2026-06-04",
+        "field": "blocked_signal_count",
+        "label": "E-Auto-Versicherung",
+        "topic_slug": "e-auto-versicherung",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "official_source_count",
+        "label": "Gebrauchtwagen-E-Auto-Förderung",
+        "topic_slug": "gebrauchtwagen-eauto-foerderung",
+        "value": 2
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_count",
+        "label": "Gebrauchtwagen-E-Auto-Förderung",
+        "topic_slug": "gebrauchtwagen-eauto-foerderung",
+        "value": 2
+      },
+      {
+        "date": "2026-06-04",
+        "field": "fact_count",
+        "label": "Gebrauchtwagen-E-Auto-Förderung",
+        "topic_slug": "gebrauchtwagen-eauto-foerderung",
+        "value": 3
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_backed_fact_count",
+        "label": "Gebrauchtwagen-E-Auto-Förderung",
+        "topic_slug": "gebrauchtwagen-eauto-foerderung",
+        "value": 2
+      },
+      {
+        "date": "2026-06-04",
+        "field": "unknown_count",
+        "label": "Gebrauchtwagen-E-Auto-Förderung",
+        "topic_slug": "gebrauchtwagen-eauto-foerderung",
+        "value": 1
+      },
+      {
+        "date": "2026-06-04",
+        "field": "signal_count",
+        "label": "Gebrauchtwagen-E-Auto-Förderung",
+        "topic_slug": "gebrauchtwagen-eauto-foerderung",
+        "value": 7
+      },
+      {
+        "date": "2026-06-04",
+        "field": "blocked_signal_count",
+        "label": "Gebrauchtwagen-E-Auto-Förderung",
+        "topic_slug": "gebrauchtwagen-eauto-foerderung",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "official_source_count",
+        "label": "E-Auto-Händler-Pool",
+        "topic_slug": "supplier-pool-e-autohaendler",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_count",
+        "label": "E-Auto-Händler-Pool",
+        "topic_slug": "supplier-pool-e-autohaendler",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "fact_count",
+        "label": "E-Auto-Händler-Pool",
+        "topic_slug": "supplier-pool-e-autohaendler",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_backed_fact_count",
+        "label": "E-Auto-Händler-Pool",
+        "topic_slug": "supplier-pool-e-autohaendler",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "unknown_count",
+        "label": "E-Auto-Händler-Pool",
+        "topic_slug": "supplier-pool-e-autohaendler",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "signal_count",
+        "label": "E-Auto-Händler-Pool",
+        "topic_slug": "supplier-pool-e-autohaendler",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "blocked_signal_count",
+        "label": "E-Auto-Händler-Pool",
+        "topic_slug": "supplier-pool-e-autohaendler",
+        "value": 0
+      },
+      {
+        "date": "2026-06-04",
+        "field": "official_source_count",
+        "label": "Wallbox-Installation",
+        "topic_slug": "wallbox-installation",
+        "value": 6
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_count",
+        "label": "Wallbox-Installation",
+        "topic_slug": "wallbox-installation",
+        "value": 6
+      },
+      {
+        "date": "2026-06-04",
+        "field": "fact_count",
+        "label": "Wallbox-Installation",
+        "topic_slug": "wallbox-installation",
+        "value": 10
+      },
+      {
+        "date": "2026-06-04",
+        "field": "source_backed_fact_count",
+        "label": "Wallbox-Installation",
+        "topic_slug": "wallbox-installation",
+        "value": 10
+      },
+      {
+        "date": "2026-06-04",
+        "field": "unknown_count",
+        "label": "Wallbox-Installation",
+        "topic_slug": "wallbox-installation",
+        "value": 3
+      },
+      {
+        "date": "2026-06-04",
+        "field": "signal_count",
+        "label": "Wallbox-Installation",
+        "topic_slug": "wallbox-installation",
+        "value": 7
+      },
+      {
+        "date": "2026-06-04",
+        "field": "blocked_signal_count",
+        "label": "Wallbox-Installation",
+        "topic_slug": "wallbox-installation",
+        "value": 0
+      }
+    ]
+  }
+}

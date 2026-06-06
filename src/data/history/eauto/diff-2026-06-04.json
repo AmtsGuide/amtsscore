@@ -1,0 +1,15 @@
+{
+  "current_snapshot": "2026-06-04",
+  "do_not_edit_by_hand": true,
+  "events": [],
+  "generated_by": "tools/eauto/import_amtsscore.py",
+  "history_model_version": "1.0",
+  "previous_snapshot": "2026-06-04",
+  "snapshot_date": "2026-06-04",
+  "snapshot_family": "eauto_candidate_signals",
+  "summary": {
+    "event_count": 0,
+    "informational_event_count": 0,
+    "material_event_count": 0
+  }
+}

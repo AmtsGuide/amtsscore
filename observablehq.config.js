@@ -27,6 +27,7 @@ export default {
 		{
 			name: 'Topics',
 			pages: [
+				{name: 'E-Auto Candidate Signals', path: '/topics/e-auto'},
 				{name: 'Halteverbot', path: '/topics/halteverbot'},
 				{name: 'KFZ-Zulassung', path: '/topics/kfz-zulassung'},
 				{name: 'GmbH-Gründung', path: '/topics/gmbh-gruendung'},
