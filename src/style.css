@@ -130,8 +130,40 @@ code, pre, kbd, samp {
   border: 1px solid var(--theme-foreground-faintest);
   color: var(--theme-foreground);
   border-radius: 8px;
+  box-sizing: border-box;
+  container-type: inline-size;
+  min-width: 0;
+  overflow: hidden;
 }
-.stat-label { color: var(--theme-foreground-muted); }
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(13rem, 100%), 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+  max-width: 100%;
+}
+.stat-label {
+  color: var(--theme-foreground-muted);
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+.stat-value {
+  color: var(--theme-foreground);
+  font-size: clamp(1.05rem, 14cqi, 1.6rem);
+  font-weight: 650;
+  line-height: 1.12;
+  margin-top: 0.45rem;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+  word-break: break-word;
+}
+.stat-value--long {
+  font-size: clamp(1rem, 9cqi, 1.3rem);
+}
+.stat-card p {
+  overflow-wrap: anywhere;
+}
 
 .amtsscore-header {
   display: flex;

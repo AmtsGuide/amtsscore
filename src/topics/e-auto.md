@@ -26,16 +26,68 @@ const gates = current.gates;
 const buildableTopics = topics.filter((t) => t.review_status === "buildable_preview");
 const bridgeTopics = topics.filter((t) => t.review_status === "bridge_context");
 const suppressedTopics = topics.filter((t) => ["not_ready", "provider_only", "suppressed"].includes(t.review_status));
-const metricRows = current.visual_rollups.metrics;
+const labelMap = new Map(Object.entries({
+  accepted: "Akzeptiert",
+  accepted_with_diagnostics: "Akzeptiert mit Hinweisen",
+  allow_cta: "CTA erlaubt",
+  allow_embedded: "Einbettung erlaubt",
+  baseline_established: "Baseline etabliert",
+  bridge: "Kontext",
+  bridge_context: "Kontextthema",
+  blocked_signal_count: "Blockierte Signals",
+  buildable_preview: "Preview bereit",
+  complete: "Vollständig",
+  core: "AmtsScore-Kern",
+  current_snapshot: "Aktueller Snapshot",
+  eauto_candidate_signals: "E-Auto Candidate Signals",
+  editor_review_required: "Redaktionelle Prüfung offen",
+  fact_count: "Fakten",
+  light_ready: "Leichtes Tool bereit",
+  light_tool_ready: "Leichtes Tool bereit",
+  not_ready: "Nicht bereit",
+  not_ready_closed: "Nicht bereit",
+  not_surfaceable: "Nicht oberflächenreif",
+  official_source_count: "Offizielle Quellen",
+  provider_only: "Provider-Kontext",
+  provider_only_ready: "Provider-Kontext bereit",
+  ready: "Bereit",
+  signal_count: "Candidate Signals",
+  static_lookup: "Statische Auskunft",
+  suppress_route: "Route unterdrückt",
+  suppressed: "Unterdrückt",
+  suppressed_route_count: "Unterdrückte Routen",
+  topic_count: "Topics",
+  unknown_count: "Unbekannte",
+  web_buildable_now_count: "Buildable Surfaces"
+}));
+const displayLabel = (value) => {
+  if (value == null || value === "") return "—";
+  if (typeof value === "boolean") return value ? "Ja" : "Nein";
+  const text = String(value);
+  return labelMap.get(text) ?? text.replace(/[_-]+/g, " ").replace(/\b\w/g, (letter) => letter.toUpperCase());
+};
+const yesNo = (value) => value ? "Ja" : "Nein";
+const statCard = (label, value, tone = "") => {
+  const valueText = String(value ?? "");
+  const longValueClass = valueText.length > 11 ? " stat-value--long" : "";
+  return html`<div class="stat-card ${tone}">
+  <div class="stat-label">${label}</div>
+  <div class="stat-value${longValueClass}">${value}</div>
+</div>`;
+};
+const metricRows = current.visual_rollups.metrics.map((row) => ({
+  ...row,
+  metric: displayLabel(row.metric)
+}));
 const unknownRows = topics
-  .map((t) => ({Topic: t.label, Unbekannte: t.unknown_count, Gruppe: t.group}))
+  .map((t) => ({Topic: t.label, Unbekannte: t.unknown_count, Gruppe: displayLabel(t.group)}))
   .sort((a, b) => b.Unbekannte - a.Unbekannte);
 const policyRows = topics.map((t) => ({
   Topic: t.label,
-  Gruppe: t.group,
-  "Route-Policy": t.route_policy ?? "—",
-  "CTA-Policy": t.cta_policy ?? "—",
-  "Embedded": t.embedded_policy ?? "—",
+  Gruppe: displayLabel(t.group),
+  "Route-Policy": displayLabel(t.route_policy),
+  "CTA-Policy": displayLabel(t.cta_policy),
+  "Embedded": displayLabel(t.embedded_policy),
 }));
 ```
 
@@ -46,58 +98,30 @@ wenn Hard Blocker, fehlgeschlagene Pipeline-Checks und Provider-Evidence als
 AmtsScore-Beleg ausgeschlossen sind.
 
 ```js
-html`<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0.75rem;margin:1rem 0">
-  <div class="stat-card">
-    <div class="stat-label">Final Audit</div>
-    <div style="font-size:1.35rem;font-weight:650">${gates.final_audit_status}</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-label">Hard Blocker</div>
-    <div style="font-size:1.35rem;font-weight:650">${gates.hard_blocker_count}</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-label">Pipeline Failures</div>
-    <div style="font-size:1.35rem;font-weight:650">${gates.failed_check_count}</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-label">Provider Evidence</div>
-    <div style="font-size:1.35rem;font-weight:650">${gates.provider_rows_used_as_evidence ? "genutzt" : "ausgeschlossen"}</div>
-  </div>
+html`<div class="stat-grid">
+  ${statCard("Finaler Audit", displayLabel(gates.final_audit_status))}
+  ${statCard("Hard Blocker", gates.hard_blocker_count)}
+  ${statCard("Pipeline-Fehler", gates.failed_check_count)}
+  ${statCard("Provider-Belege", gates.provider_rows_used_as_evidence ? "Genutzt" : "Ausgeschlossen")}
 </div>`
 ```
 
 ## Current Snapshot
 
-Der aktuelle Snapshot `${current.current_snapshot}` ist die erste
+```js
+html`<p>Der aktuelle Snapshot <strong>${current.current_snapshot}</strong> ist die erste
 E-Auto-Candidate-Signal-Baseline. Die History-Struktur ist bereits angelegt,
-damit spätere Imports sichtbar machen, was sich geändert hat.
+damit spätere Imports sichtbar machen, was sich geändert hat.</p>`
+```
 
 ```js
-html`<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:0.75rem;margin:1rem 0">
-  <div class="stat-card">
-    <div class="stat-label">Candidate Topics</div>
-    <div style="font-size:1.6rem;font-weight:650">${summary.candidate_ready_topic_count}</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-label">Candidate Signals</div>
-    <div style="font-size:1.6rem;font-weight:650">${summary.signal_count}</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-label">Blocked Signals</div>
-    <div style="font-size:1.6rem;font-weight:650">${summary.blocked_signal_count}</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-label">Buildable Surfaces</div>
-    <div style="font-size:1.6rem;font-weight:650">${summary.web_buildable_now_count}</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-label">Suppressed Routes</div>
-    <div style="font-size:1.6rem;font-weight:650">${summary.suppressed_route_count}</div>
-  </div>
-  <div class="stat-card">
-    <div class="stat-label">Snapshot Review</div>
-    <div style="font-size:1.1rem;font-weight:650">${current.review_status}</div>
-  </div>
+html`<div class="stat-grid">
+  ${statCard("Candidate Topics", summary.candidate_ready_topic_count)}
+  ${statCard("Candidate Signals", summary.signal_count)}
+  ${statCard("Blocked Signals", summary.blocked_signal_count)}
+  ${statCard("Buildable Surfaces", summary.web_buildable_now_count)}
+  ${statCard("Suppressed Routes", summary.suppressed_route_count)}
+  ${statCard("Snapshot Review", displayLabel(current.review_status))}
 </div>`
 ```
 
@@ -131,13 +155,13 @@ Route-Policy unterdrückt.
 ```js
 Inputs.table(buildableTopics.map((t) => ({
   Topic: t.label,
-  Gruppe: t.group,
-  Tool: t.tool_type ?? "—",
+  Gruppe: displayLabel(t.group),
+  Tool: displayLabel(t.tool_type),
   Quellen: `${t.official_source_count}/${t.source_count}`,
   Fakten: `${t.source_backed_fact_count}/${t.fact_count}`,
   Unbekannt: t.unknown_count,
-  Route: t.route_policy ?? "—",
-  CTA: t.cta_policy ?? "—",
+  Route: displayLabel(t.route_policy),
+  CTA: displayLabel(t.cta_policy),
   Claim: t.public_claim_wording ?? "—",
 })), {rows: 20})
 ```
@@ -150,8 +174,8 @@ eigenständige Topic-Aussage hochgestuft.
 ```js
 Inputs.table(bridgeTopics.map((t) => ({
   Topic: t.label,
-  Status: t.review_status,
-  Tool: t.tool_type ?? "—",
+  Status: displayLabel(t.review_status),
+  Tool: displayLabel(t.tool_type),
   Quellen: `${t.official_source_count}/${t.source_count}`,
   Fakten: `${t.source_backed_fact_count}/${t.fact_count}`,
   Unbekannt: t.unknown_count,
@@ -167,12 +191,12 @@ AmtsScore-Evidence verwendet.
 ```js
 Inputs.table(suppressedTopics.map((t) => ({
   Topic: t.label,
-  Status: t.review_status,
-  Gruppe: t.group,
-  Tool: t.tool_type ?? "—",
-  Route: t.route_policy ?? "—",
-  CTA: t.cta_policy ?? "—",
-  "Provider Evidence Excluded": t.provider_evidence_excluded ? "ja" : "nein",
+  Status: displayLabel(t.review_status),
+  Gruppe: displayLabel(t.group),
+  Tool: displayLabel(t.tool_type),
+  Route: displayLabel(t.route_policy),
+  CTA: displayLabel(t.cta_policy),
+  "Provider Evidence Excluded": yesNo(t.provider_evidence_excluded),
 })), {rows: 20})
 ```
 
@@ -212,12 +236,12 @@ fest, dass die E-Auto-Baseline etabliert wurde.
 
 ```js
 Inputs.table(latestDiff.events.map((event) => ({
-  Typ: event.event_type,
+  Typ: displayLabel(event.event_type),
   Topic: event.topic_slug ?? "Cluster",
-  Feld: event.field,
-  Vorher: event.previous_value ?? "—",
-  Jetzt: event.current_value ?? "—",
-  Schwere: event.severity,
+  Feld: displayLabel(event.field),
+  Vorher: displayLabel(event.previous_value),
+  Jetzt: displayLabel(event.current_value),
+  Schwere: displayLabel(event.severity),
 })), {rows: 20})
 ```
 
@@ -229,7 +253,7 @@ AmtsScore-Evidence sind sie in diesem Snapshot ausgeschlossen.
 ```js
 html`<div class="stat-card">
   <div class="stat-label">Provider Evidence Excluded</div>
-  <div style="font-size:1.5rem;font-weight:650">${summary.provider_rows_used_as_evidence ? "nein" : "ja"}</div>
+  <div class="stat-value">${summary.provider_rows_used_as_evidence ? "Nein" : "Ja"}</div>
   <p style="margin:0.5rem 0 0;color:var(--theme-foreground-muted)">Alle Topics melden provider_rows_used_as_evidence=false. Provider-Daten werden nicht in Evidence-Tabellen visualisiert.</p>
 </div>`
 ```
@@ -250,11 +274,15 @@ Inputs.table([
 
 ## Method Notes
 
-- Snapshot-Familie: `${current.snapshot_family}`
-- History Model: `${current.history_model_version}`
-- Current Pointer: `${current.current_snapshot_path}`
-- Latest Diff: `${current.latest_diff_path}`
-- Manifest-Snapshots: `${manifest.snapshots.length}`
+```js
+html`<ul>
+  <li><strong>Snapshot-Familie:</strong> ${displayLabel(current.snapshot_family)}</li>
+  <li><strong>History Model:</strong> ${current.history_model_version}</li>
+  <li><strong>Current Pointer:</strong> ${current.current_snapshot_path}</li>
+  <li><strong>Latest Diff:</strong> ${current.latest_diff_path}</li>
+  <li><strong>Manifest-Snapshots:</strong> ${manifest.snapshots.length}</li>
+</ul>`
+```
 
 Die Seite nutzt den Current Pointer. Ein Rollback kann daher auf einen älteren
 Snapshot zeigen, ohne spätere Snapshot-Dateien zu löschen.
