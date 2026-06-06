@@ -1,8 +1,23 @@
+const head = `
+<script>
+(() => {
+  const key = 'amtsscore-theme';
+  try {
+    const saved = localStorage.getItem(key);
+    if (saved === 'light' || saved === 'dark') {
+      document.documentElement.dataset.theme = saved;
+    }
+  } catch {}
+})();
+</script>`;
+
 const header = `
 <div class="amtsscore-header">
   <a href="/" aria-label="AmtsScore Home" class="amtsscore-headerlink amtsscore-brand">
-    <img src="/assets/logo-light.svg" alt="AmtsScore" height="24">
+    <img src="/assets/logo-light.svg" alt="AmtsScore" height="24" class="amtsscore-logo-light">
+    <img src="/assets/logo-dark.svg" alt="AmtsScore" height="24" class="amtsscore-logo-dark">
   </a>
+  <button type="button" class="amtsscore-theme-toggle" data-theme-toggle aria-label="Darstellung wechseln" aria-pressed="false">Hell</button>
   <a href="https://amtsguide.de/de/" target="_blank" rel="noopener" aria-label="AmtsGuide" class="amtsscore-headerlink amtsscore-ag">
     <svg width="20" height="20" viewBox="0 0 768 768" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       <rect width="768" height="768" rx="120" fill="#1a3da5"></rect>
@@ -17,11 +32,55 @@ const header = `
   </a>
 </div>`;
 
+const footer = `
+<script>
+(() => {
+  const key = 'amtsscore-theme';
+  const root = document.documentElement;
+  const button = document.querySelector('[data-theme-toggle]');
+  if (!button) return;
+
+  const media = window.matchMedia('(prefers-color-scheme: dark)');
+  const storedTheme = () => {
+    try {
+      const saved = localStorage.getItem(key);
+      return saved === 'light' || saved === 'dark' ? saved : '';
+    } catch {
+      return '';
+    }
+  };
+  const activeTheme = () => storedTheme() || (media.matches ? 'dark' : 'light');
+  const render = () => {
+    const theme = activeTheme();
+    button.textContent = theme === 'dark' ? 'Dunkel' : 'Hell';
+    button.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+    button.title = theme === 'dark' ? 'Dunkles Design aktiv' : 'Helles Design aktiv';
+  };
+
+  button.addEventListener('click', () => {
+    const next = activeTheme() === 'dark' ? 'light' : 'dark';
+    try {
+      localStorage.setItem(key, next);
+    } catch {}
+    root.dataset.theme = next;
+    render();
+  });
+
+  if (typeof media.addEventListener === 'function') {
+    media.addEventListener('change', render);
+  }
+  render();
+})();
+</script>`;
+
 export default {
 	title: 'AmtsScore',
 	root: 'src',
 	output: 'dist',
+	style: 'style.css',
+	head,
 	header,
+	footer,
 	pages: [
 		{name: 'Methodik', path: '/methodik'},
 		{

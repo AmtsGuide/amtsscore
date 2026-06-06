@@ -1,4 +1,4 @@
-/* AmtsScore custom styling — light mode only. */
+/* AmtsScore custom styling with persisted light and dark mode. */
 
 @import url("observablehq:default.css");
 @import url("observablehq:theme-air.css");
@@ -7,7 +7,101 @@
   --serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --monospace: "Spline Sans Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+:root[data-theme="light"] {
+  --syntax-keyword: #d73a49;
+  --syntax-entity: #6f42c1;
+  --syntax-constant: #005cc5;
+  --syntax-string: #032f62;
+  --syntax-variable: #e36209;
+  --syntax-comment: var(--theme-foreground-muted);
+  --syntax-entity-tag: #22863a;
+  --syntax-storage-modifier-import: #24292e;
+  --syntax-markup-heading: #005cc5;
+  --syntax-markup-list: #735c0f;
+  --syntax-markup-italic: #24292e;
+  --syntax-markup-bold: #24292e;
+  --syntax-markup-inserted: #22863a;
+  --syntax-markup-inserted-background: #f0fff4;
+  --syntax-markup-deleted: #b31d28;
+  --syntax-markup-deleted-background: #ffeef0;
+  --theme-foreground: #1b1e23;
+  --theme-foreground-focus: #3b5fc0;
+  --theme-background-a: #ffffff;
+  --theme-background-b: color-mix(in srgb, var(--theme-foreground) 4%, var(--theme-background-a));
+  --theme-background: var(--theme-background-a);
+  --theme-background-alt: var(--theme-background-b);
+  --theme-foreground-alt: color-mix(in srgb, var(--theme-foreground) 90%, var(--theme-background-a));
+  --theme-foreground-muted: color-mix(in srgb, var(--theme-foreground) 60%, var(--theme-background-a));
+  --theme-foreground-faint: color-mix(in srgb, var(--theme-foreground) 50%, var(--theme-background-a));
+  --theme-foreground-fainter: color-mix(in srgb, var(--theme-foreground) 30%, var(--theme-background-a));
+  --theme-foreground-faintest: color-mix(in srgb, var(--theme-foreground) 14%, var(--theme-background-a));
   color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --syntax-keyword: #ff7b72;
+  --syntax-entity: #d2a8ff;
+  --syntax-constant: #79c0ff;
+  --syntax-string: #a5d6ff;
+  --syntax-variable: #ffa657;
+  --syntax-comment: var(--theme-foreground-muted);
+  --syntax-entity-tag: #7ee787;
+  --syntax-storage-modifier-import: #c9d1d9;
+  --syntax-markup-heading: #1f6feb;
+  --syntax-markup-list: #f2cc60;
+  --syntax-markup-italic: #c9d1d9;
+  --syntax-markup-bold: #c9d1d9;
+  --syntax-markup-inserted: #aff5b4;
+  --syntax-markup-inserted-background: #033a16;
+  --syntax-markup-deleted: #ffdcd7;
+  --syntax-markup-deleted-background: #67060c;
+  --theme-foreground: #dfdfd6;
+  --theme-foreground-focus: oklch(.712564 .257662 265.758);
+  --theme-background-b: #161616;
+  --theme-background-a: color-mix(in srgb, var(--theme-foreground) 4%, var(--theme-background-b));
+  --theme-background: var(--theme-background-a);
+  --theme-background-alt: var(--theme-background-b);
+  --theme-foreground-alt: color-mix(in srgb, var(--theme-foreground) 90%, var(--theme-background-b));
+  --theme-foreground-muted: color-mix(in srgb, var(--theme-foreground) 60%, var(--theme-background-b));
+  --theme-foreground-faint: color-mix(in srgb, var(--theme-foreground) 50%, var(--theme-background-b));
+  --theme-foreground-fainter: color-mix(in srgb, var(--theme-foreground) 30%, var(--theme-background-b));
+  --theme-foreground-faintest: color-mix(in srgb, var(--theme-foreground) 14%, var(--theme-background-b));
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --syntax-keyword: #ff7b72;
+    --syntax-entity: #d2a8ff;
+    --syntax-constant: #79c0ff;
+    --syntax-string: #a5d6ff;
+    --syntax-variable: #ffa657;
+    --syntax-comment: var(--theme-foreground-muted);
+    --syntax-entity-tag: #7ee787;
+    --syntax-storage-modifier-import: #c9d1d9;
+    --syntax-markup-heading: #1f6feb;
+    --syntax-markup-list: #f2cc60;
+    --syntax-markup-italic: #c9d1d9;
+    --syntax-markup-bold: #c9d1d9;
+    --syntax-markup-inserted: #aff5b4;
+    --syntax-markup-inserted-background: #033a16;
+    --syntax-markup-deleted: #ffdcd7;
+    --syntax-markup-deleted-background: #67060c;
+    --theme-foreground: #dfdfd6;
+    --theme-foreground-focus: oklch(.712564 .257662 265.758);
+    --theme-background-b: #161616;
+    --theme-background-a: color-mix(in srgb, var(--theme-foreground) 4%, var(--theme-background-b));
+    --theme-background: var(--theme-background-a);
+    --theme-background-alt: var(--theme-background-b);
+    --theme-foreground-alt: color-mix(in srgb, var(--theme-foreground) 90%, var(--theme-background-b));
+    --theme-foreground-muted: color-mix(in srgb, var(--theme-foreground) 60%, var(--theme-background-b));
+    --theme-foreground-faint: color-mix(in srgb, var(--theme-foreground) 50%, var(--theme-background-b));
+    --theme-foreground-fainter: color-mix(in srgb, var(--theme-foreground) 30%, var(--theme-background-b));
+    --theme-foreground-faintest: color-mix(in srgb, var(--theme-foreground) 14%, var(--theme-background-b));
+    color-scheme: dark;
+  }
 }
 
 html, body {
@@ -65,6 +159,27 @@ code, pre, kbd, samp {
 }
 .amtsscore-headerlink svg { display: block; }
 
+.amtsscore-theme-toggle {
+  appearance: none;
+  border: 1px solid var(--theme-foreground-fainter);
+  background: var(--theme-background-alt);
+  color: var(--theme-foreground);
+  border-radius: 999px;
+  cursor: pointer;
+  font: 600 0.8rem/1 var(--sans-serif);
+  min-width: 4.5rem;
+  min-height: 1.85rem;
+  padding: 0.35rem 0.75rem;
+  text-align: center;
+}
+.amtsscore-theme-toggle:hover {
+  border-color: var(--theme-foreground-focus);
+}
+.amtsscore-theme-toggle:focus-visible {
+  outline: 2px solid var(--theme-foreground-focus);
+  outline-offset: 2px;
+}
+
 /* Collapse the row-selection checkbox column on Inputs.table to zero width
  * (display:none alone leaves Observable's column-auto-sizing thinking the
  * column still claims its 19px width). */
@@ -101,4 +216,29 @@ form[class*="inputs-"][class*="-table"] table {
   height: 24px;
   width: auto;
 }
+.amtsscore-brand .amtsscore-logo-dark { display: none; }
+:root[data-theme="dark"] .amtsscore-brand .amtsscore-logo-light { display: none; }
+:root[data-theme="dark"] .amtsscore-brand .amtsscore-logo-dark { display: block; }
+:root[data-theme="light"] .amtsscore-brand .amtsscore-logo-light { display: block; }
+:root[data-theme="light"] .amtsscore-brand .amtsscore-logo-dark { display: none; }
 .amtsscore-brand:hover { opacity: 0.85; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) .amtsscore-brand .amtsscore-logo-light { display: none; }
+  :root:not([data-theme]) .amtsscore-brand .amtsscore-logo-dark { display: block; }
+}
+
+@media (max-width: 560px) {
+  .amtsscore-ag span,
+  .amtsscore-gh span {
+    display: none;
+  }
+  .amtsscore-header {
+    gap: 0.25rem;
+    padding: 0 0.5rem;
+  }
+  .amtsscore-theme-toggle {
+    min-width: 3.9rem;
+    padding-inline: 0.55rem;
+  }
+}
