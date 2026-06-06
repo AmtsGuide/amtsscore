@@ -23,7 +23,7 @@ export default {
 	output: 'dist',
 	header,
 	pages: [
-		{name: 'Methodik', path: '/methodology'},
+		{name: 'Methodik', path: '/methodik'},
 		{
 			name: 'Topics',
 			pages: [

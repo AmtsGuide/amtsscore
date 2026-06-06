@@ -123,4 +123,4 @@ const others = stateCities.filter(c => c.city_slug !== slug);
 html`${others.length ? html`<p><strong>Andere Städte in ${summary?.bundesland}:</strong> ${others.map(c => html`<a href="/staedte/${c.city_slug}">${c.city}</a>`).reduce((a,b) => html`${a} · ${b}`)}</p>` : ''}`
 ```
 
-→ [Bundesland-Übersicht](/bundeslaender/sachsen-anhalt) · [alle Städte](/staedte/) · [Methodik](/methodology)
+→ [Bundesland-Übersicht](/bundeslaender/sachsen-anhalt) · [alle Städte](/staedte/) · [Methodik](/methodik)

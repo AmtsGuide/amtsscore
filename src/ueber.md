@@ -15,7 +15,7 @@ AmtsScore misst die digitale Performance deutscher Verwaltungs-Websites, kontinu
 
 - **Nur öffentlich messbare Daten**: keine Umfragen, keine Selbstauskünfte
 - **Bürger-Perspektive**: was die Bürger:in erreichen kann, nicht was die IT meldet
-- **Multi-dimensional**. 10 transparente Sub-Scores zu einem Composite (siehe [Methodik](/methodology))
+- **Multi-dimensional**. 10 transparente Sub-Scores zu einem Composite (siehe [Methodik](/methodik))
 - **Reproduzierbar**. Methodik öffentlich, Daten downloadbar
 - **Kontinuierlich**: quartalsweise Messung, Veränderung sichtbar
 

@@ -11,7 +11,7 @@ AmtsScore kuratiert Service-Launches, die bemerkenswert sind: end-to-end-digital
 
 ## Methodik
 
-Jeder Leuchtturm wird nach der **AmtsScore-12-Dimensionen-Methodik** ([siehe Methodik](/methodology)) bewertet, aber **angewendet auf einen einzelnen Service**, nicht die ganze Stadt. So entsteht ein zweiter Lese-Layer:
+Jeder Leuchtturm wird nach der **AmtsScore-12-Dimensionen-Methodik** ([siehe Methodik](/methodik)) bewertet, aber **angewendet auf einen einzelnen Service**, nicht die ganze Stadt. So entsteht ein zweiter Lese-Layer:
 
 - **Stadt-AmtsScore** = Durchschnitt aller Dienste der Stadt → strukturelle Performance
 - **Service-AmtsScore** = einzelner Dienst → was ist konkret gelungen

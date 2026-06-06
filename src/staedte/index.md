@@ -65,4 +65,4 @@ Plot.plot({
 })
 ```
 
-→ [Bundesländer-Übersicht](/bundeslaender/) · [Halteverbot](/topics/halteverbot) · [Methodik](/methodology)
+→ [Bundesländer-Übersicht](/bundeslaender/) · [Halteverbot](/topics/halteverbot) · [Methodik](/methodik)

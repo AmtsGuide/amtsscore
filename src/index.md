@@ -94,7 +94,7 @@ const eautoSummary = eauto.summary;
 
 ## Status
 
-AmtsScore befindet sich in **öffentlicher Methodik-Kommentierung**. Die [Methodik v0.1](/methodology) liegt zur Diskussion vor. Erste vollständige Messung der 20 deutschen Großstädte erwartet **Q3/2026**.
+AmtsScore befindet sich in **öffentlicher Methodik-Kommentierung**. Die [Methodik v0.1](/methodik) liegt zur Diskussion vor. Erste vollständige Messung der 20 deutschen Großstädte erwartet **Q3/2026**.
 
 In der Zwischenzeit zeigen wir aus bestehenden AmtsGuide-Daten erste **Topic-Auswertungen**. Behördengang-Daten pro Stadt, ohne AmtsScore-Bewertung.
 
@@ -146,7 +146,7 @@ html`<div class="summary-grid">
   <div class="cta-card">
     <h3>Methodik</h3>
     <p>Die 10 Dimensionen, mit denen AmtsScore misst. Öffentlich, reproduzierbar, in Kommentierung.</p>
-    <p><a href="/methodology">Methodik v0.1 →</a></p>
+    <p><a href="/methodik">Methodik v0.1 →</a></p>
   </div>
   <div class="cta-card">
     <h3>Topic-Daten</h3>

@@ -184,7 +184,7 @@ Diese Auswertung ist **Pre-AmtsScore v0**:
 - Kein Composite-Score 0-10
 - Statt dessen: nackte Daten zu Behörden-Wartezeiten und Gebühren
 
-Die AmtsScore-Methodik (siehe `/methodology`) misst hingegen die digitale Performance der Stadt-Verwaltungs-Websites selbst. Beide Ebenen sind komplementär:
+Die AmtsScore-Methodik (siehe `/methodik`) misst hingegen die digitale Performance der Stadt-Verwaltungs-Websites selbst. Beide Ebenen sind komplementär:
 
 - **Diese Topic-Daten** sagen: *Wie funktioniert dieser konkrete Behördengang in dieser Stadt?*
 - **AmtsScore-Methodik** sagt: *Wie gut macht diese Stadt-Website ihre Arbeit insgesamt?*

@@ -102,4 +102,4 @@ scoredRows.length === 0
     })
 ```
 
-→ [alle Bundesländer](/bundeslaender/) · [alle Städte](/staedte/) · [Methodik](/methodology)
+→ [alle Bundesländer](/bundeslaender/) · [alle Städte](/staedte/) · [Methodik](/methodik)

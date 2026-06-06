@@ -62,4 +62,4 @@ Plot.plot({
 })
 ```
 
-→ [Städte-Übersicht](/staedte/) · [Methodik](/methodology)
+→ [Städte-Übersicht](/staedte/) · [Methodik](/methodik)
