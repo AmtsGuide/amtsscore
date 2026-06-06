@@ -12,6 +12,9 @@ const head = `
 </script>`;
 
 const header = `
+<div class="amtsscore-alpha-banner" role="status">
+  <strong>Pre-Alpha:</strong> Diese Website zeigt KI-generierte Vorabdaten. Die Daten können falsch, unvollständig oder irreführend sein und sind nicht für Entscheidungen geeignet.
+</div>
 <div class="amtsscore-header">
   <a href="/" aria-label="AmtsScore Startseite" class="amtsscore-headerlink amtsscore-brand">
     <img src="/assets/logo-light.svg" alt="AmtsScore" height="24" class="amtsscore-logo-light">
